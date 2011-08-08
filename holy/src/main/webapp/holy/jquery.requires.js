@@ -1,22 +1,18 @@
 (function($) {
 
 	$.extend({
-		requires : function(dataType, url, callback) {
+		requires : function(url, dataType, callback) {
 			if ($.requires.loads[url]) {
 				return;
 			}
-			var async = !!callback;
-			console.info("x", async);
-			$.ajax({
-				url : url,
-				async : async,
-				dataType : dataType,
-				success : callback
-			});
+			console.info('load', url);
+			$('head').append(
+					'<script type="text/javascript" src="' + url
+							+ '"></script>');
 			$.requires.loads[url] = true;
 		}
 	});
-	
+
 	$.requires.loads = {};
 
 })(jQuery);
