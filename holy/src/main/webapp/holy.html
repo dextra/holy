@@ -1,27 +1,56 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <title>Holy</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <script type="text/javascript" src="holy/jquery.js"></script>
-        <script type="text/javascript" src="holy/jquery.requires.js"></script>
-        <link rel="stylesheet" href="holy/themes/liquidblue/style.css" />
-        <!--  
-        <script type="text/javascript" src="holy/jquery.js"></script>
-        <script type="text/javascript" src="holy/jquery.ba-hashchange.js"></script>
-        <script type="text/javascript" src="holy/jquery-ui.min.js"></script>
-        <link rel="stylesheet" href="holy/jqueryui.css" />
-        <script type="text/javascript" src="holy/jquery.ba-hashchange.js"></script>
-        <script type="text/javascript" src="holy/jquery.holyavenger.js"></script>
-        <script type="text/javascript" src="holy/jquery.holyavenger.trimpath.js"></script>
-        -->
-    </head>
-    <body>
-        <div id="wrapper">
-          <div id="header"><h1><a href="#index">HoLy2 - live demo</a></h1> </div>
-          <div id="content"> </div>
-          <div id="footer"> </div>
-        </div>
-        <div id="loading"><p>carregando...</p></div>
-    </body>
+<head>
+<title>Holy</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="holy/general.css" />
+<script type="text/javascript" src="holy/jquery.js"></script>
+<script type="text/javascript" src="holy/jquery.requires.js"></script>
+
+<link rel="stylesheet" type="text/css" href="holy/themes/liquidblue/base.css"/>
+<link rel="stylesheet" type="text/css" href="holy/themes/liquidblue/components.css"/>
+<script type="text/javascript" src="holy/themes/liquidblue/events.js"></script>
+
+<script type="text/javascript" src="holy/components/dropdown/dropdown.js"></script>
+<link rel="stylesheet" type="text/css" href="holy/components/dropdown/dropdown.css" />
+<!--  
+<script type="text/javascript" src="holy/jquery.js"></script>
+<script type="text/javascript" src="holy/jquery.ba-hashchange.js"></script>
+<script type="text/javascript" src="holy/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="holy/jqueryui.css" />
+<script type="text/javascript" src="holy/jquery.ba-hashchange.js"></script>
+<script type="text/javascript" src="holy/jquery.holyavenger.js"></script>
+<script type="text/javascript" src="holy/jquery.holyavenger.trimpath.js"></script>
+-->
+</head>
+<body>
+<div id="wrapper">
+  <div id="header">
+    <h1><a href="#index">HoLy2 - live demo</a></h1>
+    <ul class="hldropdown">
+      <li>
+        <a href="#!" title="link">link</a>
+        <ul>
+          <li>
+            <a href="#!" title="link">link</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#!" title="link">link</a>
+        <ul>
+          <li>
+            <a href="#!" title="link">link</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <ul class="hlmsg">
+  
+  </ul>
+  <div id="content"> </div>
+  <div id="footer"> </div>
+</div>
+</body>
 </html>
