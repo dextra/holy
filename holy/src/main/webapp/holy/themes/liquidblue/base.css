@@ -1,0 +1,5 @@
+* { margin:0; padding:0; border:0; font-family:Arial, Helvetica, sans-serif; text-decoration:none; }
+
+#header { height:100px; position:relative; }
+
+#header h1 a { text-decoration:none; position:absolute; left:20px; top:20px; }
