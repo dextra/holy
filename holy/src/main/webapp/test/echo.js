@@ -1,3 +1,6 @@
 (function(w) {
-	$('#qunit-fixture').append('echo.js');
+	
+	$.requires('test/test.css', 'css');
+	
+	$('#qunit-fixture').append('<p>echo.js</p>');
 })(window);

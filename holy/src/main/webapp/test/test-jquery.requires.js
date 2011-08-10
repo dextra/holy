@@ -7,9 +7,9 @@
 		test("requires script", function() {
 			ok(!$('#qunit-fixture').text());
 			$.requires('test/echo.js', 'script');
-			equal('echo.js', $('#qunit-fixture').text());
+			equal($('#qunit-fixture').text(), 'echo.js');
 			$.requires('test/echo.js', 'script');
-			ok('echo.js', $('#qunit-fixture').text());
+			equal($('#qunit-fixture').text(), 'echo.js');
 		});
 
 	});
