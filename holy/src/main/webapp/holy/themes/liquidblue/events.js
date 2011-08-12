@@ -1,3 +1,5 @@
-$(document).ready(function(){
-	$('.dropdown').dropdown();
-});
+(function($) {
+
+
+
+})(jQuery);
