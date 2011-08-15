@@ -1,0 +1,13 @@
+/*///// Component - Message /////*/
+
+.message li { color:#000; padding:2px 5px; font-size:11px; background:#FFF; border:1px solid #EEE; margin:2px 0; list-style:none; }
+
+.message li a { float:right; color:#000; }
+
+.message .error { color:#D8000C; border:1px solid #D8000C; background:#FFBABA; }
+
+.message .success { color:#4F8A10; border:1px solid #4F8A10; background:#DFF2BF; } 
+
+.message .info { color:#00529B; border:1px solid #00529B; background:#BDE5F8;}
+
+.message .warning { color:#9F6000; border:1px solid #9F6000; background:#FEEFB3; }

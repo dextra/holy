@@ -1,15 +1,12 @@
-
 /*///// Component - Dropdown /////*/
 
 .dropdown li { position:relative; float:left; }
 
-.dropdown li.hover a { color:#000; }
-
 .dropdown li,
-.dropdown li a { background:#EEE; margin:0; display:inline-block; text-decoration:none; }
+.dropdown li a { display:inline-block; text-decoration:none; }
 
-.dropdown li a { padding:3px 10px; }
+.dropdown li a { padding: 0 5px; }
 
-.dropdown li ul { background:#EEE; display:none; position:absolute; }
+.dropdown li ul { display:none; position:absolute; }
 
 .dropdown li ul li ul { left:100%; top:0; }

@@ -1,5 +1,16 @@
+
 /*///// Component - Dropdown /////*/
 
-.hldropdown { position:absolute; bottom:0; left:0; }
+.dropdown { position:absolute; left:0; bottom:0; width:100%; background:#333; height:34px; background:url(imgs/navbar.gif) 0 0 repeat-x; border-top:1px solid #333; }
 
-.hldropdown li a { padding:0 10px; text-transform:capitalize; }
+.dropdown li a { height:34px; line-height:33px; padding:0 15px; text-transform:capitalize; color:#FFF; font-size:12px; }
+
+.dropdown li a:hover { text-decoration:underline; }
+
+.dropdown li ul { background:#333; -moz-box-shadow:1px 1px 2px #333; -webkit-box-shadow: 1px 1px 2px #333; box-shadow: 1px 1px 2px #333; }
+
+.dropdown li ul li a { height:auto; padding: 5px 20px; display:block; line-height: normal; }
+
+/*///// Component - Messages /////*/
+
+.message li { margin:0; border:0 !important; border-bottom:solid 1px !important; }

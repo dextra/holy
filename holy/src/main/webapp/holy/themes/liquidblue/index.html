@@ -3,38 +3,127 @@
 <head>
 <title>Holy</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" href="holy/general.css" />
 <script type="text/javascript" src="../../lib/jquery.js"></script>
+<script type="text/javascript" src="../../lib/jquery.corner.js"></script>
+<!-- LIBS  -->
+<script type="text/javascript" src="../../component/dropdown/dropdown.js"></script>
+<link rel="stylesheet" type="text/css" href="../../component/dropdown/dropdown.css" />
+<link rel="stylesheet" type="text/css" href="../../component/flexigrid/flexigrid.css" />
+<script type="text/javascript" src="../../component/flexigrid/flexigrid.js"></script>
+<script type="text/javascript" src="../../component/message/message.js"></script>
+<link rel="stylesheet" type="text/css" href="../../component/message/message.css" />
+<!-- COMPONENTES -->
 <link rel="stylesheet" type="text/css" href="base.css"/>
 <link rel="stylesheet" type="text/css" href="components.css"/>
 <script type="text/javascript" src="events.js"></script>
-<script type="text/javascript" src="../../component/dropdown/dropdown.js"></script>
-<link rel="stylesheet" type="text/css" href="../../component/dropdown/dropdown.css" />
 </head>
 <body>
 <div id="wrapper">
   <div id="header">
-
+    <h1><a href="#index">Holy Demo <span>liquid blue</span></a></h1>
     <ul class="dropdown">
-      <li> <a href="#!">Ínicio</a> </li>
-      <li> <a href="#!">Componentes</a>
+      <li> <a href="#!" class="ttip" title="Ínicio">Ínicio</a> </li>
+      <li> <a href="#!" title="Componentes">Componentes</a>
         <ul>
-          <li> <a href="#!">Navegação</a>
+          <li> <a href="#!" title="Navegação">Navegação</a>
             <ul>
-              <li> <a href="#!">Dropdown</a> </li>
-              <li> <a href="#!">Tooglepanel</a> </li>
+              <li> <a href="#!" title="Dropdown">Dropdown</a> </li>
+              <li> <a href="#!" title="Tooglepanel">Tooglepanel</a> </li>
             </ul>
           </li>
         </ul>
       </li>
     </ul>
-    
-    
   </div>
-  <ul class="hlmsg">
+  <ul class="message">
+  	<li class="error">Error message <a href="#!">x</a></li>
+    <li class="success">Success message <a href="#!">x</a></li>
+    <li class="info">Information message <a href="#!">x</a></li>
+    <li class="warning">Warning message <a href="#!">x</a></li>
   </ul>
-  <div id="content"> </div>
-  <div id="footer"> </div>
+  <div id="content">
+  	<h3>Tabela de resultados</h3>
+    <table class="grid" style="display: none"></table>
+    <script type="text/javascript">
+		$(".grid").flexigrid({
+			url : '../../../template/flexigrid.xml',
+			dataType : 'xml',
+			colModel : [ {
+				display : 'ISO',
+				name : 'iso',
+				width : 40,
+				sortable : true,
+				align : 'center'
+			}, {
+				display : 'Name',
+				name : 'name',
+				width : 180,
+				sortable : true,
+				align : 'left'
+			}, {
+				display : 'Printable Name',
+				name : 'printable_name',
+				width : 120,
+				sortable : true,
+				align : 'left'
+			}, {
+				display : 'ISO3',
+				name : 'iso3',
+				width : 130,
+				sortable : true,
+				align : 'left',
+				hide : true
+			}, {
+				display : 'Number Code',
+				name : 'numcode',
+				width : 80,
+				sortable : true,
+				align : 'right'
+			} ],
+			buttons : [ {
+				name : 'Add',
+				bclass : 'add',
+				onpress : test
+			}, {
+				name : 'Delete',
+				bclass : 'delete',
+				onpress : test
+			}, {
+				separator : true
+			} ],
+			searchitems : [ {
+				display : 'ISO',
+				name : 'iso'
+			}, {
+				display : 'Name',
+				name : 'name',
+				isdefault : true
+			} ],
+			sortname : "iso",
+			sortorder : "asc",
+			usepager : true,
+			title : 'Countries',
+			useRp : true,
+			rp : 15,
+			showTableToggleBtn : true,
+			height : 200
+		});
+
+		function test(com, grid) {
+			if (com == 'Delete') {
+				confirm('Delete ' + $('.trSelected', grid).length + ' items?')
+			} else if (com == 'Add') {
+				alert('Add New Item');
+			}
+		}
+	</script>
+
+  </div>
+  <div id="footer">
+  	<div id="copyright">
+    	Live Demo :: HoLy Avanger. &copy; 2011 <a href="http://www.dextra.com.br">Dextra Sistemas</a>.
+    </div>
+  </div>
 </div>
 </body>
 </html>
