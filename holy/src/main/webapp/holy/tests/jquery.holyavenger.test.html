@@ -54,7 +54,7 @@
 				$.holyavenger.parseEngine(engineStr);
 			}, function(e) {
 				return e === '<action> requires id or selector attribute';
-			}, 'Malformed action tag.');
+			}, 'Malformed action tag error expected.');
 		});
 		test('test parseScript', function() {
 			var engineStr = "<engine><script>$(window).attr('attr', 'attr');<\/script><\/engine>";
