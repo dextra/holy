@@ -1,7 +1,8 @@
 (function($) {
+	"use strict";
 	$.holyavenger = {
 		parseEngine : function(xmlDoc, context) {
-			if (typeof (xmlDoc) == 'string') {
+			if (typeof (xmlDoc) === 'string') {
 				xmlDoc = $.parseXML(xmlDoc);
 			}
 			var tags = $(xmlDoc).find('engine > *');
@@ -10,31 +11,33 @@
 				if (parser) {
 					parser(tag, context);
 				} else {
-					throw 'Parser for <' + tag.nodeName + '> not found.'
+					throw 'Parser for <' + tag.nodeName + '> not found.';
 				}
 			});
 		},
 		parsers : {},
-		addParsers : function(_parsers) {
-			jQuery.extend($.holyavenger.parsers, _parsers);
+		addParsers : function(aParsers) {
+			jQuery.extend($.holyavenger.parsers, aParsers);
 		},
 		parseAction : function(action) {
+			var selector, text, modified;
 			action = $(action);
-			var selector = action.attr('id') ? '#' + action.attr('id') : action.attr('selector');
+			selector = action.attr('id') ? '#' + action.attr('id') : action.attr('selector');
 			if (!selector) {
 				throw "<action> requires id or selector attribute";
 			}
 			if (!action.attr('append')) {
 				$(selector).html('');
 			}
-			var text = $.holyavenger.readText(action);
-			var modified = $(selector).append(text);
-			$(window).trigger('holyavenger.docmod', [modified]);
+			text = $.holyavenger.readText(action);
+			modified = $(selector).append(text);
+			$(window).trigger('holyavenger.docmod', [ modified ]);
 		},
 		parseScript : function(script, context) {
-			var text = $(script).text();
+			var text, func;
+			text = $(script).text();
 			text = [ 'var func = function () {', text, '}; func;' ].join('');
-			var func = eval(text);
+			func = eval(text);
 			func = $.proxy(func, context);
 			$(func);
 		},
@@ -47,7 +50,7 @@
 		},
 		readChildrenText : function(element, keepStructure) {
 			var ret = [];
-			if (element.nodeType == 1) {
+			if (element.nodeType === 1) {
 				// It is element
 				ret.push('<', element.nodeName);
 				var attrs = element.attributes;
@@ -58,10 +61,10 @@
 				ret.push(">");
 				ret.push($.holyavenger.readText(element, keepStructure));
 				ret.push("</", element.nodeName, ">");
-			} else if (element.nodeType == 3) {
+			} else if (element.nodeType === 3) {
 				// It is text
 				ret.push(element.data);
-			} else if (element.nodeType == 4) {
+			} else if (element.nodeType === 4) {
 				// It is cdata
 				if (keepStructure) {
 					ret.push('<![CDATA[');
