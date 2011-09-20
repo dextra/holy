@@ -1,0 +1,96 @@
+<engine>
+	<action selector="#content">
+		<div class="myDivDialog">
+			<h3>My Div dialog</h3>
+			<div>
+				My Div dialog My Div dialog My Div dialog My Div dialog
+				<div>
+					<input type="button" value="Dialog me" class="btDialogMe"/>
+					<input type="button" value="UnDialog me" class="btUnDialogMe" />
+				</div>
+			</div>
+		</div>
+
+		<br />
+		<input type="button" class="showDialog" value="Show My Dialog" /> <br />
+
+		Some page content <br />
+		Some page content <br />
+		Some page content <br />
+		Some page content <br />
+		Some page content <br />
+		Some page content <br />
+		Some page content <br />
+
+		<img src="imgs/mountain.jpg" width="200" title="Click to view" id="myImg"/>
+		<br />
+
+		Some page content <br />
+		Some page content <br />
+		Some page content <br />
+		Some page content <br />
+		Some page content <br />
+		Some page content <br />
+		Some page content <br />
+		Some page content <br />
+		Some page content <br />
+		Some page content <br />
+		Some page content <br />
+		Some page content <br />
+		Some page content <br />
+		Some page content <br />
+		Some page content <br />
+		Some page content <br />
+		Some page content <br />
+		Some page content <br />
+		Some page content <br />
+		Some page content <br />
+		Some page content <br />
+
+	</action>
+	<script>
+		<![CDATA[
+			var dialogHtml = 
+			['<div id="myDialog" style="width: 450px;">',
+			 ' <h3>My Dialog Title</h3>',
+			 ' <div>',
+			 '   I\'m a toggle panel too!! <br />',
+			 ' </div>',
+			 ' <input type="button" value="Close"/>',
+			 '</div>'
+			 ].join("");
+
+			$(".showDialog").click(function() {
+				var myDialog  = $(dialogHtml).dialog();
+				$(myDialog).togglePanel();
+				$(myDialog).find("input[type='button']").click(function(){
+					var me = $(this);
+					me.closest("div").undialog();
+				});
+			});
+
+			$(".btDialogMe").click(function() {
+				$(".myDivDialog").width("300px");
+				$(".myDivDialog").dialog();
+				$(this).toggle();
+			});
+
+			$(".btUnDialogMe").click(function() {
+				$(".myDivDialog").width("100%");
+				$(".myDivDialog").undialog();
+				$(".btDialogMe").toggle();
+			});
+
+			$("#myImg").click(function() {
+				if(!$(this).isDialog()) {
+					$(this).removeAttr("width");
+					$(this).dialog({closable: true});
+				}
+			});
+
+			$("#myImg").bind("undialog.dialog", function() {
+				$(this).attr("width", "200px");
+			});
+		]]>
+	</script>
+</engine>

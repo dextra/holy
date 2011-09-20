@@ -1,0 +1,53 @@
+<engine>
+	<action selector=".message">
+		<li class="info closable">made by html</li>
+		<li class="warning">made by html2</li>
+	</action>
+	<action selector="#content">
+		<div class="forms">
+			<form>
+				<fieldset>
+					<legend>Message</legend>
+					<ul>
+						<li class="require">
+							<label for="message">Message:</label>
+							<input type="text" />
+						</li>
+						<li class="require">
+							<label for="type">Type:</label>
+							<select>
+								<option value="success">success</option>
+								<option value="info">info</option>
+								<option value="warning">warning</option>
+								<option value="error">error</option>
+							</select>
+						</li>
+						<li>
+							<label for="closable">Closable:</label>
+							<input type="checkbox" value="closable"/>
+						</li>
+					</ul>
+					<div class="buttons">
+						<input type="button" class="buttonSend" value="Send" />
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</action>
+
+	<script><![CDATA[
+		$('#content .forms').form();
+		$('#content .forms .buttonSend').click(function() {
+			var form = $(this).closest('form');
+			var msg = form.find('label[for="message"] + input').val();
+			var type = form.find('label[for="type"] + select').val();
+			var closable = form.find('label[for="closable"] + input:checked').val();
+			if(!msg) {
+				$('.message').message('Message is required', 'error', true);	
+				return;
+			}
+			$('.message').message(msg, type, !closable);
+		});
+	]]></script>
+
+</engine>

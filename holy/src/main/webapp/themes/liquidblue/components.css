@@ -1,0 +1,24 @@
+
+/*///// Component - Dropdown /////*/
+
+.dropdown { position:absolute; left:0; bottom:0; width:100%; background:#333; height:34px; background:url(imgs/navbar.gif) 0 0 repeat-x; border-top:1px solid #333; }
+
+.dropdown li a { height:34px; line-height:33px; padding:0 15px; text-transform:capitalize; color:#FFF; font-size:12px; }
+
+.dropdown li a:hover { text-decoration:underline; }
+
+.dropdown li ul { background:#333; -moz-box-shadow:1px 1px 2px #333; -webkit-box-shadow: 1px 1px 2px #333; box-shadow: 1px 1px 2px #333; }
+
+.dropdown li ul li a { height:auto; padding: 5px 20px; display:block; line-height: normal; }
+
+/*///// Component - Messages /////*/
+
+.message li { margin:3px 15px; }
+
+.message .error { box-shadow:0 0 3px 0px #D8000C; }
+
+.message .success { box-shadow:0 0 3px 0px #4F8A10; }
+
+.message .info { box-shadow:0 0 3px 0px #00529B; }
+
+.message .warning { box-shadow:0 0 3px 0px #9F6000; }

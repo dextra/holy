@@ -1,0 +1,33 @@
+<engine>
+	<action selector="#content">
+		<div class="togglePanel">
+			<h3>Title</h3>
+			<div>Content</div>
+		</div>
+		<div class="togglePanel">
+			<h3>Title</h3>
+			<div>
+				Content:
+				<div>xxxxx</div>
+				<div class="togglePanel">
+					<h3>mytitle</h3>
+					<div>mycontent</div>
+				</div>
+			</div>
+		</div>
+		<div class="togglePanel">
+			<h3>Title</h3>
+			<div>Content</div>
+		</div>
+		
+		<div class="sourcecode"></div>
+	</action>
+
+	<script><![CDATA[
+		$('.togglePanel').togglePanel();
+		
+		$('#content .sourcecode').appendSnippetSourceURL('demos/togglepanel.xml', 'xml');
+		$('#content .sourcecode').appendSnippetSourceURL('../../js/togglepanel/jquery.togglepanel.js', 'javascript');
+	]]></script>
+
+</engine>

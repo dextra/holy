@@ -1,0 +1,64 @@
+<engine>
+	<action selector="#content">
+		<div class="forms">
+			<form method="GET" enctype="multipart/form-data" action="#">
+				<fieldset>
+					<ul>
+						<li class="require">
+							<label for="url">Url:</label>
+							<input type="text" value="mock/test.txt" />
+						</li>
+						<li class="require">
+							<label for="message">Message:</label>
+							<input type="text" name="message" />
+						</li>
+						<li class="require">
+							<label for="type">File:</label>
+							<input type="file" name="file" />
+						</li>
+						<li class="require">
+							<label for="callback">Callback:</label>
+							<textarea rows="6" cols="50"></textarea>
+						</li>
+					</ul>
+					<div class="buttons">
+						<input type="button" class="buttonAjax" value="Ajax" />
+						<input type="button" class="buttonSend" value="Send" />
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</action>
+
+	<script><![CDATA[
+		var getOpts = function(form) {
+			var form = $(form).closest('form');
+			return  {
+				url: form.find('label[for="url"] + input').val(),
+				form: form,
+				dataType: 'text'
+			};
+		}
+		
+		$('#content .forms').form();
+		$('#content .forms .buttonAjax').click(function() {
+			var opts = getOpts(this);
+			opts.success = function(text) {
+				$('#content .forms label[for="callback"] + textarea').val(text);
+			}
+			$('#content .forms label[for="callback"] + textarea').val('loading');
+			$.ajax(opts);
+		});
+		$('#content .forms .buttonSend').click(function() {
+			var opts = getOpts(this);
+			opts.frame = true;
+			opts.complete = function(frame) {
+				$('#content .forms label[for="callback"] + textarea').val(frame.contents().find('body').html());
+			}
+			$('#content .forms label[for="callback"] + textarea').val('loading');
+			$.ajax(opts);
+		});
+		
+	]]></script>
+
+</engine>

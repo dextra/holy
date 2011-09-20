@@ -1,0 +1,73 @@
+<engine>
+	<action selector="#content">
+		<div class="tabpanel">
+			<ul>
+				<li>
+					<a href="#">Tab 1</a>
+				</li>
+				<li>
+					<a href="#">Tab 2</a>
+				</li>
+				<li>
+					<a href="#">Tab 3</a>
+				</li>
+			</ul>
+			<div>
+				<div>Pre tab1 Pre tab1 Pre tab1 Pre tab1 Pre tab1 </div>
+				Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1
+				Tab 1 Tab 1 Tab
+				1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1
+				Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1
+				Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1
+				Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1
+				Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1
+			</div>
+			<div>
+				Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2
+				Tab 2 Tab 2
+				Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2
+				Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2
+				Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2
+				Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2
+				Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 
+			</div>
+			<div>
+				Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3
+				Tab 3 Tab 3
+				Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3
+				Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3
+				Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3
+				Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3
+				Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 
+			</div>
+		</div>
+		<div class="anothertabpanel">
+			<ul>
+				<li>
+					<a href="#">Tab 1</a>
+				</li>
+				<li>
+					<a href="#">Tab 2</a>
+				</li>
+				<li>
+					<a href="#">Tab 3</a>
+				</li>
+			</ul>
+			<div>
+			</div>
+			<div>
+			</div>
+			<div>
+			</div>
+		</div>
+	</action>
+	<script>
+		<![CDATA[
+			$("#content div.tabpanel").tabPanel();
+			$("#content div.anothertabpanel").tabPanel({effect: 'fadeToggle', delay: '250'});
+			$("#content div.anothertabpanel").bind('open.tabpanel', function(evt, index) {
+					$(this).children('div').eq(index).html('xxxx: ' + (index+1));
+			});
+		]]>
+	</script>
+</engine>

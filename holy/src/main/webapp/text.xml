@@ -1,0 +1,19 @@
+<engine>
+	<action selector="body" append="true">
+		<div>1
+			<div>2.1</div>
+			<div>2.2
+				<div><b>3</b>.1</div>
+				<div>3.2</div>
+			</div>
+			<div>2.3</div>
+		</div>
+		0
+	</action>
+	<script>
+		console.info('hello script', this);
+	</script>
+	<template selector="#templateDiv">
+		This content came from: ${url}
+	</template>
+</engine>

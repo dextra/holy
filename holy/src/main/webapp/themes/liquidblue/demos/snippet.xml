@@ -1,0 +1,18 @@
+<engine>
+	<action selector="#content">
+		<div class="togglePanel">
+			<h3>#header</h3>
+			<div>
+				<pre class="snippet">
+				</pre>
+			</div>
+		</div>
+	</action>
+
+	<script><![CDATA[
+		$('#content .togglePanel').togglePanel();
+		$('#content .snippet').text($('#header').html());
+		$('#content .snippet').snippet('html', {style:"acid",showNum:false});
+	]]></script>
+
+</engine>

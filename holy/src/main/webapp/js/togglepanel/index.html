@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title>Holy</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<link rel="stylesheet" href="togglepanel.css" type="text/css" />
+        <!-- jQuery AND jQueryUI -->
+        <script type="text/javascript" src="../lib/jquery.js"></script>
+        <script type="text/javascript" src="jquery.togglepanel.js"></script>
+        
+        <script type="text/javascript">
+        jQuery(document).ready(function() {
+            $('.togglePanel').togglePanel();
+        });
+        </script>
+    </head>
+    <body class="white">
+    	<div class="togglePanel">
+    		<h3>Title</h3>
+    		<div>Content</div>
+    	</div>
+    	<div class="togglePanel">
+    		<h3>Title</h3>
+    		<div>
+    			Content:
+    			<div>xxxxx</div>
+    			<div class="togglePanel">
+    				<h3>mytitle</h3>
+    				<div>mycontent</div>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="togglePanel">
+    		<h3>Title</h3>
+    		<div>Content</div>
+    	</div>
+	</body>
+</html>
