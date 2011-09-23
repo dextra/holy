@@ -2,20 +2,21 @@
 
 	$(window).hashchange(function() {
 		if (!location.hash || location.hash == '#') {
-			location = '#welcome';
+			location = '#home';
 			return;
 		}
 		var hash = location.hash.substring(1);
-		$.holy('demos/' + hash + '.xml');
+		$.holy('../../templates/' + hash + '.xml');
 	})
 
 	$(document).ready(function() {
-		$('.dropdown').load('demos/menu.html', function() {
-			$(this).children('ul').dropDown();
-		});
+							   
+		$.holy('../../templates/menu.xml');
+		
 		$('.message').messageMonitor();
 
 		$(window).hashchange();
+		
 	});
 
 })(jQuery);

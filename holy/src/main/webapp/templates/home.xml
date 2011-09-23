@@ -1,0 +1,5 @@
+﻿<engine>
+	<action selector="#content">
+		Index
+	</action>
+</engine>
