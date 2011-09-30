@@ -1,6 +1,6 @@
 <engine>
 	<action selector="#content">
-		<div class="tabpanel">
+		<div class="tabPanel">
 			<ul>
 				<li>
 					<a href="#">Tab 1</a>
@@ -63,9 +63,9 @@
 	</action>
 	<script>
 		<![CDATA[
-			$("#content div.tabpanel").tabPanel();
-			$("#content div.anothertabpanel").tabPanel({effect: 'fadeToggle', delay: '250'});
-			$("#content div.anothertabpanel").bind('open.tabpanel', function(evt, index) {
+			$(".tabpanel").tabPanel();
+			$(".anothertabpanel").tabPanel({effect: 'fadeToggle', delay: '250'});
+			$(".anothertabpanel").bind('open.tabpanel', function(evt, index) {
 					$(this).children('div').eq(index).html('xxxx: ' + (index+1));
 			});
 		]]>

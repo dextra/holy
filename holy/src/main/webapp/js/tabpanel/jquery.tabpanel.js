@@ -1,5 +1,6 @@
 (function($) {
 	$.fn.tabPanel = function(opts) {
+		$(this).addClass('tabPanel');
 		opts = opts || {};
 		var effect = opts.effect || 'toggle';
 		var delay = opts.delay;
@@ -11,6 +12,7 @@
 			var me = $(this);
 			var parent = me.parents("div:first");
 			var index = me.closest("li").index();
+			parent.show();
 			parent.children("div:visible").hide();
 
 			var toShow = parent.children("div").eq(index);
@@ -21,7 +23,6 @@
 			}
 
 			parent.trigger("open.tabpanel", index);
-			return false;
 		});
 	}
 }(jQuery));

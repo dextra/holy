@@ -1,5 +1,4 @@
 (function($) {
-
 	$(window).hashchange(function() {
 		if (!location.hash || location.hash == '#') {
 			location = '#home';
@@ -7,16 +6,11 @@
 		}
 		var hash = location.hash.substring(1);
 		$.holy('../../templates/' + hash + '.xml');
-	})
-
-	$(document).ready(function() {
-							   
-		$.holy('../../templates/menu.xml');
-		
-		$('.message').messageMonitor();
-
-		$(window).hashchange();
-		
 	});
 
+	$(document).ready(function() {
+		$.holy('../../templates/menu.xml');
+		$('.message').messageMonitor();
+		$(window).hashchange();
+	});
 })(jQuery);
