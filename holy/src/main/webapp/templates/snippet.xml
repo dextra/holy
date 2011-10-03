@@ -8,11 +8,10 @@
 			</div>
 		</div>
 	</action>
-
-	<script><![CDATA[
-		$('#content .togglePanel').togglePanel();
-		$('#content .snippet').text($('#header').html());
-		$('#content .snippet').snippet('html', {style:"acid",showNum:false});
-	]]></script>
-
+	<script>
+		<![CDATA[
+			$('#content .snippet').text($('#header').html());
+			$('#content .snippet').snippet('html', {style:"acid",showNum:false});
+		]]>
+	</script>
 </engine>

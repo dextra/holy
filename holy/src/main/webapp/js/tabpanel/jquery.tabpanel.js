@@ -22,7 +22,7 @@
 				toShow[effect]();
 			}
 
-			parent.trigger("open.tabpanel", index);
+			parent.trigger("open.tabPanel", index);
 		});
 	}
 }(jQuery));

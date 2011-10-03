@@ -3,7 +3,10 @@
 		if (!location.hash || location.hash == '#') {
 			location = '#home';
 			return;
-		}
+		} 
+		if (!location.hash || location.hash == '#!') {
+			return;
+		} 
 		var hash = location.hash.substring(1);
 		$.holy('../../templates/' + hash + '.xml');
 	});

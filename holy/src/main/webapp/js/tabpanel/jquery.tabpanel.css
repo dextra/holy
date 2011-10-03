@@ -1,9 +1,9 @@
 .tabPanel { margin: 10px auto; }
 
-.tabPanel ul li { float:left; list-style: none; }
+.tabPanel > ul li { float:left; list-style: none; }
 
-.tabPanel ul li a { outline:0px; padding: 5px 10px; margin: 0 1px -1px 1px; display: inline-block; background: #FFF; border:1px solid #EEE; border-bottom: none; color:#333; font-size: 12px; }
+.tabPanel > ul li a { outline:0px; padding: 5px 10px; margin: 0 2px -1px 0px; display: inline-block; background: #FFF; border:1px solid #CCC; border-bottom: none; color:#333; font-size: 12px; }
 
-.tabPanel ul li a:hover { background-color: #EEE; }
+.tabPanel > ul li a:hover { background-color: #EEE; }
 
-.tabPanel > div { clear: left; padding: 10px; border: 1px solid #EEE;  }
+.tabPanel > div { clear: left; padding: 15px; border: 1px solid #CCC;  }

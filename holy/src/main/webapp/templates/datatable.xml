@@ -1,46 +1,57 @@
 <engine>
 	<action selector="#content">
-		<table class="datatable" border="0" cellspacing="0" cellpadding="0">
-			<thead>
-				<tr>
-					<th scope="col">Id</th>
-					<th scope="col">Name</th>
-					<th scope="col">Date</th>
-					<th scope="col">Active</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>25</td>
-					<td>Homer Simpson</td>
-					<td>15/01/1982</td>
-					<td>Yes</td>
-				</tr>
-				<tr>
-					<td>25</td>
-					<td>Homer Simpson</td>
-					<td>15/01/1982</td>
-					<td>Yes</td>
-				</tr>
-				<tr>
-					<td>25</td>
-					<td>Homer Simpson</td>
-					<td>15/01/1982</td>
-					<td>Yes</td>
-				</tr>
-				<tr>
-					<td>25</td>
-					<td>Homer Simpson</td>
-					<td>15/01/1982</td>
-					<td>Yes</td>
-				</tr>
-			</tbody>
-		</table>
+		<div class="tabPanel">
+			<ul>
+				<li>
+					<a href="">Demo</a>
+				</li>
+				<li>
+					<a href="">Documentation</a>
+				</li>
+				<li>
+					<a href="#code/table">Code</a>
+				</li>
+			</ul>
+			<div class="demo">
+				<div class="demoTab">
+					<ul>
+						<li>
+							<a href="">Tab 1</a>
+						</li>
+						<li>
+							<a href="">Tab 2</a>
+						</li>
+						<li>
+							<a href="">Tab 3</a>
+						</li>
+					</ul>
+					<div>
+						Tab 1
+						<br />
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris purus turpis, consequat eget accumsan ac, iaculis in est. Suspendisse vestibulum feugiat arcu eget sodales. Cras aliquam dolor faucibus libero euismod ut feugiat metus tempus. Quisque velit est, pretium pharetra accumsan eget, dapibus sed orci. Phasellus tincidunt tempus tellus id tincidunt. Suspendisse libero nulla, sollicitudin porttitor pulvinar at, lacinia in purus. In hac habitasse platea dictumst. Praesent commodo diam consectetur neque lobortis ac cursus dolor pharetra. Integer id porttitor velit. Quisque iaculis condimentum lorem a lacinia. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce eu sodales massa. Morbi ullamcorper mi id augue consectetur suscipit. Fusce tincidunt urna a orci varius nec placerat turpis venenatis.
+					</div>
+					<div>
+						Tab 2
+						<br />
+						Phasellus sed arcu dolor. Fusce leo sem, vestibulum vitae gravida id, elementum ac libero. Maecenas tristique venenatis volutpat. Vestibulum vitae tortor nibh, id hendrerit diam. Duis commodo massa in ligula molestie cursus. Proin vitae purus a tellus porta egestas a at libero. Vivamus purus nisi, porttitor quis feugiat id, pharetra sit amet diam. Suspendisse quis consequat sem. Cras eros mauris, egestas id luctus quis, tempus vitae diam. Praesent et laoreet arcu. Ut id orci mi, non pretium arcu. Phasellus sodales diam quis elit varius vehicula. Vestibulum bibendum venenatis lectus. Nullam arcu orci, imperdiet vel vulputate eu, pretium sit amet dui. Nullam vitae dolor ipsum.
+					</div>
+					<div>
+						Tab 3
+						<br />
+						Aliquam viverra sapien laoreet lorem facilisis eget dictum urna viverra. Duis vitae dolor leo, laoreet ultricies ante. Cras urna orci, sodales eget euismod sed, congue at metus. Donec sit amet euismod arcu. Curabitur id magna risus. Nam nec massa libero, quis mollis lectus. In hac habitasse platea dictumst.
+						<br />
+						Duis ultricies lorem vel purus pulvinar ornare sit amet ac tortor. Aliquam purus velit, pellentesque id molestie sit amet, sodales a ante. Vestibulum ullamcorper mauris vulputate massa viverra a tristique turpis mattis. Fusce sit amet enim tristique nisi auctor consectetur a ac dolor. Aenean tempor placerat dolor, non ornare orci vehicula ut. Suspendisse potenti. Morbi sed urna quis turpis mattis vehicula.
+					</div>
+				</div>
+			</div>
+			<div class="doc"></div>
+			<div class="code"></div>
+		</div>
 	</action>
 	<script>
 		<![CDATA[
-		$('table').datatable();
-		$('table').corner();
+		$(".tabpanel").tabPanel();
+		$(".demoTab").tabPanel();
 		]]>
 	</script>
 </engine>

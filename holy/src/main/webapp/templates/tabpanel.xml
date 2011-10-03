@@ -1,73 +1,60 @@
 <engine>
 	<action selector="#content">
+		<h3>Tab Panel</h3>
 		<div class="tabPanel">
 			<ul>
 				<li>
-					<a href="#">Tab 1</a>
+					<a href="#!">Demo</a>
 				</li>
 				<li>
-					<a href="#">Tab 2</a>
+					<a href="#!">Documentation</a>
 				</li>
 				<li>
-					<a href="#">Tab 3</a>
+					<a href="#!">Code</a>
 				</li>
 			</ul>
-			<div>
-				<div>Pre tab1 Pre tab1 Pre tab1 Pre tab1 Pre tab1 </div>
-				Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1
-				Tab 1 Tab 1 Tab
-				1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1
-				Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1
-				Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1
-				Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1
-				Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1
+			<div class="demo">
+				<div class="tab">
+					<ul>
+						<li>
+							<a href="#!">Tab 1</a>
+						</li>
+						<li>
+							<a href="#!">Tab 2</a>
+						</li>
+						<li>
+							<a href="#!">Tab 3</a>
+						</li>
+					</ul>
+					<div>
+						<strong>Tab 1</strong>
+						<br />
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris purus turpis, consequat eget accumsan ac, iaculis in est. Suspendisse vestibulum feugiat arcu eget sodales. Cras aliquam dolor faucibus libero euismod ut feugiat metus tempus. Quisque velit est, pretium pharetra accumsan eget, dapibus sed orci. Phasellus tincidunt tempus tellus id tincidunt. Suspendisse libero nulla, sollicitudin porttitor pulvinar at, lacinia in purus. In hac habitasse platea dictumst. Praesent commodo diam consectetur neque lobortis ac cursus dolor pharetra. Integer id porttitor velit. Quisque iaculis condimentum lorem a lacinia. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce eu sodales massa. Morbi ullamcorper mi id augue consectetur suscipit. Fusce tincidunt urna a orci varius nec placerat turpis venenatis.
+					</div>
+					<div>
+						<strong>Tab 2</strong>
+						<br />
+						Phasellus sed arcu dolor. Fusce leo sem, vestibulum vitae gravida id, elementum ac libero. Maecenas tristique venenatis volutpat. Vestibulum vitae tortor nibh, id hendrerit diam. Duis commodo massa in ligula molestie cursus. Proin vitae purus a tellus porta egestas a at libero. Vivamus purus nisi, porttitor quis feugiat id, pharetra sit amet diam. Suspendisse quis consequat sem. Cras eros mauris, egestas id luctus quis, tempus vitae diam. Praesent et laoreet arcu. Ut id orci mi, non pretium arcu. Phasellus sodales diam quis elit varius vehicula. Vestibulum bibendum venenatis lectus. Nullam arcu orci, imperdiet vel vulputate eu, pretium sit amet dui. Nullam vitae dolor ipsum.
+					</div>
+					<div>
+						<strong>Tab 3</strong>
+						<br />
+						Aliquam viverra sapien laoreet lorem facilisis eget dictum urna viverra. Duis vitae dolor leo, laoreet ultricies ante. Cras urna orci, sodales eget euismod sed, congue at metus. Donec sit amet euismod arcu. Curabitur id magna risus. Nam nec massa libero, quis mollis lectus. In hac habitasse platea dictumst.
+					</div>
+				</div>
 			</div>
-			<div>
-				Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2
-				Tab 2 Tab 2
-				Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2
-				Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2
-				Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2
-				Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2
-				Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 
-			</div>
-			<div>
-				Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3
-				Tab 3 Tab 3
-				Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3
-				Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3
-				Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3
-				Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3
-				Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 Tab 3 
-			</div>
-		</div>
-		<div class="anothertabpanel">
-			<ul>
-				<li>
-					<a href="#">Tab 1</a>
-				</li>
-				<li>
-					<a href="#">Tab 2</a>
-				</li>
-				<li>
-					<a href="#">Tab 3</a>
-				</li>
-			</ul>
-			<div>
-			</div>
-			<div>
-			</div>
-			<div>
+			<div class="doc">aaaaaaaaaaaaaaaaa</div>
+			<div class="code">
+				<pre></pre>
 			</div>
 		</div>
 	</action>
 	<script>
 		<![CDATA[
-			$(".tabpanel").tabPanel();
-			$(".anothertabpanel").tabPanel({effect: 'fadeToggle', delay: '250'});
-			$(".anothertabpanel").bind('open.tabpanel', function(evt, index) {
-					$(this).children('div').eq(index).html('xxxx: ' + (index+1));
-			});
+		$(".tabPanel").tabPanel();
+		$(".tab").tabPanel();
+		$('.code pre').text($('.tab').html());
+		$('.code pre').snippet('html', {style:"the",showNum:false});
 		]]>
 	</script>
 </engine>
