@@ -1,16 +1,16 @@
 ﻿<engine>
 	<action selector="#content">
-		<h3>Tab Panel</h3>
+		<h3>Dropdown <span>Menu</span></h3>
 		<div class="tabPanel">
 			<ul>
 				<li>
-					<a href="#!">Demo</a>
+					<a>Demo</a>
 				</li>
 				<li>
-					<a href="#!">Documentation</a>
+					<a>Documentation</a>
 				</li>
 				<li>
-					<a href="#!">Code</a>
+					<a>Code</a>
 				</li>
 			</ul>
 			<div class="demo">
@@ -44,15 +44,14 @@
 				</div>
 			</div>
 			<div class="doc">aaaaaaaaaaaaaaaaa</div>
-			<div class="code">
-			</div>
+			<div class="code"><pre></pre></div>
 		</div>
 	</action>
 	<script>
 		<![CDATA[
 		$(".tabPanel").tabPanel();
 		$('.dropdown').children('ul').dropDown();
-		$('.code pre').text($('.dropdown').html());
+		$('.code pre').text($('.demo').html());
 		$('.code pre').snippet('html', {style:"the",showNum:false});
 		]]>
 	</script>

@@ -5,12 +5,14 @@
 .datatable tr th,
 .datatable tr td { padding: 3px; font-size: 12px; text-align: center; }
 
-.datatable tr th { text-transform: capitalize; background: #EEE; font-size:12px; font-weight:bold; border-bottom: 1px solid #DDD; }
+.datatable tr th { text-transform: capitalize; background: #F6F6F6; font-size:12px; font-weight:bold; border-bottom: 1px solid #DDD; }
 
 .datatable tr td { border-right: 1px solid #DDD; }
 
 .datatable tr .left { text-align: left; }
 
 .datatable tr .lastCell { border:none; }
+
+.datatable tr:hover { background: #EEE; }
 
 

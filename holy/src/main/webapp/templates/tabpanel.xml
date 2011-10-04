@@ -4,13 +4,13 @@
 		<div class="tabPanel">
 			<ul>
 				<li>
-					<a href="#!">Demo</a>
+					<a>Demo</a>
 				</li>
 				<li>
-					<a href="#!">Documentation</a>
+					<a>Documentation</a>
 				</li>
 				<li>
-					<a href="#!">Code</a>
+					<a>Code</a>
 				</li>
 			</ul>
 			<div class="demo">
@@ -53,7 +53,7 @@
 		<![CDATA[
 		$(".tabPanel").tabPanel();
 		$(".tab").tabPanel();
-		$('.code pre').text($('.tab').html());
+		$('.code pre').text($('.demo').html());
 		$('.code pre').snippet('html', {style:"the",showNum:false});
 		]]>
 	</script>

@@ -1,6 +1,5 @@
 <engine>
 	<action selector="#content">
-		<h3>Datatable</h3>
 		<div class="tabPanel">
 			<ul>
 				<li>

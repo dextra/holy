@@ -29,11 +29,11 @@ body { background:#FAFAFA; }
 
 #header h1 { width:235px; line-height:55px; text-align:right; }
 
-#header h1 a { text-decoration:none; color:#23557E; text-shadow:1px 1px 1px #B5D4DF; }
+#header h1 a { text-decoration:none; color:#23557E; text-shadow:1px 1px 1px #B5D4DF; font-size: 30px; }
 
 #header h1 a span { font-size:12px; color:#587391; }
 
-#header h1 a:hover { color:#666; }
+#header h1 a:hover { color:#20344D; }
 
 /* Content */
 
