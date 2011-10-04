@@ -1,3 +1,5 @@
+/*///// Component - Datatable /////*/
+
 .datatable { width: 100%; margin: 10px auto; border:1px solid #DDD; overflow: hidden; }
 
 .datatable tr.odd { background: #FAFAFA; }
@@ -13,6 +15,6 @@
 
 .datatable tr .lastCell { border:none; }
 
-.datatable tr:hover { background: #EEE; }
+.datatable tr.hover { background: #EEE; }
 
 

@@ -1,6 +1,6 @@
 <engine>
-	<action selector=".dropdown">
-		<ul>
+	<action selector=".navegation">
+		<ul class="nav">
 			<li>
 				<a href="#home" class="ttip" title="Home">Home</a>
 			</li>
@@ -53,7 +53,7 @@
 	</action>
 	<script>
 		<![CDATA[
-		$('.dropdown').children('ul').dropDown();
+		$('.nav').dropDown();
 		]]>
 	</script>
 </engine>

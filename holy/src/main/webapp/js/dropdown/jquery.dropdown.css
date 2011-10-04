@@ -5,7 +5,11 @@
 .dropdown li,
 .dropdown li a { display:inline-block; text-decoration:none; }
 
-.dropdown li a { padding: 0 5px; }
+.dropdown li a { padding: 0 5px; white-space: nowrap; }
+
+.dropdown li a:hover { text-decoration: none; }
+
+.dropdown li span { color:#FFF; }
 
 .dropdown li ul { display:none; position:absolute; }
 

@@ -1,5 +1,6 @@
 ( function($) {
 	$.fn.togglePanel = function(opts) {
+		$(this).addClass('togglePanel');
 		opts = opts || {};
 		var title = $(this).children(opts.title || 'h3');
 		var effect = opts.effect || 'slideToggle';

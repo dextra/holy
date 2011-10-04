@@ -5,7 +5,7 @@
 
 .dropdown li a { height:34px; line-height:33px; padding:0 15px; text-transform:capitalize; color:#FFF; font-size:12px; }
 
-.dropdown li a:hover { text-decoration:underline; background: #23557E; }
+.dropdown li a:hover { background: #23557E; }
 
 .dropdown li ul { z-index:9999; background:#23557E; -moz-box-shadow:1px 1px 2px #587391; -webkit-box-shadow: 1px 1px 2px #587391; box-shadow: 1px 1px 2px #587391; }
 

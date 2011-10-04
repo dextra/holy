@@ -4,13 +4,13 @@
 		<div class="tabPanel">
 			<ul>
 				<li>
-					<a>Demo</a>
+					<a class="active">Demo</a>
 				</li>
 				<li>
-					<a>Documentation</a>
+					<a>Script</a>
 				</li>
 				<li>
-					<a>Code</a>
+					<a>HTML</a>
 				</li>
 			</ul>
 			<div class="demo">
@@ -43,18 +43,22 @@
 					</div>
 				</div>
 			</div>
-			<div class="doc">aaaaaaaaaaaaaaaaa</div>
-			<div class="code">
+			<div class="script">
+				<pre>$(".tab").tabPanel();</pre>
+			</div>
+			<div class="html">
 				<pre></pre>
 			</div>
 		</div>
 	</action>
 	<script>
 		<![CDATA[
+		$('.html pre').text($('.demo').html());
+		$('.html pre').snippet('html', {style:"the",showNum:false});
+		$('.script pre').snippet('javascript', {style:"the",showNum:false});
 		$(".tabPanel").tabPanel();
+
 		$(".tab").tabPanel();
-		$('.code pre').text($('.demo').html());
-		$('.code pre').snippet('html', {style:"the",showNum:false});
 		]]>
 	</script>
 </engine>

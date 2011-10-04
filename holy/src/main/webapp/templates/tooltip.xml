@@ -13,53 +13,17 @@
 				</li>
 			</ul>
 			<div class="demo">
-				<table class="datatable" border="0" cellspacing="0" cellpadding="0">
-					<thead>
-						<tr>
-							<th scope="col">Id</th>
-							<th scope="col">Name</th>
-							<th scope="col">Date</th>
-							<th scope="col">Active</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>25</td>
-							<td>Homer Simpson</td>
-							<td>15/01/1982</td>
-							<td>Yes</td>
-						</tr>
-						<tr>
-							<td>25</td>
-							<td>Homer Simpson</td>
-							<td>15/01/1982</td>
-							<td>Yes</td>
-						</tr>
-						<tr>
-							<td>25</td>
-							<td>Homer Simpson</td>
-							<td>15/01/1982</td>
-							<td>Yes</td>
-						</tr>
-						<tr>
-							<td>25</td>
-							<td>Homer Simpson</td>
-							<td>15/01/1982</td>
-							<td>Yes</td>
-						</tr>
-					</tbody>
-				</table>
+				<a href="#tooltip" title="Tooltip demo">Hover me!</a>
 			</div>
-			<div class="doc"></div>
+			<div class="doc">See documentation on <a href="http://onehackoranother.com/projects/jquery/tipsy/" target="_blank">http://onehackoranother.com/projects/jquery/tipsy/</a></div>
 			<div class="code"><pre></pre></div>
 		</div>
 	</action>
 	<script>
 		<![CDATA[
-		$('.datatable').datatable();
-		$('.datatable').corner();
+		$('.demo a').tipsy();
 		$('.tabPanel').tabPanel();
-		$('.code pre').text($('.datatable').html());
+		$('.code pre').text($('.demo').html());
 		$('.code pre').snippet('html', {style:"the",showNum:false});
 		]]>
 	</script>

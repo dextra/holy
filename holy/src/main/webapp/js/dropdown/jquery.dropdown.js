@@ -1,5 +1,7 @@
 (function($) {
 	$.fn.dropDown = function(opts) {
+		$(this).addClass('dropdown');
+		$(this).find('li:has(ul) > a').append(' <span>&raquo;</span>');
 		opts = opts || {};
 		var effect = opts.effect || 'slideToggle';
 		var delay = opts.delay == 0 ? 0 : opts.delay || 'fast';

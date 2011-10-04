@@ -1,0 +1,18 @@
+/*///// Component - Datapicker /////*/
+
+.datepicker { background: #FFF; padding: 3px; border: 1px solid #CCC; }
+
+.datepicker tr td { text-align: center; background: #EEE; padding:1px; border:1px solid #FFF; border-right:none; border-bottom: none; font-size: 10px; cursor: pointer; }
+
+.datepicker tr td:hover { background: #000; color: #FFF; }
+
+.datepicker tr .chosen { background: #333; color:#FFF; }
+
+.datepicker tr th select { border: 1px solid #CCC; font-size: 10px; margin: 0 1px; }
+
+.datepicker tr th select option { font-size: 10px; border: none; }
+
+.datepicker tr th span { font-size: 15px; }
+
+.datepicker .days th { padding: 2px 1px; }
+

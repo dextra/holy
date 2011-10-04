@@ -26,6 +26,7 @@
 	}
 
 	$.fn.form = function() {
+		$(this).addClass('forms')
 		var me = $(this);
 		var list = me.find('.require label');
 		if (!list.find('span.required').length) {

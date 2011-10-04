@@ -7,10 +7,10 @@
 					<a>Demo</a>
 				</li>
 				<li>
-					<a>Documentation</a>
+					<a>Script</a>
 				</li>
 				<li>
-					<a>Code</a>
+					<a>HTML</a>
 				</li>
 			</ul>
 			<div class="demo">
@@ -51,17 +51,26 @@
 					</tbody>
 				</table>
 			</div>
-			<div class="doc"></div>
-			<div class="code"><pre></pre></div>
+			<div class="script">
+				<pre>
+					$('.datatable').datatable();
+					$('.datatable').corner();
+				</pre>
+			</div>
+			<div class="html">
+				<pre></pre>
+			</div>
 		</div>
 	</action>
 	<script>
 		<![CDATA[
+		$('.html pre').text($('.demo').html());
+		$('.html pre').snippet('html', {style:"the",showNum:false});
+		$('.script pre').snippet('javascript', {style:"the",showNum:false});
+		$(".tabPanel").tabPanel();
+
 		$('.datatable').datatable();
 		$('.datatable').corner();
-		$('.tabPanel').tabPanel();
-		$('.code pre').text($('.datatable').html());
-		$('.code pre').snippet('html', {style:"the",showNum:false});
 		]]>
 	</script>
 </engine>
