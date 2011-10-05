@@ -1,7 +1,7 @@
 <engine>
 	<action selector="#content">
 		<h3>
-			Form
+			Basic <span>Form</span>
 		</h3>
 		<div class="tabPanel">
 			<ul>
@@ -42,10 +42,8 @@
 								</li>
 								<li>
 									<label>Sex:</label>
-									Male:
-									<input class="male" type="radio" />
-									Female:
-									<input class="female" type="radio" />
+									<input class="male" type="radio" /> Male
+									<input class="female" type="radio" /> Female
 								</li>
 							</ul>
 						</fieldset>

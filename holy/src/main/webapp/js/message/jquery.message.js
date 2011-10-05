@@ -67,7 +67,7 @@
 
 	$.fn.message = function(msg, type, unclosable) {
 		var ul = $(this);
-		ul.prepend('<li/>');
+		ul.prepend('<li />');
 		var li = ul.children('li:first');
 		li.hide();
 		if (type) {
@@ -79,9 +79,7 @@
 		li.text(msg);
 	}
 
-	$(document).ready(function() {
 		$('.message li').delegate('a', 'click', function() {
 			$(this).parent('li').fadeOut();
 		});
-	});
 })(jQuery);

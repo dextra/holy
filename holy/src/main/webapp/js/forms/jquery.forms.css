@@ -10,4 +10,8 @@
 
 .forms ul li span.required { color:#C00; }
 
+.forms .buttons li button,
+.forms .buttons li input,
+.forms .buttons li a { cursor: pointer; }
+
 

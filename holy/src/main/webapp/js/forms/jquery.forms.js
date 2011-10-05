@@ -15,7 +15,7 @@
 		});
 		return ret;
 	}
-
+1
 	$.fn.maximize = function(method, reset) {
 		var me = $(this);
 		if (reset !== undefined) {
@@ -33,5 +33,7 @@
 			list.prepend('<span class="required">*</span>');
 		}
 		me.find('label').maximize('width', '');
+		var labelW = $('.forms ul li label').width();
+		$('.buttons').css('marginLeft', labelW+13);
 	}
 })(jQuery);

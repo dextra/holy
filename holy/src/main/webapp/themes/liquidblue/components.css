@@ -13,12 +13,12 @@
 
 /*///// Component - Messages /////*/
 
-.message li { margin:3px 15px; }
+.message li { margin:3px 15px; padding:3px 5px 3px 25px; }
 
-.message .error { box-shadow:0 0 3px 0px #D8000C; }
+.message .error { box-shadow:0 0 3px 0px #D8000C; background-image:url('imgs/msg/error.png'); background-position:5px center; background-repeat: no-repeat; }
 
-.message .success { box-shadow:0 0 3px 0px #4F8A10; }
+.message .success { box-shadow:0 0 3px 0px #4F8A10; background-image:url('imgs/msg/success.png'); background-position:5px center; background-repeat: no-repeat; }
 
-.message .info { box-shadow:0 0 3px 0px #00529B; }
+.message .info { box-shadow:0 0 3px 0px #00529B; background-image: url('imgs/msg/info.png'); background-position:5px center; background-repeat: no-repeat; }
 
-.message .warning { box-shadow:0 0 3px 0px #9F6000; }
+.message .warning { box-shadow:0 0 3px 0px #9F6000; background-image:url('imgs/msg/warning.png'); background-position:5px center; background-repeat: no-repeat; }

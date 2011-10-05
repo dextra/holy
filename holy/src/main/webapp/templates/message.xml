@@ -1,53 +1,82 @@
 <engine>
 	<action selector=".message">
-		<li class="info closable">made by html</li>
-		<li class="warning">made by html2</li>
+		<li class="info closable">Information message</li>
+		<li class="warning">Warning message</li>
 	</action>
 	<action selector="#content">
-		<div class="forms">
-			<form>
-				<fieldset>
-					<legend>Message</legend>
-					<ul>
-						<li class="require">
-							<label for="message">Message:</label>
-							<input type="text" />
-						</li>
-						<li class="require">
-							<label for="type">Type:</label>
-							<select>
-								<option value="success">success</option>
-								<option value="info">info</option>
-								<option value="warning">warning</option>
-								<option value="error">error</option>
-							</select>
-						</li>
-						<li>
-							<label for="closable">Closable:</label>
-							<input type="checkbox" value="closable"/>
-						</li>
-					</ul>
-					<div class="buttons">
-						<input type="button" class="buttonSend" value="Send" />
-					</div>
-				</fieldset>
-			</form>
+		<h3>
+			Message
+			<span>System</span>
+		</h3>
+		<div class="tabPanel">
+			<ul>
+				<li>
+					<a>Demo</a>
+				</li>
+				<li>
+					<a>Script</a>
+				</li>
+			</ul>
+			<div class="demo">
+				<div class="forms">
+					<form>
+						<fieldset>
+							<ul>
+								<li class="require">
+									<label for="message">Message:</label>
+									<input type="text" />
+								</li>
+								<li class="require">
+									<label for="type">Type:</label>
+									<select>
+										<option value="success">Success</option>
+										<option value="info">Information</option>
+										<option value="warning">Warning</option>
+										<option value="error">Error</option>
+									</select>
+								</li>
+								<li>
+									<label for="closable">Closable:</label>
+									<input type="checkbox" value="closable"/>
+								</li>
+								<li>
+									<ul class="buttons">
+										<li>
+											<input type="button" class="buttonSend" value="Send" />
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+			<div class="script">
+				<pre>$('.message').message('Message is required', 'error', true);</pre>
+			</div>
 		</div>
 	</action>
+	<script>
+		<![CDATA[
+		$('.html pre').text($('.demo').html());
+		$('.html pre').snippet('html', {style:"the",showNum:false});
+		$('.script pre').snippet('javascript', {style:"the",showNum:false});
+		$(".tabPanel").tabPanel();
 
-	<script><![CDATA[
-		$('#content .forms').form();
+		$('.forms').form();
 		$('#content .forms .buttonSend').click(function() {
-			var form = $(this).closest('form');
-			var msg = form.find('label[for="message"] + input').val();
-			var type = form.find('label[for="type"] + select').val();
-			var closable = form.find('label[for="closable"] + input:checked').val();
+		var form = $(this).closest('form');
+		var msg = form.find('label[for="message"] + input').val();
+		var type = form.find('label[for="type"] + select').val();
+		var closable = form.find('label[for="closable"] + input:checked').val();
 			if(!msg) {
-				$('.message').message('Message is required', 'error', true);	
-				return;
-			}
-			$('.message').message(msg, type, !closable);
-		});
-	]]></script>
-
+				$('.message').message('Message is required', 'error', false);
+					return;
+				}
+					$('.message').message(msg, type, !closable);
+				}
+			);
+		]]>
+	</script>
 </engine>
+
