@@ -21,7 +21,6 @@
 			} else {
 				toShow[effect]();
 			}
-
 			parent.trigger("open.tabPanel", index);
 		});
 	}
