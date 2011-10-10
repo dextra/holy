@@ -8,7 +8,7 @@
 		$.loading({
 			text : 'Carregando...',
 			overlay : '#23557E',
-			opacity: '0.6'
+			opacity: '60'
 		});
 	});
 })(jQuery);

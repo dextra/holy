@@ -7,9 +7,9 @@
 		var delay = opts.delay == 0 ? 0 : opts.delay || 'fast';
 		$(this).delegate('li', 'hover', function(){
 			if (delay) {
-				$(this).children('ul')[effect](delay);
+				$(this).children('ul')[effect](delay).delay(100);
 			} else {
-				$(this).children('ul')[effect]();
+				$(this).children('ul')[effect]().delay(100);
 			}
 		});
 	}
