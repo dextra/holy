@@ -2,17 +2,15 @@
 
 	var remove = function() {
 		comp = $(this);
-		comp.closest('ul').trigger('remove.message', comp);		
+		comp.closest('ul').trigger('remove.message', comp);
 		comp.fadeOut('slow', function() {
 			$(this).remove();
 		});
 		return false;
 	};
-	
 	var prepare = function(li) {
 		li = $(li);
-		li.corner('5px');
-		if (li.hasClass('closable')) {
+		if(li.hasClass('closable')) {
 			li.append('<a href="#"/>');
 			var a = li.children('a:last');
 			a.text('x');
@@ -24,14 +22,14 @@
 	}
 
 	$.fn.messageMonitor = function(time, warning) {
-		if (!time) {
+		if(!time) {
 			time = 20000;
 		}
-		if (!warning) {
+		if(!warning) {
 			warning = Math.min(5000, time);
 		}
 		var me = $(this);
-		if (me.data('messageMonitor')) {
+		if(me.data('messageMonitor')) {
 			return;
 		}
 		me.data('messageMonitor', true);
@@ -40,15 +38,15 @@
 			childs.each(function() {
 				var c = $(this);
 				var t = c.data('messageMonitor');
-				if (!t) {
+				if(!t) {
 					t = time;
 					prepare(c);
 				}
 				t -= 1000;
 				c.data('messageMonitor', t);
-				if (t <= warning) {
+				if(t <= warning) {
 					var span = c.children('span.time');
-					if (!span.length) {
+					if(!span.length) {
 						c.append('<span class="time"/>');
 						span = c.children('span.time');
 						span.hide();
@@ -56,7 +54,7 @@
 					}
 					span.text('' + (t / 1000) + 's');
 				}
-				if (t <= 0) {
+				if(t <= 0) {
 					remove.apply(this);
 				}
 			})
@@ -70,16 +68,16 @@
 		ul.prepend('<li />');
 		var li = ul.children('li:first');
 		li.hide();
-		if (type) {
+		if(type) {
 			li.addClass(type);
 		}
-		if (!unclosable) {
+		if(!unclosable) {
 			li.addClass('closable');
 		}
 		li.text(msg);
 	}
 
-		$('.message li').delegate('a', 'click', function() {
-			$(this).parent('li').fadeOut();
-		});
+	$('.message li').delegate('a', 'click', function() {
+		$(this).parent('li').fadeOut();
+	});
 })(jQuery);

@@ -54,7 +54,6 @@
 			<div class="script">
 				<pre>
 					$('.datatable').datatable();
-					$('.datatable').corner();
 				</pre>
 			</div>
 			<div class="html">
@@ -70,7 +69,6 @@
 		$(".tabPanel").tabPanel();
 
 		$('.datatable').datatable();
-		$('.datatable').corner();
 		]]>
 	</script>
 </engine>
