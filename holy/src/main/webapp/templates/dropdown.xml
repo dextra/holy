@@ -45,7 +45,13 @@
 				</ul>
 			</div>
 			<div class="script">
-				<pre>$('.myNav').dropDown();</pre>
+				<pre>
+					$('.myNav').dropDown({
+						effectIn: 'fadeIn',
+						effectOut: 'fadeOut',
+						delay: 200
+					});
+				</pre>
 			</div>
 			<div class="html">
 				<pre></pre>
@@ -54,12 +60,16 @@
 	</action>
 	<script>
 		<![CDATA[
-		$('.html pre').text($('.demo').html());
-		$('.html pre').snippet('html', {style:"the",showNum:false});
-		$('.script pre').snippet('javascript', {style:"the",showNum:false});
-		$(".tabPanel").tabPanel();
-
-		$('.myNav').dropDown();
+			$('.html pre').text($('.demo').html());
+			$('.html pre').snippet('html', {style:"the",showNum:false});
+			$('.script pre').snippet('javascript', {style:"the",showNum:false});
+			$(".tabPanel").tabPanel();
+	
+			$('.myNav').dropDown({
+				effectIn: 'fadeIn',
+				effectOut: 'fadeOut',
+				delay: 200
+			});
 		]]>
 	</script>
 </engine>

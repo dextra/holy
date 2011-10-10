@@ -1,16 +1,15 @@
-(function($) {
+( function($) {
 	$.fn.dropDown = function(opts) {
 		$(this).addClass('dropdown');
 		$(this).find('li:has(ul) > a').append(' <span>&raquo;</span>');
 		opts = opts || {};
-		var effect = opts.effect || 'slideToggle';
-		var delay = opts.delay == 0 ? 0 : opts.delay || 'fast';
-		$(this).delegate('li', 'hover', function(){
-			if (delay) {
-				$(this).children('ul')[effect](delay).delay(100);
-			} else {
-				$(this).children('ul')[effect]().delay(100);
-			}
+		var effectIn = opts.effectIn || 'slideDown';
+		var effectOut = opts.effectOut || 'slideUp';
+		var duration = opts.duration == 0 ? 0 : opts.duration || 'fast';
+		$(this).children('li').hover(function() {
+			$(this).children('ul')[effectIn](duration).delay(100);
+		}, function() {
+			$(this).children('ul')[effectOut]('fast').delay(100);
 		});
 	}
 }(jQuery));
