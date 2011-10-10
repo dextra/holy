@@ -1,7 +1,8 @@
 <engine>
 	<action selector="#content">
 		<h3>
-			Basic <span>Form</span>
+			Basic
+			<span>Form</span>
 		</h3>
 		<div class="tabPanel">
 			<ul>
@@ -16,44 +17,54 @@
 				</li>
 			</ul>
 			<div class="demo">
-					<form class="myForm">
-						<fieldset>
-							<legend>Register</legend>
-							<ul>
-								<li class="require">
-									<label for="name">Name:</label>
-									<input type="text" />
-								</li>
-								<li class="require">
-									<label for="pass">Password:</label>
-									<input type="password" />
-								</li>
-								<li class="require">
-									<label for="email">Email:</label>
-									<input type="text" />
-								</li>
-								<li>
-									<label for="phone">Phone:</label>
-									<input type="text" />
-								</li>
-								<li>
-									<label for="birthdate">Birthdate:</label>
-									<input class="date" type="text" />
-								</li>
-								<li>
-									<label>Sex:</label>
-									<input class="male" type="radio" /> Male
-									<input class="female" type="radio" /> Female
-								</li>
-							</ul>
-						</fieldset>
-					</form>
+				<form class="myForm">
+					<fieldset>
+						<legend>Register</legend>
+						<ul>
+							<li class="require">
+								<label for="name">Name:</label>
+								<input type="text" />
+							</li>
+							<li class="require">
+								<label for="pass">Password:</label>
+								<input type="password" />
+							</li>
+							<li class="require">
+								<label for="email">Email:</label>
+								<input type="text" />
+							</li>
+							<li>
+								<label for="phone">Phone:</label>
+								<input type="text" />
+							</li>
+							<li>
+								<label for="birthdate">Birthdate:</label>
+								<input class="date" type="text" />
+							</li>
+							<li>
+								<label>Sex:</label>
+								<input class="male" type="radio" />
+								Male
+								<input class="female" type="radio" />
+								Female
+							</li>
+							<li>
+								<ul class="buttons">
+									<li class="btSave">
+										<button type="submit">Save</button>
+									</li>
+									<li class="btCancel">
+										<a href="#datatable">Cancel</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</fieldset>
+				</form>
 			</div>
 			<div class="script">
-				<pre>
-					$('.forms').form();
-					$('.forms input.date').simpleDatepicker();
-				</pre>
+				<pre>$('.forms').form();
+					$('.forms input.date').simpleDatepicker();</pre>
 			</div>
 			<div class="html">
 				<pre></pre>

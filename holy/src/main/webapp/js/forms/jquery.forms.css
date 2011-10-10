@@ -2,16 +2,12 @@
 
 .forms input,
 .forms select,
-.forms textarea { padding:2px; border:1px solid #DDD; }
+.forms textarea { padding:2px; border:1px solid #DDD; margin: 3px 0; }
 
-.forms ul li { list-style:none; margin:3px 0; }
+.forms ul li { list-style:none; }
 
-.forms ul li label { text-align:right; margin:0 5px; display:inline-block; }
+.forms ul li label { text-align:right; margin:0 3px; display:inline-block; }
 
 .forms ul li span.required { color:#C00; }
-
-.forms .buttons li button,
-.forms .buttons li input,
-.forms .buttons li a { cursor: pointer; }
 
 

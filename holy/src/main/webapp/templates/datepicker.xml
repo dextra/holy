@@ -1,0 +1,53 @@
+﻿<engine>
+	<action selector="#content">
+		<h3>
+			Date
+			<span>Picker</span>
+		</h3>
+		<div class="tabPanel">
+			<ul>
+				<li>
+					<a>Demo</a>
+				</li>
+				<li>
+					<a>Script</a>
+				</li>
+				<li>
+					<a>HTML</a>
+				</li>
+			</ul>
+			<div class="demo">
+				<form class="myForm">
+						<fieldset>
+							<ul>
+								<li>
+									<label for="Date">Date:</label>
+									<input class="date" type="text" />
+								</li>
+							</ul>
+						</fieldset>
+					</form>
+			</div>
+			<div class="script">
+				<pre>
+			$('.myForm').form();
+			$('.myForm input.date').simpleDatepicker();
+				</pre>
+			</div>
+			<div class="html">
+				<pre></pre>
+			</div>
+		</div>
+	</action>
+	<script>
+		<![CDATA[
+			$('.html pre').text($('.demo').html());
+			$('.html pre').snippet('html', {style:"the",showNum:false});
+			$('.script pre').snippet('javascript', {style:"the",showNum:false});
+			$(".tabPanel").tabPanel();
+	
+			$('.myForm').form();
+			$('.myForm input.date').simpleDatepicker();
+		]]>
+	</script>
+</engine>
