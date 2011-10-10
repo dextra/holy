@@ -45,6 +45,7 @@
 		$(".tabPanel").tabPanel();
 		
 		$('.myToogle').togglePanel();
+		
 		]]>
 	</script>
 </engine>
