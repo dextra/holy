@@ -30,6 +30,7 @@
 			} else {
 				$(this).removeClass('active');
 			}
+			return false;
 		});
 		$(this).trigger("toggle.togglePanel");
 	}
