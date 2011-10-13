@@ -8,15 +8,15 @@
 		var duration = opts.duration == 0 ? 0 : opts.duration || 'fast';
 		var li = $(this).children('li');
 		li.hover(function() {
-			console.info('over', this);
 			var ul = $(this).children('ul');
 			ul.stop(true, true);
 			ul[effectIn](duration);
+			$(this).addClass('active');
 		}, function() {
-			console.info('out', this);
 			var ul = $(this).children('ul');
 			ul.stop(true, true);
 			ul[effectOut]('fast');
+			$(this).removeClass('active');
 		});
 	}
 }(jQuery));
