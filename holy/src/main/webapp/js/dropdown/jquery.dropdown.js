@@ -6,10 +6,17 @@
 		var effectIn = opts.effectIn || 'slideDown';
 		var effectOut = opts.effectOut || 'slideUp';
 		var duration = opts.duration == 0 ? 0 : opts.duration || 'fast';
-		$(this).children('li').hover(function() {
-			$(this).children('ul')[effectIn](duration).delay(100);
+		var li = $(this).children('li');
+		li.hover(function() {
+			console.info('over', this);
+			var ul = $(this).children('ul');
+			ul.stop(true, true);
+			ul[effectIn](duration);
 		}, function() {
-			$(this).children('ul')[effectOut]('fast').delay(100);
+			console.info('out', this);
+			var ul = $(this).children('ul');
+			ul.stop(true, true);
+			ul[effectOut]('fast');
 		});
 	}
 }(jQuery));
