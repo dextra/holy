@@ -203,11 +203,10 @@
 						$("body").prepend(datepicker);
 						
 						var elPos = findPosition($this.get(0));
-						var x = (parseInt(opts.x) ? parseInt(opts.x) : 0) + elPos[0] - 20;
-						var y = (parseInt(opts.y) ? parseInt(opts.y) : 0) + elPos[1] - 65;
+						var x = (parseInt(opts.x) ? parseInt(opts.x) : 0) + elPos[0] - 18;
+						var y = (parseInt(opts.y) ? parseInt(opts.y) : 0) + elPos[1] - 61;
 						$(datepicker).css({ position: 'absolute', left: x, top: y });
 					
-						$("span", datepicker).css("cursor","pointer");
 						$("select", datepicker).bind('change', function () { loadMonth (null, $this, datepicker, chosendate); });
 						$("span.prevMonth", datepicker).click(function (e) { loadMonth (e, $this, datepicker, chosendate); });
 						$("span.nextMonth", datepicker).click(function (e) { loadMonth (e, $this, datepicker, chosendate); });

@@ -51,10 +51,13 @@
 							<li>
 								<ul class="buttons">
 									<li class="btSave">
-										<button type="submit">Save</button>
+										<button type="submit">button</button>
 									</li>
 									<li class="btCancel">
-										<a href="#datatable">Cancel</a>
+										<a href="#datatable">link</a>
+									</li>
+									<li class="btRemove">
+										<input type="submit" value="input" />
 									</li>
 								</ul>
 							</li>

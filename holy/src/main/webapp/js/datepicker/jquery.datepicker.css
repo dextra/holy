@@ -12,7 +12,7 @@
 
 .datepicker tr th select option { font-size: 10px; border: none; }
 
-.datepicker tr th span { font-size: 15px; }
+.datepicker tr th span { font-size: 15px; cursor: pointer; }
 
 .datepicker .days th { padding: 2px 1px; }
 

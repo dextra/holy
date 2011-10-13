@@ -7,6 +7,15 @@
 
 .buttons li a,
 .buttons li input,
-.buttons li button { display: inline-block; padding: 3px 5px; cursor: pointer; background-color: transparent; color: #333; opacity: 0.7;  filter: alpha(opacity = 70); }
+.buttons li button { display: inline-block; padding: 3px 5px; cursor: pointer; background-color: transparent; color: #333; border: 0; }
 
 .buttons li a { padding: 4px 5px; }
+
+.buttons li input { padding: 0px 5px; }
+
+.buttons li:hover { background: #000; border: 1px solid #000; }
+
+.buttons li a:hover,
+.buttons li input:hover,
+.buttons li button:hover { color:#FFF; }
+

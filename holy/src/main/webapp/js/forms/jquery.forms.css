@@ -2,12 +2,14 @@
 
 .forms input,
 .forms select,
-.forms textarea { padding:2px; border:1px solid #DDD; margin: 3px 0; }
+.forms textarea { padding:2px; background:#FAFAFA; border:1px solid #DDD; margin: 3px 0; }
 
 .forms ul li { list-style:none; }
 
 .forms ul li label { text-align:right; margin:0 3px; display:inline-block; }
 
-.forms ul li span.required { color:#C00; }
+.forms ul li span.required { color:#C00; margin-right:3px; display: inline-block; }
+
+.forms ul li .focus { border: 1px solid #333; background: #FFF; }
 
 

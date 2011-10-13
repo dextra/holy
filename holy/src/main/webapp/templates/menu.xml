@@ -19,7 +19,7 @@
 				</ul>
 			</li>
 			<li>
-				<a href="#" title="Form">Forms</a>
+				<a href="#" title="Forms">Forms</a>
 				<ul>
 					<li>
 						<a href="#basicform" title="Basic form">Basic form</a>
@@ -30,7 +30,15 @@
 				</ul>
 			</li>
 			<li>
-				<a href="#datatable">Datatable</a>
+				<a href="#" title="Tables">Tables</a>
+				<ul>
+					<li>
+						<a href="#datatable">Datatable</a>
+					</li>
+					<li>
+						<a href="#tablescroll">TableScroll</a>
+					</li>
+				</ul>
 			</li>
 			<li>
 				<a href="#message" title="Message">Message</a>
@@ -51,6 +59,9 @@
 						<a href="#snippet" title="Snippet">Snippet</a>
 					</li>
 				</ul>
+			</li>
+			<li>
+				<a href="#" title="About">About</a>
 			</li>
 		</ul>
 	</action>

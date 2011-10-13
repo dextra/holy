@@ -4,7 +4,7 @@
 		<div class="tabPanel">
 			<ul>
 				<li>
-					<a class="active">Demo</a>
+					<a>Demo</a>
 				</li>
 				<li>
 					<a>Script</a>
@@ -17,13 +17,13 @@
 				<div class="tab">
 					<ul>
 						<li>
-							<a href="#!">Tab 1</a>
+							<a>Tab 1</a>
 						</li>
 						<li>
-							<a href="#!">Tab 2</a>
+							<a>Tab 2</a>
 						</li>
 						<li>
-							<a href="#!">Tab 3</a>
+							<a>Tab 3</a>
 						</li>
 					</ul>
 					<div>
