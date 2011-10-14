@@ -14,19 +14,20 @@
 				</li>
 			</ul>
 			<div class="demo">
-				<table class="datatable" border="0" cellspacing="0" cellpadding="0">
+				<table class="datatable" border="0" cellspacing="0"
+					cellpadding="0">
 					<thead>
 						<tr>
-							<th scope="col">Id</th>
-							<th scope="col">Name</th>
-							<th scope="col">Date</th>
+							<th scope="col" class="sortable">Id</th>
+							<th scope="col" class="sortable">Name</th>
+							<th scope="col" class="sortable">Date</th>
 							<th scope="col">Active</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td>25</td>
-							<td>Homer Simpson</td>
+							<td>28</td>
+							<td>Homer Simpson008</td>
 							<td>15/01/1982</td>
 							<td>Yes</td>
 						</tr>
@@ -37,16 +38,18 @@
 							<td>Yes</td>
 						</tr>
 						<tr>
-							<td>25</td>
-							<td>Homer Simpson</td>
+							<td>27</td>
+							<td>Homer Simpson7</td>
 							<td>15/01/1982</td>
 							<td>Yes</td>
 						</tr>
 						<tr>
-							<td>25</td>
-							<td>Homer Simpson</td>
+							<td>26</td>
+							<td>Homer Simpson06</td>
 							<td>15/01/1982</td>
-							<td>Yes</td>
+							<td>
+								Yes
+							</td>
 						</tr>
 					</tbody>
 				</table>
@@ -67,8 +70,8 @@
 		$('.html pre').snippet('html', {style:"the",showNum:false});
 		$('.script pre').snippet('javascript', {style:"the",showNum:false});
 		$(".tabPanel").tabPanel();
-
 		$('.datatable').datatable();
+		$('.datatable').datatableSortable();
 		]]>
 	</script>
 </engine>
