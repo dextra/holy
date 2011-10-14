@@ -7,15 +7,9 @@
 	var yearRegEx = /^\d{4,4}$/;
 
     $.fn.simpleDatepicker = function(options) {
-
-
 		var opts = jQuery.extend({}, jQuery.fn.simpleDatepicker.defaults, options);
-		
-		
 		setupYearRange();
-
 		function setupYearRange () {
-			
 			var startyear, endyear;  
 			if (opts.startdate.constructor == Date) {
 				startyear = opts.startdate.getFullYear();
@@ -51,30 +45,23 @@
 		}
 		
 		function newDatepickerHTML () {
-			
 			var years = [];
-			
 			for (var i = 0; i <= opts.endyear - opts.startyear; i ++) years[i] = opts.startyear + i;
-	
 			var table = $('<table class="datepicker" cellpadding="0" cellspacing="0"></table>');
 			table.append('<thead></thead>');
 			table.append('<tfoot></tfoot>');
 			table.append('<tbody></tbody>');
-			
 				var monthselect = '<select name="month">';
 				for (var i in months) monthselect += '<option value="'+i+'">'+months[i]+'</option>';
 				monthselect += '</select>';
-			
 				var yearselect = '<select name="year">';
 				for (var i in years) yearselect += '<option>'+years[i]+'</option>';
 				yearselect += '</select>';
-			
 			$("thead",table).append('<tr class="controls"><th colspan="7"><span class="prevMonth">&laquo;</span>&nbsp;'+monthselect+yearselect+'&nbsp;<span class="nextMonth">&raquo;</span></th></tr>');
 			$("thead",table).append('<tr class="days"><th>S</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th></tr>');
 			for (var i = 0; i < 6; i++) $("tbody",table).append('<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>');	
 			return table;
 		}
-		
 		function findPosition (obj) {
 			var curleft = curtop = 0;
 			if (obj.offsetParent) {
@@ -87,13 +74,10 @@
 				return false;
 			}
 		}
-		
 		function loadMonth (e, el, datepicker, chosendate) {
-			
 			var mo = $("select[name=month]", datepicker).get(0).selectedIndex;
 			var yr = $("select[name=year]", datepicker).get(0).selectedIndex;
 			var yrs = $("select[name=year] option", datepicker).get().length;
-			
 			if (e && $(e.target).hasClass('prevMonth')) {				
 				if (0 == mo && yr) {
 					yr -= 1; mo = 11;
@@ -113,7 +97,6 @@
 					$("select[name=month]", datepicker).get(0).selectedIndex = mo;
 				}
 			}
-			
 			if (0 == mo && !yr) $("span.prevMonth", datepicker).hide(); 
 			else $("span.prevMonth", datepicker).show(); 
 			if (yr + 1 == yrs && 11 == mo) $("span.nextMonth", datepicker).hide(); 
@@ -237,5 +220,5 @@
 		x : 18, // must be in px
 		y : 18 // must be in px
 	};
-
+	
 })(jQuery);

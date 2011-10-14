@@ -172,6 +172,8 @@
             this[binder](eventIn, enter)[binder](eventOut, leave);
         }
         
+        $(this).addClass('ttip');
+        
         return this;
         
     };

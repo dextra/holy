@@ -1,5 +1,9 @@
 /*///// Component - Form /////*/
 
+.forms fieldset { border: 1px solid #EEE; padding: 10px; }
+
+.forms fieldset legend { font-weight: bold; font-size:16px; padding:0 10px; margin: 0 10px; }
+
 .forms input,
 .forms select,
 .forms textarea { padding:2px; background:#FAFAFA; border:1px solid #DDD; margin: 3px 0; }

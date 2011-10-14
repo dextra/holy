@@ -48,13 +48,83 @@
 							<td>15/01/1982</td>
 							<td>Yes</td>
 						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td>Yes</td>
+						</tr>
 					</tbody>
 				</table>
 			</div>
 			<div class="script">
-				<pre>
-					$('.datatable').datatable();
-				</pre>
+				<pre>$('.datatable').datatable();</pre>
 			</div>
 			<div class="html">
 				<pre></pre>

@@ -23,23 +23,23 @@
 						<ul>
 							<li class="require">
 								<label for="name">Name:</label>
-								<input type="text" />
+								<input type="text" /> <a href="#!" title="Enter your first name.">(?)</a>
 							</li>
 							<li class="require">
 								<label for="pass">Password:</label>
-								<input type="password" />
+								<input type="password" /> <a href="#!" title="Enter password.">(?)</a>
 							</li>
 							<li class="require">
 								<label for="email">Email:</label>
-								<input type="text" />
+								<input type="text" /> <a href="#!" title="Enter your e-mail address.">(?)</a>
 							</li>
 							<li>
 								<label for="phone">Phone:</label>
-								<input type="text" />
+								<input type="text" /> <a href="#!" title="Enter your phone number.">(?)</a>
 							</li>
 							<li>
 								<label for="birthdate">Birthdate:</label>
-								<input class="date" type="text" />
+								<input class="date" type="text" /> <a href="#!" title="Enter your birthdate.">(?)</a>
 							</li>
 							<li>
 								<label>Sex:</label>
@@ -82,6 +82,7 @@
 		$(".tabPanel").tabPanel();
 
 		$('.myForm').form();
+		$('.myForm a').tipsy();
 		$('.myForm input.date').simpleDatepicker();
 		]]>
 	</script>
