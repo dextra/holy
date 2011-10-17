@@ -41,12 +41,6 @@
 				</ul>
 			</li>
 			<li>
-				<a href="#message" title="Message">Message</a>
-			</li>
-			<li>
-				<a href="#dialog" title="Dialog">Dialog</a>
-			</li>
-			<li>
 				<a href="#" title="Others">Others</a>
 				<ul>
 					<li>
@@ -57,6 +51,12 @@
 					</li>
 					<li>
 						<a href="#snippet" title="Snippet">Snippet</a>
+					</li>
+					<li>
+						<a href="#message" title="Message">Message</a>
+					</li>
+					<li>
+						<a href="#dialog" title="Dialog">Dialog</a>
 					</li>
 				</ul>
 			</li>
