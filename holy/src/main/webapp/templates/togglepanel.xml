@@ -40,8 +40,8 @@
 	<script>
 		<![CDATA[
 		$('.html pre').text($('.demo').html());
-		$('.html pre').snippet('html', {style:"the",showNum:false});
-		$('.script pre').snippet('javascript', {style:"the",showNum:false});
+		$('.html pre').snippet('html', {style:"ide-eclipse"});
+		$('.script pre').snippet('javascript', {style:"ide-eclipse"});
 		$(".tabPanel").tabPanel();
 		
 		$('.myToogle').togglePanel();

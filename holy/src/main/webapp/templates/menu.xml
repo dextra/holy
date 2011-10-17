@@ -27,6 +27,17 @@
 					<li>
 						<a href="#datepicker" title="Date Picker">Date Picker</a>
 					</li>
+					<li>
+						<a href="#autocomplete" title="Auto Compete">Auto Complete</a>
+						<ul>
+							<li>
+								<a href="#autocomplete" title="Auto Compete">Simple</a>
+							</li>
+							<li>
+								<a href="#autocompleteajax" title="Auto Compete">Ajax</a>
+							</li>
+						</ul>
+					</li>					
 				</ul>
 			</li>
 			<li>
