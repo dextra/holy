@@ -12,7 +12,7 @@
 	<script>
 		<![CDATA[
 			$('#content .snippet').text($('#header').html());
-			$('#content .snippet').snippet('html', {style:"ide-eclipse"});
+			$('#content .snippet').snippet('html', {style:"ide-eclipse",showNum:false});
 		]]>
 	</script>
 </engine>

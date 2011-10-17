@@ -120,7 +120,7 @@ $('.demo input[name="tags"]').autocomplete({
 	
 	<script><![CDATA[
 		$('.html pre').text($('.demo').html());
-		$('.html pre').snippet('html', {style:"ide-eclipse"});
-		$('.script pre').snippet('javascript', {style:"ide-eclipse"});
+		$('.html pre').snippet('html', {style:"ide-eclipse",showNum:false});
+		$('.script pre').snippet('javascript', {style:"ide-eclipse",showNum:false});
 	]]></script>
 </engine>
