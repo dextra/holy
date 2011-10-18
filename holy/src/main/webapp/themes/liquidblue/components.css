@@ -1,12 +1,14 @@
 
 /*///// Component - Dropdown /////*/
 
-.dropdown { width:100%; background:#333; height:34px; background:#20344D; border-top:1px solid #333; }
+.dropdown { width:100%; background: url('imgs/navbar.png') left top repeat-x; height:34px; }
 
-.dropdown li a { height:34px; line-height:33px; padding:0 15px; text-transform:capitalize; color:#FFF; font-size:12px; }
+.dropdown > li a { height:34px; line-height:33px; padding:0 15px; text-transform:capitalize; color:#FFF; font-size:12px; }
 
 .dropdown li a:hover,
-.dropdown li.active a { background: #23557E; }
+.dropdown li.active > a { background: url('imgs/navbar.png') left bottom repeat-x; color:#000; }
+
+.dropdown li > ul li a:hover { background:none; text-decoration: underline; color:#FFF; }
 
 .dropdown li ul { z-index:9999; background:#23557E; -moz-box-shadow:1px 1px 2px #587391; -webkit-box-shadow: 1px 1px 2px #587391; box-shadow: 1px 1px 2px #587391; }
 
@@ -24,4 +26,14 @@
 
 .message .warning { box-shadow:0 0 3px 0px #9F6000; background-image:url('imgs/msg/warning.png'); background-position:5px center; background-repeat: no-repeat; }
 
+/*///// Component - Forms /////*/
+
 .forms ul li .focus { background:#FFF; border:1px solid #587391; box-shadow: 0 0px 4px #587391; -moz-box-shadow: 0 0px 4px #587391; -webkit-box-shadow: 0 0px 4px #587391; color:#000; }
+
+/*///// Component - Toogle /////*/
+
+.togglePanel h3 { background: url('imgs/gradient-bg.png') left center repeat-x; padding:1px 5px; line-height: 20px; }
+
+.togglePanel h3 span { padding-left: 25px; background: url('imgs/arrow_close.png') left center no-repeat; }
+
+.togglePanel h3.active span { background: url('imgs/arrow_open.png') left center no-repeat; }

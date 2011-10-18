@@ -33,8 +33,10 @@
 			list.prepend('<span class="required">*</span>');
 		}
 		me.find('label').maximize('width', '');
-		var labelW = $('.forms ul li label').width();
+		var labelW = me.find('ul li label').width();
 		$('.buttons').css('marginLeft', labelW+13);
+		
+		
 		$(this).find('input').live('focus', function() {
 			$(this).addClass('focus');
 		});

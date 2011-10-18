@@ -1,5 +1,4 @@
 ( function($) {
-	
 	$.fn.tooglePanelShow = function() {
 		var opts = $(this).data('tooglepanel.opts');
 		opts = $.extend({}, opts);
@@ -15,7 +14,6 @@
 			content[effect](trigger);
 		}
 	}
-	
 	$.fn.togglePanel = function(opts) {
 		$(this).addClass('togglePanel');
 		opts = opts || {};
@@ -26,9 +24,9 @@
 		});
 		$(this).bind('toggle.togglePanel', function() {
 			if($(this).children('div:visible').length) {
-				$(this).addClass('active');
+				$(this).children('h3').addClass('active');
 			} else {
-				$(this).removeClass('active');
+				$(this).children('h3').removeClass('active');
 			}
 			return false;
 		});

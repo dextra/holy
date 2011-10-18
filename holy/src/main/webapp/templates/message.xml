@@ -21,6 +21,7 @@
 				<div class="forms">
 					<form>
 						<fieldset>
+							<legend>Message test</legend>
 							<ul>
 								<li class="require">
 									<label for="message">Message:</label>
@@ -36,7 +37,7 @@
 									</select>
 								</li>
 								<li>
-									<label for="closable">Closable:</label>
+									<label for="closable">Closable ?</label>
 									<input type="checkbox" value="closable"/>
 								</li>
 								<li>

@@ -57,6 +57,17 @@
 					</li>
 					<li>
 						<a href="#snippet" title="Snippet">Snippet</a>
+						<ul>
+							<li>
+								<a href="#tooltip">Tooltip</a>
+							</li>
+							<li>
+								<a href="#sendformbyframe" title="sendformbyframe">Send Form by Frame</a>
+							</li>
+							<li>
+								<a href="#snippet" title="Snippet">Snippet</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</li>

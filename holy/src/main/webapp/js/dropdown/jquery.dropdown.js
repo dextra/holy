@@ -8,7 +8,7 @@
 		var duration = opts.duration == 0 ? 0 : opts.duration || 'fast';
 		var li = $(this).children('li');
 		li.hover(function() {
-			var ul = $(this).children('ul');
+			var ul = $(this).find('ul');
 			ul.stop(true, true);
 			ul[effectIn](duration);
 			$(this).addClass('active');
