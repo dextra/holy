@@ -5,6 +5,9 @@
 				<a href="#home" class="ttip" title="Home">Home</a>
 			</li>
 			<li>
+				<a href="#gettingstarted" class="ttip" title="Getting Started">Getting Started</a>
+			</li>
+			<li>
 				<a href="#" title="Navigation">Navigation</a>
 				<ul>
 					<li>
