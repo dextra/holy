@@ -25,3 +25,5 @@
 .message .warning { box-shadow:0 0 3px 0px #9F6000; background-image:url('imgs/msg/warning.png'); background-position:5px center; background-repeat: no-repeat; }
 
 .forms ul li .focus { background:#FFF; border:1px solid #587391; box-shadow: 0 0px 4px #587391; -moz-box-shadow: 0 0px 4px #587391; -webkit-box-shadow: 0 0px 4px #587391; color:#000; }
+
+.ui-autocomplete-loading { background: white url('imgs/load_16x16.gif') right center no-repeat !important; }
