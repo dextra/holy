@@ -14,7 +14,7 @@
 				</li>
 			</ul>
 			<div class="demo">
-				<input type="buttons" value="Sort first level" />
+				<input type="button" value="Sort first level" />
 				<input type="button" value="Sort all levels" />
 				<ul>
 					<li>
