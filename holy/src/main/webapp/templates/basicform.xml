@@ -17,29 +17,33 @@
 				</li>
 			</ul>
 			<div class="demo">
-				<form class="myForm">
+				<form class="myForm liquidForm">
 					<fieldset>
 						<legend>Register</legend>
 						<ul>
 							<li class="require">
 								<label for="name">Name:</label>
-								<input type="text" /> <a href="#!" title="Enter your first name.">(?)</a>
+								<input type="text" title="Enter your first name." /> 
+							</li>
+							<li>
+								<label for="name">Second name:</label>
+								<input type="text" title="Enter your second name." /> 
 							</li>
 							<li class="require">
 								<label for="pass">Password:</label>
-								<input type="password" /> <a href="#!" title="Enter password.">(?)</a>
+								<input type="password" title="Enter password." />
 							</li>
 							<li class="require">
 								<label for="email">Email:</label>
-								<input type="text" /> <a href="#!" title="Enter your e-mail address.">(?)</a>
+								<input type="text" title="Enter your e-mail address." />
 							</li>
 							<li>
 								<label for="phone">Phone:</label>
-								<input type="text" /> <a href="#!" title="Enter your phone number.">(?)</a>
+								<input type="text" title="Enter your phone number." />
 							</li>
 							<li>
 								<label for="birthdate">Birthdate:</label>
-								<input class="date" type="text" /> <a href="#!" title="Enter your birthdate.">(?)</a>
+								<input class="date" type="text" title="Enter your birthdate." />
 							</li>
 							<li>
 								<label>Sex:</label>
@@ -48,8 +52,8 @@
 								<input class="female" type="radio" />
 								Female
 							</li>
-							<li>
-								<ul class="buttons">
+							<li class="buttons">
+								<ul>
 									<li class="btSave">
 										<button type="submit">button</button>
 									</li>
@@ -82,7 +86,7 @@
 		$(".tabPanel").tabPanel();
 
 		$('.myForm').form();
-		$('.myForm a').tipsy();
+		$('.myForm [title]').tipsy({trigger: 'focus', gravity: 'w', fade: true});
 		$('.myForm input.date').simpleDatepicker();
 		]]>
 	</script>

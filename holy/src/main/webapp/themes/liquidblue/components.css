@@ -37,3 +37,14 @@
 .togglePanel h3 span { padding-left: 25px; background: url('imgs/arrow_close.png') left center no-repeat; }
 
 .togglePanel h3.active span { background: url('imgs/arrow_open.png') left center no-repeat; }
+
+
+/*///// Component - Buttons /////*/
+
+.buttons ul li * { padding-left: 30px !important; }
+
+.buttons ul li .btCancel { background: url('imgs/buttons/arrow_open.png') left center no-repeat; }
+
+.buttons ul li .btSave {}
+
+.buttons ul li .btRemove {}

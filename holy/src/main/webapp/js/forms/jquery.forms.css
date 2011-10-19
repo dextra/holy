@@ -16,4 +16,6 @@
 
 .forms ul li .focus { border: 1px solid #333; background: #FFF; }
 
+.liquidForm ul li { float: left; margin: 0 5px 0 0; }
+
 

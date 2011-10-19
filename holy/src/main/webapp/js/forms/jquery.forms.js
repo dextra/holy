@@ -1,6 +1,6 @@
 (function($) {
 	$.fn.max = function(method) {
-		if (typeof (method) == 'string') {
+		if( typeof (method) == 'string') {
 			var m = method;
 			method = function() {
 				return $(this)[m]();
@@ -9,38 +9,34 @@
 		var ret = null;
 		$(this).each(function() {
 			var num = method.apply(this);
-			if (!ret || num > ret) {
+			if(!ret || num > ret) {
 				ret = num;
 			}
 		});
 		return ret;
 	}
-1
 	$.fn.maximize = function(method, reset) {
 		var me = $(this);
-		if (reset !== undefined) {
+		if(reset !== undefined) {
 			me[method](reset);
 		}
 		var max = me.max(method);
 		me[method](max);
 	}
-
 	$.fn.form = function() {
-		$(this).addClass('forms')
-		var me = $(this);
-		var list = me.find('.require label');
-		if (!list.find('span.required').length) {
+		var forms = $(this);
+		forms.addClass('forms');
+		var list = forms.find('.require label');
+		if(!list.find('span.required').length) {
 			list.prepend('<span class="required">*</span>');
 		}
-		me.find('label').maximize('width', '');
-		var labelW = me.find('ul li label').width();
-		$('.buttons').css('marginLeft', labelW+13);
-		
-		
+		forms.find('label').maximize('width', '');
+		var labelW = forms.find('ul li label').width();
+		$('.buttons').css('marginLeft', labelW + 9);
 		$(this).find('input').live('focus', function() {
 			$(this).addClass('focus');
 		});
-		$(this).find('input').live('blur',function() {
+		$(this).find('input').live('blur', function() {
 			$(this).removeClass('focus');
 		});
 	}

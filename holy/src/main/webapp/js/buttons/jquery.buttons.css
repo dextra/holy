@@ -1,20 +1,22 @@
-.buttons li { float:left; display: inline-block; zoom: 1; background: #FAFAFA; border: 1px solid #CCC; margin: 5px 5px 5px 0px; }
+.buttons { clear: left; display: block; }
 
-.buttons li:before,
-.buttons li:after { content: ""; display: table; }
+.buttons ul li { float:left; display: inline-block; zoom: 1; background: #FAFAFA; border: 1px solid #CCC; margin: 5px 5px 5px 0px; }
 
-.buttons li:after { clear: both; }
+.buttons ul li:before,
+.buttons ul li:after { content: ""; display: table; }
 
-.buttons li a,
-.buttons li input,
-.buttons li button { display: inline-block; padding: 3px 5px; cursor: pointer; background-color: transparent; color: #333; border: 0; }
+.buttons ul li:after { clear: both; }
 
-.buttons li a { padding: 4px 5px; }
+.buttons ul li a,
+.buttons ul li input,
+.buttons ul li button { display: inline-block; padding: 3px 5px; cursor: pointer; background-color: transparent; color: #333; border: 0; }
 
-.buttons li input { padding: 0px 5px; }
+.buttons ul li a { padding: 4px 5px; }
 
-.buttons li:hover { background: #000; border: 1px solid #000; }
+.buttons ul li input { padding: 0px 5px; }
 
-.buttons li a:hover,
-.buttons li input:hover,
-.buttons li button:hover { color:#FFF; }
+.buttons ul li:hover { background: #000; border: 1px solid #000; }
+
+.buttons ul li a:hover,
+.buttons ul li input:hover,
+.buttons ul li button:hover { color:#FFF; }
