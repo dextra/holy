@@ -3,7 +3,7 @@
 
 .dropdown { width:100%; background:#333; height:34px; background:#20344D; border-top:1px solid #333; }
 
-.dropdown li a { height:34px; line-height:33px; padding:0 15px; text-transform:capitalize; color:#FFF; font-size:12px; }
+.dropdown li a { height:34px; line-height:33px; padding:0 15px; color:#FFF; font-size:12px; }
 
 .dropdown li a:hover,
 .dropdown li.active a { background: #23557E; }
