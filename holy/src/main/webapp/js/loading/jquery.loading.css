@@ -8,7 +8,3 @@
 
 .loading p {  background: url('load.gif') left center no-repeat; padding-left: 36px; height:32px; display:inline-block; text-align: center; font-size: 11px; color: #666; font-weight: bold; line-height:32px; }
 
-
-/*
-.loading p img { vertical-align: middle; margin-right: 10px; }
-*/
