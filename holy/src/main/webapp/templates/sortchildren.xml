@@ -62,7 +62,10 @@
 				</ul>
 			</div>
 			<div class="script">
-				<pre>$('.de').datatable();</pre>
+				<pre>
+					$('.demo > ul').sortChildren();
+					$('.demo ul').sortChildren();
+				</pre>
 			</div>
 			<div class="html">
 				<pre></pre>
