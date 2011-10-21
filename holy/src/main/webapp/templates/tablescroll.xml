@@ -14,6 +14,7 @@
 				</li>
 			</ul>
 			<div class="demo">
+				This component changes your DOM. It creates a table with headers and another table with rows.
 				<table class="datatable" border="0" cellspacing="0" cellpadding="0">
 					<thead>
 						<tr>
@@ -179,8 +180,8 @@
 	<script>
 		<![CDATA[
 		$('.html pre').text($('.demo').html());
-		$('.html pre').snippet('html', {style:"the",showNum:false});
-		$('.script pre').snippet('javascript', {style:"the",showNum:false});
+		$('.html pre').snippet('html', {style:"ide-eclipse",showNum:false});
+		$('.script pre').snippet('javascript', {style:"ide-eclipse",showNum:false});
 		$(".tabPanel").tabPanel();
 
 		$('.datatable').tableScroll({height:300});

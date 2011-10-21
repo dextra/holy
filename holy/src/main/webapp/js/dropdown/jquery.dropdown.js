@@ -6,7 +6,7 @@
 		var effectIn = opts.effectIn || 'slideDown';
 		var effectOut = opts.effectOut || 'slideUp';
 		var duration = opts.duration == 0 ? 0 : opts.duration || 'fast';
-		var li = $(this).children('li');
+		var li = $(this).find('li');
 		li.hover(function() {
 			var ul = $(this).find('ul');
 			ul.stop(true, true);

@@ -1,0 +1,135 @@
+<engine>
+	<action selector="#content">
+		<h3>Auto Complete Ajax</h3>
+		<div class="tabPanel">
+			<ul>
+				<li>
+					<a>Demo</a>
+				</li>
+				<li>
+					<a>Script</a>
+				</li>
+				<li>
+					<a>HTML</a>
+				</li>
+			</ul>
+			<div class="demo demoajax">
+				<form action="#">
+					<legend>
+						This is a
+						<a href="http://jqueryui.com/" target="_blank">JQuery UI</a>
+						component.
+					</legend>
+					<fieldset>
+						<ul>
+							<li>
+								<label for="value">Value:</label>
+								<input type="text" name="value" readonly="readonly" />
+							</li>
+							<li>
+								<label for="id">id:</label>
+								<input type="text" name="id" />
+							</li>
+							<li>
+								<label for="tags">Tags:</label>
+								<input type="text" name="tags" />
+							</li>
+						</ul>
+					</fieldset>
+				</form>
+				<div>
+					<p>The Autocomplete widgets provides suggestions while you type
+						into
+						the field. Here the suggestions are tags for programming
+						languages,
+						give "ja" (for Java or JavaScript) a try.</p>
+					<p>The datasource is a simple JavaScript array, provided to the
+						widget using the source-option.</p>
+				</div>
+			</div>
+			<div class="script">
+				<pre><![CDATA[
+$('.demo form').form();				
+$('.demo input[name="tags"]').autocomplete({
+	source: function(req, resp) {
+		$.ajax({
+			url: 'http://ws.geonames.org/searchJSON', 
+			data: {
+				featureClass: "P",
+				style: "full",
+				maxRows: 12,
+				name_startsWith: req.term
+			},
+			dataType: 'jsonp', 
+			success: function(data) {
+				resp( $.map( data.geonames, function( item ) {
+					return {
+						label: item.name + (item.adminName1 ? ", " + item.adminName1 : "") + ", " + item.countryName,
+						value: item.name
+					}
+				}));
+			}
+		});
+	},
+	minLength: 2,
+	select: function( event, ui ) {
+		$('.demo input[name="id"]').val(ui.item.value);
+		$(this).val(ui.item.label);
+		return false;
+	}
+});
+				]]></pre>
+			</div>
+			<div class="html">
+				<pre></pre>
+			</div>
+		</div>
+	</action>
+	<script><![CDATA[
+	$(".tabPanel").tabPanel();
+	$('.demo form').form();				
+	$('.demo input[name="tags"]').autocomplete({
+		source: function(req, resp) {
+			$.ajax({
+				url: 'http://ws.geonames.org/searchJSON', 
+				data: {
+					featureClass: "P",
+					style: "full",
+					maxRows: 12,
+					name_startsWith: req.term
+				},
+				dataType: 'jsonp', 
+				success: function(data) {
+					resp( $.map( data.geonames, function( item ) {
+						return {
+							label: item.name + (item.adminName1 ? ", " + item.adminName1 : "") + ", " + item.countryName,
+							value: item.name
+						}
+					}));
+				}
+			});
+		},
+		minLength: 2,
+		select: function( event, ui ) {
+			$('.demo input[name="id"]').val(ui.item.value);
+			$(this).val(ui.item.label);
+			return false;
+		}
+	});
+	var keep = function() {
+		var tags = $('.demoajax input[name="tags"]');
+		if(!tags.length) {
+			return;
+		}
+		$('.demoajax input[name="value"]').val(tags.val());
+		setTimeout(keep, 500);
+	}
+	keep();
+	]]></script>
+
+	<script><![CDATA[
+		$('.html pre').text($('.demo').html());
+		$('.html pre').snippet('html', {style:"ide-eclipse",showNum:false});
+		$('.script pre').snippet('javascript', {style:"ide-eclipse",showNum:false});
+	]]></script>
+</engine>

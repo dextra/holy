@@ -1,0 +1,25 @@
+﻿<engine>
+	<action selector="#content">
+		<div class="togglePanel">
+			<h3>index.html</h3>
+			<div>
+				<pre class="snippet">
+				</pre>
+			</div>
+		</div>
+	</action>
+	<script>
+		<![CDATA[
+			$.ajax({
+				url: 'index.html',
+				dataType: 'text',
+				success: function(text) {
+					text = text.replace(/\.\.\/.\.\//g, location.protocol + '//' + location.host + '/');
+					text = text.replace(/\.\//g, location.protocol + '//' + location.host + location.pathname.replace(/\/[^\/]*$/, '/'));
+					$('#content .snippet').text(text);
+					$('#content .snippet').snippet('html', {style:"ide-eclipse",showNum:false});
+				}
+			});
+		]]>
+	</script>
+</engine>

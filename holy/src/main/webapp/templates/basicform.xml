@@ -23,11 +23,11 @@
 						<ul>
 							<li class="require">
 								<label for="name">Name:</label>
-								<input type="text" title="Enter your first name." /> 
+								<input type="text" title="Enter your first name." />
 							</li>
 							<li>
 								<label for="name">Second name:</label>
-								<input type="text" title="Enter your second name." /> 
+								<input type="text" title="Enter your second name." />
 							</li>
 							<li class="require">
 								<label for="pass">Password:</label>
@@ -53,17 +53,9 @@
 								Female
 							</li>
 							<li class="buttons">
-								<ul>
-									<li class="btSave">
-										<button type="submit">button</button>
-									</li>
-									<li class="btCancel">
-										<a href="#datatable">link</a>
-									</li>
-									<li class="btRemove">
-										<input type="submit" value="input" />
-									</li>
-								</ul>
+								<button type="submit" class="btSave">button</button>
+								<a href="#datatable" class="btCancel">link</a>
+								<input type="submit" value="input" class="btRemove" />
 							</li>
 						</ul>
 					</fieldset>
@@ -81,8 +73,8 @@
 	<script>
 		<![CDATA[
 		$('.html pre').text($('.demo').html());
-		$('.html pre').snippet('html', {style:"the",showNum:false});
-		$('.script pre').snippet('javascript', {style:"the",showNum:false});
+		$('.html pre').snippet('html', {style:"ide-eclipse",showNum:false});
+		$('.script pre').snippet('javascript', {style:"ide-eclipse",showNum:false});
 		$(".tabPanel").tabPanel();
 
 		$('.myForm').form();

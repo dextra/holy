@@ -24,7 +24,7 @@
 		$('.demo a').tipsy();
 		$('.tabPanel').tabPanel();
 		$('.code pre').text($('.demo').html());
-		$('.code pre').snippet('html', {style:"the",showNum:false});
+		$('.code pre').snippet('html', {style:"ide-eclipse",showNum:false});
 		]]>
 	</script>
 </engine>

@@ -41,10 +41,19 @@
 
 /*///// Component - Buttons /////*/
 
-.buttons ul li * { padding-left: 30px !important; }
-
 .buttons ul li .btCancel { background: url('imgs/buttons/arrow_open.png') left center no-repeat; }
 
 .buttons ul li .btSave {}
 
 .buttons ul li .btRemove {}
+
+/*///// Component - Autocomplete /////*/
+
+.ui-autocomplete-loading { background: white url('imgs/load_16x16.gif') right center no-repeat; }
+
+
+/*///// Component - Table /////*/
+
+.datatable .asc { background: #F6F6F6 url('imgs/asc.gif') right center no-repeat;  }
+
+.datatable .desc { background: #F6F6F6 url('imgs/desc.gif') right center no-repeat;  }

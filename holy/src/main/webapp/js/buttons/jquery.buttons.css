@@ -1,22 +1,13 @@
-.buttons { clear: left; display: block; }
+.buttons { clear: left; display: block; padding: 10px 0; }
 
-.buttons ul li { float:left; display: inline-block; zoom: 1; background: #FAFAFA; border: 1px solid #CCC; margin: 5px 5px 5px 0px; }
+.buttons a,
+.buttons input,
+.buttons button { display: inline-block; padding: 3px 5px; cursor: pointer; background:#FAFAFA; color: #333; border: 1px solid #EEE; margin: 0px; }
 
-.buttons ul li:before,
-.buttons ul li:after { content: ""; display: table; }
+.buttons a { padding: 4px 5px; }
 
-.buttons ul li:after { clear: both; }
+.buttons input { padding: 3px 5px; }
 
-.buttons ul li a,
-.buttons ul li input,
-.buttons ul li button { display: inline-block; padding: 3px 5px; cursor: pointer; background-color: transparent; color: #333; border: 0; }
-
-.buttons ul li a { padding: 4px 5px; }
-
-.buttons ul li input { padding: 0px 5px; }
-
-.buttons ul li:hover { background: #000; border: 1px solid #000; }
-
-.buttons ul li a:hover,
-.buttons ul li input:hover,
-.buttons ul li button:hover { color:#FFF; }
+.buttons a:hover,
+.buttons input:hover,
+.buttons button:hover { color:#FFF; background: #000; }

@@ -5,6 +5,9 @@
 				<a href="#home" class="ttip" title="Home">Home</a>
 			</li>
 			<li>
+				<a href="#indexhtml" class="ttip" title="index.html">index.html</a>
+			</li>
+			<li>
 				<a href="#" title="Navigation">Navigation</a>
 				<ul>
 					<li>
@@ -27,24 +30,32 @@
 					<li>
 						<a href="#datepicker" title="Date Picker">Date Picker</a>
 					</li>
+					<li>
+						<a href="#autocomplete" title="Auto Compete">Auto Complete</a>
+						<ul>
+							<li>
+								<a href="#autocomplete" title="Auto Compete">Simple</a>
+							</li>
+							<li>
+								<a href="#autocompleteajax" title="Auto Compete">Ajax</a>
+							</li>
+						</ul>
+					</li>					
 				</ul>
 			</li>
 			<li>
 				<a href="#" title="Tables">Tables</a>
 				<ul>
 					<li>
-						<a href="#datatable">Datatable</a>
+						<a href="#datatable">Simple table</a>
 					</li>
 					<li>
 						<a href="#tablescroll">TableScroll</a>
 					</li>
+					<li>
+						<a href="#tablescroll">Table Order</a>
+					</li>
 				</ul>
-			</li>
-			<li>
-				<a href="#message" title="Message">Message</a>
-			</li>
-			<li>
-				<a href="#dialog" title="Dialog">Dialog</a>
 			</li>
 			<li>
 				<a href="#" title="Others">Others</a>
@@ -69,6 +80,15 @@
 							</li>
 						</ul>
 					</li>
+					<li>
+						<a href="#message" title="Message">Message</a>
+					</li>
+					<li>
+						<a href="#dialog" title="Dialog">Dialog</a>
+					</li>
+					<li>
+						<a href="#sortchildren" title="Sort Children">Sort Children</a>
+					</li>					
 				</ul>
 			</li>
 			<li>

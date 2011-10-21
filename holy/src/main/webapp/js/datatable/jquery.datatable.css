@@ -7,10 +7,12 @@
 .datatable tr th,
 .datatable tr td { padding: 3px; font-size: 12px; text-align: center; }
 
-.datatable thead th,
-.datatable tfoot td { text-transform: capitalize; background: #F6F6F6; font-size:12px; font-weight:bold; border-bottom: 1px solid #DDD; }
+.datatable tr th { cursor: pointer; }
 
 .datatable tr td { border-right: 1px solid #DDD; }
+
+.datatable thead th,
+.datatable tfoot td { text-transform: capitalize; background: #F6F6F6; font-size:12px; font-weight:bold; border-bottom: 1px solid #DDD; }
 
 .datatable tfoot td { border: 0; border-top: 1px solid #DDD; }
 
