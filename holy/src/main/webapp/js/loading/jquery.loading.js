@@ -12,12 +12,14 @@
 		if(!overOpacity) {
 			overOpacity = '50'
 		}
-		$('body').append('<div id="loading"><div id="load" style="border:1px solid ' + bgOver + '; box-shadow: 0px 0px 10px ' + bgOver + ';"><p><img src="imgs/load.gif" align="middle" />' + loadTxt + '</p></div><div id="overlay" style="background:' + bgOver + '; opacity: 0.' + overOpacity + '; filter: alpha(opacity = ' + overOpacity + ');"></div></div>');
-		$('#load').center();
-		$('#loading').ajaxStart(function() {
+		if(!$('.loading').length) {
+			$('body').append('<div class="loading"><div class="load"><p>Carregando...</p></div><div class="overlay"></div></div>');
+		}
+		$('.loading .load').center();
+		$('.loading').ajaxStart(function() {
 			$(this).fadeIn('fast');
 		});
-		$("#loading").ajaxStop(function() {
+		$(".loading").ajaxStop(function() {
 			$(this).fadeOut('fast');
 		});
 	}

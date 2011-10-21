@@ -1,11 +1,14 @@
 /*///// Component - loading /////*/
 
-#loading { display: none; }
+.loading { display: none; }
 
-#overlay { position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; overflow: hidden; display: block; z-index: 999; }
+.loading .overlay { position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; overflow: hidden; display: block; z-index: 999; background:#23557E; opacity: 0.60; filter: alpha(opacity = 60); }
 
-#load { width: 400px; padding: 10px;  background: #FFF; text-align: center; z-index: 9999; }
+.loading .load { width: 400px; padding: 10px;  background: #FFF; text-align: center; z-index: 9999; border:1px solid #23557E; box-shadow: 0px 0px 10px #23557E; }
 
-#load p { text-align: center; font-size: 11px; color: #666; font-weight: bold; }
+.loading p {  background: url('load.gif') left center no-repeat; padding-left: 36px; height:32px; display:inline-block; text-align: center; font-size: 11px; color: #666; font-weight: bold; line-height:32px; }
 
-#load p img { vertical-align: middle; margin-right: 10px; }
+
+/*
+.loading p img { vertical-align: middle; margin-right: 10px; }
+*/
