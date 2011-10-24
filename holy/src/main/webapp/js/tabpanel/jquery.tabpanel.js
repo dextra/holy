@@ -35,6 +35,7 @@
 				toShow[effect]();
 			}
 			parent.trigger("open.tabPanel", index);
+			return false;
 		});
 		
 		if(tabpanel.find('> ul > li').length) {

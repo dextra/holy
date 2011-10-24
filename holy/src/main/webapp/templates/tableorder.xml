@@ -1,0 +1,155 @@
+<engine>
+	<action selector="#content">
+		<h3>Datatable</h3>
+		<div class="tabPanel">
+			<ul>
+				<li>
+					<a>Demo</a>
+				</li>
+				<li>
+					<a>Script</a>
+				</li>
+				<li>
+					<a>HTML</a>
+				</li>
+			</ul>
+			<div class="demo">
+				<table class="datatable" border="0" cellspacing="0"
+					cellpadding="0">
+					<thead>
+						<tr>
+							<th scope="col" class="sortable">Id</th>
+							<th scope="col" class="sortable">Name</th>
+							<th scope="col" class="sortable">Date</th>
+							<th scope="col">Active</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>28</td>
+							<td>Homer Simpson008</td>
+							<td>15/01/1982</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td>27</td>
+							<td>Homer Simpson7</td>
+							<td>15/01/1982</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td>26</td>
+							<td>Homer Simpson06</td>
+							<td>15/01/1982</td>
+							<td>
+								Yes
+							</td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td>Yes</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="script">
+				<pre>
+					$('.datatable').datatable();
+					$('.datatable tr th').click(function() {
+						$('.datatable tr td').sortChildren();
+					});
+					</pre>
+			</div>
+			<div class="html">
+				<pre></pre>
+			</div>
+		</div>
+	</action>
+	<script>
+		<![CDATA[
+		$('.html pre').text($('.demo').html());
+		$('.html pre').snippet('html', {style:"ide-eclipse",showNum:false});
+		$('.script pre').snippet('javascript', {style:"ide-eclipse",showNum:false});
+		$(".tabPanel").tabPanel();
+		$('.datatable').datatable();
+		
+		$('.datatable tr th').click(function() {
+			$('.datatable tr td').sortChildren();
+		});
+		]]>
+	</script>
+</engine>

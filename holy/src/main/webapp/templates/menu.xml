@@ -5,7 +5,7 @@
 				<a href="#home" class="ttip" title="Home">Home</a>
 			</li>
 			<li>
-				<a href="#indexhtml" class="ttip" title="index.html">index.html</a>
+				<a href="#indexhtml" class="ttip" title="index.html">Base Code</a>
 			</li>
 			<li>
 				<a href="#" title="Navigation">Navigation</a>
@@ -53,7 +53,7 @@
 						<a href="#tablescroll">TableScroll</a>
 					</li>
 					<li>
-						<a href="#tablescroll">Table Order</a>
+						<a href="#tableorder">Table Order</a>
 					</li>
 				</ul>
 			</li>

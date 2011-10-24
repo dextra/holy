@@ -1,1 +1,3 @@
-.dialogOverlay {height: 100%; left: 0; opacity: 0.5; position: fixed; top: 0; width: 100%; background: #000;}
+.dialogBox { background: #FFF; padding: 10px; }
+
+.dOverlay { height: 100%; left: 0; opacity: 0.5; position: fixed; top: 0; width: 100%; background: #000; }

@@ -1,75 +1,46 @@
 (function($) {
-	$.fn.dialog = function(opts) {
-		var me = $(this);
-		opts = opts || {};
-		var effect = opts.effect || 'slideToggle';
-		var overlayClass = opts.overlayClass || 'dialogOverlay';
-		var delay = opts.delay;
-		var closable = opts.closable;
-
-		me.data("dialog.css.position", me.css("position"));
-		me.data("dialog.position", me.position());
-		me.data("dialog.parent", me.parent());
-		me.data("dialog.state", true);
-
-		if (!me.data("dialog.overlaydiv")) {
-			var overlayDiv = $("<div></div>");
-			overlayDiv.addClass(overlayClass);
-			if (closable) {
-				overlayDiv.bind('click', {obj: me}, function(event) {
-					event.data.obj.undialog();
-				});
-			}
-
-			if (!me.parent().length) {
-				me.appendTo("body");
-			}
-
-			overlayDiv.prependTo("body");
-			me.data("dialog.overlaydiv", overlayDiv);
+	jQuery.fn.xdialog = function(opts) {
+		
+		opts = $.extend({}, opts);
+		
+		// dialog options \o/
+		
+		var overColor = opts.overlay;
+		if(!overColor) {
+			overColor = '#000000'
 		}
-
-		me.center();
-		me.hide();
-
-		if (delay) {
-			me[effect](delay);
-		} else {
-			me[effect]();
+		
+		var alpha = opts.alpha;
+		if(!alpha) {
+			alpha = '7'
 		}
-
-		$(window).bind("scroll.dialog", function() {
-			me.center();
+		
+		// if overlay is on
+		$('body').append('<div class="dOverlay" style="background:'+ overColor +'; opacity:0.'+ alpha +'; filter: alpha(opacity = '+ alpha +'0);"></div>');
+		
+		// VARS =)
+		var me = $(this)
+		
+		var close = '<a href="#" class="close">(x)</a>'
+		
+		
+		$(this).appendTo('body');
+		
+		me.prepend(close); // add close button on dialog box.
+		
+		me.addClass('dialogBox'); // add class to identify dialog box style
+		
+		me.center(); // centralize dialog box
+		
+		me.fadeIn();
+		
+		
+		$(".dOverlay, .dialogBox .close").click(function() {
+			$('.dOverlay').fadeOut();
+			$('.dialogBox').fadeOut();
+			$('.dialogBox .close').remove();
+			return false;
 		});
-
-		me.trigger("dialog.dialog", opts);
-
-		return me;
-	};
-
-	$.fn.undialog = function() {
-		var me = $(this);
-
-		me.css("position", me.data("dialog.css.position"));
-		me.position(me.data("dialog.position"));
-
-		me.data("dialog.overlaydiv").remove();
-
-		me.data("dialog.state", null);
-		me.data("dialog.overlaydiv", null);
-		me.data("dialog.position", null);
-		me.data("dialog.css.position", null);
-
-		if (!me.data("dialog.parent").length) {
-			me.remove();
-		}
-
-		$(window).unbind("scroll.dialog");
-		me.trigger("undialog.dialog");
-	};
-
-	$.fn.isDialog = function() {
-		return $(this).data("dialog.state");
+		
 	}
-
-}(jQuery));
+})(jQuery);
