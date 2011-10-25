@@ -57,6 +57,13 @@
 
 .datatable .desc { background: #F6F6F6 url('imgs/desc.gif') right center no-repeat;  }
 
+/*///// Component - Pagination /////*/
+
+.paging a { background:#FAFAFA; padding: 3px 7px; border-radius: 10px;  }
+
+.paging a:hover,
+.paging .active { color:#FFF; background:#23557E; }
+
 /*///// Component - Dialog /////*/
 
 .dialogBox {box-shadow:  0px 0px 10px #333; border-radius: 10px 0px 10px 10px;}

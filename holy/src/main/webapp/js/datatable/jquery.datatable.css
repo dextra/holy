@@ -23,3 +23,13 @@
 .datatable tr.hover { background: #EEE; }
 
 .tsBody { margin: 0; border: 0; }
+
+/*///// Component - Pagination /////*/
+
+.paging { text-align: center; margin: 10px auto; }
+
+.paging a,
+.paging span { margin: 0 5px; }
+
+.paging .active { font-weight:bold; }
+
