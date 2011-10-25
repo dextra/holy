@@ -1,6 +1,6 @@
 /*///// Component - Datapicker /////*/
 
-.datepicker { background: #FFF; padding: 3px; border: 1px solid #CCC; }
+.datepicker { background: #FFF; padding: 3px; border: 1px solid #CCC; z-index: 900; }
 
 .datepicker tr td { text-align: center; background: #EEE; padding:1px; border:1px solid #FFF; border-right:none; border-bottom: none; font-size: 10px; cursor: pointer; }
 
