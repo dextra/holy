@@ -21,6 +21,7 @@
 
 		var close = '<a href="#" class="close">(x)</a>'
 
+		$(this).data('xdialog.parent', $(this).parent());
 		$(this).appendTo('body');
 
 		me.prepend(close);
@@ -32,7 +33,7 @@
 		me.center();
 
 		me.fadeIn();
-
+		
 		me.prev('div.dOverlay').click(function() {
 			$(this).find(' + .dialogBox a.close').click();
 		});
@@ -43,12 +44,14 @@
 			var overlay = popup.prev('div.dOverlay');
 			me.remove();
 			if(popup.length) {
-				popup.fadeOut('fast');
+				popup.hide();
+				popup.data('xdialog.parent').append(popup);
 			}
 			if(overlay.length) {
 				overlay.remove();
 			}
 			return false;
 		});
+		
 	}
 })(jQuery);

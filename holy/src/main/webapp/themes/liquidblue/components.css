@@ -38,7 +38,6 @@
 
 .togglePanel h3.active span { background: url('imgs/arrow_open.png') left center no-repeat; }
 
-
 /*///// Component - Buttons /////*/
 
 .buttons ul li .btCancel { background: url('imgs/buttons/arrow_open.png') left center no-repeat; }
@@ -60,10 +59,9 @@
 
 /*///// Component - Dialog /////*/
 
-.dialogBox,
-.dialogBox .close {box-shadow:  0px 0px 10px #333; border-radius: 10px;}
+.dialogBox {box-shadow:  0px 0px 10px #333; border-radius: 10px 0px 10px 10px;}
 
-.dialogBox .close {  top:-25px; }
+.dialogBox .close { box-shadow:  0px 0px 10px #333; top:-20px; right:-20px; border-radius: 10px 10px 10px 0px; }
 
 .dialogBox .close:hover { background: #FFF; color:#000; }
 
