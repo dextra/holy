@@ -38,14 +38,6 @@
 
 .togglePanel h3.active span { background: url('imgs/arrow_open.png') left center no-repeat; }
 
-/*///// Component - Buttons /////*/
-
-.buttons ul li .btCancel { background: url('imgs/buttons/arrow_open.png') left center no-repeat; }
-
-.buttons ul li .btSave {}
-
-.buttons ul li .btRemove {}
-
 /*///// Component - Autocomplete /////*/
 
 .ui-autocomplete-loading { background: white url('imgs/load_16x16.gif') right center no-repeat; }
@@ -75,3 +67,51 @@
 .dialogBox > h3 { font:normal 22px Arial, Helvetica, sans-serif; padding: 0 5px 5px 5px; margin:0 0 15px 0; color:#23557E; border-bottom: 1px solid #B5D4DF; }
 
 .dialogBox > h3 span { color: #587391; font-size: 22px; }
+
+/*///// Component - Buttons /////*/
+
+.buttons a,
+.buttons input,
+.buttons button { border-radius:5px; padding: 5px 8px 5px 22px; margin: 0 5px; color:#333; }
+
+.buttons a:hover,
+.buttons input:hover,
+.buttons button:hover { color:#000; background-color: #FFF; border:1px solid #23557E; }
+
+.buttons .btSave { background:#FAFAFA url('imgs/buttons/btsave.png') 5px center no-repeat; }
+
+.buttons .btCancel { background:#FAFAFA url('imgs/buttons/btcancel.png') 5px center no-repeat; }
+
+.buttons .btAdd { background:#FAFAFA url('imgs/buttons/btadd.png') 5px center no-repeat; }
+
+.buttons .btClear { background:#FAFAFA url('imgs/buttons/btclear.png') 5px center no-repeat; }
+
+.buttons .btView { background:#FAFAFA url('imgs/buttons/btview.png') 5px center no-repeat; }
+
+.buttons .btSearch { background:#FAFAFA url('imgs/buttons/btsearch.png') 5px center no-repeat; }
+
+.buttons .btEdit { background:#FAFAFA url('imgs/buttons/btedit.png') 5px center no-repeat; }
+
+.buttons .btWait { background:#FAFAFA url('imgs/buttons/btwait.png') 5px center no-repeat; }
+
+.buttons .btRemove { background:#FAFAFA url('imgs/buttons/btremove.png') -2px center no-repeat; }
+
+.buttons .btFilter { background:#FAFAFA url('imgs/buttons/btfilter.png') 5px center no-repeat; }
+
+.buttons .btDownload { background:#FAFAFA url('imgs/buttons/btdownload.png') -2px center no-repeat; }
+
+.buttons .btUpload { background:#FAFAFA url('imgs/buttons/btupload.png') -2px center no-repeat; }
+
+.buttons .btWord { background:#FAFAFA url('imgs/buttons/btword.png') 5px center no-repeat; }
+
+.buttons .btExcel { background:#FAFAFA url('imgs/buttons/btexcel.png') 5px center no-repeat; }
+
+.buttons .btPdf { background:#FAFAFA url('imgs/buttons/btpdf.png') 5px center no-repeat; }
+
+.buttons .btMap { background:#FAFAFA url('imgs/buttons/btmap.png') 5px center no-repeat; }
+
+.buttons .btExport { background:#FAFAFA url('imgs/buttons/btexport.png') 5px center no-repeat; }
+
+.buttons .btRename { background:#FAFAFA url('imgs/buttons/btrename.png') 5px center no-repeat; }
+
+.buttons .btNewdoc { background:#FAFAFA url('imgs/buttons/btnewdoc.png') 5px center no-repeat; }
