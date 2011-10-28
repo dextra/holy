@@ -119,7 +119,8 @@
 			
 			$('form').submit(function() {
 				$('.another').xdialog({
-					overlay: '#000'
+					overlay: '#000',
+					overlayClick: true
 				});
 				return false;
 			});

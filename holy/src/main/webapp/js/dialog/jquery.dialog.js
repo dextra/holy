@@ -22,12 +22,13 @@
 
 		var me = $(this)
 
-		var close = '<a href="#" class="close">(x)</a>'
-
 		$(this).data('xdialog.parent', $(this).parent());
 		$(this).appendTo('body');
 
-		me.prepend(close);
+		if(!opts.unclosable) {
+			var close = '<a href="#" class="close">(x)</a>'
+			me.prepend(close);
+		}
 
 		me.addClass('dialogBox');
 
@@ -37,18 +38,23 @@
 
 		me.fadeIn();
 
-		me.prev('div.dOverlay').click(function() {
-			$(this).find(' + .dialogBox a.close').click();
-		});
-
-		me.find('a.close:first').click($.fn.xundialog);
+		if(!opts.unclosable) {
+			if(opts.overlayClick) {
+				me.prev('div.dOverlay').click(function() {
+					$(this).find(' + .dialogBox a.close').click();
+				});
+			}
+			me.find('a.close:first').click($.fn.xundialog);
+		}
 	}
 
 	$.fn.xundialog = function() {
 		var popup = $(this).closest('.dialogBox');
 		var a = popup.children('a.close:first');
 		var overlay = popup.prev('div.dOverlay');
-		a.remove();
+		if(a.length) {
+			a.remove();	
+		}
 		if (popup.length) {
 			popup.hide();
 			popup.data('xdialog.parent').append(popup);
