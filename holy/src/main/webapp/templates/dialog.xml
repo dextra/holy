@@ -52,6 +52,7 @@
 								</li>
 								<li class="buttons">
 									<button type="submit" class="btSave">Save</button>
+									<button type="button" class="btCancel">Cancel</button>
 								</li>
 							</ul>
 						</fieldset>
@@ -121,6 +122,10 @@
 					overlay: '#000'
 				});
 				return false;
+			});
+			
+			$('form .btCancel').click(function() {
+				$('.myDialog').xundialog();
 			});
 	
 		]]>
