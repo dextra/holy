@@ -21,7 +21,7 @@
 .message .error { box-shadow:0 0 3px 0px #D8000C; background-image:url('imgs/msg/error.png'); background-position:5px center; background-repeat: no-repeat; }
 
 .message .success { box-shadow:0 0 3px 0px #4F8A10; background-image:url('imgs/msg/success.png'); background-position:5px center; background-repeat: no-repeat; }
-
+1
 .message .info { box-shadow:0 0 3px 0px #00529B; background-image: url('imgs/msg/info.png'); background-position:5px center; background-repeat: no-repeat; }
 
 .message .warning { box-shadow:0 0 3px 0px #9F6000; background-image:url('imgs/msg/warning.png'); background-position:5px center; background-repeat: no-repeat; }
@@ -32,7 +32,7 @@
 .forms select, 
 .forms textarea { border-radius:5px; padding: 4px; }
 
-.forms ul li .focus { background:#FFF; border:1px solid #587391; box-shadow: 0 0px 4px #587391; -moz-box-shadow: 0 0px 4px #587391; -webkit-box-shadow: 0 0px 4px #587391; color:#000; }
+.forms ul li .focus { background-color:#FFF; border:1px solid #587391; box-shadow: 0 0px 4px #587391; -moz-box-shadow: 0 0px 4px #587391; -webkit-box-shadow: 0 0px 4px #587391; color:#000; }
 
 /*///// Component - Toogle /////*/
 
@@ -94,7 +94,7 @@
 
 .buttons .btSave { background:#FAFAFA url('imgs/buttons/btsave.png') 5px center no-repeat; }
 
-.buttons .btCancel { background:#FAFAFA url('imgs/buttons/btcancel.png') 5px center no-repeat; }
+.buttons .btCancel { background:#FAFAFA url('imgs/buttons/btcancel.png') 4px center no-repeat; }
 
 .buttons .btAdd { background:#FAFAFA url('imgs/buttons/btadd.png') 5px center no-repeat; }
 

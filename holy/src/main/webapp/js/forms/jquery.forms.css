@@ -16,7 +16,7 @@
 
 .forms ul li span.required { color:#C00; margin-right:3px; display: inline-block; }
 
-.forms ul li .focus { border: 1px solid #333; background: #FFF; }
+.forms ul li .focus { border: 1px solid #333; background-color: #FFF; }
 
 .liquidForm ul li { float: left; margin: 5px; }
 
