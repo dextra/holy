@@ -60,6 +60,49 @@
 						</ul>
 					</fieldset>
 				</form>
+				<form class="myForm">
+					<fieldset>
+						<legend>Register</legend>
+						<ul>
+							<li class="require">
+								<label for="name">Name:</label>
+								<input type="text" title="Enter your first name." />
+							</li>
+							<li>
+								<label for="name">Second name:</label>
+								<input type="text" title="Enter your second name." />
+							</li>
+							<li class="require">
+								<label for="pass">Password:</label>
+								<input type="password" title="Enter password." />
+							</li>
+							<li class="require">
+								<label for="email">Email:</label>
+								<input type="text" title="Enter your e-mail address." />
+							</li>
+							<li>
+								<label for="phone">Phone:</label>
+								<input type="text" title="Enter your phone number." />
+							</li>
+							<li>
+								<label for="birthdate">Birthdate:</label>
+								<input class="date" type="text" title="Enter your birthdate." />
+							</li>
+							<li>
+								<label>Sex:</label>
+								<input class="male" type="radio" />
+								Male
+								<input class="female" type="radio" />
+								Female
+							</li>
+							<li class="buttons">
+								<button type="submit" class="btSave">button</button>
+								<a href="#datatable" class="btCancel">link</a>
+								<input type="submit" value="input" class="btRemove" />
+							</li>
+						</ul>
+					</fieldset>
+				</form>
 			</div>
 			<div class="script">
 				<pre>$('.forms').form();

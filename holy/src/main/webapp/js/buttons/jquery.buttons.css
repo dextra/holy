@@ -1,8 +1,8 @@
-.buttons { clear: left; display: block; padding: 10px 0; }
+.buttons { clear: left; display: block; padding:0; }
 
 .buttons a,
 .buttons input,
-.buttons button { display: inline-block; padding: 3px 5px; cursor: pointer; background:#FAFAFA; color: #333; border: 1px solid #EEE; margin: 0px; }
+.buttons button { display: inline-block; padding: 3px 5px; cursor: pointer; background:#FAFAFA; color: #333; border: 1px solid #DDD; margin: 5px; }
 
 .buttons a { padding: 4px 5px; }
 

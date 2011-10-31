@@ -29,7 +29,6 @@
 					<input type="button" class="btFilter" value="Filter" />
 					<input type="button" class="btDownload" value="Download" />
 					<input type="button" class="btUpload" value="Upload" />
-					<input type="button" class="btWord" value="Word" />
 					<input type="button" class="btExcel" value="Excel" />
 					<input type="button" class="btPdf" value="PDF" />
 					<input type="button" class="btMap" value="Sitemap" />
@@ -37,6 +36,9 @@
 					<input type="button" class="btExport" value="Export" />
 					<input type="button" class="btRename" value="Rename" />
 					<input type="button" class="btNewdoc" value="New Document" />
+					<input type="button" class="btBack" value="Back" />
+					<input type="button" class="btNext" value="Next" />
+					
 				</div>
 			</div>
 			<div class="script">

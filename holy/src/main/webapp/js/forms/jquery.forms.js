@@ -1,4 +1,5 @@
 (function($) {
+	
 	$.fn.max = function(method) {
 		if( typeof (method) == 'string') {
 			var m = method;
@@ -15,6 +16,7 @@
 		});
 		return ret;
 	}
+	
 	$.fn.maximize = function(method, reset) {
 		var me = $(this);
 		if(reset !== undefined) {
@@ -23,6 +25,7 @@
 		var max = me.max(method);
 		me[method](max);
 	}
+	
 	$.fn.form = function() {
 		var forms = $(this);
 		forms.addClass('forms');
@@ -40,4 +43,5 @@
 			$(this).removeClass('focus');
 		});
 	}
+	
 })(jQuery);

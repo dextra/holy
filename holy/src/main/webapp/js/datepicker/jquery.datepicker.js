@@ -152,7 +152,7 @@
 			datepicker = null;
 			jQuery.data(el.get(0), "simpleDatepicker", { hasDatepicker : false });
 		}
-
+		
         return this.each(function() {
 			
 			if ( $(this).is('input') && 'text' == $(this).attr('type')) {

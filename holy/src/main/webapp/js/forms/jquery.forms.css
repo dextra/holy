@@ -1,14 +1,16 @@
 /*///// Component - Form /////*/
 
+.forms { margin:0px 0px 10px 0px; }
+
 .forms fieldset { border: 1px solid #EEE; padding: 10px; }
 
 .forms fieldset legend { font-weight: bold; font-size:16px; padding:0 10px; margin: 0 10px; }
 
 .forms input,
 .forms select,
-.forms textarea { padding:2px; background:#FAFAFA; border:1px solid #DDD; margin: 3px 0; }
+.forms textarea { padding:2px; background:#FAFAFA; border:1px solid #DDD; margin: 0; vertical-align: middle; }
 
-.forms ul li { list-style:none; }
+.forms ul li { list-style:none; margin: 10px 0; }
 
 .forms ul li label { text-align:right; margin:0 3px; display:inline-block; }
 
@@ -16,6 +18,6 @@
 
 .forms ul li .focus { border: 1px solid #333; background: #FFF; }
 
-.liquidForm ul li { float: left; margin: 0 5px 0 0; }
+.liquidForm ul li { float: left; margin: 5px; }
 
 

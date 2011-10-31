@@ -18,7 +18,10 @@
 			</ul>
 			<div class="demo">
 				<div class="myDialog">
-					<h3>Dialog <span>Exemple</span></h3>
+					<h3>
+						Dialog
+						<span>Exemple</span>
+					</h3>
 					<form class="myForm">
 						<fieldset>
 							<legend>Register</legend>
@@ -60,25 +63,25 @@
 						<h1>Ha!</h1>
 					</div>
 				</div>
-				
 				<div class="buttons">
-					<button type="submit" class="showDialog">Show Dialog</button>
+					<button type="submit" class="showDialog btHelp">Show Dialog</button>
 				</div>
 			</div>
 			<div class="options">
 				<p>
-					<strong>overlay:</strong> none or hex color #000000 <span>(default: none)</span>
+					<strong>overlay:</strong> none or hex color #000000
+					<span>(default: none)</span>
 				</p>
 				<p>
-					<strong>alpha:</strong> 1 to 10 <span>(default: 5)</span> 
+					<strong>alpha:</strong> 1 to 10
+					<span>(default: 5)</span>
 				</p>
 				<p>
-					<strong>width:</strong> auto or px <span>(default: auto)</span>
+					<strong>width:</strong> auto or px
+					<span>(default: auto)</span>
 				</p>
 				<br />
-				<p>
-					See the script tab to view example.
-				</p>
+				<p>See the script tab to view example.</p>
 			</div>
 			<div class="script">
 				<pre>
@@ -87,42 +90,40 @@
 							overlay: '#23557E',
 							alpha: '3'
 						});
-					});
+					 });
 				</pre>
 			</div>
 			<div class="html">
-				<pre>
-				</pre>
+				<pre></pre>
 			</div>
 		</div>
 	</action>
 	<script>
 		<![CDATA[
-			$('.html pre').text($('.demo').html());
-			$('.html pre').snippet('html', {style:"ide-eclipse",showNum:false});
-			$('.script pre').snippet('javascript', {style:"ide-eclipse",showNum:false});
-			$(".tabPanel").tabPanel();
-	
-	
-			$('.myForm').form();
-			$('.myForm [title]').tipsy({trigger: 'focus', gravity: 's', fade: true});
-			$('.myForm input.date').simpleDatepicker();	
-			$('.myDialog, .another').hide();
-			
-			$(".showDialog").click(function() {
-				$(".myDialog").xdialog({
-					overlay: '#23557E',
-					alpha: '3'
-				});
-			});
-			
-			$('form').submit(function() {
-				$('.another').xdialog({
-					overlay: '#000'
-				});
-				return false;
-			});
-	
+		$('.html pre').text($('.demo').html());
+		$('.html pre').snippet('html', {style:"ide-eclipse",showNum:false});
+		$('.script pre').snippet('javascript', {style:"ide-eclipse",showNum:false});
+		$(".tabPanel").tabPanel();
+
+		$('.myForm').form();
+		$('.myForm [title]').tipsy({trigger: 'focus', gravity: 's', fade: true});
+		$('.myForm input.date').simpleDatepicker();
+		$('.myDialog, .another').hide();
+
+		$(".showDialog").click(function() {
+		$(".myDialog").xdialog({
+		overlay: '#23557E',
+		alpha: '3'
+		});
+		});
+
+		$('form').submit(function() {
+		$('.another').xdialog({
+		overlay: '#000'
+		});
+		return false;
+		});
+
 		]]>
 	</script>
 </engine>
