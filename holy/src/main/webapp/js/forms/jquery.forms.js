@@ -35,11 +35,11 @@
 		}
 		forms.find('label').maximize('width', '');
 		var labelW = forms.find('ul li label').width();
-		$('.buttons').css('marginLeft', labelW + 9);
-		$(this).find('input').live('focus', function() {
+		$('.buttons').css('marginLeft', labelW + 5);
+		$(this).find('input, textarea, select').live('focus', function() {
 			$(this).addClass('focus');
 		});
-		$(this).find('input').live('blur', function() {
+		$(this).find('input, textarea, select').live('blur', function() {
 			$(this).removeClass('focus');
 		});
 	}

@@ -28,6 +28,9 @@
 						<a href="#basicform" title="Basic form">Basic form</a>
 					</li>
 					<li>
+						<a href="#charcount" title="Char Count">Char Count</a>
+					</li>
+					<li>
 						<a href="#datepicker" title="Date Picker">Date Picker</a>
 					</li>
 					<li>
@@ -68,20 +71,6 @@
 					</li>
 					<li>
 						<a href="#sendformbyframe" title="sendformbyframe">Send Form by Frame</a>
-					</li>
-					<li>
-						<a href="#snippet" title="Snippet">Snippet</a>
-						<ul>
-							<li>
-								<a href="#tooltip">Tooltip</a>
-							</li>
-							<li>
-								<a href="#sendformbyframe" title="sendformbyframe">Send Form by Frame</a>
-							</li>
-							<li>
-								<a href="#snippet" title="Snippet">Snippet</a>
-							</li>
-						</ul>
 					</li>
 					<li>
 						<a href="#message" title="Message">Message</a>

@@ -21,7 +21,7 @@
 .message .error { box-shadow:0 0 3px 0px #D8000C; background-image:url('imgs/msg/error.png'); background-position:5px center; background-repeat: no-repeat; }
 
 .message .success { box-shadow:0 0 3px 0px #4F8A10; background-image:url('imgs/msg/success.png'); background-position:5px center; background-repeat: no-repeat; }
-1
+
 .message .info { box-shadow:0 0 3px 0px #00529B; background-image: url('imgs/msg/info.png'); background-position:5px center; background-repeat: no-repeat; }
 
 .message .warning { box-shadow:0 0 3px 0px #9F6000; background-image:url('imgs/msg/warning.png'); background-position:5px center; background-repeat: no-repeat; }
@@ -46,7 +46,6 @@
 
 .ui-autocomplete-loading { background: white url('imgs/load_16x16.gif') right center no-repeat; }
 
-
 /*///// Component - Table /////*/
 
 .datatable .asc { background: url('imgs/asc.gif') right center no-repeat;  }
@@ -55,7 +54,7 @@
 
 .datatable thead tr { background: url('imgs/table-bg.png') center center; }
 
-.datatable thead tr th {background: none; }
+.datatable thead tr th { background: none; }
 
 /*/ Table - Actions /*/
 
@@ -133,3 +132,5 @@
 .buttons .btBack { background:#FAFAFA url('imgs/buttons/btback.png') 5px center no-repeat; }
 
 .buttons .btHelp { background:#FAFAFA url('imgs/buttons/bthelp.png') 5px center no-repeat; }
+
+.buttons .btSend { background:#FAFAFA url('imgs/buttons/btsend.png') 5px center no-repeat; }

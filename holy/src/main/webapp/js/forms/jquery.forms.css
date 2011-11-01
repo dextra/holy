@@ -2,6 +2,8 @@
 
 .forms { margin:0px 0px 10px 0px; }
 
+.forms * { font-size: 12px; }
+
 .forms fieldset { border: 1px solid #EEE; padding: 10px; }
 
 .forms fieldset legend { font-weight: bold; font-size:16px; padding:0 10px; margin: 0 10px; }
@@ -19,5 +21,16 @@
 .forms ul li .focus { border: 1px solid #333; background-color: #FFF; }
 
 .liquidForm ul li { float: left; margin: 5px; }
+
+/*///// Component - CharCounter /////*/
+
+.charCount { display: block; font-size: 11px; color:#999; padding:3px 0; }
+
+.charCount span { font-weight: bold; }
+
+.countWarning { color:#9F6000; }
+
+.countExceeded { color:#D8000C; }
+
 
 
