@@ -1,10 +1,15 @@
 ( function($) {
 	$.fn.dropDown = function(opts) {
-		$(this).addClass('dropdown');
 		$(this).find('li:has(ul) > a').append(' <span>&raquo;</span>');
 		opts = opts || {};
 		var effectIn = opts.effectIn || 'slideDown';
 		var effectOut = opts.effectOut || 'slideUp';
+		var vertical = !!opts.vertical;
+		if (vertical) {
+			$(this).addClass('vdropdown');
+		} else {
+			$(this).addClass('hdropdown');
+		}
 		var duration = opts.duration == 0 ? 0 : opts.duration || 'fast';
 		var li = $(this).find('li');
 		li.hover(function() {

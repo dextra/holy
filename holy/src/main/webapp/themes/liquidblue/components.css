@@ -1,18 +1,29 @@
+	
+/*///// Component - Horizontal Dropdown /////*/
 
-/*///// Component - Dropdown /////*/
+.hdropdown { width:100%; background: url('imgs/navbar.png') left top repeat-x; height:34px; }
 
-.dropdown { width:100%; background: url('imgs/navbar.png') left top repeat-x; height:34px; }
+.hdropdown > li a { height:34px; line-height:33px; padding:0 15px; text-transform:capitalize; color:#FFF; font-size:12px; }
 
-.dropdown > li a { height:34px; line-height:33px; padding:0 15px; text-transform:capitalize; color:#FFF; font-size:12px; }
+.hdropdown li a:hover,
+.hdropdown li.active > a { background: url('imgs/navbar.png') left bottom repeat-x; color:#000; }
 
-.dropdown li a:hover,
-.dropdown li.active > a { background: url('imgs/navbar.png') left bottom repeat-x; color:#000; }
+.hdropdown li > ul li a:hover { background:none; text-decoration: underline; color:#FFF; }
 
-.dropdown li > ul li a:hover { background:none; text-decoration: underline; color:#FFF; }
+.hdropdown li ul { z-index:9999; background:#23557E; -moz-box-shadow:1px 1px 2px #587391; -webkit-box-shadow: 1px 1px 2px #587391; box-shadow: 1px 1px 2px #587391; }
 
-.dropdown li ul { z-index:9999; background:#23557E; -moz-box-shadow:1px 1px 2px #587391; -webkit-box-shadow: 1px 1px 2px #587391; box-shadow: 1px 1px 2px #587391; }
+.hdropdown li ul li a { height:auto; padding: 5px 20px; display:block; line-height: normal; }
 
-.dropdown li ul li a { height:auto; padding: 5px 20px; display:block; line-height: normal; }
+/*///// Component - Vertical Dropdown /////*/
+
+.vdropdown li { width:100%; background: url('imgs/navbar.png') left top repeat; width:200px; height: 34px; }
+
+.vdropdown li a { height:34px; line-height:33px; padding:0 15px; text-transform:capitalize; color:#FFF; font-size:12px; display: block; }
+
+.vdropdown li a:hover,
+.vdropdown li.active > a,
+.vdropdown li > ul li a:hover  { background: url('imgs/navbar.png') left bottom repeat-x; color:#000; }
+
 
 /*///// Component - Messages /////*/
 

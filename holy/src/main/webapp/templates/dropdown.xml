@@ -43,6 +43,33 @@
 						</ul>
 					</li>
 				</ul>
+				<hr />
+				<ul class="myNavV">
+					<li>
+						<a href="#home" class="ttip" title="Home">Home</a>
+					</li>
+					<li>
+						<a href="#" title="Componentes">Components</a>
+						<ul>
+							<li>
+								<a href="#" title="Navigation">Navigation</a>
+								<ul>
+									<li>
+										<a href="#dropdown" title="Dropdown">Dropdown</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" title="Form">Forms</a>
+								<ul>
+									<li>
+										<a href="#" title="Basic form">Basic form</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
 			</div>
 			<div class="script">
 				<pre>
@@ -69,6 +96,12 @@
 				effectIn: 'fadeIn',
 				effectOut: 'fadeOut',
 				delay: 200
+			});
+			$('.myNavV').dropDown({
+				effectIn: 'fadeIn',
+				effectOut: 'fadeOut',
+				delay: 200,
+				vertical: 'true'
 			});
 		]]>
 	</script>

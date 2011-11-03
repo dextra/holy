@@ -1,17 +1,29 @@
 /*///// Component - Dropdown /////*/
 
-.dropdown li { position:relative; float:left; }
+/* horizontal dropdown */
 
-.dropdown li,
-.dropdown li a { display:inline-block; text-decoration:none; }
+.hdropdown li { position:relative; float:left; }
 
-.dropdown li a { padding: 0 5px; white-space: nowrap; outline: 0; }
+.hdropdown li,
+.hdropdown li a { display:inline-block; text-decoration:none; }
 
-.dropdown li a:hover,
-.dropdown li.active a { text-decoration: none; }
+.hdropdown li a { padding: 0 5px; white-space: nowrap; outline: 0; }
 
-.dropdown li span { color:#FFF; }
+.hdropdown li a:hover,
+.hdropdown li.active a { text-decoration: none; }
 
-.dropdown li ul { display:none; position:absolute; }
+.hdropdown li span { color:#FFF; }
 
-.dropdown li ul li ul { left:100%; top:0; }
+.hdropdown li ul { display:none; position:absolute; }
+
+.hdropdown li ul li ul { left:100%; top:0; }
+
+
+/* vertical dropdown */
+
+.vdropdown,
+.vdropdown ul { width: 200px; }
+
+.vdropdown li { position:relative; list-style: none; }
+
+.vdropdown li ul { display:none; position:absolute; left: 199px; top:0; }

@@ -12,6 +12,8 @@
 
 a { color: #23557E; }
 
+hr { margin: 10px 0; height: 1px; background: #23557E; }
+
 .center { margin: 0 auto; text-align: center; }
 
 /* Clear fix */
@@ -66,7 +68,7 @@ body { background:#FAFAFA; }
 
 /* Content */
 
-#content { background:#FFF; margin:15px 15px 5px 15px; border:1px solid #DDD; padding:10px; }
+#content { border-radius:10px; background:#FFF; margin:15px 15px 5px 15px; border:1px solid #DDD; padding:10px; }
 
 #content > h3 { font:normal 22px Arial, Helvetica, sans-serif; padding: 0 5px 5px 5px; margin:0 0 15px 0; color:#23557E; border-bottom: 1px solid #B5D4DF; }
 
