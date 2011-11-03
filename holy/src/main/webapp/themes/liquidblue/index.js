@@ -13,6 +13,7 @@
 
 	$(document).ready(function() {
 		$.holy('../../templates/menu.xml');
+		$.holy('../../templates/userbar.xml');
 		$('.message').messageMonitor();
 		$(window).hashchange();
 	});

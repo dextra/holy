@@ -35,7 +35,7 @@
 .paging { text-align: center; margin: 10px auto; }
 
 .paging a,
-.paging span { margin: 0 5px; }
+.paging span { margin: 0 5px; outline: 0px; }
 
 .paging .active { font-weight:bold; }
 

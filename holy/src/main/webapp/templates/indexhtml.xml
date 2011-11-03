@@ -1,6 +1,6 @@
 ﻿<engine>
 	<action selector="#content">
-		<div class="togglePanel">
+		<div>
 			<h3>index.html</h3>
 			<div>
 				<pre class="snippet">

@@ -1,11 +1,14 @@
 <engine>
-	<action selector=".navegation">
-		<ul class="nav">
+	<action selector=".navigation">
+		<ul>
 			<li>
-				<a href="#home" class="ttip" title="Home">Home</a>
+				<a href="#home" title="Home">Home</a>
 			</li>
 			<li>
-				<a href="#indexhtml" class="ttip" title="index.html">Base Code</a>
+				<a href="https://github.com/dextra/holy" target="_blank" title="HoLy Download">Download</a>
+			</li>
+			<li>
+				<a href="#indexhtml" title="Base Code">Base Code</a>
 			</li>
 			<li>
 				<a href="#" title="Navigation">Navigation</a>
@@ -90,7 +93,7 @@
 	</action>
 	<script>
 		<![CDATA[
-		$('.nav').dropDown();
+		$('.navigation > ul').dropDown();
 		]]>
 	</script>
 </engine>

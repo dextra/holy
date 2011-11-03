@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Holy</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script type="text/javascript" src="../../js/lib/jquery.js"></script>
+		<script type="text/javascript" src="../../js/lib/jquery.holycomponents.js"></script>
+		<script type="text/javascript" src="../../js/forms/jquery.forms.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../js/forms/jquery.forms.css" />
+		<link rel="stylesheet" type="text/css" href="../../js/buttons/jquery.buttons.css" />
+		<!-- START AND THEME -->
+		<link rel="stylesheet" type="text/css" href="./base.css"/>
+		<link rel="stylesheet" type="text/css" href="./components.css"/>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#login').center();
+				$('#login form').form();
+			});
+
+		</script>
+	</head>
+	<body>
+		<div id="login">
+			<form>
+				<ul>
+					<li>
+						<label>Username</label>
+						<input type="text" />
+					</li>
+					<li>
+						<label>Password</label>
+						<input type="password" />
+					</li>
+					<li class="buttons">
+						<a href="index.html" class="btUser">Login</a>
+					</li>
+					<li class="center">
+						<a href="index.html">forgot password?</a>
+					</li>
+				</ul>
+			</form>
+			<p class="copyright">
+				Live Demo :: HoLy Avanger. &copy; 2011 <a href="http://www.dextra.com.br" target="_blank">Dextra Sistemas</a>.
+			</p>
+		</div>
+	</body>
+</html>

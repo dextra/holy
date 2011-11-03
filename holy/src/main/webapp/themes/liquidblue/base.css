@@ -12,6 +12,8 @@
 
 a { color: #23557E; }
 
+.center { margin: 0 auto; text-align: center; }
+
 /* Clear fix */
 
 .clf { zoom: 1; }
@@ -25,17 +27,41 @@ a { color: #23557E; }
 
 body { background:#FAFAFA; }
 
+/* Login */
+
+#login form { width: 210px; margin: 0 auto; background: #FFF; padding: 20px; border: 5px solid #587391; border-radius:10px; }
+
+#login .copyright { font-size: 11px; padding: 20px; }
+
+
 /* Header */
 
 #header { background:#EEE; height:95px; position:relative; }
 
-#header h1 { width:235px; line-height:55px; text-align:right; }
+#header h1 { line-height:55px; text-align:left; padding: 0 0 0 10px;  }
 
 #header h1 a { text-decoration:none; color:#23557E; text-shadow:1px 1px 1px #B5D4DF; font-size: 30px; }
 
 #header h1 a span { font-size:12px; color:#587391; }
 
 #header h1 a:hover { color:#20344D; }
+
+/* Userbar */
+
+.userbar { position: absolute; top: 0; right: 0; }
+
+.userbar li { display: inline-block; margin: 0 5px; }
+
+.userbar li,
+.userbar li a { font-size: 11px; font-weight: bold; }
+
+.userbar li span { font-style: italic; }
+
+.userbar li a:hover { text-decoration: underline; color: #000; }
+
+.userbar li .config { padding-left: 20px; background: url('imgs/buttons/btconfig.png') left center no-repeat;}
+
+.userbar li .logout { padding-left: 20px; background: url('imgs/buttons/btlogout.png') left center no-repeat; }
 
 /* Content */
 

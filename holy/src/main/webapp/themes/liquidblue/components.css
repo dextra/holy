@@ -52,7 +52,7 @@
 
 .datatable .desc { background: url('imgs/desc.gif') right center no-repeat;  }
 
-.datatable thead tr { background: url('imgs/table-bg.png') center center; }
+.datatable thead tr { background: url('imgs/gradient-bg.png') center center; }
 
 .datatable thead tr th { background: none; }
 
@@ -64,7 +64,7 @@
 
 /*///// Component - Pagination /////*/
 
-.paging a { background:#FAFAFA; padding: 3px 7px; border-radius: 10px;  }
+.paging a { background:#FAFAFA; padding: 3px 7px; border-radius: 10px; font-size: 11px;  }
 
 .paging a:hover,
 .paging .active { color:#FFF; background:#23557E; }
@@ -85,7 +85,7 @@
 
 .buttons a,
 .buttons input,
-.buttons button { border-radius:5px; padding: 5px 8px 5px 22px; color:#333; }
+.buttons button { border-radius:5px; padding: 5px 8px 5px 24px; color:#333; }
 
 .buttons a:hover,
 .buttons input:hover,
@@ -134,3 +134,9 @@
 .buttons .btHelp { background:#FAFAFA url('imgs/buttons/bthelp.png') 5px center no-repeat; }
 
 .buttons .btSend { background:#FAFAFA url('imgs/buttons/btsend.png') 5px center no-repeat; }
+
+.buttons .btUser { background:#FAFAFA url('imgs/buttons/btuser.png') 5px center no-repeat; }
+
+.buttons .btConfig { background:#FAFAFA url('imgs/buttons/btconfig.png') 5px center no-repeat; }
+
+.buttons .btLogout { background:#FAFAFA url('imgs/buttons/btlogout.png') 5px center no-repeat; }

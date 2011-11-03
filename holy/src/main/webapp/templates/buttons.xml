@@ -38,7 +38,9 @@
 					<input type="button" class="btNewdoc" value="New Document" />
 					<input type="button" class="btBack" value="Back" />
 					<input type="button" class="btNext" value="Next" />
-					
+					<input type="button" class="btUser" value="User" />
+					<input type="button" class="btConfig" value="Configuration" />
+					<input type="button" class="btLogout" value="Logout" />
 				</div>
 			</div>
 			<div class="script">

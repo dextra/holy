@@ -5,7 +5,7 @@
 .dropdown li,
 .dropdown li a { display:inline-block; text-decoration:none; }
 
-.dropdown li a { padding: 0 5px; white-space: nowrap; }
+.dropdown li a { padding: 0 5px; white-space: nowrap; outline: 0; }
 
 .dropdown li a:hover,
 .dropdown li.active a { text-decoration: none; }
