@@ -29,10 +29,11 @@ body { background:#FAFAFA; }
 
 /* Login */
 
-#login form { width: 210px; margin: 0 auto; background: #FFF; padding: 20px; border: 5px solid #587391; border-radius:10px; }
+#login form { width: 210px; margin: 0 auto; background: #FFF; padding:10px 20px; border: 5px solid #587391; border-radius:10px; }
 
 #login .copyright { font-size: 11px; padding: 20px; }
 
+#login h1 { font-size:50px; text-decoration:none; color:#23557E; text-shadow:1px 1px 1px #B5D4DF; font-size: 30px; text-align: center; padding:0 0 10px 0;  }
 
 /* Header */
 
