@@ -18,7 +18,6 @@
 
 .hdropdown li ul li ul { left:100%; top:0; }
 
-
 /* vertical dropdown */
 
 .vdropdown,
@@ -27,3 +26,5 @@
 .vdropdown li { position:relative; list-style: none; }
 
 .vdropdown li ul { display:none; position:absolute; left: 199px; top:0; }
+
+.vdropdown li span { float: right; }

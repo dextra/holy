@@ -141,7 +141,9 @@
 				</div>
 			</div>
 			<div class="script">
-				<pre></pre>
+				<pre>$(".btNone").click(function() {
+					$('html').animate({scrollTop : 0},'slow');
+					});</pre>
 			</div>
 			<div class="html">
 				<pre></pre>
