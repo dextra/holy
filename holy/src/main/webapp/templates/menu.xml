@@ -46,7 +46,7 @@
 								<a href="#autocompleteajax" title="Auto Compete">Ajax</a>
 							</li>
 						</ul>
-					</li>					
+					</li>
 				</ul>
 			</li>
 			<li>
@@ -83,7 +83,10 @@
 					</li>
 					<li>
 						<a href="#sortchildren" title="Sort Children">Sort Children</a>
-					</li>					
+					</li>
+					<li>
+						<a href="#gotop" title="Go Top">GoTop</a>
+					</li>
 				</ul>
 			</li>
 		</ul>

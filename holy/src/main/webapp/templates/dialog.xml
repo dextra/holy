@@ -97,7 +97,7 @@
 					</div>
 				</div>
 				<div class="buttons">
-					<button type="submit" class="btHelp">
+					<button type="submit" class="showDialog btHelp">
 						Show Dialog
 					</button>
 				</div>
@@ -139,6 +139,10 @@
 							overlay: '#23557E',
 							alpha: '3'
 						});
+					});
+					// close dialog
+					$('form .btCancel').click(function() {
+						$('.myDialog').xundialog();
 					});
 				</pre>
 			</div>
