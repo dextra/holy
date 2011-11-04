@@ -20,6 +20,8 @@
 
 .forms ul li .focus { border: 1px solid #333; background-color: #FFF; }
 
+/*///// Component - LiquidForm /////*/
+
 .liquidForm ul li { float: left; margin: 5px; }
 
 /*///// Component - CharCounter /////*/
@@ -38,7 +40,7 @@
 
 .buttons a,
 .buttons input,
-.buttons button { display: inline-block; padding: 3px 5px; cursor: pointer; background:#FAFAFA; color: #333; border: 1px solid #DDD; margin: 5px; }
+.buttons button { display: inline-block; padding: 3px 5px; cursor: pointer; background:#FAFAFA; color: #333; border: 1px solid #DDD; margin: 5px; outline: 0px; }
 
 .buttons a { padding: 4px 5px; }
 
