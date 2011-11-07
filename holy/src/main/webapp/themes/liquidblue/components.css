@@ -1,3 +1,4 @@
+
 /*
  * #8EBE26 - green
  * #CC2914 - red
@@ -15,9 +16,9 @@
 .hdropdown li a:hover,
 .hdropdown li.active > a { background: url('imgs/navbar.png') center bottom repeat-x; }
 
-.hdropdown li ul { width:150px; z-index:9999; background:#009CD9; border-top: 3px solid #009CD9;  -moz-box-shadow:1px 1px 2px #587391; -webkit-box-shadow: 1px 1px 2px #587391; box-shadow: 1px 1px 2px #587391; }
+.hdropdown li ul { width:150px; z-index:9999; background:#009CD9; border-top: 3px solid #009CD9; -moz-box-shadow:1px 1px 2px #587391; -webkit-box-shadow: 1px 1px 2px #587391; box-shadow: 1px 1px 2px #587391; }
 
-.hdropdown li > ul li a {  border-bottom:1px solid #39B7E8; border-top:1px solid #0092CB; width:110px; height:auto; padding: 5px 20px; display:block; line-height: normal; }
+.hdropdown li > ul li a { border-bottom:1px solid #39B7E8; border-top:1px solid #0092CB; width:110px; height:auto; padding: 5px 20px; display:block; line-height: normal; }
 
 .hdropdown li > ul li a:hover,
 .hdropdown li > ul li.active > a { background: #2D3235; color:#FFF; }
@@ -32,7 +33,7 @@
 
 .vdropdown li a:hover,
 .vdropdown li.active > a,
-.vdropdown li > ul li a:hover  { background:#009CD9; }
+.vdropdown li > ul li a:hover { background:#009CD9; }
 
 /*///// Component - Messages /////*/
 
@@ -48,8 +49,8 @@
 
 /*///// Component - Forms /////*/
 
-.forms input, 
-.forms select, 
+.forms input,
+.forms select,
 .forms textarea { border-radius:5px; padding: 4px; }
 
 .forms ul li .focus { background-color:#FFF; border:1px solid #0092CB; box-shadow: 0 0px 4px #39B7E8; -moz-box-shadow: 0 0px 4px #39B7E8; -webkit-box-shadow: 0 0px 4px #39B7E8; color:#000; }
@@ -64,7 +65,19 @@
 
 .togglePanel h3.active span { background: url('imgs/arrow_open.gif') left center no-repeat; }
 
-.togglePanel > div { border:1px solid #EEE; border-top:none; } 
+.togglePanel > div { border:1px solid #EEE; border-top:none; }
+
+/*///// Component - Tabpanel /////*/
+
+.tabPanel { border-bottom:2px solid #232C2F; }
+
+.tabPanel > ul li a { padding: 5px 20px; margin: 0 2px 0 0; background: #232C2F; color:#FFF; border:none; border-top-left-radius: 5px; border-top-right-radius: 5px; }
+
+.tabPanel > ul li a:hover { color:#FFF; background:#8EBE26; }
+
+.tabPanel > ul .active a { padding: 5px 20px; background: #39B7E8; border-bottom:1px solid #39B7E8; color:#FFF; }
+
+.tabPanel > div { border: 1px solid #39B7E8; border-top:2px solid #39B7E8; }
 
 /*///// Component - Autocomplete /////*/
 
@@ -72,9 +85,9 @@
 
 /*///// Component - Table /////*/
 
-.datatable .asc { background: url('imgs/asc.gif') right center no-repeat;  }
+.datatable .asc { background: url('imgs/asc.gif') right center no-repeat; }
 
-.datatable .desc { background: url('imgs/desc.gif') right center no-repeat;  }
+.datatable .desc { background: url('imgs/desc.gif') right center no-repeat; }
 
 .datatable thead tr { background: url('imgs/gradient-bg.png') center center; }
 
@@ -88,14 +101,14 @@
 
 /*///// Component - Pagination /////*/
 
-.paging a { background:#FAFAFA; padding: 3px 7px; border-radius: 10px; font-size: 11px;  }
+.paging a { background:#FAFAFA; padding: 3px 7px; border-radius: 10px; font-size: 11px; }
 
 .paging a:hover,
 .paging .active { color:#FFF; background:#23557E; }
 
 /*///// Component - Dialog /////*/
 
-.dialogBox {box-shadow:  0px 0px 10px #333; border-radius: 10px 0px 10px 10px;}
+.dialogBox { box-shadow:  0px 0px 10px #333; border-radius: 10px 0px 10px 10px; }
 
 .dialogBox .close { box-shadow:  0px 0px 10px #333; top:-20px; right:-20px; border-radius: 10px 10px 10px 0px; }
 
@@ -109,11 +122,11 @@
 
 .buttons a,
 .buttons input,
-.buttons button { border-radius:5px; padding: 5px 8px 5px 24px; color:#333; }
+.buttons button { border-radius:0; padding: 5px 8px 5px 24px; color:#333; border-bottom:2px solid #8EBE26; }
 
 .buttons a:hover,
 .buttons input:hover,
-.buttons button:hover { color:#FFF; background-color: #8EBE26; border:1px solid #8EBE26; }
+.buttons button:hover { color:#FFF; background-color: #8EBE26; border:1px solid #8EBE26;  }
 
 .buttons .btNone { background:#FAFAFA; padding: 5px 8px; }
 
@@ -153,7 +166,7 @@
 
 .buttons .btNewdoc { background:#FAFAFA url('imgs/buttons/btnewdoc.png') 5px center no-repeat; }
 
-.buttons .btNext { background:#FAFAFA url('imgs/buttons/btnext.png') 5px center no-repeat; padding:; }
+.buttons .btNext { background:#FAFAFA url('imgs/buttons/btnext.png') 5px center no-repeat; }
 
 .buttons .btBack { background:#FAFAFA url('imgs/buttons/btback.png') 5px center no-repeat; }
 
