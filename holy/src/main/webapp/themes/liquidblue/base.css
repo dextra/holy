@@ -1,18 +1,20 @@
 /*
- * #010406
- * #20344D
- * #23557E
- * #587391
- * #B5D4DF
+ * #8EBE26 - green
+ * #CC2914 - red
+ * #39B7E8 - light blue
+ * #0092CB - medium blue
+ * #232C2F - blackium
  */
 
 
 /* Global reset */ 
 * { margin:0; padding:0; border:0; font-family:Helvetica, Arial, sans-serif; text-decoration:none; }
 
-a { color: #23557E; }
+a { color: #232C2F; }
 
-hr { margin: 10px 0; height: 1px; background: #23557E; }
+a:hover { color:#CC2914; }
+
+hr { margin: 10px 0; height: 1px; background: #8EBE26; }
 
 .center { margin: 0 auto; text-align: center; }
 
@@ -27,7 +29,7 @@ hr { margin: 10px 0; height: 1px; background: #23557E; }
 
 /* Basics */
 
-body { background:#FAFAFA; }
+body { background:#FFF; }
 
 /* Login */
 
@@ -37,21 +39,26 @@ body { background:#FAFAFA; }
 
 #login h1 { font-size:50px; text-decoration:none; color:#23557E; text-shadow:1px 1px 1px #B5D4DF; font-size: 30px; text-align: center; padding:0 0 10px 0;  }
 
+/* wrapper */
+
+#wrapper { margin: 10px 20px; border: 1px solid #232C2F; border-radius: 10px; }
+
 /* Header */
 
-#header { background:#EEE; height:95px; position:relative; }
+#header { background:#EEE; height:95px; position:relative; border-radius: 10px; }
 
 #header h1 { line-height:55px; text-align:left; padding: 0 0 0 10px;  }
 
-#header h1 a { text-decoration:none; color:#0092cb; text-shadow:1px 1px 1px #B5D4DF; font-size: 30px; }
+#header h1 a { text-decoration:none; color:#232C2F; text-shadow:1px 1px 1px #39B7E8; font-size: 30px; }
 
-#header h1 a span { font-size:12px; color:#000; }
+#header h1 a span { font-size:12px; color:#0092CB; }
 
-#header h1 a:hover { color:#20344D; }
+#header h1 a:hover,
+#header h1 a:hover span { color:#232C2F; }
 
 /* Userbar */
 
-.userbar { position: absolute; top: 0; right: 0; }
+.userbar { position: absolute; top: 40px; right: 0px; }
 
 .userbar li { display: inline-block; margin: 0 5px; }
 
@@ -60,23 +67,20 @@ body { background:#FAFAFA; }
 
 .userbar li span { font-style: italic; }
 
-.userbar li a:hover { text-decoration: underline; color: #000; }
-
 .userbar li .config { padding-left: 20px; background: url('imgs/buttons/btconfig.png') left center no-repeat;}
 
 .userbar li .logout { padding-left: 20px; background: url('imgs/buttons/btlogout.png') left center no-repeat; }
 
 /* Content */
 
-#content { border-radius:10px; background:#FFF; margin:15px 15px 5px 15px; border:1px solid #DDD; padding:10px; }
+#content {  padding:20px; }
 
-#content > h3 { font:normal 22px Arial, Helvetica, sans-serif; padding: 0 5px 5px 5px; margin:0 0 15px 0; color:#23557E; border-bottom: 1px solid #0092CB; }
+#content > h3 { font:normal 22px Arial, Helvetica, sans-serif; padding: 0 5px 5px 5px; margin:0 0 15px 0; color:#0092CB; border-bottom: 1px solid #8EBE26; }
 
-#content > h3 span { color: #587391; font-size: 22px; }
+#content > h3 span { color: #39B7E8; font-size: 22px; }
 
 /* footer */
 
 #footer { margin:0 20px; }
 
-#copyright,
-#copyright a { text-align:right; font-size:11px; font-weight:bold; color:#999;}
+#copyright { text-align:right; font-size:11px; font-weight:bold; color:#999; margin: 0 30px; }

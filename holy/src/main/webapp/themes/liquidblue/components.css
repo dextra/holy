@@ -1,4 +1,11 @@
-	
+/*
+ * #8EBE26 - green
+ * #CC2914 - red
+ * #39B7E8 - light blue
+ * #0092CB - medium blue
+ * #232C2F - blackium
+ */
+
 /*///// Component - Horizontal Dropdown /////*/
 
 .hdropdown { width:100%; background: url('imgs/navbar.png') left top repeat-x; height:35px; border-bottom: 3px solid #009CD9; }
@@ -45,19 +52,19 @@
 .forms select, 
 .forms textarea { border-radius:5px; padding: 4px; }
 
-.forms ul li .focus { background-color:#FFF; border:1px solid #587391; box-shadow: 0 0px 4px #587391; -moz-box-shadow: 0 0px 4px #587391; -webkit-box-shadow: 0 0px 4px #587391; color:#000; }
+.forms ul li .focus { background-color:#FFF; border:1px solid #0092CB; box-shadow: 0 0px 4px #39B7E8; -moz-box-shadow: 0 0px 4px #39B7E8; -webkit-box-shadow: 0 0px 4px #39B7E8; color:#000; }
 
 /*///// Component - Toogle /////*/
 
 .togglePanel { margin-bottom: 3px; }
 
-.togglePanel h3 { margin:0; font-size:16px; background: url('imgs/gradient-bg.png') left center repeat-x; padding:1px 5px; line-height: 22px; }
+.togglePanel h3 { border:none; margin:0; font-size:12px; background:#232C2F; border-bottom:2px solid #CC2914; padding:2px 5px; color:#FFF; }
 
-.togglePanel h3 span { padding-left: 25px; background: url('imgs/arrow_close.png') left center no-repeat; }
+.togglePanel h3 span { padding-left: 15px; background: url('imgs/arrow_close.gif') left center no-repeat; }
 
-.togglePanel h3.active span { background: url('imgs/arrow_open.png') left center no-repeat; }
+.togglePanel h3.active span { background: url('imgs/arrow_open.gif') left center no-repeat; }
 
-.togglePanel > div { border:1px solid #EEE; border-top:none; background: #FAFAFA; } 
+.togglePanel > div { border:1px solid #EEE; border-top:none; } 
 
 /*///// Component - Autocomplete /////*/
 
@@ -106,7 +113,7 @@
 
 .buttons a:hover,
 .buttons input:hover,
-.buttons button:hover { color:#FFF; background-color: #333; border:1px solid #000; }
+.buttons button:hover { color:#FFF; background-color: #8EBE26; border:1px solid #8EBE26; }
 
 .buttons .btNone { background:#FAFAFA; padding: 5px 8px; }
 
