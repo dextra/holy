@@ -1,3 +1,4 @@
+
 /*
  * #8EBE26 - green
  * #CC2914 - red
@@ -37,7 +38,7 @@ body { background:#FFF; }
 
 #login .copyright { font-size: 11px; padding: 20px; }
 
-#login h1 { font-size:50px; text-decoration:none; color:#23557E; text-shadow:1px 1px 1px #B5D4DF; font-size: 30px; text-align: center; padding:0 0 10px 0;  }
+#login h1 { font-size:50px; text-decoration:none; color:#23557E; text-shadow:1px 1px 1px #B5D4DF; font-size: 30px; text-align: center; padding:0 0 10px 0; }
 
 /* wrapper */
 
@@ -47,7 +48,7 @@ body { background:#FFF; }
 
 #header { background:#EEE; height:95px; position:relative; border-radius: 10px; }
 
-#header h1 { line-height:55px; text-align:left; padding: 0 0 0 10px;  }
+#header h1 { line-height:55px; text-align:left; padding: 0 0 0 10px; }
 
 #header h1 a { text-decoration:none; color:#232C2F; text-shadow:1px 1px 1px #39B7E8; font-size: 30px; }
 
@@ -67,13 +68,13 @@ body { background:#FFF; }
 
 .userbar li span { font-style: italic; }
 
-.userbar li .config { padding-left: 20px; background: url('imgs/buttons/btconfig.png') left center no-repeat;}
+.userbar li .config { padding-left: 20px; background: url('imgs/buttons/btconfig.png') left center no-repeat; }
 
 .userbar li .logout { padding-left: 20px; background: url('imgs/buttons/btlogout.png') left center no-repeat; }
 
 /* Content */
 
-#content {  padding:20px; }
+#content { padding:20px; }
 
 #content > h3 { font:normal 22px Arial, Helvetica, sans-serif; padding: 0 5px 5px 5px; margin:0 0 15px 0; color:#0092CB; border-bottom: 1px solid #8EBE26; }
 

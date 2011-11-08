@@ -31,6 +31,9 @@
 						<a href="#basicform" title="Basic form">Basic form</a>
 					</li>
 					<li>
+						<a href="#buttons" title="Action Buttons">Buttons</a>
+					</li>
+					<li>
 						<a href="#charcount" title="Char Count">Char Count</a>
 					</li>
 					<li>
@@ -66,9 +69,6 @@
 			<li>
 				<a href="#" title="Others">Others</a>
 				<ul>
-					<li>
-						<a href="#buttons">Buttons</a>
-					</li>
 					<li>
 						<a href="#tooltip">Tooltip</a>
 					</li>
