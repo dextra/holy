@@ -5,10 +5,6 @@
 			loading : true
 		});
 
-		var loadTxt = opts.text;
-		if (!loadTxt) {
-			loadTxt = 'Loading...'
-		}
 		var bgOver = opts.overlay;
 		if (!bgOver) {
 			bgOver = '#000000'
@@ -18,10 +14,9 @@
 			overOpacity = '50'
 		}
 		if (!$('.loading').length) {
-			$('body')
-					.append(
-							'<div class="loading"><div class="load"><p>Carregando...</p></div><div class="overlay"></div></div>');
+			$('body').append('<div class="loading"><div class="load"></div><div class="overlay"></div></div>');
 		}
+		
 		$('.loading .load').center();
 
 		var stack = 0;
@@ -50,7 +45,7 @@
 				}
 				stack++;
 				if (stack == 1) {
-					var div = $('<div class="loadingAjax">LOADING</div>');
+					var div = $('<div class="loading"><div class="load"></div><div class="overlayInside"></div></div>');
 					div.css('position', 'absolute');
 					div.css('left', $(this).position().left);
 					div.css('top', $(this).position().top);

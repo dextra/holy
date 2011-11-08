@@ -52,6 +52,10 @@
 								<input class="female" type="radio" />
 								Female
 							</li>
+							<li class="box info">
+								<p class="icon">i</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis metus in nulla venenatis sit amet aliquam erat fringilla. Suspendisse potenti. Maecenas commodo posuere diam. In interdum accumsan elit, sit amet accumsan nulla interdum eu. Ut convallis augue at leo accumsan molestie ornare nisl consequat. In malesuada ornare nunc molestie sollicitudin. Phasellus consequat nisi eget elit blandit eleifend.</p>
+							</li>
 							<li class="buttons">
 								<button type="submit" class="btSave">button</button>
 								<a href="#datatable" class="btCancel">link</a>
@@ -83,6 +87,10 @@
 							<li>
 								<label for="phone">Phone:</label>
 								<input type="text" title="Enter your phone number." />
+							</li>
+							<li class="box info">
+								<span>i</span>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis metus in nulla venenatis sit amet aliquam erat fringilla. Suspendisse potenti. Maecenas commodo posuere diam. In interdum accumsan elit, sit amet accumsan nulla interdum eu. Ut convallis augue at leo accumsan molestie ornare nisl consequat. In malesuada ornare nunc molestie sollicitudin. Phasellus consequat nisi eget elit blandit eleifend.</p>
 							</li>
 							<li>
 								<label for="birthdate">Birthdate:</label>

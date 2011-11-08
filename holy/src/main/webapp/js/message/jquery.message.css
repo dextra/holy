@@ -18,9 +18,9 @@
 .message .success { border:1px solid #4F8A10; background-color:#DFF2BF; }
 
 .message .info a,
-.message .info { color:#00529B; }
+.message .info { color:#0092CB; }
 
-.message .info { border:1px solid #00529B; background-color:#BDE5F8; }
+.message .info { border:1px solid #0092CB; background-color:#BDE5F8; }
 
 .message .warning a,
 .message .warning { color:#9F6000; }

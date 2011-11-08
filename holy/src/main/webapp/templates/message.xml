@@ -40,12 +40,8 @@
 									<label for="closable">Closable ?</label>
 									<input type="checkbox" value="closable"/>
 								</li>
-								<li>
-									<ul class="buttons">
-										<li>
-											<input type="button" class="buttonSend" value="Send" />
-										</li>
-									</ul>
+								<li class="buttons">
+									<input type="button" class="btSend" value="Send" />
 								</li>
 							</ul>
 						</fieldset>
@@ -70,13 +66,13 @@
 		var msg = form.find('label[for="message"] + input').val();
 		var type = form.find('label[for="type"] + select').val();
 		var closable = form.find('label[for="closable"] + input:checked').val();
-			if(!msg) {
-				$('.message').message('Message is required', 'error', false);
-					return;
-				}
-					$('.message').message(msg, type, !closable);
-				}
-			);
+		if(!msg) {
+		$('.message').message('Message is required', 'error', false);
+		return;
+		}
+		$('.message').message(msg, type, !closable);
+		}
+		);
 		]]>
 	</script>
 </engine>

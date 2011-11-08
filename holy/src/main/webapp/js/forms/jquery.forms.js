@@ -37,7 +37,9 @@
 		}
 		forms.find('label').maximize('width', '');
 		var labelW = forms.find('ul li label').width();
-		$('.buttons').css('marginLeft', labelW + 5);
+		
+		forms.find('ul li:not(:has(label))').css('marginLeft', labelW + 10);
+		
 		$(this).find('input, textarea, select').live('focus', function() {
 			$(this).addClass('focus');
 		});

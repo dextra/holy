@@ -41,6 +41,7 @@
 					<input type="button" class="btUser" value="User" />
 					<input type="button" class="btConfig" value="Configuration" />
 					<input type="button" class="btLogout" value="Logout" />
+					<input type="button" class="btSend" value="Logout" />
 					<input type="button" class="btNone" value="Simple" />
 				</div>
 			</div>
