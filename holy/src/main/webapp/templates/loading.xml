@@ -30,7 +30,26 @@
 				</div>
 			</div>
 			<div class="script">
-				<pre>$('.myToogle').togglePanel();</pre>
+				<pre>
+					$('.demo h3').click(function() {
+						$.ajax({
+							url: '../../mock/numbers.js',
+							dataType: 'json',
+							
+							// You can inform a dom (or jquery dom list) where we should put a loading layer.
+							// Use true if you want a screen loading layer. And, of course,
+							// false for no loading layer.
+							// We use $.ajaxSetup to set loading true by default.
+							loading: $(this).next('div'),
+							
+							success: function(numbers) {
+								$(this.loading).text(numbers[Math.floor((Math.random()*numbers.length)+1)]);
+							}
+						});
+					});
+					
+									
+				</pre>
 			</div>
 			<div class="html">
 				<pre></pre>
@@ -46,11 +65,11 @@
 		
 		$('.demo h3').click(function() {
 			$.ajax({
-				url: '../../mock/numbers.js',
+				url: '../../_/echo?msg=' + Math.random() + '&sleep=1000',
 				dataType: 'json',
 				loading: $(this).next('div'),
-				success: function(numbers) {
-					$(this.loading).text(numbers[Math.floor((Math.random()*numbers.length)+1)]);
+				success: function(n) {
+					$(this.loading).text(n);
 				}
 			});
 		});
