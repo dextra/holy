@@ -7,6 +7,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.google.gson.JsonPrimitive;
+
 public class EchoServlet extends HttpServlet {
 
 	private static final long serialVersionUID = -7786416896693773207L;
@@ -14,6 +16,7 @@ public class EchoServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
+
 		String msg = req.getParameter("msg");
 		String sleep = req.getParameter("sleep");
 
@@ -27,8 +30,8 @@ public class EchoServlet extends HttpServlet {
 			}
 		}
 
-		resp.setContentType("text/plain");
-		resp.getWriter().println(msg);
+		resp.setContentType("application/json");
+		resp.getWriter().println(new JsonPrimitive(msg));
 
 	}
 

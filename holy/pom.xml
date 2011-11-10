@@ -31,6 +31,7 @@
 		<gae.rt.version>1.5.2</gae.rt.version>
 		<gae.application.version>test</gae.application.version>
 		<mycontainer.version>1.2.33</mycontainer.version>
+		<restitory.version>1.0.50</restitory.version>		
 	</properties>
 
 	<dependencies>
@@ -51,6 +52,19 @@
 			<groupId>org.easymock</groupId>
 			<artifactId>easymock</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.googlecode.restitory</groupId>
+			<artifactId>restitory-gae-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.googlecode.restitory</groupId>
+			<artifactId>restitory-gae-api</artifactId>
+			<version>${restitory.version}</version>
 		</dependency>
 
 		<dependency>

@@ -65,8 +65,8 @@
 		
 		$('.demo h3').click(function() {
 			$.ajax({
-				url: '../../_/echo?msg=' + Math.random() + '&sleep=1000',
-				dataType: 'json',
+				url: 'http://holy-avenger.appspot.com/_/echo?sleep=300&msg=' + Math.random(),
+				dataType: 'jsonp',
 				loading: $(this).next('div'),
 				success: function(n) {
 					$(this.loading).text(n);
