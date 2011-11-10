@@ -17,7 +17,7 @@
 				</li>
 			</ul>
 			<div class="demo">
-				Go to end the end of page
+				Go to end of page
 				<br />
 				<br />
 				<br />
@@ -156,6 +156,8 @@
 		$('.html pre').snippet('html', {style:"ide-eclipse",showNum:false});
 		$('.script pre').snippet('javascript', {style:"ide-eclipse",showNum:false});
 		$(".tabPanel").tabPanel();
+
+		$('html').animate({scrollTop : $('html').height()},'slow');
 
 		$(".btNone").click(function() {
 		$('html').animate({scrollTop : 0},'slow');

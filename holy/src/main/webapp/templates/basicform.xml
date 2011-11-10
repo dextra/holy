@@ -80,6 +80,10 @@
 								<label for="pass">Password:</label>
 								<input type="password" title="Enter password." />
 							</li>
+							<li class="box warning">
+								<p class="icon">!</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis metus in nulla venenatis sit amet aliquam erat fringilla. Suspendisse potenti. Maecenas commodo posuere diam. In interdum accumsan elit.</p>
+							</li>
 							<li class="require">
 								<label for="email">Email:</label>
 								<input type="text" title="Enter your e-mail address." />
@@ -89,7 +93,7 @@
 								<input type="text" title="Enter your phone number." />
 							</li>
 							<li class="box info">
-								<span>i</span>
+								<span class="icon">i</span>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis metus in nulla venenatis sit amet aliquam erat fringilla. Suspendisse potenti. Maecenas commodo posuere diam. In interdum accumsan elit, sit amet accumsan nulla interdum eu. Ut convallis augue at leo accumsan molestie ornare nisl consequat. In malesuada ornare nunc molestie sollicitudin. Phasellus consequat nisi eget elit blandit eleifend.</p>
 							</li>
 							<li>

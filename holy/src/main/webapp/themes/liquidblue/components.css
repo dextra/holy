@@ -51,9 +51,19 @@
 
 .forms input,
 .forms select,
-.forms textarea { border-radius:5px; padding: 4px; }
+.forms textarea { border-radius:5px; }
 
 .forms ul li .focus { background-color:#FFF; border:1px solid #0092CB; box-shadow: 0 0px 4px #39B7E8; -moz-box-shadow: 0 0px 4px #39B7E8; -webkit-box-shadow: 0 0px 4px #39B7E8; color:#000; }
+
+/* MSG BOX's */
+
+.forms ul .info { border:1px solid #0092CB; background-color:#BDE5F8; }
+
+.forms ul .info .icon { background-color: #39B7E8; }
+
+.forms ul .warning { border:1px solid #9F6000; background-color:#FEEFB3;  }
+
+.forms ul .warning .icon {  background-color: #9F6000; }
 
 /*///// Component - Toogle /////*/
 
@@ -122,11 +132,11 @@
 
 .buttons a,
 .buttons input,
-.buttons button { border-radius:0; padding: 5px 8px 5px 24px; color:#333; border-bottom:2px solid #8EBE26; }
+.buttons button { border-radius:0; padding-left: 24px; color:#333; border-bottom:2px solid #232C2F; }
 
 .buttons a:hover,
 .buttons input:hover,
-.buttons button:hover { color:#FFF; background-color: #8EBE26; border:1px solid #8EBE26;  }
+.buttons button:hover { color:#FFF; background-color: #8EBE26; border-bottom:2px solid #232C2F; border:1px solid #8EBE26;  }
 
 .buttons .btNone { background:#FAFAFA; padding: 5px 8px; }
 

@@ -5,7 +5,7 @@
 .loading .overlay,
 .loading .overlayInside { position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; overflow: hidden; display: block; z-index: 999; background:#000; opacity: 0.50; filter: alpha(opacity = 50); }
 
-.loading .overlayInside { position: absolute; }
+.loading .overlayInside { border-radius:5px; position: absolute; }
 
-.loading .load { position:absolute; width: 32px; height:32px; border-radius:20px; background: #FFF url('load.gif') center center no-repeat; text-align: center; z-index: 9999;  }
+.loading .load { margin:10px; position:absolute; width: 32px; height:32px; border-radius:20px; background: #FFF url('load.gif') center center no-repeat; text-align: center; z-index: 9999;  }
 

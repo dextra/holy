@@ -40,6 +40,7 @@
 							// Use true if you want a screen loading layer. And, of course,
 							// false for no loading layer.
 							// We use $.ajaxSetup to set loading true by default.
+							
 							loading: $(this).next('div'),
 							
 							success: function(numbers) {
@@ -47,8 +48,6 @@
 							}
 						});
 					});
-					
-									
 				</pre>
 			</div>
 			<div class="html">

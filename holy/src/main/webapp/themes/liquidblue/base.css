@@ -1,4 +1,4 @@
-
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 /*
  * #8EBE26 - green
  * #CC2914 - red
@@ -9,7 +9,7 @@
 
 
 /* Global reset */ 
-* { margin:0; padding:0; border:0; font-family:Helvetica, Arial, sans-serif; text-decoration:none; }
+* { margin:0; padding:0; border:0; font-family: 'Open Sans', sans-serif; text-decoration:none; }
 
 a { color: #232C2F; }
 
@@ -34,7 +34,9 @@ body { background:#FFF; }
 
 /* Login */
 
-#login form { width: 210px; margin: 0 auto; background: #FFF; padding:10px 20px; border: 5px solid #587391; border-radius:10px; }
+#login { background: #EEE; }
+
+#login form { width: 210px; margin: 0 auto; background: #FFF; padding:10px 20px; border: 3px solid #8EBE26; border-radius:10px; }
 
 #login .copyright { font-size: 11px; padding: 20px; }
 
@@ -61,10 +63,10 @@ body { background:#FFF; }
 
 .userbar { position: absolute; top: 40px; right: 0px; }
 
-.userbar li { display: inline-block; margin: 0 5px; }
+.userbar li { margin: 0 5px; }
 
 .userbar li,
-.userbar li a { font-size: 11px; font-weight: bold; }
+.userbar li a { font-size: 11px; font-weight: bold; display: inline-block; }
 
 .userbar li span { font-style: italic; }
 

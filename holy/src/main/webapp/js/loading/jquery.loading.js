@@ -9,10 +9,12 @@
 		if (!bgOver) {
 			bgOver = '#000000'
 		}
+		
 		var overOpacity = opts.opacity;
 		if (!overOpacity) {
 			overOpacity = '50'
 		}
+		
 		if (!$('.loading').length) {
 			$('body').append('<div class="loading"><div class="load"></div><div class="overlay"></div></div>');
 		}
