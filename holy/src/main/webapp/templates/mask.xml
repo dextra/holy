@@ -1,0 +1,92 @@
+<engine>
+	<action selector="#content">
+		<h3>
+			Basic
+			<span>Form</span>
+		</h3>
+		<div class="tabPanel">
+			<ul>
+				<li>
+					<a>Demo</a>
+				</li>
+				<li>
+					<a>Script</a>
+				</li>
+				<li>
+					<a>HTML</a>
+				</li>
+			</ul>
+			<div class="demo">
+				<form class="myForm">
+					<fieldset>
+						<legend>Register</legend>
+						<ul>
+							<li>
+								<label for="phone">Phone:</label>
+								<input type="text" title="Enter your phone number." alt="phone" />
+							</li>
+							<li>
+								<label for="phone-us">Phone US:</label>
+								<input type="text" title="Enter your phone number." alt="phone-us" />
+							</li>
+							<li>
+								<label for="cpf">CPF:</label>
+								<input type="text" title="Enter your cpf number." alt="cpf" />
+							</li>
+							<li>
+								<label for="cnpj">CNPJ:</label>
+								<input type="text" title="Enter your cnpj number." alt="cnpj" />
+							</li>
+							<li>
+								<label for="date">Date:</label>
+								<input type="text" title="Enter date." alt="date" />
+							</li>
+							<li>
+								<label for="date-us">Date US:</label>
+								<input type="text" title="Enter date." alt="date-us" />
+							</li>
+							<li>
+								<label for="cep">CEP:</label>
+								<input type="text" title="Enter your cep number." alt="cep" />
+							</li>
+							<li>
+								<label for="time">Time:</label>
+								<input type="text" title="Enter time." alt="time" />
+							</li>
+							<li>
+								<label for="cc">Credit Card:</label>
+								<input type="text" title="Enter your card number." alt="cc" />
+							</li>
+							<li class="buttons">
+								<button type="submit" class="btSave">button</button>
+								<a href="#datatable" class="btCancel">link</a>
+								<input type="submit" value="input" class="btRemove" />
+							</li>
+						</ul>
+					</fieldset>
+				</form>
+			</div>
+			<div class="script">
+				<pre>$('.myForm').form();
+					$('input:text').setMask();
+					$('.myForm [title]').tipsy({trigger: 'focus', gravity: 'w', fade: true});</pre>
+			</div>
+			<div class="html">
+				<pre></pre>
+			</div>
+		</div>
+	</action>
+	<script>
+		<![CDATA[
+		$('.html pre').text($('.demo').html());
+		$('.html pre').snippet('html', {style:"ide-eclipse",showNum:false});
+		$('.script pre').snippet('javascript', {style:"ide-eclipse",showNum:false});
+		$(".tabPanel").tabPanel();
+
+		$('.myForm').form();
+		$('input:text').setMask();
+		$('.myForm [title]').tipsy({trigger: 'focus', gravity: 'w', fade: true});
+		]]>
+	</script>
+</engine>
+

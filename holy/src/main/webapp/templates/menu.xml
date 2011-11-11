@@ -37,6 +37,9 @@
 						<a href="#charcount" title="Char Count">Char Count</a>
 					</li>
 					<li>
+						<a href="#mask" title="Input Mask">Input Mask</a>
+					</li>
+					<li>
 						<a href="#datepicker" title="Date Picker">Date Picker</a>
 					</li>
 					<li>

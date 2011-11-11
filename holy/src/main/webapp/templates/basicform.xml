@@ -39,7 +39,7 @@
 							</li>
 							<li>
 								<label for="phone">Phone:</label>
-								<input type="text" title="Enter your phone number." />
+								<input type="text" title="Enter your phone number." alt="phone" />
 							</li>
 							<li>
 								<label for="birthdate">Birthdate:</label>
@@ -90,7 +90,7 @@
 							</li>
 							<li>
 								<label for="phone">Phone:</label>
-								<input type="text" title="Enter your phone number." />
+								<input type="text" title="Enter your phone number." alt="phone" />
 							</li>
 							<li class="box info">
 								<span class="icon">i</span>
@@ -117,8 +117,9 @@
 				</form>
 			</div>
 			<div class="script">
-				<pre>$('.forms').form();
-					$('.forms input.date').simpleDatepicker();</pre>
+				<pre>$('.myForm').form();
+					$('input:text').setMask();
+					$('.myForm [title]').tipsy({trigger: 'focus', gravity: 'w', fade: true});</pre>
 			</div>
 			<div class="html">
 				<pre></pre>
@@ -133,8 +134,8 @@
 		$(".tabPanel").tabPanel();
 
 		$('.myForm').form();
+		$('input:text').setMask();
 		$('.myForm [title]').tipsy({trigger: 'focus', gravity: 'w', fade: true});
-		$('.myForm input.date').simpleDatepicker();
 		]]>
 	</script>
 </engine>
