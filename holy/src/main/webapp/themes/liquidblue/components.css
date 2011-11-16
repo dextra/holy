@@ -99,7 +99,7 @@
 
 .datatable .desc { background: url('imgs/desc.gif') right center no-repeat; }
 
-.datatable thead tr { background: url('imgs/gradient-bg.png') center center; }
+.datatable thead tr { background: url('imgs/gradient-bg.png') top center; }
 
 .datatable thead tr th { background: none; }
 
@@ -114,7 +114,9 @@
 .paging a { background:#FAFAFA; padding: 3px 7px; border-radius: 10px; font-size: 11px; }
 
 .paging a:hover,
-.paging .active { color:#FFF; background:#23557E; }
+.paging .active { color:#FFF; background:#39B7E8; }
+
+.paging .active { background: #8EBE26; }
 
 /*///// Component - Dialog /////*/
 

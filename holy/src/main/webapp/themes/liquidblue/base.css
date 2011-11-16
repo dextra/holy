@@ -74,6 +74,16 @@ body { background:#FFF; }
 
 .userbar li .logout { padding-left: 20px; background: url('imgs/buttons/btlogout.png') left center no-repeat; }
 
+/* THEMES */
+
+.themes { position: absolute; top: -10px; right: 5px; }
+
+.themes a { border:1px solid #333; width: 6px; height: 6px; display: inline-block; font-size: 0px; outline: 0px; text-indent: -9999px; }
+
+.themes .fixedred { background: #CC2914; }
+
+.themes .liquidblue { background:#39B7E8; }
+
 /* Content */
 
 #content { padding:20px; }
