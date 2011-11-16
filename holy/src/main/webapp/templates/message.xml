@@ -11,10 +11,10 @@
 		<div class="tabPanel">
 			<ul>
 				<li>
-					<a>Demo</a>
+					<a href="#!">Demo</a>
 				</li>
 				<li>
-					<a>Script</a>
+					<a href="#!">Script</a>
 				</li>
 			</ul>
 			<div class="demo">

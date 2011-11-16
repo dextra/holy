@@ -26,9 +26,9 @@
 
 /*///// Component - Buttons and Actions /////*/
 
-.datatable tr td span,
-.datatable tr td input[type=submit],
-.datatable tr td a { width: 16px; height: 16px; border: 0; display: inline-block; outline: 0px; text-indent:-9999px; cursor: pointer; }
+.datatable tr td.action span,
+.datatable tr td.action input[type=submit],
+.datatable tr td.action a { width: 16px; height: 16px; border: 0; display: inline-block; outline: 0px; text-indent:-9999px; cursor: pointer; }
 
 /*///// Component - Pagination /////*/
 

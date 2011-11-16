@@ -4,13 +4,13 @@
 		<div class="tabPanel">
 			<ul>
 				<li>
-					<a>Demo</a>
+					<a href="#!">Demo</a>
 				</li>
 				<li>
-					<a>Script</a>
+					<a href="#!">Script</a>
 				</li>
 				<li>
-					<a>HTML</a>
+					<a href="#!">HTML</a>
 				</li>
 			</ul>
 			<div class="demo demoajax">

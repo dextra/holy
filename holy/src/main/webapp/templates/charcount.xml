@@ -9,17 +9,17 @@
 		<div class="tabPanel">
 			<ul>
 				<li>
-					<a>
+					<a href="#!">
 						Demo
 					</a>
 				</li>
 				<li>
-					<a>
+					<a href="#!">
 						Script
 					</a>
 				</li>
 				<li>
-					<a>
+					<a href="#!">
 						HTML
 					</a>
 				</li>
