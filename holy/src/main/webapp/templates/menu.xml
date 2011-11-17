@@ -67,6 +67,9 @@
 					<li>
 						<a href="#tableorder">Table Order</a>
 					</li>
+					<li>
+						<a href="#toggletable">Toggle Table</a>
+					</li>
 				</ul>
 			</li>
 			<li>
@@ -99,7 +102,9 @@
 	</action>
 	<script>
 		<![CDATA[
-		$('.navigation > ul').dropDown();
+		$('.navigation > ul').dropDown({
+			showlevel: true
+		});
 		]]>
 	</script>
 </engine>

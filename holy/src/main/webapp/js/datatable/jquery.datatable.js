@@ -1,5 +1,6 @@
-(function($) {
-	$.fn.datatable = function() {
+( function($) {
+	$.fn.datatable = function(opts) {
+		opts = $.extend({}, opts);
 		$(this).addClass('datatable');
 		$(this).children('tbody').datatableOddEven();
 		$(this).find(' > tbody > tr').hover(function(ev) {
@@ -7,6 +8,14 @@
 		}, function(ev) {
 			$(this).removeClass('hover');
 		});
+		if(opts.toogle) {
+			$(this).children('tbody tr:odd').hide().addClass('tcontent');
+			$(this).children('tbody tr:odd td').removeClass('lastCell');
+			$(this).children('tbody tr:even').addClass('tline');
+			$(this).children('tbody tr:even').click(function() {
+				$(this).next("tr").fadeToggle("slow");
+			});
+		}
 	}
 
 	$.fn.datatableOddEven = function() {
@@ -25,7 +34,7 @@
 			var tbody = $(a).parent();
 			var order = tbody.data('datatableSort');
 			var ret = 0;
-			for ( var i = 0; i < order.length; i++) {
+			for(var i = 0; i < order.length; i++) {
 				var o = order[i];
 				var f = $.fn.sortChildren.createHow(order);
 				var ret = f(a, b);
@@ -45,15 +54,15 @@
 			var tbody = table.children('tbody');
 			var order = tbody.data('datatableSort');
 			var entry = null;
-			for ( var i = 0; i < order.length; i++) {
+			for(var i = 0; i < order.length; i++) {
 				var o = order[i];
-				if (o.index == index) {
+				if(o.index == index) {
 					entry = o;
 					order.splice(i, 1);
 					break;
 				}
 			}
-			if (!entry) {
+			if(!entry) {
 				entry = {
 					index : index
 				}
@@ -64,7 +73,5 @@
 			order.unshift(entry);
 			tbody.sortChildren();
 		});
-
 	}
-
 }(jQuery));

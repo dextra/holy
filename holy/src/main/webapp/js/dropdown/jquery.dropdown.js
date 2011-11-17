@@ -1,7 +1,9 @@
 ( function($) {
 	$.fn.dropDown = function(opts) {
-		$(this).find('li:has(ul) > a').append(' <span>&raquo;</span>');
-		opts = opts || {};
+		opts = $.extend({}, opts);
+		if(opts.showlevel) {
+			$(this).find('li:has(ul) > a').append(' <span>&raquo;</span>');
+		}
 		var effectIn = opts.effectIn || 'slideDown';
 		var effectOut = opts.effectOut || 'slideUp';
 		var vertical = !!opts.vertical;

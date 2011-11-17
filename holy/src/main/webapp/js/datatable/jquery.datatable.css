@@ -24,6 +24,10 @@
 
 .tsBody { margin: 0; border: 0; }
 
+.datatable tr.tline td { cursor: pointer; border-bottom:1px solid #DDD; } /* for toggle option */
+
+.datatable tr.tcontent td { border-bottom:1px solid #DDD; } 
+
 /*///// Component - Buttons and Actions /////*/
 
 .datatable tr td.action span,
