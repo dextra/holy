@@ -1,10 +1,16 @@
 <engine>
 	<action selector="#content">
-		<h3>Tab Panel</h3>
+		<h3>
+			Tab
+			<span>Panel</span>
+		</h3>
 		<div class="tabPanel">
 			<ul>
 				<li>
 					<a href="#!">Demo</a>
+				</li>
+				<li>
+					<a href="#!">Options</a>
 				</li>
 				<li>
 					<a href="#!">Script</a>
@@ -15,19 +21,39 @@
 			</ul>
 			<div class="demo">
 				<div class="myToogle">
-					<h3><span>Toogle 1</span></h3>
+					<h3>
+						<span>Toogle 1</span>
+					</h3>
 					<div>Donec nec libero quis libero faucibus consectetur. In sagittis porta faucibus. Mauris sit amet tempus turpis. Pellentesque in tortor nec leo facilisis lobortis. Pellentesque sit amet augue ligula. Integer id sem et lorem convallis pellentesque. Sed nibh elit, ornare vel tincidunt eget, interdum vitae velit. Morbi et metus tellus, a lobortis velit. Proin ut sollicitudin ante. Curabitur pellentesque tempor tincidunt. Etiam odio lorem, cursus a ultricies quis, tristique nec augue. Sed vestibulum erat at urna luctus ac cursus purus tristique. Quisque blandit vehicula vestibulum. Fusce interdum augue ut ligula imperdiet in vulputate turpis mattis. Phasellus feugiat hendrerit tincidunt.</div>
 				</div>
 				<div class="myToogle">
-					<h3><span>Toogle 2</span></h3>
+					<h3>
+						<span>Toogle 2</span>
+					</h3>
 					<div>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pulvinar blandit tortor vel consectetur. Nulla auctor, libero sed tristique interdum, elit dolor laoreet purus, vel interdum orci purus mattis erat. Nulla facilisi. Ut imperdiet, nisl a accumsan ultricies, dolor nibh varius nisi, quis convallis libero nisi ut mauris. Sed vestibulum nisi eu augue pulvinar semper. Vestibulum sit amet urna libero, at dapibus urna. Phasellus odio erat, commodo in dapibus bibendum, auctor eget nisl.
 						<div class="myToogle">
-							<h3><span>Toogle inside toogle</span></h3>
+							<h3>
+								<span>Toogle inside toogle</span>
+							</h3>
 							<div>Ut elementum viverra imperdiet. Sed eget justo felis. Vivamus nec massa arcu. Curabitur dui arcu, convallis nec vestibulum nec, congue at turpis. Vestibulum quis neque arcu. Quisque venenatis sollicitudin est eu tempor. Integer aliquet varius dui in dictum. Suspendisse lorem est, commodo eget facilisis a, tempor nec lacus. Donec mauris lectus, mollis ut tincidunt et, condimentum a ante. Morbi vitae ligula sed ipsum elementum sollicitudin eget eu elit. Quisque ut erat massa. Pellentesque erat odio, vestibulum eu mollis et, sagittis vel massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent id mauris ante, at dapibus ante. Sed semper dui a sapien tincidunt id ullamcorper mi lacinia.</div>
 						</div>
 					</div>
 				</div>
+				<div class="myToogle">
+					<h3>
+						<span>Toogle 1</span>
+					</h3>
+					<div style="display:none;">Donec nec libero quis libero faucibus consectetur. In sagittis porta faucibus. Mauris sit amet tempus turpis. Pellentesque in tortor nec leo facilisis lobortis. Pellentesque sit amet augue ligula. Integer id sem et lorem convallis pellentesque. Sed nibh elit, ornare vel tincidunt eget, interdum vitae velit. Morbi et metus tellus, a lobortis velit. Proin ut sollicitudin ante. Curabitur pellentesque tempor tincidunt. Etiam odio lorem, cursus a ultricies quis, tristique nec augue. Sed vestibulum erat at urna luctus ac cursus purus tristique. Quisque blandit vehicula vestibulum. Fusce interdum augue ut ligula imperdiet in vulputate turpis mattis. Phasellus feugiat hendrerit tincidunt.</div>
+				</div>
+			</div>
+			<div class="options">
+				<p>
+					<strong>effect:</strong> toggle, fadeToggle or slideToggle(default).
+				</p>
+				<p>
+					<strong>delay:</strong> define time to open and close container
+				</p>
 			</div>
 			<div class="script">
 				<pre>$('.myToogle').togglePanel();</pre>
@@ -43,9 +69,9 @@
 		$('.html pre').snippet('html', {style:"ide-eclipse",showNum:false});
 		$('.script pre').snippet('javascript', {style:"ide-eclipse",showNum:false});
 		$(".tabPanel").tabPanel();
-		
+
 		$('.myToogle').togglePanel();
-		
+
 		]]>
 	</script>
 </engine>

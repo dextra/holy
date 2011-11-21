@@ -9,16 +9,16 @@
 
 /*///// Component - Horizontal Dropdown /////*/
 
-.hdropdown { width:100%; background: url('imgs/navbar.png') left top repeat-x; height:35px; border-bottom: 3px solid #009CD9; }
+.hdropdown { width:100%; height:35px;  background: url('imgs/navbar.png') left top repeat-x; height:35px; border-bottom: 3px solid #009CD9; }
 
-.hdropdown > li a { height:35px; line-height:34px; padding:0 15px; text-transform:capitalize; color:#FFF; font-size:12px; }
+.hdropdown li a { height:35px; line-height:34px; padding:0 15px; text-transform:capitalize; color:#FFFFFF; font-size:12px; }
 
 .hdropdown li a:hover,
 .hdropdown li.active > a { background: url('imgs/navbar.png') center bottom repeat-x; }
 
-.hdropdown li ul { width:150px; z-index:9999; background:#009CD9; border-top: 3px solid #009CD9; -moz-box-shadow:1px 1px 2px #587391; -webkit-box-shadow: 1px 1px 2px #587391; box-shadow: 1px 1px 2px #587391; }
+.hdropdown li ul { width:150px; z-index:9999; background:#009CD9; border-top: 3px solid #009CD9; -moz-box-shadow:1px 1px 2px #587391; -webkit-box-shadow: 1px 1px 2px #587391; box-shadow: 1px 1px 2px #587391; top:35px; }
 
-.hdropdown li > ul li a { border-bottom:1px solid #39B7E8; border-top:1px solid #0092CB; width:110px; height:auto; padding: 5px 20px; display:block; line-height: normal; }
+.hdropdown li > ul li a { width:150px; border-bottom:1px solid #39B7E8; border-top:1px solid #0092CB; width:110px; height:auto; padding: 5px 20px; display:block; line-height: normal; }
 
 .hdropdown li > ul li a:hover,
 .hdropdown li > ul li.active > a { background: #2D3235; color:#FFF; }
@@ -70,6 +70,8 @@
 .togglePanel { margin-bottom: 3px; }
 
 .togglePanel h3 { border:none; margin:0; font-size:12px; background:#232C2F; border-bottom:2px solid #CC2914; padding:2px 5px; color:#FFF; }
+
+.togglePanel h3.active { border-bottom:2px solid #8EBE26; }
 
 .togglePanel h3 span { padding-left: 15px; background: url('imgs/arrow_close.gif') left center no-repeat; }
 

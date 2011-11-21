@@ -1,5 +1,7 @@
 .tabPanel { margin: 10px auto; }
 
+.tabPanel > ul { overflow: hidden; }
+
 .tabPanel > ul li { float:left; list-style: none; }
 
 .tabPanel > ul li a { cursor:pointer; outline:0px; padding: 5px 10px; margin: 0 2px -1px 0; display: inline-block; background: #EEE; border:1px solid #CCC; color:#999; font-size: 12px; }

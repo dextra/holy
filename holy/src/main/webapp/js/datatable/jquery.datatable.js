@@ -8,6 +8,16 @@
 		}, function(ev) {
 			$(this).removeClass('hover');
 		});
+		var checkAll = $(this).find('tr th:first').has('input:checkbox');
+		if(checkAll) {
+			$(this).toggle(function() {
+				$(this).find('input:checkbox').attr('checked', 'checked');
+				$(checkAll).attr('checked', 'checked')
+			}, function() {
+				$(this).find('input:checkbox').removeAttr('checked');
+				$(checkAll).removeAttr('checked');
+			})
+		}
 		if(opts.toogle) {
 			$(this).children('tbody tr:odd').hide().addClass('tcontent');
 			$(this).children('tbody tr:odd td').removeClass('lastCell');

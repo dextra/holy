@@ -29,6 +29,7 @@
 				cellpadding="0">
 					<thead>
 						<tr>
+							<th><input type="checkbox" /></th>
 							<th scope="col" class="sortable">Id</th>
 							<th scope="col" class="sortable">Name</th>
 							<th scope="col" class="sortable">Date</th>
@@ -37,96 +38,112 @@
 					</thead>
 					<tbody>
 						<tr>
+							<td><input type="checkbox" /></td>
 							<td>28</td>
 							<td>Homer Simpson008</td>
 							<td>15/01/1982</td>
 							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 						<tr>
+							<td><input type="checkbox" /></td>
 							<td>25</td>
 							<td>Homer Simpson</td>
 							<td>15/01/1982</td>
 							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 						<tr>
+							<td><input type="checkbox" /></td>
 							<td>27</td>
 							<td>Homer Simpson7</td>
 							<td>15/01/1982</td>
 							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 						<tr>
+							<td><input type="checkbox" /></td>
 							<td>26</td>
 							<td>Homer Simpson06</td>
 							<td>15/01/1982</td>
 							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 						<tr>
+							<td><input type="checkbox" /></td>
 							<td>25</td>
 							<td>Homer Simpson</td>
 							<td>15/01/1982</td>
 							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 						<tr>
+							<td><input type="checkbox" /></td>
 							<td>25</td>
 							<td>Homer Simpson</td>
 							<td>15/01/1982</td>
 							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 						<tr>
+							<td><input type="checkbox" /></td>
 							<td>25</td>
 							<td>Homer Simpson</td>
 							<td>15/01/1982</td>
 							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 						<tr>
+							<td><input type="checkbox" /></td>
 							<td>25</td>
 							<td>Homer Simpson</td>
 							<td>15/01/1982</td>
 							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 						<tr>
+							<td><input type="checkbox" /></td>
 							<td>25</td>
 							<td>Homer Simpson</td>
 							<td>15/01/1982</td>
 							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 						<tr>
+							<td><input type="checkbox" /></td>
 							<td>25</td>
 							<td>Homer Simpson</td>
 							<td>15/01/1982</td>
 							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 						<tr>
+							<td><input type="checkbox" /></td>
 							<td>25</td>
 							<td>Homer Simpson</td>
 							<td>15/01/1982</td>
 							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 						<tr>
+							<td><input type="checkbox" /></td>
 							<td>25</td>
 							<td>Homer Simpson</td>
 							<td>15/01/1982</td>
 							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 						<tr>
+							<td><input type="checkbox" /></td>
 							<td>25</td>
 							<td>Homer Simpson</td>
 							<td>15/01/1982</td>
 							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 						<tr>
+							<td><input type="checkbox" /></td>
 							<td>25</td>
 							<td>Homer Simpson</td>
 							<td>15/01/1982</td>
 							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 						<tr>
+							<td><input type="checkbox" /></td>
 							<td>25</td>
 							<td>Homer Simpson</td>
 							<td>15/01/1982</td>
 							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 						<tr>
+							<td><input type="checkbox" /></td>
 							<td>25</td>
 							<td>Homer Simpson</td>
 							<td>15/01/1982</td>

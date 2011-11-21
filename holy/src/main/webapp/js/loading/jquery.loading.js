@@ -17,6 +17,7 @@
 		
 		if (!$('.loading').length) {
 			$('body').append('<div class="loading"><div class="load"></div><div class="overlay"></div></div>');
+			$('.overlay').css('height', $(window).height());
 		}
 		
 		$('.loading .load').center();

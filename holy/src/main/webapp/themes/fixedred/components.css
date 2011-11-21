@@ -9,9 +9,9 @@
 
 /*///// Component - Horizontal Dropdown /////*/
 
-.hdropdown { width:100%; background: url('imgs/navbar.png') left top repeat-x; height:35px; border-bottom: 3px solid #BF2814; }
+.hdropdown { width:100%; background: url('imgs/navbar.png') left top repeat-x; height:35px; border-bottom: 3px solid #BF2814; height:35px; }
 
-.hdropdown > li a { height:35px; line-height:34px; padding:0 15px; text-transform:capitalize; color:#FFF; font-size:12px; }
+.hdropdown > li a { height:35px; line-height:34px; padding:0 15px; text-transform:capitalize; color:#FFFFFF; font-size:12px; }
 
 .hdropdown li a:hover,
 .hdropdown li.active > a { background: url('imgs/navbar.png') center bottom repeat-x; }

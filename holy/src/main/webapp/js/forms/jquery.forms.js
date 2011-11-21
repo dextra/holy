@@ -31,14 +31,16 @@
 	$.fn.form = function() {
 		var forms = $(this);
 		forms.addClass('forms');
-		var list = forms.find('.require label');
+		var list = forms.find('.require label:first-child');
 		if(!list.find('span.required').length) {
 			list.prepend('<span class="required">*</span>');
 		}
-		forms.find('label').maximize('width', '');
+		forms.find('ul li label:first-child').maximize('width', '');
 		var labelW = forms.find('ul li label').width();
 		
-		forms.find('ul li:not(:has(label))').css('marginLeft', labelW + 10);
+		forms.find('ul li:not(:has(label))').css('marginLeft', labelW + 9);
+		
+		forms.find('ul li:has(textarea)').addClass('clear');
 		
 		$(this).find('input, textarea, select').live('focus', function() {
 			$(this).addClass('focus');

@@ -157,7 +157,7 @@
 		$('.script pre').snippet('javascript', {style:"ide-eclipse",showNum:false});
 		$(".tabPanel").tabPanel();
 
-		$('html').animate({scrollTop : $('html').height()},'slow');
+		$('html').animate({scrollTop : $('body').height()},'slow');
 
 		$(".btNone").click(function() {
 		$('html').animate({scrollTop : 0},'slow');

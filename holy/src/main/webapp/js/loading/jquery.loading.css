@@ -1,6 +1,6 @@
 /*///// Component - loading /////*/
 
-.loading { display: block; cursor: wait; }
+.loading { display: block; cursor: wait; z-index: 999999; }
 
 .loading .overlay,
 .loading .overlayInside { position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; overflow: hidden; display: block; z-index: 999; background:#000; opacity: 0.50; filter: alpha(opacity = 50); }

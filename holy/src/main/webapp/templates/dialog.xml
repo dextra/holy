@@ -160,7 +160,6 @@
 		$(".tabPanel").tabPanel();
 		$('.myForm').form();
 		$('.myForm [title]').tipsy({trigger: 'focus', gravity: 's', fade: true});
-		$('.myForm input.date').simpleDatepicker();
 		$('.myDialog, .another').hide();
 		$(".showDialog").click(function() {
 		$(".myDialog").xdialog({

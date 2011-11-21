@@ -5,7 +5,7 @@
 	$.fn.tabPanel = function(opts) {
 		$(this).addClass('tabPanel');
 		opts = opts || {};
-		var effect = opts.effect || 'toggle';
+		var effect = opts.effect || 'fadeToggle';
 		var delay = opts.delay;
 
 		var tabpanel = $(this);

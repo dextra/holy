@@ -12,6 +12,9 @@
 .forms select,
 .forms textarea { padding:4px; background:#FAFAFA; border:1px solid #DDD; margin: 0; vertical-align: middle; }
 
+.forms input[type=checkbox],
+.forms input[type=radio] { vertical-align: middle; margin:7px 2px 7px 5px; }
+
 .forms ul li { list-style:none; margin: 10px 0; }
 
 .forms ul li label { text-align:right; margin:0 3px; display:inline-block; }
@@ -20,9 +23,11 @@
 
 .forms ul li .focus { border: 1px solid #333; background-color: #FFF; }
 
+.forms ul > li.clear { clear:left; margin-bottom: 10px; }
+
 /*///// Component - LiquidForm /////*/
 
-.liquidForm ul li { float: left; margin:  5px 5px 5px 0px; }
+.liquidForm ul li { float: left; margin:  5px 5px 5px 0px; width: auto; }
 
 /*///// Component - CharCounter /////*/
 
@@ -36,11 +41,7 @@
 
 /*///// Component - MSG BOX's /////*/
 
-.forms ul .box { margin:5px 10px; border-radius:5px; padding:10px 15px; color:#232C2F; }
-
-.forms ul .box .icon { width:5px; vertical-align:top; display:inline-block; margin-right:10px;  color:#FFF; font-size:20px; border-radius: 80px; padding: 5px 10px; font-weight:bold; text-shadow: 0px -1px 0px #000; line-height: 14px; }
-
-.forms ul .box p { display: inline-block; width:90%; }
+.forms ul .box { float:none; clear:left; display:block; margin:5px 0; border-radius:5px; padding:10px; color:#232C2F; }
 
 /*///// Component - Buttons /////*/
 
@@ -48,7 +49,7 @@
 
 .buttons a,
 .buttons input,
-.buttons button { display: inline-block; padding: 3px 5px; cursor: pointer; background:#FAFAFA; color: #333; border: 1px solid #DDD; margin: 5px 5px 5px 0px; outline: 0px; }
+.buttons button { display: inline-block; padding: 3px 5px; cursor: pointer; background:#FAFAFA; color: #333; border: 1px solid #DDD; margin: 0 5px 0 0px; outline: 0px; }
 
 .buttons a { padding: 4px 5px; }
 

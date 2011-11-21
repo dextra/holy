@@ -7,6 +7,9 @@
 					<a href="#">Demo</a>
 				</li>
 				<li>
+					<a href="#!">Options</a>
+				</li>
+				<li>
 					<a href="#">Script</a>
 				</li>
 				<li>
@@ -70,6 +73,10 @@
 						mollis lectus. In hac habitasse platea dictumst.
 					</div>
 				</div>
+			</div>
+			<div class="options">
+				<p><strong>effect:</strong> toggle, slideToggle or fadeToggle(default).</p>
+				<p><strong>delay:</strong> define time to open and close container</p>
 			</div>
 			<div class="script">
 				<pre>$(".tab").tabPanel();</pre>

@@ -12,11 +12,9 @@
 .hdropdown li a:hover,
 .hdropdown li.active a { text-decoration: none; }
 
-.hdropdown li span { color:#FFF; }
+.hdropdown li ul { display:none; position:absolute; left:0px; }
 
-.hdropdown li ul { display:none; position:absolute; }
-
-.hdropdown li ul li ul { left:100%; top:0; }
+.hdropdown li ul li ul { left:100%; top:0px; }
 
 /* vertical dropdown */
 

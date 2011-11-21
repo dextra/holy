@@ -10,6 +10,9 @@
 					<a href="#!">Demo</a>
 				</li>
 				<li>
+					<a href="#!">Options</a>
+				</li>
+				<li>
 					<a href="#!">Script</a>
 				</li>
 				<li>
@@ -325,12 +328,29 @@
 					</li>
 				</ul>
 			</div>
+			<div class="options">
+				<p><strong>effectIn:</strong> set effect to show submenu (default is slideDown)</p>
+				<p><strong>effectOut:</strong> set effect to show submenu (default is slideUp)</p>
+				<p><strong>delay:</strong> set time to show and hide submenu</p>
+				<p><strong>showlevel:</strong> true to show arrow &amp;raquo;</p>
+				<p><strong>vertical:</strong> set true to show dropdown in vertical position</p>
+			</div>
 			<div class="script">
-				<pre>$('.myNav').dropDown({
-					effectIn: 'fadeIn',
-					effectOut: 'fadeOut',
-					delay: 200
-					});</pre>
+				<pre>
+					$('.myNav').dropDown({
+						effectIn: 'fadeIn',
+						effectOut: 'fadeOut',
+						delay: 200,
+						showlevel: true
+					});
+					$('.myNavV').dropDown({
+						effectIn: 'fadeIn',
+						effectOut: 'fadeOut',
+						delay: 200,
+						vertical: true,
+						showlevel: true
+					});
+				</pre>
 			</div>
 			<div class="html">
 				<pre></pre>
@@ -347,13 +367,15 @@
 		$('.myNav').dropDown({
 		effectIn: 'fadeIn',
 		effectOut: 'fadeOut',
-		delay: 200
+		delay: 200,
+		showlevel: true
 		});
 		$('.myNavV').dropDown({
 		effectIn: 'fadeIn',
 		effectOut: 'fadeOut',
 		delay: 200,
-		vertical: 'true'
+		vertical: true,
+		showlevel: true
 		});
 		]]>
 	</script>
