@@ -61,7 +61,7 @@
 		$(".tabPanel").tabPanel();
 
 		$('.forms').form();
-		$('#content .forms .buttonSend').click(function() {
+		$('#content .forms .btSend').click(function() {
 		var form = $(this).closest('form');
 		var msg = form.find('label[for="message"] + input').val();
 		var type = form.find('label[for="type"] + select').val();
