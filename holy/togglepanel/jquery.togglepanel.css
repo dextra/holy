@@ -1,0 +1,5 @@
+.togglePanel > h3 {	background: #FAFAFA; padding:2px 10px; margin:1px 0px; font-size:18px; color:#666; cursor: pointer; border:1px solid #EEE; }
+
+.togglePanel > div { background: #FFF }
+
+.togglePanel div { padding: 10px; }

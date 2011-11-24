@@ -1,0 +1,11 @@
+<engine>
+	<action selector="#content">
+		<h3>
+			Components
+		</h3>
+	</action>
+	<script>
+		<![CDATA[
+		]]>
+	</script>
+</engine>

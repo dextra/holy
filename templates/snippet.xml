@@ -1,0 +1,18 @@
+<engine>
+	<action selector="#content">
+		<div class="togglePanel">
+			<h3>#header</h3>
+			This is provided by <a href="http://steamdev.com/snippet/" target="_blank">http://steamdev.com/snippet/</a>
+			<div>
+				<pre class="snippet">
+				</pre>
+			</div>
+		</div>
+	</action>
+	<script>
+		<![CDATA[
+			$('#content .snippet').text($('#header').html());
+			$('#content .snippet').snippet('html', {style:"ide-eclipse",showNum:false});
+		]]>
+	</script>
+</engine>

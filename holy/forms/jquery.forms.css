@@ -1,0 +1,63 @@
+/*///// Component - Form /////*/
+
+.forms { margin:0px 0px 10px 0px; }
+
+.forms * { font-size: 12px; }
+
+.forms fieldset { border: 1px solid #EEE; padding: 10px; }
+
+.forms fieldset legend { font-weight: bold; font-size:16px; padding:0 10px; margin: 0 10px; }
+
+.forms input,
+.forms select,
+.forms textarea { padding:4px; background:#FAFAFA; border:1px solid #DDD; margin: 0; vertical-align: middle; }
+
+.forms input[type=checkbox],
+.forms input[type=radio] { vertical-align: middle; margin:7px 2px 7px 5px; }
+
+.forms ul li { list-style:none; margin: 10px 0; }
+
+.forms ul li label { text-align:right; margin:0 3px; display:inline-block; }
+
+.forms ul li span.required { color:#C00; margin-right:3px; display: inline-block; }
+
+.forms ul li .focus { border: 1px solid #333; background-color: #FFF; }
+
+.forms ul > li.clear { clear:left; margin-bottom: 10px; }
+
+/*///// Component - LiquidForm /////*/
+
+.liquidForm ul li { float: left; margin:  5px 5px 5px 0px; width: auto; }
+
+/*///// Component - CharCounter /////*/
+
+.charCount { display: block; font-size: 11px; color:#999; padding:3px 0; }
+
+.charCount span { font-weight: bold; }
+
+.countWarning { color:#9F6000; }
+
+.countExceeded { color:#D8000C; }
+
+/*///// Component - MSG BOX's /////*/
+
+.forms ul .box { float:none; clear:left; display:block; margin:5px 0; border-radius:5px; padding:10px; color:#232C2F; }
+
+/*///// Component - Buttons /////*/
+
+.buttons { clear: left; display: block; padding:0; }
+
+.buttons a,
+.buttons input,
+.buttons button { display: inline-block; padding: 3px 5px; cursor: pointer; background:#FAFAFA; color: #333; border: 1px solid #DDD; margin: 0 5px 0 0px; outline: 0px; }
+
+.buttons a { padding: 4px 5px; }
+
+.buttons input { padding: 3px 5px; }
+
+.buttons a:hover,
+.buttons input:hover,
+.buttons button:hover { color:#FFF; background-color: #000; }
+
+
+

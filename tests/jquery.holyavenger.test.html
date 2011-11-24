@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+                    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/qunit/git/qunit.css"
+	type="text/css" media="screen" />
+<script type="text/javascript"
+	src="http://code.jquery.com/qunit/git/qunit.js"></script>
+<script type="text/javascript"
+	src="../js/lib/jquery.holyavenger.js"></script>
+
+<script>
+	$(document).ready(function() {
+		test("test parseEngine", function() {
+			var count = 0;
+			$.holyavenger.addParsers({
+				'parser1' : function(tag) {
+					equals(tag.nodeName, 'parser1', 'Expected tag name for this parser.');
+					count++;
+				},
+				'parser2' : function(tag) {
+					equals(tag.nodeName, 'parser2', 'Expected tag name for this parser.');
+					count++;
+				}
+			});
+			var engineStr = '<engine><parser1></parser1><parser2/></engine>';
+			$.holyavenger.parseEngine(engineStr);
+			equals(count, 2, 'Number of parsed tags.');
+			
+			engineStr = '<engine><parser3></parser3></engine>';
+			raises(function() {
+				$.holyavenger.parseEngine(engineStr);
+			}, function(e) {
+				return e === 'Parser for <parser3> not found.';
+			}, 'Unknown tag error expected.');
+		});
+		test('test parseAction', function() {
+			var engineStr = '<engine><action id="actionIdDiv">test1</action>' +
+				'<action selector="#actionSelectorDiv">test2</action>' +
+				'<action selector="#actionComplexSelectorDiv .holder span">test3</action>' +
+				'<action id="actionComplexActionDiv"><div><![CDATA[test4]]></div></action></engine>';
+			$.holyavenger.parseEngine(engineStr);
+			equals($('#actionIdDiv').html(), 'test1', 'Tag content replaced');
+			equals($('#actionSelectorDiv').html(), 'test2', 'Tag content replaced');
+			$.each($('#actionComplexSelectorDiv .holder span'), function(idx, span) {
+				equals($(span).html(), 'test3', 'Tag content replaced');
+			});
+			equals($('#actionComplexActionDiv div').html(), 'test4', 'Tag content replaced');
+			
+
+			engineStr = '<engine><action></action></engine>';
+			raises(function() {
+				$.holyavenger.parseEngine(engineStr);
+			}, function(e) {
+				return e === '<action> requires id or selector attribute';
+			}, 'Malformed action tag error expected.');
+		});
+		test('test parseScript', function() {
+			var engineStr = "<engine><script>$(window).attr('attr', 'attr');<\/script><\/engine>";
+			$.holyavenger.parseEngine(engineStr);
+			equals($(window).attr('attr'), 'attr', 'Script code execution.');
+		});
+	});
+</script>
+
+</head>
+<body>
+	<h1 id="qunit-header">Holyavenger tests</h1>
+	<h2 id="qunit-banner"></h2>
+	<div id="qunit-testrunner-toolbar"></div>
+	<h2 id="qunit-userAgent"></h2>
+	<ol id="qunit-tests"></ol>
+	<div id="qunit-fixture">
+		<div id="actionIdDiv"></div>
+		<div id="actionSelectorDiv"></div>
+		<div id="actionComplexSelectorDiv"><div class="holder"><span></span><span></span></div></div>
+		<div id="actionComplexActionDiv"></div>
+	</div>
+</body>
+</html>

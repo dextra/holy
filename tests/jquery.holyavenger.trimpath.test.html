@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+                    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/qunit/git/qunit.css" type="text/css" media="screen" />
+<script type="text/javascript" src="http://code.jquery.com/qunit/git/qunit.js"></script>
+<script type="text/javascript" src="../js/lib/jquery.holyavenger.js"></script>
+<script type="text/javascript" src="../js/lib/trimpath.js"></script>
+<script type="text/javascript" src="../js/lib/jquery.holyavenger.trimpath.js"></script>
+
+<script>
+	$(document).ready(function() {
+		test('test parseTemplate', function() {
+			var engineStr = '<engine><template id="templateIdDiv">${test1}</template>' +
+				'<template selector="#templateSelectorDiv">${test2}</template>' +
+				'<template selector="#templateComplexSelectorDiv .holder span">${test3}</template>' +
+				'<template id="templateComplexTemplateDiv"><div><![CDATA[${test4}]]></div></template></engine>';
+			var context = {test1: 'test1', test2: 'test2', test3: 'test3', test4: 'test4'};
+			$.holyavenger.parseEngine(engineStr, context);
+			equals($('#templateIdDiv').html(), 'test1', 'Tag content replaced');
+			equals($('#templateSelectorDiv').html(), 'test2', 'Tag content replaced');
+			$.each($('#templateComplexSelectorDiv .holder span'), function(idx, span) {
+				equals($(span).html(), 'test3', 'Tag content replaced');
+			});
+			equals($('#templateComplexTemplateDiv div').html(), 'test4', 'Tag content replaced');
+			
+
+			engineStr = '<engine><template></template></engine>';
+			raises(function() {
+				$.holyavenger.parseEngine(engineStr);
+			}, function(e) {
+				return e === '<template> requires id or selector attribute';
+			}, 'Malformed template tag error expected.');
+		});
+	});
+</script>
+
+</head>
+<body>
+	<h1 id="qunit-header">Holyavenger tests</h1>
+	<h2 id="qunit-banner"></h2>
+	<div id="qunit-testrunner-toolbar"></div>
+	<h2 id="qunit-userAgent"></h2>
+	<ol id="qunit-tests"></ol>
+	<div id="qunit-fixture">
+		<div id="templateIdDiv"></div>
+		<div id="templateSelectorDiv"></div>
+		<div id="templateComplexSelectorDiv"><div class="holder"><span></span><span></span></div></div>
+		<div id="templateComplexTemplateDiv"></div>
+	</div>
+</body>
+</html>

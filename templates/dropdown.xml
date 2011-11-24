@@ -1,0 +1,382 @@
+﻿<engine>
+	<action selector="#content">
+		<h3>
+			Dropdown
+			<span>Menu</span>
+		</h3>
+		<div class="tabPanel">
+			<ul>
+				<li>
+					<a href="#!">Demo</a>
+				</li>
+				<li>
+					<a href="#!">Options</a>
+				</li>
+				<li>
+					<a href="#!">Script</a>
+				</li>
+				<li>
+					<a href="#!">HTML</a>
+				</li>
+			</ul>
+			<div class="demo">
+				<ul class="myNav">
+					<li>
+						<a href="#">Dropdown</a>
+					</li>
+					<li>
+						<a href="#">Dropdown</a>
+						<ul>
+							<li>
+								<a href="#">Dropdown</a>
+							</li>
+							<li>
+								<a href="#">Dropdown</a>
+							</li>
+							<li>
+								<a href="#">Dropdown</a>
+								<ul>
+									<li>
+										<a href="#">Dropdown</a>
+									</li>
+									<li>
+										<a href="#">Dropdown</a>
+									</li>
+									<li>
+										<a href="#">Dropdown</a>
+									</li>
+									<li>
+										<a href="#">Dropdown</a>
+									</li>
+									<li>
+										<a href="#">Dropdown</a>
+										<ul>
+											<li>
+												<a href="#">Dropdown</a>
+											</li>
+											<li>
+												<a href="#">Dropdown</a>
+											</li>
+											<li>
+												<a href="#">Dropdown</a>
+											</li>
+											<li>
+												<a href="#">Dropdown</a>
+											</li>
+											<li>
+												<a href="#">Dropdown</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Dropdown</a>
+							</li>
+							<li>
+								<a href="#">Dropdown</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Dropdown</a>
+						<ul>
+							<li>
+								<a href="#">Dropdown</a>
+								<ul>
+									<li>
+										<a href="#">Dropdown</a>
+									</li>
+									<li>
+										<a href="#">Dropdown</a>
+									</li>
+									<li>
+										<a href="#">Dropdown</a>
+									</li>
+									<li>
+										<a href="#">Dropdown</a>
+										<ul>
+											<li>
+												<a href="#">Dropdown</a>
+												<ul>
+													<li>
+														<a href="#">Dropdown</a>
+													</li>
+													<li>
+														<a href="#">Dropdown</a>
+													</li>
+													<li>
+														<a href="#">Dropdown</a>
+													</li>
+													<li>
+														<a href="#">Dropdown</a>
+														<ul>
+															<li>
+																<a href="#">Dropdown</a>
+															</li>
+															<li>
+																<a href="#">Dropdown</a>
+															</li>
+															<li>
+																<a href="#">Dropdown</a>
+															</li>
+															<li>
+																<a href="#">Dropdown</a>
+															</li>
+															<li>
+																<a href="#">Dropdown</a>
+															</li>
+														</ul>
+													</li>
+													<li>
+														<a href="#">Dropdown</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">Dropdown</a>
+											</li>
+											<li>
+												<a href="#">Dropdown</a>
+											</li>
+											<li>
+												<a href="#">Dropdown</a>
+											</li>
+											<li>
+												<a href="#">Dropdown</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Dropdown</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Dropdown</a>
+							</li>
+							<li>
+								<a href="#">Dropdown</a>
+							</li>
+							<li>
+								<a href="#">Dropdown</a>
+							</li>
+							<li>
+								<a href="#">Dropdown</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Dropdown</a>
+					</li>
+					<li>
+						<a href="#">Dropdown</a>
+					</li>
+				</ul>
+				<hr />
+				<ul class="myNavV">
+					<li>
+						<a href="#">Dropdown</a>
+					</li>
+					<li>
+						<a href="#">Dropdown</a>
+						<ul>
+							<li>
+								<a href="#">Dropdown</a>
+							</li>
+							<li>
+								<a href="#">Dropdown</a>
+							</li>
+							<li>
+								<a href="#">Dropdown</a>
+								<ul>
+									<li>
+										<a href="#">Dropdown</a>
+									</li>
+									<li>
+										<a href="#">Dropdown</a>
+									</li>
+									<li>
+										<a href="#">Dropdown</a>
+									</li>
+									<li>
+										<a href="#">Dropdown</a>
+									</li>
+									<li>
+										<a href="#">Dropdown</a>
+										<ul>
+											<li>
+												<a href="#">Dropdown</a>
+											</li>
+											<li>
+												<a href="#">Dropdown</a>
+											</li>
+											<li>
+												<a href="#">Dropdown</a>
+											</li>
+											<li>
+												<a href="#">Dropdown</a>
+											</li>
+											<li>
+												<a href="#">Dropdown</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Dropdown</a>
+							</li>
+							<li>
+								<a href="#">Dropdown</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Dropdown</a>
+						<ul>
+							<li>
+								<a href="#">Dropdown</a>
+								<ul>
+									<li>
+										<a href="#">Dropdown</a>
+									</li>
+									<li>
+										<a href="#">Dropdown</a>
+									</li>
+									<li>
+										<a href="#">Dropdown</a>
+									</li>
+									<li>
+										<a href="#">Dropdown</a>
+										<ul>
+											<li>
+												<a href="#">Dropdown</a>
+												<ul>
+													<li>
+														<a href="#">Dropdown</a>
+													</li>
+													<li>
+														<a href="#">Dropdown</a>
+													</li>
+													<li>
+														<a href="#">Dropdown</a>
+													</li>
+													<li>
+														<a href="#">Dropdown</a>
+														<ul>
+															<li>
+																<a href="#">Dropdown</a>
+															</li>
+															<li>
+																<a href="#">Dropdown</a>
+															</li>
+															<li>
+																<a href="#">Dropdown</a>
+															</li>
+															<li>
+																<a href="#">Dropdown</a>
+															</li>
+															<li>
+																<a href="#">Dropdown</a>
+															</li>
+														</ul>
+													</li>
+													<li>
+														<a href="#">Dropdown</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a href="#">Dropdown</a>
+											</li>
+											<li>
+												<a href="#">Dropdown</a>
+											</li>
+											<li>
+												<a href="#">Dropdown</a>
+											</li>
+											<li>
+												<a href="#">Dropdown</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Dropdown</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Dropdown</a>
+							</li>
+							<li>
+								<a href="#">Dropdown</a>
+							</li>
+							<li>
+								<a href="#">Dropdown</a>
+							</li>
+							<li>
+								<a href="#">Dropdown</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Dropdown</a>
+					</li>
+					<li>
+						<a href="#">Dropdown</a>
+					</li>
+				</ul>
+			</div>
+			<div class="options">
+				<p><strong>effectIn:</strong> set effect to show submenu (default is slideDown)</p>
+				<p><strong>effectOut:</strong> set effect to show submenu (default is slideUp)</p>
+				<p><strong>delay:</strong> set time to show and hide submenu</p>
+				<p><strong>showlevel:</strong> true to show arrow &amp;raquo;</p>
+				<p><strong>vertical:</strong> set true to show dropdown in vertical position</p>
+			</div>
+			<div class="script">
+				<pre>
+					$('.myNav').dropDown({
+						effectIn: 'fadeIn',
+						effectOut: 'fadeOut',
+						delay: 200,
+						showlevel: true
+					});
+					$('.myNavV').dropDown({
+						effectIn: 'fadeIn',
+						effectOut: 'fadeOut',
+						delay: 200,
+						vertical: true,
+						showlevel: true
+					});
+				</pre>
+			</div>
+			<div class="html">
+				<pre></pre>
+			</div>
+		</div>
+	</action>
+	<script>
+		<![CDATA[
+		$('.html pre').text($('.demo').html());
+		$('.html pre').snippet('html', {style:"ide-eclipse",showNum:false});
+		$('.script pre').snippet('javascript', {style:"ide-eclipse",showNum:false});
+		$(".tabPanel").tabPanel();
+
+		$('.myNav').dropDown({
+		effectIn: 'fadeIn',
+		effectOut: 'fadeOut',
+		delay: 200,
+		showlevel: true
+		});
+		$('.myNavV').dropDown({
+		effectIn: 'fadeIn',
+		effectOut: 'fadeOut',
+		delay: 200,
+		vertical: true,
+		showlevel: true
+		});
+		]]>
+	</script>
+</engine>

@@ -1,0 +1,66 @@
+<engine>
+	<action selector="#content">
+		<h3>
+			Action
+			<span>Buttons</span>
+		</h3>
+		<div class="tabPanel">
+			<ul>
+				<li>
+					<a href="#!">Demo</a>
+				</li>
+				<li>
+					<a href="#!">Script</a>
+				</li>
+				<li>
+					<a href="#!">HTML</a>
+				</li>
+			</ul>
+			<div class="demo">
+				<div class="buttons">
+					<input type="button" class="btSave" value="Save" />
+					<input type="button" class="btCancel" value="Cancel" />
+					<input type="button" class="btView" value="View" />
+					<input type="button" class="btAdd" value="Add" />
+					<input type="button" class="btClear" value="Clear" />
+					<input type="button" class="btSearch" value="Search" />
+					<input type="button" class="btEdit" value="Edit" />
+					<input type="button" class="btRemove" value="Remove" />
+					<input type="button" class="btFilter" value="Filter" />
+					<input type="button" class="btDownload" value="Download" />
+					<input type="button" class="btUpload" value="Upload" />
+					<input type="button" class="btExcel" value="Excel" />
+					<input type="button" class="btPdf" value="PDF" />
+					<input type="button" class="btMap" value="Sitemap" />
+					<input type="button" class="btWait" value="Wait" />
+					<input type="button" class="btExport" value="Export" />
+					<input type="button" class="btRename" value="Rename" />
+					<input type="button" class="btNewdoc" value="New Document" />
+					<input type="button" class="btBack" value="Back" />
+					<input type="button" class="btNext" value="Next" />
+					<input type="button" class="btUser" value="User" />
+					<input type="button" class="btConfig" value="Configuration" />
+					<input type="button" class="btLogout" value="Logout" />
+					<input type="button" class="btSend" value="Logout" />
+					<input type="button" class="btNone" value="Simple" />
+				</div>
+			</div>
+			<div class="script">
+				<pre></pre>
+			</div>
+			<div class="html">
+				<pre></pre>
+			</div>
+		</div>
+	</action>
+	<script>
+		<![CDATA[
+		$('.html pre').text($('.demo').html());
+		$('.html pre').snippet('html', {style:"ide-eclipse",showNum:false});
+		$('.script pre').snippet('javascript', {style:"ide-eclipse",showNum:false});
+		$(".tabPanel").tabPanel();
+
+		]]>
+	</script>
+</engine>
+

@@ -1,0 +1,28 @@
+/*///// Component - Message /////*/
+
+.message { margin:10px 0; }
+
+.message li { color:#000; padding:3px 5px; font-size:11px; background:#FFF; border:1px solid #EEE; margin:3px 10px; list-style:none; }
+
+.message li a, 
+.message li .time { float:right; padding:0 5px; }
+
+.message .error a,
+.message .error { color:#D8000C; }
+
+.message .error { border:1px solid #D8000C; background-color:#FFBABA; }
+
+.message .success a,
+.message .success { color:#4F8A10; }
+
+.message .success { border:1px solid #4F8A10; background-color:#DFF2BF; }
+
+.message .info a,
+.message .info { color:#0092CB; }
+
+.message .info { border:1px solid #0092CB; background-color:#BDE5F8; }
+
+.message .warning a,
+.message .warning { color:#9F6000; }
+
+.message .warning { border:1px solid #9F6000; background-color:#FEEFB3; }

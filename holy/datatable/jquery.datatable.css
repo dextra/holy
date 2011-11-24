@@ -1,0 +1,45 @@
+/*///// Component - Datatable /////*/
+
+.datatable { width: 100%; margin: 10px auto; border:1px solid #DDD; overflow:auto; overflow-x: hidden; }
+
+.datatable tr.odd { background: #FAFAFA; }
+
+.datatable tr th,
+.datatable tr td { padding: 5px; font-size: 12px; text-align: center; }
+
+.datatable tr th { cursor: pointer; }
+
+.datatable tr td { border-right: 1px solid #DDD; }
+
+.datatable thead th,
+.datatable tfoot td { text-transform: capitalize; background: #F6F6F6; font-size:12px; font-weight:bold; border-bottom: 1px solid #DDD; }
+
+.datatable tfoot td { border: 0; border-top: 1px solid #DDD; }
+
+.datatable tr .left { text-align: left; }
+
+.datatable tr .lastCell { border:none; }
+
+.datatable tr.hover { background: #EEE; }
+
+.tsBody { margin: 0; border: 0; }
+
+.datatable tr.tline td { cursor: pointer; border-bottom:1px solid #DDD; } /* for toggle option */
+
+.datatable tr.tcontent td { border-bottom:1px solid #DDD; } 
+
+/*///// Component - Buttons and Actions /////*/
+
+.datatable tr td.action span,
+.datatable tr td.action input[type=submit],
+.datatable tr td.action a { width: 16px; height: 16px; border: 0; display: inline-block; outline: 0px; text-indent:-9999px; cursor: pointer; }
+
+/*///// Component - Pagination /////*/
+
+.paging { text-align: center; margin: 10px auto; }
+
+.paging a,
+.paging span { margin: 0 5px; outline: 0px; }
+
+.paging .active { font-weight:bold; }
+

@@ -1,0 +1,13 @@
+.tabPanel { margin: 10px auto; }
+
+.tabPanel > ul { overflow: hidden; }
+
+.tabPanel > ul li { float:left; list-style: none; }
+
+.tabPanel > ul li a { cursor:pointer; outline:0px; padding: 5px 10px; margin: 0 2px -1px 0; display: inline-block; background: #EEE; border:1px solid #CCC; color:#999; font-size: 12px; }
+
+.tabPanel > ul li a:hover { color:#666; }
+
+.tabPanel > ul .active a { background: #FFF; border-bottom:1px solid #FFF; color:#000; padding: 5px 10px; margin: 0 2px -1px 0; }
+
+.tabPanel > div { clear: left; padding: 15px; border: 1px solid #CCC;  }

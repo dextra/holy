@@ -1,0 +1,202 @@
+<engine>
+	<action selector="#content">
+		<h3>Datatable</h3>
+		<div class="tabPanel">
+			<ul>
+				<li>
+					<a href="#!">Demo</a>
+				</li>
+				<li>
+					<a href="#!">Script</a>
+				</li>
+				<li>
+					<a href="#!">HTML</a>
+				</li>
+			</ul>
+			<div class="demo">
+				This component changes your DOM. It creates a table with headers and another table with rows.
+				<table class="datatable" border="0" cellspacing="0" cellpadding="0">
+					<thead>
+						<tr>
+							<th scope="col">Id</th>
+							<th scope="col">Name</th>
+							<th scope="col">Date</th>
+							<th scope="col">Active</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>Homer Simpson</td>
+							<td>15/01/1982</td>
+							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td>Id</td>
+							<td>Name</td>
+							<td>Date</td>
+							<td>Active</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+			<div class="script">
+				<pre>$('.datatable').tableScroll({height:150});
+					$('.datatable').datatable();</pre>
+			</div>
+			<div class="html">
+				<pre></pre>
+			</div>
+		</div>
+	</action>
+	<script>
+		<![CDATA[
+		$('.html pre').text($('.demo').html());
+		$('.html pre').snippet('html', {style:"ide-eclipse",showNum:false});
+		$('.script pre').snippet('javascript', {style:"ide-eclipse",showNum:false});
+		$(".tabPanel").tabPanel();
+
+		$('.datatable').tableScroll({height:300});
+		$('.datatable').datatable();
+		
+		$('.datatable tr td a').tipsy();
+		
+		$(".datatable tr td a").click(function() {
+			if ($(this).hasClass('btenable')){
+				$(this).removeClass('btenable').addClass('btdisable');
+			}else {
+				$(this).addClass('btenable').removeClass('btdisable');
+			}
+		});
+		
+		]]>
+	</script>
+</engine>
