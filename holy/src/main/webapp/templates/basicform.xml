@@ -17,7 +17,7 @@
 				</li>
 			</ul>
 			<div class="demo">
-				<form class="myForm liquidForm">
+				<form class="myForm">
 					<fieldset>
 						<legend>Register</legend>
 						<ul>
@@ -94,7 +94,7 @@
 						</ul>
 					</fieldset>
 				</form>
-				<form class="myForm">
+				<form class="myForm2">
 					<fieldset>
 						<legend>Register</legend>
 						<ul>
@@ -176,7 +176,8 @@
 				</form>
 			</div>
 			<div class="script">
-				<pre>$('.myForm').form();
+				<pre>$('.myForm').form({ liquid: true });
+					$('.myForm2').form();
 					$('input:text').setMask();
 					$('.myForm [title]').tipsy({trigger: 'focus', gravity: 'w', fade: true});</pre>
 			</div>
@@ -192,7 +193,8 @@
 		$('.script pre').snippet('javascript', {style:"ide-eclipse",showNum:false});
 		$(".tabPanel").tabPanel();
 
-		$('.myForm').form();
+		$('.myForm').form({ liquid: true });
+		$('.myForm2').form();
 		$('input:text').setMask();
 		$('.myForm [title]').tipsy({trigger: 'focus', gravity: 'w', fade: true});
 		]]>

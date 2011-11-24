@@ -28,7 +28,8 @@
 		me[method](max);
 	}
 	
-	$.fn.form = function() {
+	$.fn.form = function(opts) {
+		opts = $.extend({}, opts);
 		var forms = $(this);
 		forms.addClass('forms');
 		var list = forms.find('.require label:first-child');
@@ -48,6 +49,9 @@
 		$(this).find('input, textarea, select').live('blur', function() {
 			$(this).removeClass('focus');
 		});
+		if(opts.liquid) {
+			$(this).addClass('liquidForm');
+		}
 	}
 	
 	// charCounter
