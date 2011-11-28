@@ -17,32 +17,86 @@
 				</li>
 			</ul>
 			<div class="demo">
+				<div class="bt2" style="display:none;">
+					<div class="buttons">
+						<input type="button" class="btSave" value="Save" />
+						<input type="button" class="btCancel" value="Cancel" />
+						<input type="button" class="btView" value="View" />
+						<input type="button" class="btAdd" value="Add" />
+						<input type="button" class="btClear" value="Clear" />
+						<input type="button" class="btSearch" value="Search" />
+						<input type="button" class="btEdit" value="Edit" />
+						<input type="button" class="btRemove" value="Remove" />
+						<input type="button" class="btFilter" value="Filter" />
+						<input type="button" class="btDownload" value="Download" />
+						<input type="button" class="btUpload" value="Upload" />
+						<input type="button" class="btExcel" value="Excel" />
+						<input type="button" class="btPdf" value="PDF" />
+						<input type="button" class="btMap" value="Sitemap" />
+						<input type="button" class="btWait" value="Wait" />
+						<input type="button" class="btExport" value="Export" />
+						<input type="button" class="btRename" value="Rename" />
+						<input type="button" class="btNewdoc" value="New Document" />
+						<input type="button" class="btBack" value="Back" />
+						<input type="button" class="btNext" value="Next" />
+						<input type="button" class="btUser" value="User" />
+						<input type="button" class="btConfig" value="Configuration" />
+						<input type="button" class="btLogout" value="Logout" />
+						<input type="button" class="btSend" value="Logout" />
+						<input type="button" class="btNone" value="Simple" />
+					</div>
+				</div>
 				<div class="buttons">
 					<input type="button" class="btSave" value="Save" />
+					<pre>class="btSave"</pre>
 					<input type="button" class="btCancel" value="Cancel" />
+					<pre>class="btCancel"</pre>
 					<input type="button" class="btView" value="View" />
+					<pre>class="btView"</pre>
 					<input type="button" class="btAdd" value="Add" />
+					<pre>class="btAdd"</pre>
 					<input type="button" class="btClear" value="Clear" />
+					<pre>class="btClear"</pre>
 					<input type="button" class="btSearch" value="Search" />
+					<pre>class="btSearch"</pre>
 					<input type="button" class="btEdit" value="Edit" />
+					<pre>class="btEdit"</pre>
 					<input type="button" class="btRemove" value="Remove" />
+					<pre>class="btRemove"</pre>
 					<input type="button" class="btFilter" value="Filter" />
+					<pre>class="btFilter"</pre>
 					<input type="button" class="btDownload" value="Download" />
+					<pre>class="btDownload"</pre>
 					<input type="button" class="btUpload" value="Upload" />
+					<pre>class="btUpload"</pre>
 					<input type="button" class="btExcel" value="Excel" />
+					<pre>class="btExcel"</pre>
 					<input type="button" class="btPdf" value="PDF" />
+					<pre>class="btPdf"</pre>
 					<input type="button" class="btMap" value="Sitemap" />
+					<pre>class="btMap"</pre>
 					<input type="button" class="btWait" value="Wait" />
+					<pre>class="btWait"</pre>
 					<input type="button" class="btExport" value="Export" />
+					<pre>class="btExport"</pre>
 					<input type="button" class="btRename" value="Rename" />
+					<pre>class="btRename"</pre>
 					<input type="button" class="btNewdoc" value="New Document" />
+					<pre>class="btNewdoc"</pre>
 					<input type="button" class="btBack" value="Back" />
+					<pre>class="btbtBack"</pre>
 					<input type="button" class="btNext" value="Next" />
+					<pre>class="btNext"</pre>
 					<input type="button" class="btUser" value="User" />
+					<pre>class="btUser"</pre>
 					<input type="button" class="btConfig" value="Configuration" />
+					<pre>class="btConfig"</pre>
 					<input type="button" class="btLogout" value="Logout" />
+					<pre>class="btLogout"</pre>
 					<input type="button" class="btSend" value="Logout" />
+					<pre>class="btSend"</pre>
 					<input type="button" class="btNone" value="Simple" />
+					<pre>class="btNone"</pre>
 				</div>
 			</div>
 			<div class="script">
@@ -55,7 +109,7 @@
 	</action>
 	<script>
 		<![CDATA[
-		$('.html pre').text($('.demo').html());
+		$('.html pre').text($('.demo .bt2').html());
 		$('.html pre').snippet('html', {style:"ide-eclipse",showNum:false});
 		$('.script pre').snippet('javascript', {style:"ide-eclipse",showNum:false});
 		$(".tabPanel").tabPanel();

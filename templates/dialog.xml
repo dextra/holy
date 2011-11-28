@@ -1,5 +1,5 @@
 <engine>
-	<action selector="#content">
+	<action selector="#content .dialog">
 		<h3>
 			Dialog
 		</h3>

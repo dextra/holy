@@ -1,11 +1,464 @@
 <engine>
 	<action selector="#content">
-		<h3>
-			Components
-		</h3>
+		<div id="components">
+			<p>
+				<strong>Here you can see all Holy components.</strong>
+			</p>
+			<div class="compToggle">
+				<h3>
+					<span>Dropdown</span>
+				</h3>
+				<div>
+					<p>
+						Transforma qualquer estrutura de
+						<strong>&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;</strong> em menu dropdown, possui opções de transição, tempo de transição, mostrar ou não setas de submenus e define se é vertical ou horizontal.
+					</p>
+					<ul class="myNav">
+						<li>
+							<a href="#">Dropdown</a>
+						</li>
+						<li>
+							<a href="#">Dropdown</a>
+							<ul>
+								<li>
+									<a href="#">Dropdown</a>
+								</li>
+								<li>
+									<a href="#">Dropdown</a>
+								</li>
+								<li>
+									<a href="#">Dropdown</a>
+									<ul>
+										<li>
+											<a href="#">Dropdown</a>
+										</li>
+										<li>
+											<a href="#">Dropdown</a>
+										</li>
+										<li>
+											<a href="#">Dropdown</a>
+										</li>
+										<li>
+											<a href="#">Dropdown</a>
+										</li>
+										<li>
+											<a href="#">Dropdown</a>
+											<ul>
+												<li>
+													<a href="#">Dropdown</a>
+												</li>
+												<li>
+													<a href="#">Dropdown</a>
+												</li>
+												<li>
+													<a href="#">Dropdown</a>
+												</li>
+												<li>
+													<a href="#">Dropdown</a>
+												</li>
+												<li>
+													<a href="#">Dropdown</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Dropdown</a>
+								</li>
+								<li>
+									<a href="#">Dropdown</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Dropdown</a>
+							<ul>
+								<li>
+									<a href="#">Dropdown</a>
+									<ul>
+										<li>
+											<a href="#">Dropdown</a>
+										</li>
+										<li>
+											<a href="#">Dropdown</a>
+										</li>
+										<li>
+											<a href="#">Dropdown</a>
+										</li>
+										<li>
+											<a href="#">Dropdown</a>
+											<ul>
+												<li>
+													<a href="#">Dropdown</a>
+													<ul>
+														<li>
+															<a href="#">Dropdown</a>
+														</li>
+														<li>
+															<a href="#">Dropdown</a>
+														</li>
+														<li>
+															<a href="#">Dropdown</a>
+														</li>
+														<li>
+															<a href="#">Dropdown</a>
+															<ul>
+																<li>
+																	<a href="#">Dropdown</a>
+																</li>
+																<li>
+																	<a href="#">Dropdown</a>
+																</li>
+																<li>
+																	<a href="#">Dropdown</a>
+																</li>
+																<li>
+																	<a href="#">Dropdown</a>
+																</li>
+																<li>
+																	<a href="#">Dropdown</a>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<a href="#">Dropdown</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<a href="#">Dropdown</a>
+												</li>
+												<li>
+													<a href="#">Dropdown</a>
+												</li>
+												<li>
+													<a href="#">Dropdown</a>
+												</li>
+												<li>
+													<a href="#">Dropdown</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Dropdown</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Dropdown</a>
+								</li>
+								<li>
+									<a href="#">Dropdown</a>
+								</li>
+								<li>
+									<a href="#">Dropdown</a>
+								</li>
+								<li>
+									<a href="#">Dropdown</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Dropdown</a>
+						</li>
+						<li>
+							<a href="#">Dropdown</a>
+						</li>
+					</ul>
+					<div class="buttons">
+						<a href="#dropdown" class="btView">More Details</a>
+					</div>
+				</div>
+			</div>
+			<div class="compToggle">
+				<h3>
+					<span>Tab Panel</span>
+				</h3>
+				<div>
+					<p>Cria simples paineis com abas, possui opções de efeito de transição ao abrir o painel e delay de transição.</p>
+					<div class="tab">
+						<ul>
+							<li>
+								<a href="#">Tab 1</a>
+							</li>
+							<li>
+								<a href="#">Tab 2</a>
+							</li>
+							<li>
+								<a href="#">Tab 3</a>
+							</li>
+						</ul>
+						<div>
+							<strong>Tab 1</strong>
+							<br />
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+							purus turpis, consequat eget accumsan ac, iaculis in est.
+							Suspendisse vestibulum feugiat arcu eget sodales. Cras aliquam
+							dolor faucibus libero euismod ut feugiat metus tempus. Quisque
+							velit est, pretium pharetra accumsan eget, dapibus sed orci.
+							Phasellus tincidunt tempus tellus id tincidunt. Suspendisse libero
+							nulla, sollicitudin porttitor pulvinar at, lacinia in purus. In
+							hac habitasse platea dictumst. Praesent commodo diam consectetur
+							neque lobortis ac cursus dolor pharetra. Integer id porttitor
+							velit. Quisque iaculis condimentum lorem a lacinia. Vestibulum
+							ante ipsum primis in faucibus orci luctus et ultrices posuere
+							cubilia Curae; Cum sociis natoque penatibus et magnis dis
+							parturient montes, nascetur ridiculus mus. Fusce eu sodales massa.
+							Morbi ullamcorper mi id augue consectetur suscipit. Fusce
+							tincidunt urna a orci varius nec placerat turpis venenatis.
+						</div>
+						<div>
+							<strong>Tab 2</strong>
+							<br />
+							Phasellus sed arcu dolor. Fusce leo sem, vestibulum vitae gravida
+							id, elementum ac libero. Maecenas tristique venenatis volutpat.
+							Vestibulum vitae tortor nibh, id hendrerit diam. Duis commodo
+							massa in ligula molestie cursus. Proin vitae purus a tellus porta
+							egestas a at libero. Vivamus purus nisi, porttitor quis feugiat
+							id, pharetra sit amet diam. Suspendisse quis consequat sem. Cras
+							eros mauris, egestas id luctus quis, tempus vitae diam. Praesent
+							et laoreet arcu. Ut id orci mi, non pretium arcu. Phasellus
+							sodales diam quis elit varius vehicula. Vestibulum bibendum
+							venenatis lectus. Nullam arcu orci, imperdiet vel vulputate eu,
+							pretium sit amet dui. Nullam vitae dolor ipsum.
+						</div>
+						<div>
+							<strong>Tab 3</strong>
+							<br />
+							Aliquam viverra sapien laoreet lorem facilisis eget dictum urna
+							viverra. Duis vitae dolor leo, laoreet ultricies ante. Cras urna
+							orci, sodales eget euismod sed, congue at metus. Donec sit amet
+							euismod arcu. Curabitur id magna risus. Nam nec massa libero, quis
+							mollis lectus. In hac habitasse platea dictumst.
+						</div>
+					</div>
+					<div class="buttons">
+						<a href="#tabpanel" class="btView">More Details</a>
+					</div>
+				</div>
+			</div>
+			<div class="compToggle">
+				<h3>
+					<span>Toggle Panel</span>
+				</h3>
+				<div>
+					<p>Cria paineis expansiveis, possui opções de efeito de transição ao abrir o painel e delay de transição.</p>
+					<div class="myToogle">
+						<h3>
+							<span>Toogle 1</span>
+						</h3>
+						<div>Donec nec libero quis libero faucibus consectetur. In sagittis porta faucibus. Mauris sit amet tempus turpis. Pellentesque in tortor nec leo facilisis lobortis. Pellentesque sit amet augue ligula. Integer id sem et lorem convallis pellentesque. Sed nibh elit, ornare vel tincidunt eget, interdum vitae velit. Morbi et metus tellus, a lobortis velit. Proin ut sollicitudin ante. Curabitur pellentesque tempor tincidunt. Etiam odio lorem, cursus a ultricies quis, tristique nec augue. Sed vestibulum erat at urna luctus ac cursus purus tristique. Quisque blandit vehicula vestibulum. Fusce interdum augue ut ligula imperdiet in vulputate turpis mattis. Phasellus feugiat hendrerit tincidunt.</div>
+						<div class="buttons">
+							<a href="#togglepanel" class="btView">More Details</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="compToggle">
+				<h3>
+					<span>Forms</span>
+				</h3>
+				<div>
+					<p>Ao aplicar a função desse plugin em qualquer formulário o mesmo calcula o label com maior largura e define igualmente para todos, fazendo com que o form automaticamente tenha uma diagramação perfeita.</p>
+					<p>Também identifica campos de checkbox, radios e campos requeridos de forma automatica, facilitando a diagramação de qualquer formulário.</p>
+					<p>Possui a opção liquid: true, para definir o formulário com os campos lado a lado com layout liquido.</p>
+					<form class="myForm2">
+						<fieldset>
+							<legend>Register</legend>
+							<ul>
+								<li class="require">
+									<label for="name">Name:</label>
+									<input type="text" title="Enter your first name." />
+								</li>
+								<li>
+									<label for="name">Second name:</label>
+									<input type="text" title="Enter your second name." />
+								</li>
+								<li class="require">
+									<label for="pass">Password:</label>
+									<input type="password" title="Enter password." />
+								</li>
+								<li class="box warning">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis metus in nulla venenatis sit amet aliquam erat fringilla. Suspendisse potenti. Maecenas commodo posuere diam. In interdum accumsan elit.</p>
+								</li>
+								<li class="require">
+									<label for="email">Email:</label>
+									<input type="text" title="Enter your e-mail address." />
+								</li>
+								<li>
+									<label for="phone">Phone:</label>
+									<input type="text" title="Enter your phone number." alt="phone" />
+								</li>
+								<li class="box info">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis metus in nulla venenatis sit amet aliquam erat fringilla. Suspendisse potenti. Maecenas commodo posuere diam. In interdum accumsan elit, sit amet accumsan nulla interdum eu. Ut convallis augue at leo accumsan molestie ornare nisl consequat. In malesuada ornare nunc molestie sollicitudin. Phasellus consequat nisi eget elit blandit eleifend.</p>
+								</li>
+								<li>
+									<label for="birthdate">Birthdate:</label>
+									<input class="date" type="text" title="Enter your birthdate." />
+								</li>
+								<li>
+									<label>Sex:</label>
+									<label>
+										<input class="male" type="radio" />
+										Male
+									</label>
+									<label>
+										<input class="female" type="radio" />
+										Female
+									</label>
+								</li>
+								<li>
+									<label>Message:</label>
+									<textarea></textarea>
+								</li>
+								<li class="require">
+									<label>Options:</label>
+									<label>
+										<input type="checkbox" />
+										Option 1
+									</label>
+									<label>
+										<input type="checkbox" />
+										Option 2
+									</label>
+									<label>
+										<input type="checkbox" />
+										Option 3
+									</label>
+									<label>
+										<input type="checkbox" />
+										Option 4
+									</label>
+									<label>
+										<input type="checkbox" />
+										Option 5
+									</label>
+								</li>
+								<li class="buttons">
+									<button type="submit" class="btSave">button</button>
+									<a href="#datatable" class="btCancel">link</a>
+									<input type="submit" value="input" class="btRemove" />
+								</li>
+							</ul>
+						</fieldset>
+					</form>
+					<div class="buttons">
+						<a href="#basicform" class="btView">More Details</a>
+					</div>
+				</div>
+			</div>
+			<div class="compToggle">
+				<h3>
+					<span>Buttons</span>
+				</h3>
+				<div>
+					<p>Pack de botões, não possui função javascript nenhuma, apenas estilização dos icones.</p>
+					<p>Obs: este é o unico componente dependente do tema.</p>
+				</div>
+			</div>
+			<div class="compToggle">
+				<h3>
+					<span>Character Counter</span>
+				</h3>
+				<div>
+					<p>Aplica a contagem de caracteres em qualquer campo de texto.</p>
+					<p>Ele não impede que o usuário ultrapasse o limite de caracteres, mas avisa quando está chegando ao limite e quando o usuário passa do limite, mostrando mensagens destacadas.</p>
+				</div>
+			</div>
+			<div class="compToggle">
+				<h3>
+					<span>Masks</span>
+				</h3>
+				<div>
+					<p>Este é o mesmo plugin de mascarás do antigo Holy, pesquisamos muito e chegamos a conclusão que este plugin é o ideal para essa função, não sendo necessário o desenvolvimento de um novo.</p>
+				</div>
+			</div>
+			<div class="compToggle">
+				<h3>
+					<span>Tables</span>
+				</h3>
+				<div>
+					<ul>
+						<li>Adiciona automaticamente as classes odd/even nas linhas</li>
+						<li>Foca as linhas da tabela adicionando a classe hover ao passar o mouse</li>
+						<li>Adiciona class lastCell no final de todas as celulas de todas as linhas, permitindo uma melhor customização com bordas.</li>
+						<li>Opção toggleTable: true, faz com que todas as linhas even sejam mostradas apenas quando a linha acima for clicada, fazendo um efeito de toggleTable.</li>
+						<li>Função scrollTable fixa altura no tbody da tabela e adiciona barra de rolagem automaticamente de forma crossbrowser.</li>
+						<li>Adiciona função de sortable em todas as colunas.</li>
+						<li>Transforma a coluna com class action ideal para inserir botões de ação.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="compToggle">
+				<h3>
+					<span>Tooltip (tipsy)</span>
+				</h3>
+				<div>
+					<p>Plugin de tooltip de terceiros incorporado ao pacote para exibir tooltip em qualquer elemento que for definido, formulários, links, imagens, etc...</p>
+					<p>Basta definir um title no elemento e executar a função especificando qual elemento deve ser aplicado.</p>
+					<p>
+						Conheça melhor o componente em
+						<a href="http://onehackoranother.com/projects/jquery/tipsy/">http://onehackoranother.com/projects/jquery/tipsy/</a>
+					</p>
+				</div>
+			</div>
+			<div class="compToggle">
+				<h3>
+					<span>Message System</span>
+				</h3>
+				<div>
+					<p>Faz a requisição de 4 tipos de mensagem, Erro, Aviso, Informação e Sucesso.</p>
+					<p>É possível definir o tempo de exibição da mensagem para o usuário e um link de fechar ou não a mensagem.</p>
+				</div>
+			</div>
+			<div class="compToggle">
+				<h3>
+					<span>Dialog</span>
+				</h3>
+				<div>
+					<p>Você pode esconder qualquer bloco html ou chama-lo via ajax para que seja aberto em uma dialog.</p>
+					<p>A dialog abre sempre centralizada dentro da aplicação, sendo possível definir a cor do overlay, opacidade e largura fixa ou automática.</p>
+				</div>
+			</div>
+			<div class="compToggle">
+				<h3>
+					<span>Sort Children</span>
+				</h3>
+				<div>
+					<p>Permite aplicar a função de ordenação em qualquer elemento de lista.</p>
+				</div>
+			</div>
+			<div class="compToggle">
+				<h3>
+					<span>Loading</span>
+				</h3>
+				<div>
+					<p>Executado de forma geral, exibe o loading em qualquer requisição ajax. Mas também pode ser executado apenas para um determinado bloco da página, sendo possível definir cor e opacidade do loading.</p>
+				</div>
+			</div>
+		</div>
 	</action>
 	<script>
 		<![CDATA[
+		$('.compToggle, .myToogle').togglePanel();
+
+		$('.myNav').dropDown({
+		effectIn: 'fadeIn',
+		effectOut: 'fadeOut',
+		delay: 200,
+		showlevel: true
+		});
+		$('.myNavV').dropDown({
+		effectIn: 'fadeIn',
+		effectOut: 'fadeOut',
+		delay: 200,
+		vertical: true,
+		showlevel: true
+		});
+		$(".tab").tabPanel();
+		$('.myForm2').form();
+
 		]]>
 	</script>
 </engine>
