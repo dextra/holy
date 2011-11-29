@@ -5,7 +5,15 @@
 				<a href="#home" title="Home">Home</a>
 			</li>
 			<li>
-				<a href="https://github.com/dextra/holy" target="_blank" title="Holy Download">Download</a>
+				<a href="https://github.com/dextra/holy/downloads" title="Holy Download">Download</a>
+			</li>
+			<!--
+			<li>
+				<a href="#download" title="Holy Download">Download</a>
+			</li>
+			-->
+			<li>
+				<a href="https://github.com/dextra/holy/issues/new" target="_blank" title="Bug Report">Issues</a>
 			</li>
 			<li>
 				<a href="#components" title="Components">Components</a>

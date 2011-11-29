@@ -21,20 +21,20 @@
 					<fieldset>
 						<legend>Register</legend>
 						<ul>
-							<li class="require">
-								<label for="name">Name:</label>
+							<li>
+								<label class="require" for="name">Name:</label>
 								<input type="text" title="Enter your first name." />
 							</li>
 							<li>
 								<label for="name">Second name:</label>
 								<input type="text" title="Enter your second name." />
 							</li>
-							<li class="require">
-								<label for="pass">Password:</label>
+							<li>
+								<label class="require" for="pass">Password:</label>
 								<input type="password" title="Enter password." />
 							</li>
-							<li class="require">
-								<label for="email">Email:</label>
+							<li>
+								<label class="require" for="email">Email:</label>
 								<input type="text" title="Enter your e-mail address." />
 							</li>
 							<li>
@@ -60,8 +60,8 @@
 								<label>Message:</label>
 								<textarea></textarea>
 							</li>
-							<li class="require">
-								<label>Options:</label>
+							<li>
+								<label class="require">Options:</label>
 								<label>
 									<input type="checkbox" />
 									Option 1
@@ -98,23 +98,23 @@
 					<fieldset>
 						<legend>Register</legend>
 						<ul>
-							<li class="require">
-								<label for="name">Name:</label>
+							<li>
+								<label class="require" for="name">Name:</label>
 								<input type="text" title="Enter your first name." />
 							</li>
 							<li>
 								<label for="name">Second name:</label>
 								<input type="text" title="Enter your second name." />
 							</li>
-							<li class="require">
-								<label for="pass">Password:</label>
+							<li>
+								<label class="require" for="pass">Password:</label>
 								<input type="password" title="Enter password." />
 							</li>
 							<li class="box warning">
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis metus in nulla venenatis sit amet aliquam erat fringilla. Suspendisse potenti. Maecenas commodo posuere diam. In interdum accumsan elit.</p>
 							</li>
-							<li class="require">
-								<label for="email">Email:</label>
+							<li>
+								<label class="require" for="email">Email:</label>
 								<input type="text" title="Enter your e-mail address." />
 							</li>
 							<li>
@@ -143,8 +143,8 @@
 								<label>Message:</label>
 								<textarea></textarea>
 							</li>
-							<li class="require">
-								<label>Options:</label>
+							<li>
+								<label class="require">Options:</label>
 								<label>
 									<input type="checkbox" />
 									Option 1

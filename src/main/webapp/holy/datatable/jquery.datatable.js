@@ -9,10 +9,10 @@
 			$(this).removeClass('hover');
 		});
 		if(opts.toogle) {
-			$(this).children('tbody tr:odd').hide().addClass('tcontent');
-			$(this).children('tbody tr:odd td').removeClass('lastCell');
-			$(this).children('tbody tr:even').addClass('tline');
-			$(this).children('tbody tr:even').click(function() {
+			$(this).find('tbody tr:odd').hide().addClass('tcontent');
+			$(this).find('tbody tr:odd td').removeClass('lastCell');
+			$(this).find('tbody tr:even').addClass('tline');
+			$(this).find('tbody tr:even').click(function() {
 				$(this).next("tr").fadeToggle("slow");
 			});
 		}

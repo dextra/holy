@@ -32,10 +32,6 @@
 		opts = $.extend({}, opts);
 		var forms = $(this);
 		forms.addClass('forms');
-		var list = forms.find('.require label:first-child');
-		if(!list.find('span.required').length) {
-			list.prepend('<span class="required">*</span>');
-		}
 		forms.find('ul li label:first-child').maximize('width', '');
 		var labelW = forms.find('ul li label').width();
 		
@@ -49,9 +45,11 @@
 		$(this).find('input, textarea, select').live('blur', function() {
 			$(this).removeClass('focus');
 		});
+		
 		if(opts.liquid) {
 			$(this).addClass('liquidForm');
 		}
+		$(this).find('.require').prepend('<span class="required">*</span>');
 	}
 	
 	// charCounter
