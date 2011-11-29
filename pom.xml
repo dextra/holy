@@ -6,7 +6,7 @@
 	<artifactId>holy-web</artifactId>
 	<packaging>war</packaging>
 	<name>holy-web</name>
-	<version>2.0.2</version>
+	<version>2.0.3-SNAPSHOT</version>
 
 	<!-- Specify hard-coded project properties here -->
 	<properties>
