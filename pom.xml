@@ -201,7 +201,7 @@
 	<scm>
 		<connection>scm:git:https://github.com/dextra/holy</connection>
 		<developerConnection>scm:git:https://github.com/dextra/holy</developerConnection>
-		<url>https://github.com/dextra/holy<</url>
+		<url>https://github.com/dextra/holy</url>
 	</scm>
 
 	<dependencyManagement>
