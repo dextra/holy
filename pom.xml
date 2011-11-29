@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.dextrasw.holy</groupId>
@@ -117,7 +118,7 @@
 				<artifactId>maven-release-plugin</artifactId>
 				<version>2.1</version>
 				<configuration>
-					<remoteTagging>true</remoteTagging>
+					<!-- <goals>gae:deploy</goals> -->
 				</configuration>
 			</plugin>
 			<plugin>
@@ -139,12 +140,6 @@
 				</dependencies>
 			</plugin>
 
-			<plugin>
-				<artifactId>maven-release-plugin</artifactId>
-				<configuration>
-					<goals>gae:deploy</goals>
-				</configuration>
-			</plugin>
 			<plugin>
 				<groupId>com.googlecode.mycontainer</groupId>
 				<artifactId>maven-mycontainer-plugin</artifactId>
@@ -176,6 +171,16 @@
 			</plugins>
 		</pluginManagement>
 	</build>
+
+
+	<distributionManagement>
+		<repository>
+			<id>releases</id>
+			<name>Globosat Novocms</name>
+			<url>dav:https://mvn.dextra.com.br/repository/releases</url>
+		</repository>
+	</distributionManagement>
+
 	<repositories>
 		<repository>
 			<id>central</id>
@@ -351,4 +356,6 @@
 			</properties>
 		</profile>
 	</profiles>
+
+
 </project>
