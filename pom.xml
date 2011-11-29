@@ -199,9 +199,9 @@
 	</pluginRepositories>
 
 	<scm>
-		<connection>scm:svn:https://dextranet.dextra.com.br/svn/reddrummer_portal/trunk/devel/implementation/reddrummer-portal-web</connection>
-		<developerConnection>scm:svn:https://dextranet.dextra.com.br/svn/reddrummer_portal/trunk/devel/implementation/reddrummer-portal-web</developerConnection>
-		<url>https://dextranet.dextra.com.br/svn/reddrummer_portal/trunk/devel/implementation/reddrummer-portal-web</url>
+		<connection>scm:git:https://github.com/dextra/holy</connection>
+		<developerConnection>scm:git:https://github.com/dextra/holy</developerConnection>
+		<url>https://github.com/dextra/holy<</url>
 	</scm>
 
 	<dependencyManagement>
