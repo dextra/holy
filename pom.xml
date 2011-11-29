@@ -198,8 +198,8 @@
 	</pluginRepositories>
 
 	<scm>
-		<connection>scm:git:git://github.com/dextra/holy</connection>
-		<developerConnection>scm:git:git://github.com/dextra/holy</developerConnection>
+		<connection>scm:git:git@github.com/dextra/holy</connection>
+		<developerConnection>scm:git:git@github.com/dextra/holy</developerConnection>
 		<url>http://github.com/dextra/holy</url>
 	</scm>
 
