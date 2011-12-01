@@ -48,7 +48,7 @@ body { background:#FFF; }
 
 /* Header */
 
-#header { background:#EEE; height:95px; position:relative; border-radius: 10px; }
+#header { background:#EEE; height:auto; position:relative; border-radius: 10px; }
 
 #header h1 { line-height:55px; text-align:left; padding: 0 0 0 10px; }
 
