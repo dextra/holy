@@ -1,21 +1,7 @@
-<p>Os frameworks tradicionais para a construção de interfaces web tem se tornado cada vez mais complexos.</p>
-		<p>
-			Pior do que isto, eles têm se afastado cada vez mais das tecnologias base da Internet
-			<em>(HTML, CSS e Javascript)</em> que estão se tornando cada vez mais poderosas.
-		</p>
-		<p>
-			O
-			<strong>Holy</strong> uma proposta, ao mesmo tempo inovadora e descomplicada, para a construção de interfaces de sistemas
-			<strong>web-based</strong>.
-		</p>
-		<p>A proposta é baseada no conceito de inversão de controle: não é o servidor que “monta” a página e a envia para o browser, mas é o browser que monta a página, solicitando as informações necessárias para isto.</p>
-		<p>Gostamos de chamar o Holy de um “não-framework”, pela sua simplicidade e tamanho reduzido.</p>
-		<p>&amp;nbsp;</p>
-		<p>Nestas páginas você pode ver os componentes de interface já desenvolvidos e entender sua forma de uso.</p>
-		<p>&amp;nbsp;</p>
-		<p>
-			O projeto é
-			<strong>OpenSource</strong> e está disponível em
-			<a href="https://github.com/dextra/holy/downloads" target="_blank">https://github.com/dextra/holy</a>
-		</p>
-http://holy.dextra.com.br
+Os frameworks tradicionais para a construção de interfaces web tem se tornado cada vez mais complexos. Pior do que isto, eles têm se afastado cada vez mais das tecnologias base da Internet <em>(HTML, CSS e Javascript)</em> que estão se tornando cada vez mais poderosas.
+
+O Holy é uma proposta, ao mesmo tempo inovadora e descomplicada, para a construção de interfaces de sistemas web-based. A proposta é baseada no conceito de inversão de controle: não é o servidor que monta a página e a envia para o browser, mas é o browser que monta a página, solicitando as informações necessárias para isto. Gostamos de chamar o Holy de um não-framework, pela sua simplicidade e tamanho reduzido.
+
+Você pode visualizar os componentes de interface já desenvolvidos e entender sua forma de uso através do endereço http://holy.dextra.com.br.
+
+O projeto é OpenSource e está disponível em https://github.com/dextra/holy.
