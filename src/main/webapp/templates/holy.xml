@@ -1,0 +1,75 @@
+<engine>
+	<action selector="#content">
+		<h3>Holy</h3>
+		<div class="tabPanel">
+			<ul>
+				<li>
+					<a href="#!">Demo</a>
+				</li>
+				<li>
+					<a href="#!">Script</a>
+				</li>
+				<li>
+					<a href="#!">HTML</a>
+				</li>
+			</ul>
+			<div class="demo">
+				<form class="myForm" action="#">
+					<fieldset>
+						<legend>Holy</legend>
+						<ul>
+							<li>
+								<label class="require" for="template">Template:</label>
+								<textarea name="template" cols="40" rows="10"><![CDATA[
+									<engine>
+										<template selector="#content .result">
+											Hello World: ${name}
+										</template>
+										<script>
+											$('#content .count').val(parseInt($('#content .count').val())+1);
+										</script>
+									</engine>
+								]]></textarea>
+							</li>
+							<li>
+								<label class="require" for="count">Count:</label>
+								<input type="text" class="count" name="count" value="0" />
+							</li>
+							<li class="buttons">
+								<button type="button" class="btSave">Execute</button>
+							</li>
+						</ul>
+					</fieldset>
+				</form>
+				<div class="result"></div>
+			</div>
+			<div class="script">
+				<pre><![CDATA[			var template = $(this).closest('form').find('textarea[name="template"]').val();
+			$.executeHoly(template, {name:'myname'});
+				]]></pre>
+			</div>
+			<div class="html">
+				<pre></pre>
+			</div>
+		</div>
+	</action>
+	<script>
+		<![CDATA[
+		$('.html pre').text($('.demo').html());
+		$('.html pre').snippet('html', {style:"ide-eclipse",showNum:false});
+		$('.script pre').snippet('javascript', {style:"ide-eclipse",showNum:false});
+		$(".tabPanel").tabPanel();
+
+		$('.myForm').form();
+
+		$('#content .myForm').submit(function() {
+			return false;
+		});
+
+		$('#content .myForm .btSave').click(function() {
+			var template = $(this).closest('form').find('textarea[name="template"]').val();
+			$.executeHoly(template, {name:'myname'});
+		});
+		
+	]]></script>
+</engine>

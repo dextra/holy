@@ -3,9 +3,9 @@
 		template = $(template);
 		var selector = template.attr('id') ? '#' + template.attr('id')
 				: template.attr('selector');
-		if(template.attr('target')) {
+		if (template.attr('target')) {
 			selector = eval(template.attr('target'));
-		}		
+		}
 		if (!selector) {
 			throw "<template> requires id or selector attribute";
 		}
@@ -23,4 +23,18 @@
 	$.holyavenger.addParsers({
 		'template' : $.holyavenger.parseTemplate
 	});
+
+	$.fn.trimpath = function(template, ctx) {
+		var parsed = TrimPath.parseTemplate(template);
+		var result = parsed.process(ctx);
+		$(this).html(result);
+		return this;
+	}
+
+	$.fn.appendTrimpath = function(template, ctx) {
+		var parsed = TrimPath.parseTemplate(template);
+		var result = parsed.process(ctx);
+		$(this).append(result);
+		return this;
+	}
 })(jQuery);

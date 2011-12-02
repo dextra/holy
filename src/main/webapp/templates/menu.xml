@@ -16,10 +16,13 @@
 				<a href="https://github.com/dextra/holy/issues/new" target="_blank" title="Bug Report">Issues</a>
 			</li>
 			<li>
+				<a href="#indexhtml" title="Base Code">Base Code</a>
+			</li>
+			<li>
 				<a href="#!" title="Components">Components</a>
 			</li>
 			<li>
-				<a href="#indexhtml" title="Base Code">Base Code</a>
+				<a href="#holy" title="Holy">Holy</a>
 			</li>
 			<li>
 				<a href="#" title="Navigation">Navigation</a>
@@ -103,6 +106,9 @@
 					</li>
 					<li>
 						<a href="#loading" title="Loading">Loading</a>
+					</li>
+					<li>
+						<a href="#trimpath" title="Trimpath">Trimpath</a>
 					</li>
 				</ul>
 			</li>

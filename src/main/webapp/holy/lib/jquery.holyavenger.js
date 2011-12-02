@@ -7,7 +7,7 @@
 			if (!context) {
 				context = {};
 			}
-			if(!context.hvars) {
+			if (!context.hvars) {
 				context.hvars = {};
 			}
 			var tags = $(xmlDoc).find('engine > *');
@@ -28,7 +28,7 @@
 			action = $(action);
 			var selector = action.attr('id') ? '#' + action.attr('id') : action
 					.attr('selector');
-			if(action.attr('target')) {
+			if (action.attr('target')) {
 				selector = eval(action.attr('target'));
 			}
 			if (!selector) {
@@ -52,7 +52,7 @@
 			var text = $.holyavenger.readText(xml);
 			var name = xml.attr('name');
 			context.hvars[name] = text;
-		},		
+		},
 		readText : function(element) {
 			var ret = [];
 			$.each($(element).contents(), function(idx, child) {
@@ -118,4 +118,9 @@
 			context : context
 		});
 	}
+
+	$.executeHoly = function(template, context) {
+		return $.holyavenger.parseEngine(template, context);
+	}
+
 })(jQuery);
