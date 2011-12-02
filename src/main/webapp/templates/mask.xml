@@ -10,6 +10,9 @@
 					<a href="#!">Demo</a>
 				</li>
 				<li>
+					<a href="#!">Options</a>
+				</li>
+				<li>
 					<a href="#!">Script</a>
 				</li>
 				<li>
@@ -42,6 +45,10 @@
 								<input type="text" title="Enter date." alt="date" />
 							</li>
 							<li>
+								<label for="date">Decimal:</label>
+								<input type="text" title="Enter value." alt="decimal" />
+							</li>
+							<li>
 								<label for="date-us">Date US:</label>
 								<input type="text" title="Enter date." alt="date-us" />
 							</li>
@@ -65,6 +72,31 @@
 						</ul>
 					</fieldset>
 				</form>
+				<p>
+					More information
+					<a href="http://www.meiocodigo.com/projects/meiomask/">http://www.meiocodigo.com/projects/meiomask</a>
+				</p>
+			</div>
+			<div class="options">
+				<pre>
+					// Defined masks: 
+					
+					$.mask.masks : {
+					'phone'     : { mask : '(99) 9999-9999' },
+					'phone-us'  : { mask : '(999) 9999-9999' },
+					'cpf'       : { mask : '999.999.999-99' },
+					'cnpj'      : { mask : '99.999.999/9999-99' },
+					'date'      : { mask : '39/19/9999' }, //uk date
+					'date-us'   : { mask : '19/39/9999' },
+					'cep'       : { mask : '99999-999' },
+					'time'      : { mask : '29:69' },
+					'cc'        : { mask : '9999 9999 9999 9999' }, //credit card mask
+					'integer'   : { mask : '999.999.999.999', type : 'reverse' },
+					'decimal'   : { mask : '99,999.999.999.999', type : 'reverse', defaultValue: '000' },
+					'decimal-us'    : { mask : '99.999,999,999,999', type : 'reverse', defaultValue: '000' },
+					'signed-decimal'    : { mask : '99,999.999.999.999', type : 'reverse', defaultValue : '+000' },
+					'signed-decimal-us' : { mask : '99,999.999.999.999', type : 'reverse', defaultValue : '+000' }
+					}</pre>
 			</div>
 			<div class="script">
 				<pre>$('.myForm').form();
@@ -80,7 +112,7 @@
 		<![CDATA[
 		$('.html pre').text($('.demo').html());
 		$('.html pre').snippet('html', {style:"ide-eclipse",showNum:false});
-		$('.script pre').snippet('javascript', {style:"ide-eclipse",showNum:false});
+		$('.script pre, .options pre').snippet('javascript', {style:"ide-eclipse",showNum:false});
 		$(".tabPanel").tabPanel();
 
 		$('.myForm').form();
