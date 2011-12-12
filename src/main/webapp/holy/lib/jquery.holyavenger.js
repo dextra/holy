@@ -72,7 +72,7 @@
 			var text = $.holyavenger.readText(xml);
 			var name = xml.attr('name');
 			context.hvars[name] = text;
-			calllback();
+			callback();
 		},
 		parseHoly : function(text, context, callback) {
 			var xml = $(text);
