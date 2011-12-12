@@ -1,5 +1,5 @@
 (function($) {
-	$.holyavenger.parseTemplate = function(template, context) {
+	$.holyavenger.parseTemplate = function(template, context, callback) {
 		template = $(template);
 		var selector = template.attr('id') ? '#' + template.attr('id')
 				: template.attr('selector');
@@ -19,6 +19,7 @@
 			throw result.exception;
 		}
 		$(selector).append(result);
+		callback();
 	}
 	$.holyavenger.addParsers({
 		'template' : $.holyavenger.parseTemplate

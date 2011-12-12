@@ -1,10 +1,10 @@
 <engine>
-	<action selector="#content .demo">
+	<template selector="#content .demo">
 		<div class="other">
 			My text
 		</div>	
 		<div class="text"></div>
-	</action>
+	</template>
 	<holy src="templates/import/imp2.xml" />
 	<script><![CDATA[
 		$('#content .demo .text .result').text('imported');
