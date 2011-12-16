@@ -1,0 +1,116 @@
+<engine>
+	<action selector="#content">
+		<h3>
+			Youtube
+			<span>Tip</span>
+		</h3>
+		<div class="tabPanel">
+			<ul>
+				<li>
+					<a href="#!">Demo</a>
+				</li>
+				<li>
+					<a href="#!">Script</a>
+				</li>
+				<li>
+					<a href="#!">HTML</a>
+				</li>
+			</ul>
+			<div class="demo buttons">
+				Click to search: 
+								<input type="button" class="btSearch js" value="JavaScript" />
+								<input type="button" class="btSearch jq" value="JQuery" />
+								<input type="button" class="btSearch java" value="Java" />
+								<input type="button" class="btSearch html" value="HTML" />
+								<input type="button" class="btSearch css" value="Cascading Style Sheets" />
+				<div class="result">
+				</div>
+				<div class="youtubeDialog">
+					<div class="youtubeTipSearch buttons"></div>
+				</div>
+			</div>
+			<div class="script">
+			<pre>
+			<![CDATA[
+			$(".btSearch").click(function(){
+				$(".youtubeTipSearch").youtubeTip(
+												{
+													query: $(this).val(),
+													maxResults: 15,
+													maxWidth: "800px;",
+													containerWidth: "800px",
+													playerWidth: 350,
+													playerHeight: 200,
+													complete: function(){
+														$(".youtubeDialog").xdialog({
+															overlay: '#23557E',
+															alpha: '3'
+														});
+													},
+													select: function(o){
+														$('.youtubeDialog').xundialog();
+
+														if (!$(".result object").length) {
+															var object = $("<object/>");
+															object.width("400px");
+															object.height("350px");
+															object.attr("id", "resultpreview");
+															$(".result").append(object);
+														}
+														$(".result object").tipYoutubeWatch(o.playerUrl);
+													}
+												});
+			});
+			]]>
+			</pre>
+			</div>
+			<div class="html">
+				<pre></pre>
+			</div>
+		</div>
+	</action>
+	<script>
+		<![CDATA[
+
+			$('.html pre').text($('.demo').html());
+			$('.html pre').snippet('html', {style:"ide-eclipse",showNum:false});
+			$('.script pre').snippet('javascript', {style:"ide-eclipse",showNum:false});
+			$(".tabPanel").tabPanel();
+
+			$(".youtubeDialog").hide();
+			$(".youtubeDialog").height("400px");
+			$(".youtubeDialog").css("overflow-y", "scroll");
+			$(".youtubeDialog").css("overflow-x", "hidden");
+
+			$(".btSearch").click(function(){
+				$(".youtubeTipSearch").youtubeTip(
+												{
+													query: $(this).val(),
+													maxResults: 15,
+													maxWidth: "800px;",
+													containerWidth: "800px",
+													playerWidth: 350,
+													playerHeight: 200,
+													complete: function(){
+														$(".youtubeDialog").xdialog({
+															overlay: '#23557E',
+															alpha: '3'
+														});
+													},
+													select: function(o){
+														$('.youtubeDialog').xundialog();
+
+														if (!$(".result object").length) {
+															var object = $("<object/>");
+															object.width("400px");
+															object.height("350px");
+															object.attr("id", "resultpreview");
+															$(".result").append(object);
+														}
+														$(".result object").tipYoutubeWatch(o.playerUrl);
+													}
+												});
+			});
+
+	]]></script>
+</engine>
