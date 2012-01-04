@@ -1,0 +1,66 @@
+<engine>
+	<action selector="#content">
+		<h3>Trimpath</h3>
+		<div class="tabPanel">
+			<ul>
+				<li>
+					<a href="#!">Demo</a>
+				</li>
+				<li>
+					<a href="#!">Script</a>
+				</li>
+				<li>
+					<a href="#!">HTML</a>
+				</li>
+			</ul>
+			<div class="demo">
+				<form class="myForm" action="#">
+					<fieldset>
+						<legend>http://code.google.com/p/trimpath/</legend>
+						<ul>
+							<li>
+								<label class="require" for="template">Template:</label>
+								<textarea name="template">Hello World: ${name}</textarea>
+							</li>
+							<li>
+								<label class="require" for="json">Json:</label>
+								<textarea name="json">{name:'myname', age:19}</textarea>
+							</li>
+							<li class="buttons">
+								<button type="button" class="btSave">Execute</button>
+							</li>
+						</ul>
+					</fieldset>
+				</form>
+				<div class="result"></div>
+			</div>
+			<div class="script">
+				<pre>$('#content .result').trimpath('Hello World: ${name}', {name:'myname', age:19});</pre>
+			</div>
+			<div class="html">
+				<pre></pre>
+			</div>
+		</div>
+	</action>
+	<script>
+		<![CDATA[
+		$('.html pre').text($('.demo').html());
+		$('.html pre').snippet('html', {style:"ide-eclipse",showNum:false});
+		$('.script pre').snippet('javascript', {style:"ide-eclipse",showNum:false});
+		$(".tabPanel").tabPanel();
+		
+		$('.myForm').form();
+
+		$('#content .myForm').submit(function() {
+			return false;
+		});
+
+		$('#content .myForm .btSave').click(function() {
+			var template = $(this).closest('form').find('textarea[name="template"]').val();
+			var json = $(this).closest('form').find('textarea[name="json"]').val();
+			json = eval('(function() { return ' + json + ';})()');
+			$('#content .result').trimpath(template, json);
+		});
+		
+	]]></script>
+</engine>

@@ -1,4 +1,28 @@
 (function($) {
+
+	var execute = function(tags, context) {
+		if(!tags.length) {
+			return ;
+		}
+		var tag = tags.shift();
+		var check = $(tag).attr('if');
+		if(check) {
+			check = [ '(function () { return (', check, '); })();' ].join('');
+			var result = eval(check);
+			if(!result) {
+				return execute(tags, context);
+			}
+		}
+		var parser = $.holyavenger.parsers[tag.nodeName];
+		if (parser) {
+			parser(tag, context, function() {
+				return execute(tags, context);
+			});
+		} else {
+			throw 'Parser for <' + tag.nodeName + '> not found.'
+		}
+	}
+	
 	$.holyavenger = {
 		parseEngine : function(xmlDoc, context) {
 			if (typeof (xmlDoc) == 'string') {
@@ -7,28 +31,22 @@
 			if (!context) {
 				context = {};
 			}
-			if(!context.hvars) {
+			if (!context.hvars) {
 				context.hvars = {};
 			}
 			var tags = $(xmlDoc).find('engine > *');
-			$.each(tags, function(idx, tag) {
-				var parser = $.holyavenger.parsers[tag.nodeName];
-				if (parser) {
-					parser(tag, context);
-				} else {
-					throw 'Parser for <' + tag.nodeName + '> not found.'
-				}
-			});
+			tags = $.makeArray(tags);
+			execute(tags, context);
 		},
 		parsers : {},
 		addParsers : function(_parsers) {
 			jQuery.extend($.holyavenger.parsers, _parsers);
 		},
-		parseAction : function(action, context) {
+		parseAction : function(action, context, callback) {
 			action = $(action);
 			var selector = action.attr('id') ? '#' + action.attr('id') : action
 					.attr('selector');
-			if(action.attr('target')) {
+			if (action.attr('target')) {
 				selector = eval(action.attr('target'));
 			}
 			if (!selector) {
@@ -39,20 +57,32 @@
 			}
 			var text = $.holyavenger.readText(action);
 			$(selector).append(text);
+			callback();
 		},
-		parseScript : function(script, context) {
+		parseScript : function(script, context, callback) {
 			var text = $(script).text();
 			text = [ 'var func = function () {', text, '}; func;' ].join('');
 			var func = eval(text);
 			func = $.proxy(func, context);
 			$(func);
+			callback();
 		},
-		parseText : function(text, context) {
+		parseText : function(text, context, callback) {
 			var xml = $(text);
 			var text = $.holyavenger.readText(xml);
 			var name = xml.attr('name');
 			context.hvars[name] = text;
-		},		
+			callback();
+		},
+		parseHoly : function(text, context, callback) {
+			var xml = $(text);
+			var src = xml.attr('src');
+			$.ajax({
+				url: src,
+				dataType: 'holy',
+				complete: callback
+			});
+		},
 		readText : function(element) {
 			var ret = [];
 			$.each($(element).contents(), function(idx, child) {
@@ -84,7 +114,8 @@
 	$.holyavenger.addParsers({
 		'action' : $.holyavenger.parseAction,
 		'script' : $.holyavenger.parseScript,
-		'text' : $.holyavenger.parseText
+		'text' : $.holyavenger.parseText,
+		'holy' : $.holyavenger.parseHoly
 	});
 
 	$.ajaxSetup({
@@ -118,4 +149,9 @@
 			context : context
 		});
 	}
+
+	$.executeHoly = function(template, context) {
+		return $.holyavenger.parseEngine(template, context);
+	}
+
 })(jQuery);

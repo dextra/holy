@@ -1,0 +1,5 @@
+<engine>
+	<action selector="#content .demo .text">
+		copy: <span class="result"></span> 
+	</action>
+</engine>
