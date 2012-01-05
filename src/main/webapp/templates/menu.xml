@@ -54,6 +54,9 @@
 						<a href="#mask" title="Input Mask">Input Mask</a>
 					</li>
 					<li>
+						<a href="#datepicker" title="Input Datepicker">Datepicker</a>
+					</li>
+					<li>
 						<a href="#autocomplete" title="Auto Compete">Auto Complete</a>
 						<ul>
 							<li>
