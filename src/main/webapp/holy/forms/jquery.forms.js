@@ -39,7 +39,7 @@ limitations under the License.*/
 			me[method](reset);
 		}
 		var max = me.max(method);
-		me[method](max);
+		me[method](max+15);
 	}
 	
 	$.fn.form = function(opts) {
@@ -49,7 +49,7 @@ limitations under the License.*/
 		forms.find('ul li label:first-child').maximize('width', '');
 		var labelW = forms.find('ul li label').width();
 		
-		forms.find('ul li:not(:has(label))').css('marginLeft', labelW + 9);
+		forms.find('ul li:not(:has(label))').css('marginLeft', labelW + 24);
 		
 		forms.find('ul li:has(textarea)').addClass('clear');
 		
@@ -63,7 +63,7 @@ limitations under the License.*/
 		if(opts.liquid) {
 			$(this).addClass('liquidForm');
 		}
-		$(this).find('.require').prepend('<span class="required">*</span>');
+		$(this).find('.require label').prepend('<span class="required">*</span>');
 	}
 	
 	// charCounter
