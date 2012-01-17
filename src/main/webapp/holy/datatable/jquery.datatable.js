@@ -30,6 +30,9 @@ limitations under the License.*/
 				$(this).next("tr").fadeToggle("slow");
 			});
 		}
+    var nActions = $(this).find('> tbody > tr:first .action a').length;
+    var wActions = nActions * $(this).find('> tbody > tr .action a').width();
+    $(this).find('.action').width(wActions);
 	}
 
 	$.fn.datatableOddEven = function() {

@@ -14,7 +14,7 @@ limitations under the License.*/
 
 /*///// Component - Datatable /////*/
 
-.datatable { width: 100%; margin: 10px auto; border:1px solid #DDD; overflow:auto; overflow-x: hidden; }
+.datatable { width: 100%; margin: 10px auto; border:1px solid #DDD; overflow:auto; overflow-x: hidden; border-collapse: collapse; }
 
 .datatable tr.odd { background: #FAFAFA; }
 
@@ -43,6 +43,8 @@ limitations under the License.*/
 .datatable tr.tcontent td { border-bottom:1px solid #DDD; } 
 
 /*///// Component - Buttons and Actions /////*/
+
+.datatable tr td.action { padding:4px 10px; }
 
 .datatable tr td.action span,
 .datatable tr td.action input[type=submit],
