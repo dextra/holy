@@ -65,15 +65,10 @@ limitations under the License.*/
 
 .buttons a,
 .buttons input,
-.buttons button { display: inline-block; padding: 3px 5px; cursor: pointer; background:#FAFAFA; color: #333; border: 1px solid #DDD; margin: 5px 5px 5px 0px; outline: 0px; }
+.buttons button { vertical-align:top; display: inline-block; padding: 3px 7px; cursor: pointer; background:#FAFAFA; color: #333; border: 1px solid #DDD; margin: 5px 5px 5px 0px; outline: 0px; }
 
-.buttons a { padding: 4px 5px; }
-
-.buttons input { padding: 3px 5px; }
+.buttons a { padding:4px 5px; /* IE FIX > */ padding:5px 12px 6px 12px\9; }
 
 .buttons a:hover,
 .buttons input:hover,
 .buttons button:hover { color:#FFF; background-color: #000; }
-
-
-
