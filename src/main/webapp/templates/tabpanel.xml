@@ -137,11 +137,17 @@
 					<strong>effect:</strong> toggle, slideToggle or fadeToggle(default).
 				</p>
 				<p>
-					<strong>delay:</strong> define time to open and close container
+					<strong>delay:</strong> define time to open and close container.
+				</p>
+				<p>
+					<strong>vertical:</strong> <em>true</em> to show vertical tabpanel.
 				</p>
 			</div>
 			<div class="script">
-				<pre>$(".tab").tabPanel();</pre>
+				<pre>
+					$(".tab").tabPanel();
+					$(".tab1").tabPanel({vertical: true});
+				</pre>
 			</div>
 			<div class="html">
 				<pre></pre>
