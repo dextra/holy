@@ -152,7 +152,7 @@ limitations under the License.*/
 
 .buttons a:hover,
 .buttons input:hover,
-.buttons button:hover { color:#FFF; background-color: #8EBE26; border-bottom:2px solid #232C2F; border:1px solid #8EBE26;  }
+.buttons button:hover { color:#FFF; background-color: #8EBE26; border:1px solid #8EBE26;  border-bottom:2px solid #232C2F;  }
 
 .buttons .btNone { background:#FAFAFA; padding: 5px 8px; }
 
