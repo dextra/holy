@@ -21,6 +21,7 @@
 					<div class="buttons">
 						<input type="button" class="btSave" value="Save" />
 						<input type="button" class="btCancel" value="Cancel" />
+						<input type="button" class="btConfirm" value="Confirm" />
 						<input type="button" class="btView" value="View" />
 						<input type="button" class="btAdd" value="Add" />
 						<input type="button" class="btClear" value="Clear" />
@@ -51,6 +52,8 @@
 					<pre>class="btSave"</pre>
 					<input type="button" class="btCancel" value="Cancel" />
 					<pre>class="btCancel"</pre>
+					<input type="button" class="btConfirm" value="Confirm" />
+					<pre>class="btConfirm"</pre>
 					<input type="button" class="btView" value="View" />
 					<pre>class="btView"</pre>
 					<input type="button" class="btAdd" value="Add" />

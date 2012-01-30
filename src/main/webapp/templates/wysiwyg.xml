@@ -1,0 +1,81 @@
+<engine>
+	<action selector="#content">
+		<h3>
+			WYSI
+			<span>WYG</span>
+		</h3>
+		<div class="tabPanel">
+			<ul>
+				<li>
+					<a href="#!">Demo</a>
+				</li>
+				<li>
+					<a href="#!">Documentation</a>
+				</li>
+				<li>
+					<a href="#!">Script</a>
+				</li>
+				<li>
+					<a href="#!">HTML</a>
+				</li>
+			</ul>
+			<div class="demo">
+				<h4>Default (No Config Specified)</h4>
+				<p>new nicEditor().panelInstance('area1');</p>
+				<textarea cols="50" id="area1"></textarea>
+				<hr />
+				<h4>All Available Buttons {fullPanel : true}</h4>
+				<p>new nicEditor({fullPanel : true}).panelInstance('area2');</p>
+				<textarea cols="60" id="area2">Some Initial Content was in this textarea</textarea>
+				<hr />
+				<h4>Change Path to Icon File {iconsPath : 'holy/third/nicedit/icons.gif'}</h4>
+				<p>new nicEditor({iconsPath : 'nicEditorIcons.gif'}).panelInstance('area3');</p>
+				<textarea cols="50" id="area3"></textarea>
+				<hr />
+				<h4>Customize the Panel Buttons/Select List</h4>
+				<p>{buttonList : ['fontSize','bold','italic','underline','strikeThrough','subscript','superscript']}</p>
+				<textarea cols="50" id="area4">
+					HTML
+					<b>content</b>
+					<i>default</i> in textarea
+				</textarea>
+				<hr />
+				<h4>Set a maximum expansion size (maxHeight)</h4>
+				<p>{maxHeight : 100}</p>
+				<textarea style="height: 100px;" cols="50" id="area5">
+					HTML
+					<b>content</b>
+					<i>default</i> in textarea
+				</textarea>
+			</div>
+			<div class="doc">
+				See documentation on
+				<a target="_blank" href="http://nicedit.com/docs.php">nicedit.com</a>
+			</div>
+			<div class="script">
+				<pre>
+					new nicEditor().panelInstance('area1');
+					new nicEditor({fullPanel : true}).panelInstance('area2');
+					new nicEditor({iconsPath : 'holy/third/nicedit/icons.gif'}).panelInstance('area3');
+					new nicEditor({buttonList : ['fontSize','bold','italic','underline','strikeThrough','subscript','superscript','html','image']}).panelInstance('area4');
+					new nicEditor({maxHeight : 100}).panelInstance('area5');
+				</pre>
+			</div>
+			<div class="code">
+				<pre></pre>
+			</div>
+		</div>
+	</action>
+	<script>
+		<![CDATA[
+		$('.tabPanel').tabPanel();
+		$('.code pre').text($('.demo').html());
+		$('.code pre').snippet('html', {style:"ide-eclipse",showNum:false});
+		new nicEditor().panelInstance('area1');
+		new nicEditor({fullPanel : true}).panelInstance('area2');
+		new nicEditor({iconsPath : 'holy/third/nicedit/icons.gif'}).panelInstance('area3');
+		new nicEditor({buttonList : ['fontSize','bold','italic','underline','strikeThrough','subscript','superscript','html','image']}).panelInstance('area4');
+		new nicEditor({maxHeight : 100}).panelInstance('area5');
+		]]>
+	</script>
+</engine>

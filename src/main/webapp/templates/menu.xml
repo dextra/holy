@@ -57,6 +57,9 @@
 						<a href="#datepicker" title="Input Datepicker">Datepicker</a>
 					</li>
 					<li>
+						<a href="#wysiwyg" title="Input wysiwyg">WYSIWYG</a>
+					</li>
+					<li>
 						<a href="#autocomplete" title="Auto Compete">Auto Complete</a>
 						<ul>
 							<li>

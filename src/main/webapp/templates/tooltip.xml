@@ -1,5 +1,8 @@
 <engine>
 	<action selector="#content">
+		<h3>
+			Tool<span>tip</span>
+		</h3>
 		<div class="tabPanel">
 			<ul>
 				<li>
