@@ -21,8 +21,11 @@ limitations under the License.*/
 		opts = opts || {};
 		var effect = opts.effect || 'fadeToggle';
 		var delay = opts.delay;
-
 		var tabpanel = $(this);
+		var vertical = !!opts.vertical;
+		if (vertical) {
+			$(this).addClass('vtabPanel');
+		} 
 		tabpanel.children("div:gt(0)").hide();
 		
 		tabpanel.bind('open.tabPanel', function(evt, index) {

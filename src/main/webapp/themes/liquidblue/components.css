@@ -103,6 +103,16 @@ limitations under the License.*/
 
 .tabPanel > div { border: 1px solid #39B7E8; border-top:2px solid #39B7E8; }
 
+/* vtab */
+
+.vtabPanel { border:0; }
+
+.vtabPanel > ul li a,
+.vtabPanel > ul .active a  { border-radius: 0; border-top-left-radius: 5px; border-bottom-left-radius: 5px; margin-bottom:5px; border:0; margin-bottom:2px; }
+
+.vtabPanel > div { margin-left:220px; border: 1px solid #39B7E8; border-left:2px solid #39B7E8; }
+
+
 /*///// Component - Autocomplete /////*/
 
 .ui-autocomplete-loading { background: white url('imgs/load_16x16.gif') right center no-repeat; }
