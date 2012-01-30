@@ -1,8 +1,7 @@
 <engine>
 	<action selector="#content">
 		<h3>
-			WYSI
-			<span>WYG</span>
+			WYSI<span>WYG</span>
 		</h3>
 		<div class="tabPanel">
 			<ul>
