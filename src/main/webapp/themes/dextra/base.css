@@ -71,6 +71,16 @@ body { background:#FFF; }
 #header h1 a:hover,
 #header h1 a:hover span { color:#232C2F; }
 
+/* THEMES */
+
+.themes  { position: absolute; top: 5px; right: 5px; }
+
+.themes a { border:1px solid #333; width: 6px; height: 6px; display:block; float:right; font-size: 0px; outline: 0px; margin:0 2px; text-indent: -9999px; }
+
+.themes .dextra { background: #118C85; }
+
+.themes .liquidblue { background:#39B7E8; }
+
 /* Userbar */
 
 .userbar { position: absolute; top: 60px; right: 0px; width:auto; text-align: right; }
