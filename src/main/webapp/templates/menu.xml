@@ -9,7 +9,7 @@
 			</li>
 			<!--
 			<li>
-				<a href="#download" title="Holy Download">Download</a>
+			<a href="#download" title="Holy Download">Download</a>
 			</li>
 			-->
 			<li>
@@ -42,24 +42,6 @@
 				<a href="#" title="Forms">Forms</a>
 				<ul>
 					<li>
-						<a href="#basicform" title="Basic form">Basic form</a>
-					</li>
-					<li>
-						<a href="#buttons" title="Action Buttons">Buttons</a>
-					</li>
-					<li>
-						<a href="#charcount" title="Char Count">Char Count</a>
-					</li>
-					<li>
-						<a href="#mask" title="Input Mask">Input Mask</a>
-					</li>
-					<li>
-						<a href="#datepicker" title="Input Datepicker">Datepicker</a>
-					</li>
-					<li>
-						<a href="#wysiwyg" title="Input wysiwyg">WYSIWYG</a>
-					</li>
-					<li>
 						<a href="#autocomplete" title="Auto Compete">Auto Complete</a>
 						<ul>
 							<li>
@@ -69,6 +51,27 @@
 								<a href="#autocompleteajax" title="Auto Compete">Ajax</a>
 							</li>
 						</ul>
+					</li>
+					<li>
+						<a href="#basicform" title="Basic form">Basic form</a>
+					</li>
+					<li>
+						<a href="#buttons" title="Action Buttons">Buttons</a>
+					</li>
+					<li>
+						<a href="#charcount" title="Char Count">Char Count</a>
+					</li>
+					<li>
+						<a href="#datepicker" title="Input Datepicker">Datepicker</a>
+					</li>
+					<li>
+						<a href="#mask" title="Input Mask">Input Mask</a>
+					</li>
+					<li>
+						<a href="#picklist" title="Picklist">Picklist</a>
+					</li>
+					<li>
+						<a href="#wysiwyg" title="WYSIWYG">WYSIWYG</a>
 					</li>
 				</ul>
 			</li>
@@ -129,7 +132,7 @@
 	<script>
 		<![CDATA[
 		$('.navigation > ul').dropDown({
-			showlevel: true
+		showlevel: true
 		});
 		]]>
 	</script>

@@ -179,7 +179,7 @@
 				<pre>$('.myForm').form({ liquid: true });
 					$('.myForm2').form();
 					$('input:text').setMask();
-					$('.myForm [title]').tipsy({trigger: 'focus', gravity: 'w', fade: true});</pre>
+					$('.myForm [title], .myForm2 [title]').tipsy({trigger: 'focus', gravity: 'w', fade: true});</pre>
 			</div>
 			<div class="html">
 				<pre></pre>

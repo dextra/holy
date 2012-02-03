@@ -17,6 +17,7 @@ limitations under the License.*/
 
 .picklist select { min-width:200px; }
 
-.picklist button { margin:3px 5px; cursor:pointer; display:block; width:25px; height:25px; line-height:25px; text-align:center; font-weight:bold; }
+.picklist button { margin:10px 5px; cursor:pointer; display:block; width:25px; height:25px; line-height:25px; text-align:center; font-weight:bold; }
+
 
 

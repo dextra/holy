@@ -1,0 +1,68 @@
+<engine>
+	<action selector="#content">
+		<h3>
+			Character 
+			<span>
+				Counter
+			</span>
+		</h3>
+		<div class="tabPanel">
+			<ul>
+				<li>
+					<a href="#!">
+						Demo
+					</a>
+				</li>
+				<li>
+					<a href="#!">
+						Script
+					</a>
+				</li>
+				<li>
+					<a href="#!">
+						HTML
+					</a>
+				</li>
+			</ul>
+			<div class="demo">
+				<form class="myForm">
+					<div class="thelist">
+						<select>
+							<option>aaa1</option>
+							<option>aaa2</option>
+							<option>aaa3</option>
+							<option>aaa4</option>
+							<option>aaa5</option>
+						</select>
+						<select>
+							<option>bbb1</option>
+							<option>bbb2</option>
+							<option>bbb3</option>
+							<option>bbb4</option>
+							<option>bbb5</option>
+						</select>
+					</div>
+				</form>
+			</div>
+			<div class="script">
+				<pre>
+					$(".thelist").picklist();
+				</pre>
+			</div>
+			<div class="html">
+				<pre>
+				</pre>
+			</div>
+		</div>
+	</action>
+	<script>
+		<![CDATA[
+		$('.html pre').text($('.demo').html());
+		$('.html pre').snippet('html', {style:"ide-eclipse",showNum:false});
+		$('.script pre').snippet('javascript', {style:"ide-eclipse",showNum:false});
+		$(".tabPanel").tabPanel();
+		$('.myForm').form();
+		$(".thelist").picklist();
+		]]>
+	</script>
+</engine>

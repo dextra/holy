@@ -77,6 +77,19 @@ limitations under the License.*/
 
 .forms ul .warning .icon {  background-color: #9F6000; }
 
+/* PICK LIST */
+
+.picklist button { font-size:0px; text-indent:-9999px; background:url('imgs/picklist-arrow.png') 0 0 no-repeat; }
+
+.picklist .pr { background-position:0px -25px; }
+
+.picklist .apr { background-position:0px 0px; }
+
+.picklist .apl { background-position:0px -50px; }
+
+.picklist .pl { background-position:0px -75px; }
+
+
 /*///// Component - Toogle /////*/
 
 .togglePanel { margin-bottom: 3px; }
