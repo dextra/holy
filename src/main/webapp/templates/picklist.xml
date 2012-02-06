@@ -57,7 +57,7 @@
 	</action>
 	<script>
 		<![CDATA[
-		$('.html pre').text($('.demo').html());
+		$('.html pre').text($('.demo .myForm').html());
 		$('.html pre').snippet('html', {style:"ide-eclipse",showNum:false});
 		$('.script pre').snippet('javascript', {style:"ide-eclipse",showNum:false});
 		$(".tabPanel").tabPanel();

@@ -10,7 +10,7 @@ Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
-limitations under the License.*/
+limitations under the License.*/     
 
 ( function($) {
 	$.fn.datatable = function(opts) {
@@ -24,10 +24,12 @@ limitations under the License.*/
 		});
 		if(opts.toogle) {
 			$(this).find('tbody tr:odd').hide().addClass('tcontent');
-			$(this).find('tbody tr:odd td').removeClass('lastCell');
 			$(this).find('tbody tr:even').addClass('tline');
-			$(this).find('tbody tr:even').click(function() {
-				$(this).next("tr").fadeToggle("slow");
+			$(this).find('thead tr').prepend('<th class="sortable"></th>');
+			$(this).find('tbody tr:even').prepend('<td class="opentt"><button>+</button><button class="close">-</button></td>');
+			$(this).find('.opentt button').click(function() {
+				$(this).parents().next('.tcontent').fadeToggle('slow');
+				$(this).parents('td').toggleClass('open');
 			});
 		}
     var nActions = $(this).find('> tbody > tr:first .action a').length;
