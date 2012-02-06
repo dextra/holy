@@ -26,7 +26,7 @@ table.jCalendar td.unselectable:hover,
 table.jCalendar td.unselectable.dp-hover { background: #bbb; color: #888; }
 
 
-div.dp-popup { position: relative; background: #EEE; font-size: 10px; font-family: arial, sans-serif; padding: 2px; width: 156px; line-height: 1.2em; }
+div.dp-popup { position: relative; background: #EEE; font-size: 10px; font-family: arial, sans-serif; padding: 2px; line-height: 1.2em; }
 
 div#dp-popup { position: absolute; z-index: 199; }
 

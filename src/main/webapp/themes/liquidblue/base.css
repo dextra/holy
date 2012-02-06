@@ -66,7 +66,7 @@ body { background:#FFF; }
 
 #header h1 { line-height:55px; text-align:left; padding: 0 0 0 10px; }
 
-#header h1 a { text-decoration:none; color:#232C2F; text-shadow:1px 1px 1px #39B7E8; font-size: 30px; }
+#header h1 a { text-decoration:none; color:#232C2F; text-shadow:1px 1px 1px #39B7E8; font-size: 30px; text-indent: -9999px; width:240px; height:70px; display:block; background: url('imgs/logo.png') center center no-repeat; }
 
 #header h1 a span { font-size:12px; color:#0092CB; }
 

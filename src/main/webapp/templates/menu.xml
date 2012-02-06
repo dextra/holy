@@ -7,19 +7,11 @@
 			<li>
 				<a href="https://github.com/dextra/holy/downloads" title="Holy Download">Download</a>
 			</li>
-			<!--
-			<li>
-			<a href="#download" title="Holy Download">Download</a>
-			</li>
-			-->
 			<li>
 				<a href="https://github.com/dextra/holy/issues/new" target="_blank" title="Bug Report">Issues</a>
 			</li>
 			<li>
 				<a href="#indexhtml" title="Base Code">Base Code</a>
-			</li>
-			<li>
-				<a href="#!" title="Components">Components</a>
 			</li>
 			<li>
 				<a href="#holy" title="Holy">Holy</a>
@@ -123,7 +115,7 @@
 						<a href="#import" title="Import">Import</a>
 					</li>
 					<li>
-						<a href="#youtubeTip" title="Import">YoutubeTip</a>
+						<a href="#youtubeTip" title="Import">Youtube Tip</a>
 					</li>
 				</ul>
 			</li>
