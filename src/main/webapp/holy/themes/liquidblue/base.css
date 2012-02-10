@@ -85,7 +85,7 @@ body { background:#FFF; }
 
 /* Userbar */
 
-.userbar { position: absolute; top: 45px; right: 0px; width:auto; text-align: right; }
+.userbar { position: absolute; top: 50px; right: 0px; width:auto; text-align: right; }
 
 .userbar li { margin: 0 5px; display: inline-block; float: left; }
 

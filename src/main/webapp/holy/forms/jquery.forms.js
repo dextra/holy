@@ -63,7 +63,7 @@ limitations under the License.*/
 		if(opts.liquid) {
 			$(this).addClass('liquidForm');
 		}
-		$(this).find('.require label').prepend('<span class="required">*</span>');
+		$(this).find('.require label:first-child').prepend('<span class="required">*</span>');
 	}
 	
 	// charCounter

@@ -29,6 +29,8 @@ limitations under the License.*/
 .forms input[type=checkbox],
 .forms input[type=radio] { vertical-align: middle; margin:7px 2px 7px 5px; }
 
+.forms select option { padding:0 10px 0 5px; }
+
 .forms ul li { list-style:none; margin: 10px 0; }
 
 .forms ul li label { text-align:right; margin:0 3px; display:inline-block; }

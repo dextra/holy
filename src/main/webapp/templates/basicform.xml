@@ -21,20 +21,20 @@
 					<fieldset>
 						<legend>Register</legend>
 						<ul>
-							<li>
-								<label class="require" for="name">Name:</label>
+							<li class="require">
+								<label for="name">Name:</label>
 								<input type="text" title="Enter your first name." />
 							</li>
 							<li>
 								<label for="name">Second name:</label>
 								<input type="text" title="Enter your second name." />
 							</li>
-							<li>
-								<label class="require" for="pass">Password:</label>
+							<li class="require">
+								<label for="pass">Password:</label>
 								<input type="password" title="Enter password." />
 							</li>
-							<li>
-								<label class="require" for="email">Email:</label>
+							<li class="require">
+								<label for="email">Email:</label>
 								<input type="text" title="Enter your e-mail address." />
 							</li>
 							<li>
@@ -44,6 +44,16 @@
 							<li>
 								<label for="birthdate">Birthdate:</label>
 								<input class="date" type="text" title="Enter your birthdate." />
+							</li>
+							<li>
+								<label for="nation">Nation:</label>
+								<select>
+									<option>----------------</option>
+									<option>Brazil</option>
+									<option>France</option>
+									<option>United States</option>
+									<option>Spain</option>
+								</select>
 							</li>
 							<li>
 								<label>Sex:</label>
@@ -60,8 +70,8 @@
 								<label>Message:</label>
 								<textarea></textarea>
 							</li>
-							<li>
-								<label class="require">Options:</label>
+							<li class="require">
+								<label>Options:</label>
 								<label>
 									<input type="checkbox" />
 									Option 1
@@ -98,23 +108,23 @@
 					<fieldset>
 						<legend>Register</legend>
 						<ul>
-							<li>
-								<label class="require" for="name">Name:</label>
+							<li class="require" >
+								<label for="name">Name:</label>
 								<input type="text" title="Enter your first name." />
 							</li>
 							<li>
 								<label for="name">Second name:</label>
 								<input type="text" title="Enter your second name." />
 							</li>
-							<li>
-								<label class="require" for="pass">Password:</label>
+							<li class="require">
+								<label for="pass">Password:</label>
 								<input type="password" title="Enter password." />
 							</li>
 							<li class="box warning">
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent facilisis metus in nulla venenatis sit amet aliquam erat fringilla. Suspendisse potenti. Maecenas commodo posuere diam. In interdum accumsan elit.</p>
 							</li>
-							<li>
-								<label class="require" for="email">Email:</label>
+							<li class="require" >
+								<label for="email">Email:</label>
 								<input type="text" title="Enter your e-mail address." />
 							</li>
 							<li>
@@ -127,6 +137,16 @@
 							<li>
 								<label for="birthdate">Birthdate:</label>
 								<input class="date" type="text" title="Enter your birthdate." />
+							</li>
+							<li>
+								<label for="nation">Nation:</label>
+								<select>
+									<option>----------------</option>
+									<option>Brazil</option>
+									<option>France</option>
+									<option>United States</option>
+									<option>Spain</option>
+								</select>
 							</li>
 							<li>
 								<label>Sex:</label>
@@ -143,8 +163,8 @@
 								<label>Message:</label>
 								<textarea></textarea>
 							</li>
-							<li>
-								<label class="require">Options:</label>
+							<li class="require">
+								<label>Options:</label>
 								<label>
 									<input type="checkbox" />
 									Option 1
