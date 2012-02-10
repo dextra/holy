@@ -13,22 +13,11 @@ See the License for the specific language governing permissions and
 limitations under the License.*/
 
 (function($) {
-	$(window).hashchange(function() {
-		if(!location.hash || location.hash == '#') {
-			location = '#home';
-			return;
-		}
-		if(!location.hash || location.hash == '#!') {
-			return;
-		}
-		var hash = location.hash.substring(1);
-		$.holy('./templates/' + hash + '.xml');
-	});
-
 	$(document).ready(function() {
-		$.holy('./templates/menu.xml');
-		$.holy('./templates/userbar.xml');
-		$('.message').messageMonitor();
-		$(window).hashchange();
+		$.loading({
+			text : 'Carregando...',
+			overlay : '#23557E',
+			opacity: '60'
+		});
 	});
 })(jQuery);
