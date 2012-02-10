@@ -21,7 +21,7 @@
 							<th scope="col">Id</th>
 							<th scope="col">Name</th>
 							<th scope="col">Date</th>
-							<th scope="col">Active</th>
+							<th scope="col" class="action">Active</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -29,133 +29,133 @@
 							<td>25</td>
 							<td>Homer Simpson</td>
 							<td>15/01/1982</td>
-							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 						<tr>
 							<td>25</td>
 							<td>Homer Simpson</td>
 							<td>15/01/1982</td>
-							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 						<tr>
 							<td>25</td>
 							<td>Homer Simpson</td>
 							<td>15/01/1982</td>
-							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 						<tr>
 							<td>25</td>
 							<td>Homer Simpson</td>
 							<td>15/01/1982</td>
-							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 						<tr>
 							<td>25</td>
 							<td>Homer Simpson</td>
 							<td>15/01/1982</td>
-							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 						<tr>
 							<td>25</td>
 							<td>Homer Simpson</td>
 							<td>15/01/1982</td>
-							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 						<tr>
 							<td>25</td>
 							<td>Homer Simpson</td>
 							<td>15/01/1982</td>
-							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 						<tr>
 							<td>25</td>
 							<td>Homer Simpson</td>
 							<td>15/01/1982</td>
-							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 						<tr>
 							<td>25</td>
 							<td>Homer Simpson</td>
 							<td>15/01/1982</td>
-							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 						<tr>
 							<td>25</td>
 							<td>Homer Simpson</td>
 							<td>15/01/1982</td>
-							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 						<tr>
 							<td>25</td>
 							<td>Homer Simpson</td>
 							<td>15/01/1982</td>
-							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 						<tr>
 							<td>25</td>
 							<td>Homer Simpson</td>
 							<td>15/01/1982</td>
-							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 						<tr>
 							<td>25</td>
 							<td>Homer Simpson</td>
 							<td>15/01/1982</td>
-							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 						<tr>
 							<td>25</td>
 							<td>Homer Simpson</td>
 							<td>15/01/1982</td>
-							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 						<tr>
 							<td>25</td>
 							<td>Homer Simpson</td>
 							<td>15/01/1982</td>
-							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 						<tr>
 							<td>25</td>
 							<td>Homer Simpson</td>
 							<td>15/01/1982</td>
-							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 						<tr>
 							<td>25</td>
 							<td>Homer Simpson</td>
 							<td>15/01/1982</td>
-							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 						<tr>
 							<td>25</td>
 							<td>Homer Simpson</td>
 							<td>15/01/1982</td>
-							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 						<tr>
 							<td>25</td>
 							<td>Homer Simpson</td>
 							<td>15/01/1982</td>
-							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 						<tr>
 							<td>25</td>
 							<td>Homer Simpson</td>
 							<td>15/01/1982</td>
-							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 						<tr>
 							<td>25</td>
 							<td>Homer Simpson</td>
 							<td>15/01/1982</td>
-							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 						<tr>
 							<td>25</td>
 							<td>Homer Simpson</td>
 							<td>15/01/1982</td>
-							<td><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
+							<td class="action"><a href="#!" class="btenable" title="Click to disable">Enable</a></td>
 						</tr>
 					</tbody>
 					<tfoot>
@@ -163,7 +163,7 @@
 							<td>Id</td>
 							<td>Name</td>
 							<td>Date</td>
-							<td>Active</td>
+							<td class="action">Active</td>
 						</tr>
 					</tfoot>
 				</table>

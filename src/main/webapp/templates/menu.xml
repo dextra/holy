@@ -53,9 +53,9 @@
 					<li>
 						<a href="#charcount" title="Char Count">Char Count</a>
 					</li>
-					<li>
+					<!--<li>
 						<a href="#datepicker" title="Input Datepicker">Datepicker</a>
-					</li>
+				</li>-->
 					<li>
 						<a href="#mask" title="Input Mask">Input Mask</a>
 					</li>
@@ -76,9 +76,9 @@
 					<li>
 						<a href="#tablescroll">TableScroll</a>
 					</li>
-					<li>
+					<!--<li>
 						<a href="#tableorder">Table Order</a>
-					</li>
+				</li>-->
 					<li>
 						<a href="#toggletable">Toggle Table</a>
 					</li>
