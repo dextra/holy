@@ -1,0 +1,80 @@
+/*Copyright 2011/2012 Dextra Sistemas
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.*/
+
+/*///////// DROPDOWN  /////////*/
+
+/* horizontal dropdown */
+
+.hdropdown li { position:relative; float:left; }
+
+.hdropdown li,
+.hdropdown li a { display:inline-block; text-decoration:none; }
+
+.hdropdown li a { padding: 0 5px; white-space: nowrap; outline: 0; }
+
+.hdropdown li a:hover,
+.hdropdown li.active a { text-decoration: none; }
+
+.hdropdown li ul { display:none; position:absolute; left:0px; }
+
+.hdropdown li ul li ul { left:100%; top:0px; }
+
+/* vertical dropdown */
+
+.vdropdown,
+.vdropdown ul { width: 200px; }
+
+.vdropdown li { position:relative; list-style: none; }
+
+.vdropdown li ul { display:none; position:absolute; left: 199px; top:0; }
+
+.vdropdown li span { float: right; }
+
+/*///////// TOGGLE  /////////*/
+
+.togglePanel > h3 {	background: #FAFAFA; padding:2px 10px; margin:1px 0px; font-size:18px; color:#666; cursor: pointer; border:1px solid #EEE; }
+
+.togglePanel > div { background: #FFF ; padding: 10px; }
+
+/*///////// TABPANEL  /////////*/
+
+.tabPanel { margin: 10px auto; }
+
+.tabPanel > ul { overflow: hidden; }
+
+.tabPanel > ul li { float:left; list-style: none; }
+
+.tabPanel > ul li a { cursor:pointer; outline:0px; padding: 5px 10px; margin: 0 2px -1px 0; display: inline-block; background: #EEE; border:1px solid #CCC; color:#999; font-size: 12px; }
+
+.tabPanel > ul li a:hover { color:#666; }
+
+.tabPanel > ul .active a { background: #FFF; border-bottom:1px solid #FFF; color:#000; padding: 5px 10px; margin: 0 2px -1px 0; }
+
+.tabPanel > div { clear: left; padding: 15px; border: 1px solid #CCC;  }
+
+.vtabPanel {position: relative;}
+
+/* vtab */
+
+.vtabPanel { position: relative; }
+
+.vtabPanel > ul { position:absolute; left:0; top:0; width:200px; display: block; overflow:visible; }
+
+.vtabPanel > ul li { float:none; }
+
+.vtabPanel > ul li a { width:180px; margin:0; margin-bottom:-1px; }
+
+.vtabPanel > ul .active a {border:1px solid #CCC;}
+
+.vtabPanel > div { margin-left:201px; }
