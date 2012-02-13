@@ -33,7 +33,7 @@ limitations under the License.*/
 			});
 		}
     var nActions = $(this).find('> tbody > tr:first .action a').length;
-    var wActions = nActions * $(this).find('> tbody > tr .action a').width();
+    var wActions = nActions + 4 * $(this).find('> tbody > tr .action a').width();
     $(this).find('.action').width(wActions);
 	}
 

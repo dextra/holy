@@ -74,3 +74,7 @@ limitations under the License.*/
 .buttons a:hover,
 .buttons input:hover,
 .buttons button:hover { color:#FFF; background-color: #000; }
+
+.buttons a:active,
+.buttons input:active,
+.buttons button:active { margin-top:6px; }

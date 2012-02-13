@@ -55,11 +55,14 @@ limitations under the License.*/
 
 /*///// Component - Buttons and Actions /////*/
 
-.datatable tr td.action { padding:4px 10px; }
+.datatable tr td.action { padding:4px 10px; display:table-cell; }
 
 .datatable tr td.action span,
 .datatable tr td.action input[type=submit],
-.datatable tr td.action a { width: 16px; height: 16px; border: 0; display: inline-block; outline: 0px; text-indent:-9999px; cursor: pointer; }
+.datatable tr td.action a { background-color: transparent; width: 16px; height: 16px; border: 0; display: inline-block; outline: 0px; text-indent:-9999px; cursor: pointer; padding:0; margin:0 1px; background-position:center center; }
+
+.datatable tr td.action input:hover,
+.datatable tr td.action a:hover {  background-color: transparent; }
 
 /*///// Component - Pagination /////*/
 
