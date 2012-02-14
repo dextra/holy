@@ -51,7 +51,7 @@ limitations under the License.*/
 
 .tabPanel { margin: 10px auto; }
 
-.tabPanel > ul { overflow: hidden; }
+.tabPanel > ul { overflow: hidden; margin:0; padding:0; }
 
 .tabPanel > ul li { float:left; list-style: none; }
 

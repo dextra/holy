@@ -2,20 +2,22 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>Navigation - Drop Down, Tab Panel, Toggle Panel</title>
+		<title>Navigation - Dropdown, Tab Panel, Toggle Panel</title>
 		<script type="text/javascript" src="../../lib/jquery.js"></script>
 		<script type="text/javascript" src="../jquery.navigation.js"></script>
 		<link rel="stylesheet" type="text/css" href="../jquery.navigation.css" />
 		<script type="text/javascript">
 			(function($) {
 				$(document).ready(function() {
-					$('.horizontalNav').dropDown({
+					$('.horizontalNav').Drop
+					down({
 						effectIn : 'fadeIn',
 						effectOut : 'fadeOut',
 						delay : 200,
 						showlevel : true
 					});
-					$('.verticalNav').dropDown({
+					$('.verticalNav').Drop
+					down({
 						effectIn : 'fadeIn',
 						effectOut : 'fadeOut',
 						delay : 200,
@@ -24,9 +26,11 @@
 					});
 				});
 			})(jQuery);
+
 		</script>
 	</head>
 	<body>
+		<h1>Vertical dropdown</h1>
 		<ul class="horizontalNav">
 			<li>
 				<a href="#">Dropdown</a>
@@ -102,6 +106,12 @@
 				</ul>
 			</li>
 		</ul>
+		<br />
+		<br />
+		<hr />
+		<br />
+		<br />
+		<h1>Horizontal dropdown</h1>
 		<ul class="verticalNav">
 			<li>
 				<a href="#">Dropdown</a>
