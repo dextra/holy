@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Navigation - Drop Down, Tab Panel, Toggle Panel</title>
+		<script type="text/javascript" src="../../lib/jquery.js"></script>
+		<script type="text/javascript" src="jquery.navigation.js"></script>
+		<link rel="stylesheet" type="text/css" href="jquery.navigation.css" />
+		<script type="text/javascript">
+			(function($) {
+				$(document).ready(function() {
+					$('.horizontalNav').dropDown({
+						effectIn : 'fadeIn',
+						effectOut : 'fadeOut',
+						delay : 200,
+						showlevel : true
+					});
+					$('.verticalNav').dropDown({
+						effectIn : 'fadeIn',
+						effectOut : 'fadeOut',
+						delay : 200,
+						vertical : true,
+						showlevel : true
+					});
+				});
+			})(jQuery);
+		</script>
+	</head>
+	<body>
+		<ul class="horizontalNav">
+			<li>
+				<a href="#">Dropdown</a>
+			</li>
+			<li>
+				<a href="#">Dropdown</a>
+				<ul>
+					<li>
+						<a href="#">Dropdown</a>
+					</li>
+					<li>
+						<a href="#">Dropdown</a>
+						<ul>
+							<li>
+								<a href="#">Dropdown</a>
+								<ul>
+									<li>
+										<a href="#">Dropdown</a>
+									</li>
+									<li>
+										<a href="#">Dropdown</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Dropdown</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Dropdown</a>
+				<ul>
+					<li>
+						<a href="#">Dropdown</a>
+						<ul>
+							<li>
+								<a href="#">Dropdown</a>
+							</li>
+							<li>
+								<a href="#">Dropdown</a>
+								<ul>
+									<li>
+										<a href="#">Dropdown</a>
+										<ul>
+											<li>
+												<a href="#">Dropdown</a>
+											</li>
+											<li>
+												<a href="#">Dropdown</a>
+												<ul>
+													<li>
+														<a href="#">Dropdown</a>
+													</li>
+													<li>
+														<a href="#">Dropdown</a>
+													</li>
+													<li>
+														<a href="#">Dropdown</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Dropdown</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<ul class="verticalNav">
+			<li>
+				<a href="#">Dropdown</a>
+			</li>
+			<li>
+				<a href="#">Dropdown</a>
+				<ul>
+					<li>
+						<a href="#">Dropdown</a>
+					</li>
+					<li>
+						<a href="#">Dropdown</a>
+						<ul>
+							<li>
+								<a href="#">Dropdown</a>
+								<ul>
+									<li>
+										<a href="#">Dropdown</a>
+									</li>
+									<li>
+										<a href="#">Dropdown</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Dropdown</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Dropdown</a>
+				<ul>
+					<li>
+						<a href="#">Dropdown</a>
+						<ul>
+							<li>
+								<a href="#">Dropdown</a>
+							</li>
+							<li>
+								<a href="#">Dropdown</a>
+								<ul>
+									<li>
+										<a href="#">Dropdown</a>
+										<ul>
+											<li>
+												<a href="#">Dropdown</a>
+											</li>
+											<li>
+												<a href="#">Dropdown</a>
+												<ul>
+													<li>
+														<a href="#">Dropdown</a>
+													</li>
+													<li>
+														<a href="#">Dropdown</a>
+													</li>
+													<li>
+														<a href="#">Dropdown</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Dropdown</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</body>
+</html>
