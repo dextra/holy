@@ -1,27 +1,21 @@
 <engine>
 	<action selector="#content">
 		<h3>
-			Character 
-			<span>
-				Counter
-			</span>
+			Pick<span>list</span>
 		</h3>
 		<div class="tabPanel">
 			<ul>
 				<li>
-					<a href="#!">
-						Demo
-					</a>
+					<a href="#!">Demo</a>
 				</li>
 				<li>
-					<a href="#!">
-						Script
-					</a>
+					<a href="#!">Script</a>
 				</li>
 				<li>
-					<a href="#!">
-						HTML
-					</a>
+					<a href="#!">HTML</a>
+				</li>
+				<li>
+					<a href="#!">Download</a>
 				</li>
 			</ul>
 			<div class="demo">
@@ -45,13 +39,16 @@
 				</form>
 			</div>
 			<div class="script">
-				<pre>
-					$(".thelist").picklist();
-				</pre>
+				<pre>$(".thelist").picklist();</pre>
 			</div>
 			<div class="html">
-				<pre>
-				</pre>
+				<pre></pre>
+			</div>
+			<div class="download">
+				<div class="buttons">
+					<a class="btDownload" target="_blank" title="Clique here to download JavaScript file." href="holy/forms/jquery.forms.js">jquery.forms.js</a>
+					<a class="btDownload" target="_blank" title="Clique here to download CSS file." href="holy/forms/jquery.forms.css">jquery.forms.css</a>
+				</div>
 			</div>
 		</div>
 	</action>

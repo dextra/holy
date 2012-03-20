@@ -31,7 +31,7 @@ limitations under the License.*/
 			}
 		});
 		return ret;
-	}
+	};
 	
 	$.fn.maximize = function(method, reset) {
 		var me = $(this);
@@ -40,7 +40,7 @@ limitations under the License.*/
 		}
 		var max = me.max(method);
 		me[method](max+15);
-	}
+	};
 	
 	$.fn.form = function(opts) {
 		opts = $.extend({}, opts);
@@ -64,7 +64,7 @@ limitations under the License.*/
 			$(this).addClass('liquidForm');
 		}
 		$(this).find('.require label:first-child').prepend('<span class="required">*</span>');
-	}
+	};
 	
 	// charCounter
 	
@@ -110,9 +110,38 @@ limitations under the License.*/
 			$(this).change(function() {calculate(this)
 			});
 		});
-		
 	};
 
+	// picklist
+
+	$.fn.picklist = function(opts) {
+		var plist = $(this);
+		plist.addClass('picklist');
+		var selectHeight = plist.find('select').height();
+		plist.css('height', selectHeight + 10);
+		plist.find('select').attr('multiple', 'multiple');
+		$(this).find('select:first').after('<div class="pActions"><button class="pr">&gt;</button><button class="apr">&gt;&gt;</button><button class="apl">&lt;&lt;</button><button class="pl">&lt;</button></div>');
+		plist.find('.pl').click(function() {
+			var pselect = plist.find('select:last option:selected');
+			pselect.remove();
+			plist.find('select:first').append(pselect);
+		});
+		plist.find('.pr').click(function() {
+			var pselect = plist.find('select:first option:selected');
+			pselect.remove();
+			plist.find('select:last').append(pselect);
+		});
+		plist.find('.apl').click(function() {
+			var pselect = plist.find('select:last option');
+			pselect.remove();
+			plist.find('select:first').append(pselect);
+		});
+		plist.find('.apr').click(function() {
+			var pselect = plist.find('select:first option');
+			pselect.remove();
+			plist.find('select:last').append(pselect);
+		});
+	};
 
 	
 })(jQuery);

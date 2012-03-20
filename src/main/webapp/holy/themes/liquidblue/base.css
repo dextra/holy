@@ -12,18 +12,16 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.*/
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 /*
  * #8EBE26 - green
  * #CC2914 - red
  * #39B7E8 - light blue
  * #0092CB - medium blue
- * #232C2F - blackium
+ * #232C2F - black
  */
 
-
 /* Global reset */ 
-* { margin:0; padding:0; border:0; font-family: 'Open Sans', sans-serif; text-decoration:none; list-style-position: inside; }
+* { margin:0; padding:0; border:0; font-family: Arial, Helvetica, sans-serif; text-decoration:none; list-style-position: inside; font-size:12px; }
 
 em { font-style:italic; }
 
@@ -41,16 +39,13 @@ p { margin: 5px 0px; }
 
 /* Basics */
 
-html,
-body { overflow-x: hidden; }
-
 body { background:#FFF; }
 
 /* Login */
 
 #login { background: #EEE; }
 
-#login form { width: 210px; margin: 0 auto; background: #FFF; padding:10px 20px; border: 3px solid #8EBE26; border-radius:10px; }
+#login form { width: 235px; margin: 0 auto; background: #FFF; padding:10px 20px; border: 3px solid #8EBE26; border-radius:10px; }
 
 #login .copyright { font-size: 11px; padding: 20px; }
 
@@ -75,13 +70,13 @@ body { background:#FFF; }
 
 /* THEMES */
 
-.themes  { position: absolute; top: 5px; right: 5px; }
+#header .themes  { position: absolute; top: 5px; right: 5px; }
 
-.themes a { border:1px solid #333; width: 6px; height: 6px; display:block; float:right; font-size: 0px; outline: 0px; margin:0 2px; text-indent: -9999px; }
+#header .themes a { border:1px solid #333; width: 6px; height: 6px; display:block; float:right; font-size: 0px; outline: 0px; margin:0 2px; text-indent: -9999px; }
 
-.themes .dextra { background: #118C85; }
+#header .themes .dextra { background: #118C85; }
 
-.themes .liquidblue { background:#39B7E8; }
+#header .themes .liquidblue { background:#39B7E8; }
 
 /* Userbar */
 

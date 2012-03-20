@@ -17,6 +17,9 @@
 				<li>
 					<a href="#!">HTML</a>
 				</li>
+				<li>
+					<a href="#!">Download</a>
+				</li>
 			</ul>
 			<div class="demo">
 				<h4>Default (No Config Specified)</h4>
@@ -62,6 +65,11 @@
 			</div>
 			<div class="code">
 				<pre></pre>
+			</div>
+			<div class="download">
+				<div class="buttons">
+					<a class="btDownload" target="_blank" title="Clique here to download JavaScript file." href="holy/third/nicedit/nicedit.js">nicedit.js</a>
+				</div>
 			</div>
 		</div>
 	</action>

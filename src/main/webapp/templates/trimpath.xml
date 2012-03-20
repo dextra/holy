@@ -1,6 +1,6 @@
 <engine>
 	<action selector="#content">
-		<h3>Trimpath</h3>
+		<h3>Trim<span>path</span></h3>
 		<div class="tabPanel">
 			<ul>
 				<li>
@@ -12,11 +12,14 @@
 				<li>
 					<a href="#!">HTML</a>
 				</li>
+				<li>
+					<a href="#!">Download</a>
+				</li>
 			</ul>
 			<div class="demo">
 				<form class="myForm" action="#">
 					<fieldset>
-						<legend>http://code.google.com/p/trimpath/</legend>
+						<legend>http://code.google.com/p/trimpath</legend>
 						<ul>
 							<li>
 								<label class="require" for="template">Template:</label>
@@ -39,6 +42,12 @@
 			</div>
 			<div class="html">
 				<pre></pre>
+			</div>
+			<div class="download">
+				<div class="buttons">
+					<a class="btDownload" target="_blank" title="Clique here to download JavaScript file." href="holy/lib/trimpath.js">trimpath.js</a>
+					<a class="btDownload" target="_blank" title="Clique here to download JavaScript file." href="holy/lib/jquery.holyavenger.trimpath.js">jquery.holyavenger.trimpath.js</a>
+				</div>
 			</div>
 		</div>
 	</action>

@@ -33,6 +33,7 @@
 			<li>
 				<a href="#" title="Forms">Forms</a>
 				<ul>
+					<!--
 					<li>
 						<a href="#autocomplete" title="Auto Compete">Auto Complete</a>
 						<ul>
@@ -44,6 +45,7 @@
 							</li>
 						</ul>
 					</li>
+					-->
 					<li>
 						<a href="#basicform" title="Basic form">Basic form</a>
 					</li>
@@ -119,6 +121,7 @@
 					</li>
 				</ul>
 			</li>
+			<li><a href="#themes" title="Themes">Themes</a></li>
 		</ul>
 	</action>
 	<script>

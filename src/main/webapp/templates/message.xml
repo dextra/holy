@@ -16,6 +16,9 @@
 				<li>
 					<a href="#!">Script</a>
 				</li>
+				<li>
+					<a href="#!">Download</a>
+				</li>
 			</ul>
 			<div class="demo">
 				<div class="forms">
@@ -50,6 +53,12 @@
 			</div>
 			<div class="script">
 				<pre>$('.message').message('Message is required', 'error', true);</pre>
+			</div>
+			<div class="download">
+				<div class="buttons">
+					<a class="btDownload" target="_blank" title="Clique here to download JavaScript file." href="holy/message/jquery.message.js">jquery.message.js</a>
+					<a class="btDownload" target="_blank" title="Clique here to download CSS file." href="holy/message/jquery.message.css">jquery.message.css</a>
+				</div>
 			</div>
 		</div>
 	</action>

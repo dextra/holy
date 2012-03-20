@@ -28,7 +28,7 @@ limitations under the License.*/
 .hdropdown li a:hover,
 .hdropdown li.active > a { background: url('imgs/navbar.png') center bottom repeat-x; }
 
-.hdropdown li ul { width:150px; z-index:9999; background:#009CD9; border-top: 3px solid #009CD9; -moz-box-shadow:1px 1px 2px #587391; -webkit-box-shadow: 1px 1px 2px #587391; box-shadow: 1px 1px 2px #587391; top:35px; }
+.hdropdown li ul { width:150px; z-index:9999; background:#009CD9; border-top: 3px solid #009CD9; top:35px; }
 
 .hdropdown li > ul li a { width:150px; border-bottom:1px solid #39B7E8; border-top:1px solid #0092CB; width:110px; height:auto; padding: 5px 20px; display:block; line-height: normal; }
 
@@ -49,21 +49,21 @@ limitations under the License.*/
 
 /*///// Component - Messages /////*/
 
-.message li { margin:3px 15px; padding:3px 5px 3px 25px; }
+.message li { margin:2px 15px; padding:3px 5px 3px 25px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
 
-.message .error { box-shadow:0 0 3px 0px #D8000C; background-image:url('imgs/msg/error.png'); background-position:5px center; background-repeat: no-repeat; }
+.message .error { background-image:url('imgs/msg/error.png'); background-position:5px center; background-repeat: no-repeat; }
 
-.message .success { box-shadow:0 0 3px 0px #4F8A10; background-image:url('imgs/msg/success.png'); background-position:5px center; background-repeat: no-repeat; }
+.message .success { background-image:url('imgs/msg/success.png'); background-position:5px center; background-repeat: no-repeat; }
 
-.message .info { box-shadow:0 0 3px 0px #00529B; background-image: url('imgs/msg/info.png'); background-position:5px center; background-repeat: no-repeat; }
+.message .info { background-image: url('imgs/msg/info.png'); background-position:5px center; background-repeat: no-repeat; }
 
-.message .warning { box-shadow:0 0 3px 0px #9F6000; background-image:url('imgs/msg/warning.png'); background-position:5px center; background-repeat: no-repeat; }
+.message .warning { background-image:url('imgs/msg/warning.png'); background-position:5px center; background-repeat: no-repeat; }
 
 /*///// Component - Forms /////*/
 
 .forms input,
 .forms select,
-.forms textarea { border-radius:5px; }
+.forms textarea { border-radius:3px; }
 
 .forms ul li .focus { background-color:#FFF; border:1px solid #0092CB; box-shadow: 0 0px 4px #39B7E8; -moz-box-shadow: 0 0px 4px #39B7E8; -webkit-box-shadow: 0 0px 4px #39B7E8; color:#000; }
 
@@ -170,11 +170,11 @@ limitations under the License.*/
 
 .buttons a,
 .buttons input,
-.buttons button { border-radius:0; padding-left: 24px; color:#333; border-bottom:2px solid #232C2F; }
+.buttons button { border-radius:0; padding-left: 24px; color:#333; border-bottom:2px solid #DDD; display:inline-block; }
 
 .buttons a:hover,
 .buttons input:hover,
-.buttons button:hover { color:#FFF; background-color: #8EBE26; border:1px solid #8EBE26;  border-bottom:2px solid #232C2F;  }
+.buttons button:hover { color:#FFF; background-color: #8EBE26; border:1px solid #8EBE26; border-bottom:2px solid #8EBE26;  }
 
 .buttons .btNone { background:#FAFAFA; padding: 5px 8px; }
 

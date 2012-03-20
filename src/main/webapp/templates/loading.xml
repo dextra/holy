@@ -12,6 +12,9 @@
 				<li>
 					<a href="#!">HTML</a>
 				</li>
+				<li>
+					<a href="#!">Download</a>
+				</li>
 			</ul>
 			<div class="demo">
 				<div class="myDiv">
@@ -52,6 +55,12 @@
 			</div>
 			<div class="html">
 				<pre></pre>
+			</div>
+			<div class="download">
+				<div class="buttons">
+					<a class="btDownload" target="_blank" title="Clique here to download JavaScript file." href="holy/loading/jquery.loading.js">jquery.loading.js</a>
+					<a class="btDownload" target="_blank" title="Clique here to download CSS file." href="holy/loading/jquery.loading.css">jquery.loading.css</a>
+				</div>
 			</div>
 		</div>
 	</action>

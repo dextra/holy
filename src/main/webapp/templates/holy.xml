@@ -12,6 +12,9 @@
 				<li>
 					<a href="#!">HTML</a>
 				</li>
+				<li>
+					<a href="#!">Download</a>
+				</li>
 			</ul>
 			<div class="demo">
 				<form class="myForm" action="#">
@@ -20,16 +23,18 @@
 						<ul>
 							<li>
 								<label class="require" for="template">Template:</label>
-								<textarea name="template" cols="40" rows="10"><![CDATA[
+								<textarea name="template" cols="40" rows="10">
+									<![CDATA[
 									<engine>
-										<template selector="#content .result">
-											Hello World: ${name}
-										</template>
-										<script>
-											$('#content .count').val(parseInt($('#content .count').val())+1);
-										</script>
+									<template selector="#content .result">
+									Hello World: ${name}
+									</template>
+									<script>
+									$('#content .count').val(parseInt($('#content .count').val())+1);
+									</script>
 									</engine>
-								]]></textarea>
+									]]>
+								</textarea>
 							</li>
 							<li>
 								<label class="require" for="count">Count:</label>
@@ -44,12 +49,19 @@
 				<div class="result"></div>
 			</div>
 			<div class="script">
-				<pre><![CDATA[			var template = $(this).closest('form').find('textarea[name="template"]').val();
-			$.executeHoly(template, {name:'myname'});
-				]]></pre>
+				<pre>
+					<![CDATA[			var template = $(this).closest('form').find('textarea[name="template"]').val();
+					$.executeHoly(template, {name:'myname'});
+					]]>
+				</pre>
 			</div>
 			<div class="html">
 				<pre></pre>
+			</div>
+			<div class="download">
+				<div class="buttons">
+					<a class="btDownload" target="_blank" title="Clique here to download JavaScript file." href="holy/lib/jquery.holyavenger.js">jquery.holyavenger.js</a>
+				</div>
 			</div>
 		</div>
 	</action>
@@ -67,9 +79,10 @@
 		});
 
 		$('#content .myForm .btSave').click(function() {
-			var template = $(this).closest('form').find('textarea[name="template"]').val();
-			$.executeHoly(template, {name:'myname'});
+		var template = $(this).closest('form').find('textarea[name="template"]').val();
+		$.executeHoly(template, {name:'myname'});
 		});
-		
-	]]></script>
+
+		]]>
+	</script>
 </engine>

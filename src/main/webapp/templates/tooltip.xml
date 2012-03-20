@@ -17,6 +17,9 @@
 				<li>
 					<a href="#!">HTML</a>
 				</li>
+				<li>
+					<a href="#!">Download</a>
+				</li>
 			</ul>
 			<div class="demo">
 				<a href="#tooltip" title="Tooltip demo">Hover me!</a>
@@ -30,6 +33,12 @@
 			</div>
 			<div class="code">
 				<pre></pre>
+			</div>
+			<div class="download">
+				<div class="buttons">
+					<a class="btDownload" target="_blank" title="Clique here to download JavaScript file." href="holy/third/tooltip.tipsy/jquery.tipsy.js">jquery.tipsy.js</a>
+					<a class="btDownload" target="_blank" title="Clique here to download CSS file." href="holy/third/tooltip.tipsy/jquery.tipsy.css">jquery.tipsy.css</a>
+				</div>
 			</div>
 		</div>
 	</action>

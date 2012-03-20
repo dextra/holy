@@ -101,8 +101,8 @@ limitations under the License.*/
 		tabpanel.children("div:gt(0)").hide();
 		
 		tabpanel.bind('open.tabPanel', function(evt, index) {
-			var lis = tabpanel.children('ul').children('li');
-			var divs = tabpanel.children('div');
+			var lis = $(this).children('ul').children('li');
+			var divs = $(this).children('div');
 			lis.removeClass('active');
 			divs.removeClass('active');
 			lis.eq(index).addClass('active');

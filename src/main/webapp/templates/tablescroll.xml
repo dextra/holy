@@ -1,6 +1,6 @@
 <engine>
 	<action selector="#content">
-		<h3>Datatable</h3>
+		<h3>Table<span>Scroll</span></h3>
 		<div class="tabPanel">
 			<ul>
 				<li>
@@ -11,6 +11,9 @@
 				</li>
 				<li>
 					<a href="#!">HTML</a>
+				</li>
+				<li>
+					<a href="#!">Download</a>
 				</li>
 			</ul>
 			<div class="demo">
@@ -174,6 +177,11 @@
 			</div>
 			<div class="html">
 				<pre></pre>
+			</div>
+			<div class="download">
+				<div class="buttons">
+					<a class="btDownload" target="_blank" title="Clique here to download JavaScript file." href="holy/third/jquery.tablescroll.js">jquery.tablescroll.js</a>
+				</div>
 			</div>
 		</div>
 	</action>
