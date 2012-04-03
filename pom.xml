@@ -12,10 +12,10 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<downloadSources>true</downloadSources>
-		<gae.version>1.5.5</gae.version>
+		<gae.version>1.6.2.1</gae.version>
 		<gae.application.version>test</gae.application.version>
-		<mycontainer.version>1.2.35</mycontainer.version>
-		<restitory.version>2.0.0</restitory.version>
+		<mycontainer.version>1.2.37</mycontainer.version>
+		<restitory.version>2.0.41</restitory.version>
 	</properties>
 
 	<dependencies>
@@ -46,7 +46,6 @@
 		<dependency>
 			<groupId>com.google.appengine</groupId>
 			<artifactId>appengine-api-labs</artifactId>
-			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.google.appengine</groupId>
@@ -62,11 +61,16 @@
 			<groupId>com.googlecode.mycontainer</groupId>
 			<artifactId>mycontainer-gae-web</artifactId>
 			<scope>test</scope>
+                     <exclusions>
+                                <exclusion>
+                                        <groupId>org.slf4j</groupId>
+                                        <artifactId>slf4j-log4j12</artifactId>
+                                </exclusion>
+                        </exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.googlecode.restitory</groupId>
 			<artifactId>restitory-gae-api</artifactId>
-			<scope>test</scope>
 		</dependency>
 	</dependencies>
 
@@ -97,17 +101,6 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>2.1.1</version>
 			</plugin>
-			<plugin>
-				<artifactId>maven-ejb-plugin</artifactId>
-				<configuration>
-					<ejbVersion>3.0</ejbVersion>
-					<archive>
-						<manifest>
-							<addClasspath>true</addClasspath>
-						</manifest>
-					</archive>
-				</configuration>
-			</plugin>
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -118,14 +111,14 @@
 					</includes>
 				</configuration>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-release-plugin</artifactId>
-				<version>2.1</version>
-				<configuration>
-					<!-- <goals>gae:deploy</goals> -->
-				</configuration>
-			</plugin>
+                        <plugin>
+                                <groupId>org.apache.maven.plugins</groupId>
+                                <artifactId>maven-release-plugin</artifactId>
+                                <version>2.1</version>
+                                <configuration>
+                                        <remoteTagging>true</remoteTagging>
+                                </configuration>
+                        </plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-source-plugin</artifactId>
