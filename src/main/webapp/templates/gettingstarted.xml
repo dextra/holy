@@ -7,34 +7,55 @@
 			</h3>
 			<div>
 				<p>The easiest way is getting the index.html witch links directly
-					to ${window.location.protocol}//${window.location.host}
+					to
+					${window.location.protocol}//${window.location.host}
 				</p>
 				<p>Remeber you can always right click to save the file :)</p>
-			</div>
-			<div class="toogle">
-				<h3>
-					<span>
-						index.html (absulute links)
-					</span>
-				</h3>
-				<div class="absoluteindex" style="display:none">
-					<pre class="snippet">
-					</pre>
+				<div class="toogle">
+					<h3>
+						<span>
+							index.html (absulute links)
+						</span>
+					</h3>
+					<div class="absoluteindex" style="display:none">
+						<pre class="snippet">
+						</pre>
+					</div>
 				</div>
-			</div>
-			<div class="toogle">
-				<h3>
-					<span>
-						<a href="index.html" class="unclickable">index.html (relative links)
-						</a>
-					</span>
-				</h3>
-				<div class="relativeindex" style="display:none">
-					<pre class="snippet">
-					</pre>
+				<div class="toogle">
+					<h3>
+						<span>
+							<a href="index.html" class="unclickable">index.html (relative links)
+							</a>
+						</span>
+					</h3>
+					<div class="relativeindex" style="display:none">
+						<pre class="snippet">
+						</pre>
+					</div>
 				</div>
 			</div>
 		</div>
+
+		<div class="toogle">
+			<h3>
+				<span>The almost esiest way</span>
+			</h3>
+			<div>
+				<p>The almost easiest way is getting the <a href="holy.zip">zip</a> including index.html
+					and all resources
+				</p>
+			</div>
+		</div>
+		
+		<div class="toogle">
+			<h3>
+				<span>Or go to the source!</span>
+			</h3>
+			<div>
+				<a target="_blank" href="http://github.com/dextra/holy.git">http://github.com/dextra/holy.git</a>
+			</div>
+		</div>		
 	</template>
 	<script>
 		<![CDATA[
