@@ -28,6 +28,7 @@ limitations under the License.*/
 		}
 		var text = $.holyavenger.readText(template);
 		template = TrimPath.parseTemplate(text);
+		context.window = window;
 		var result = template.process(context);
 		if (result.exception) {
 			throw result.exception;
