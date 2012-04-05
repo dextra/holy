@@ -5,16 +5,10 @@
 				<a href="#home" title="Home">Home</a>
 			</li>
 			<li>
-				<a href="https://github.com/dextra/holy/downloads" target="_blank" title="Holy Download">Download</a>
-			</li>
-			<li>
 				<a href="https://github.com/dextra/holy/issues/new" target="_blank" title="Bug Report">Issues</a>
 			</li>
 			<li>
-				<a href="#indexhtml" title="Base Code">Base Code</a>
-			</li>
-			<li>
-				<a href="#gettingstarted" title="Getting Started">Getting Started</a>
+				<a href="#download" title="Download">Download</a>
 			</li>
 			<li>
 				<a href="#holy" title="Holy">Holy</a>
