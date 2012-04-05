@@ -1,0 +1,90 @@
+﻿<engine>
+	<template selector="#content">
+		<h3>Download</h3>
+		<div class="toogle">
+			<h3>
+				<span>The easiest way</span>
+			</h3>
+			<div>
+				<p>The easiest way is getting index.html which links directly
+					to
+					${window.location.protocol}//${window.location.host}
+				</p>
+				<div class="toogle">
+					<h3>
+						<span>
+							index.html (absolute links)
+						</span>
+					</h3>
+					<div class="absoluteindex" style="display:none">
+						<pre class="snippet">
+						</pre>
+					</div>
+				</div>
+				<div class="toogle">
+					<h3>
+						<span>
+							index.html (relative links)
+						</span>
+					</h3>
+					<div class="relativeindex" style="display:none">
+						<pre class="snippet">
+						</pre>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="toogle">
+			<h3>
+				<span>The almost easiest way</span>
+			</h3>
+			<div>
+				<p>
+					The almost easiest way is getting the
+					<a href="holy.zip">zip</a>
+					including index.html
+					and all resources
+				</p>
+			</div>
+		</div>
+
+		<div class="toogle">
+			<h3>
+				<span>Or go to the source!</span>
+			</h3>
+			<div>
+				<a target="_blank" href="http://github.com/dextra/holy.git">http://github.com/dextra/holy.git</a>
+			</div>
+		</div>
+	</template>
+	<script>
+		<![CDATA[
+			$('#content .toogle').togglePanel();
+
+			$.ajax({
+				url: 'index.html',
+				dataType: 'text',
+				success: function(text) {
+					$('#content .relativeindex .snippet').text(text);
+					$('#content .relativeindex .snippet').snippet('html', {style:"ide-eclipse",showNum:false});
+					
+					var xml = $($.parseXML(text));
+					xml.find('[src],[href]').each(function() {
+					     var value = $(this).attr('src') ||  $(this).attr('href');
+					     if(!value.match(/\:/)) {
+					        value = location.protocol + '//' + location.host + (value.match(/^\//)?value:'/' + value);
+					        if($(this).attr('src')) {
+					           $(this).attr('src', value);
+					        } else {
+					        	$(this).attr('href', value);
+					        }
+					     }
+					});
+					$('#content .absoluteindex .snippet').text(xml.xml());
+					$('#content .absoluteindex .snippet').snippet('html', {style:"ide-eclipse",showNum:false});
+				}
+			});
+		]]>
+	</script>
+</engine>
