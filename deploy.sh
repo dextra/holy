@@ -1,4 +1,5 @@
 #!/bin/bash
 
-
-appcfg.py update WebContent
+http_proxy=
+https_proxy=
+appcfg.py --insecure update WebContent
