@@ -15,7 +15,7 @@ cd target/release-deploy
 pwd
 
 TAG="holy-$VERSION"
-HOLY_URL="https://github.com/dextra/holy/zipball/$TAG/WebContent"
+HOLY_URL="https://github.com/dextra/holy/zipball/$TAG"
 GAE_VERSION=$(echo "$TAG" | sed "s/\./\-/g")
 
 echo "x: $HOLY_URL"

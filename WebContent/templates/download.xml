@@ -86,7 +86,7 @@
 				}
 			});
 			
-			$('#content .zipdownload').attr('href', 'https://github.com/dextra/holy/zipball/' + $.holy.version + '/WebContent');
+			$('#content .zipdownload').attr('href', 'https://github.com/dextra/holy/zipball/' + $.holy.version);
 		]]>
 	</script>
 </engine>
