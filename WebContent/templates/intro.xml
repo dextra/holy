@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<engine>
+	<action selector="#content">
+		<h3>Holy</h3>
+		<div class="toogle">
+			<h3>
+				Intro
+			</h3>
+			<div>
+				<p>
+					O Holy uma proposta, ao mesmo tempo inovadora e descomplicada,
+					para a construção de interfaces de sistemas web.
+				</p>
+				<p>
+					O conceito é o browser montar a pagina client-side. Para isso ele
+					faz chamadas ao servidor para objeter os dados (normalmente json).
+				</p>
+				<p>
+					Gostamos de chamar o Holy de um “não-framework”, pela sua
+					simplicidade e tamanho reduzido.
+				</p>
+				<div class="toogle">
+					<h3>
+						Features
+					</h3>
+					<div>
+						<ul>
+							<li>Todos os componentes são plugins do JQuery</li>
+							<li>Os componentes podem ser usados separados</li>
+							<li>Pode ser usado junto com outros componentes do JQuery</li>
+							<li>Suporte ao jQuery.noConflict();</li>
+						</ul>
+						<p>Cada componente pode ser acessado atravez do menu acima</p>
+					</div>
+				</div>
+				<div class="toogle">
+					<h3>
+						Great for
+					</h3>
+					<div>
+						<ul>
+							<li>
+								<a href="http://en.wikipedia.org/wiki/Ajax_(programming)"
+									target="_blank">Ajax</a>
+							</li>
+							<li>
+								<a href="http://en.wikipedia.org/wiki/Single-page_application"
+									target="_blank">Single Page</a>
+							</li>
+							<li>
+								<a
+									href="http://en.wikipedia.org/wiki/Representational_state_transfer"
+									target="_blank">Rest</a>
+								/
+								<a hrf="http://en.wikipedia.org/wiki/Json" target="_blank">json</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</action>
+	<script>
+		<![CDATA[
+			$('#content .toogle').togglePanel();
+		]]>
+	</script>
+</engine>
