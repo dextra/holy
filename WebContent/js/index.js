@@ -26,6 +26,14 @@ limitations under the License.*/
 	});
 
 	$(document).ready(function() {
+		$.ajax({
+			url: 'props/version.txt',
+			dataType: 'text',
+			success: function(version) {
+				$.holy.version = $.trim(version);
+			}
+		});
+		
 		$.holy('./templates/menu.xml');
 		$.holy('./templates/userbar.xml');
 		$('.message').messageMonitor();

@@ -42,7 +42,7 @@
 			<div>
 				<p>
 					The almost easiest way is getting the
-					<a href="holy.zip">zip</a>
+					<a class="zipdownload" href="holy.zip">zip</a>
 					including index.html
 					and all resources
 				</p>
@@ -85,6 +85,8 @@
 					$('#content .absoluteindex .snippet').snippet('html', {style:"ide-eclipse",showNum:false});
 				}
 			});
+			
+			
 		]]>
 	</script>
 </engine>
