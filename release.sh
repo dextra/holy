@@ -12,14 +12,14 @@ fi
 TAG="holy-$VERSION"
 
 echo "$VERSION" > WebContent/props/version.txt
-git commit -a "releasing $VERSION"
+git commit -a -m "releasing $VERSION"
 #git push
 
 git tag -a "$TAG" -m "releasing $TAG"
 #git push --tags
 
 echo "master" > WebContent/props/version.txt
-git commit -a "releasing $VERSION"
+git commit -a -m "releasing $VERSION"
 git push --tags
 
 git pull
