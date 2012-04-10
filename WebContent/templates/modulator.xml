@@ -21,7 +21,7 @@
 				<ul></ul>
 				<div class="buttons">
 					<input class="btNone modulate" type="button" value="Modulate" />
-					<input class="btNone demodulate" type="button" value="Don't Modulator" />
+					<input class="btNone demodulate" type="button" value="Don't Modulate" />
 				</div>
 			</div>
 			<div class="script">
