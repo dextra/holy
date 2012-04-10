@@ -60,6 +60,19 @@
 
 		<div class="toogle">
 			<h3>
+				<span>Components</span>
+			</h3>
+			<div class="comps">
+				<p>
+					You can download some components separately
+					<a href="https://github.com/dextra/holy/tree/master/WebContent/holy"
+						target="_blank">here</a>
+				</p>
+			</div>
+		</div>
+
+		<div class="toogle">
+			<h3>
 				<span>other versions</span>
 			</h3>
 			<div style="display:none">
@@ -97,6 +110,7 @@
 			});
 			
 			$('#content .zipdownload').attr('href', 'https://github.com/dextra/holy/zipball/' + $.holy.version);
+			$('#content .comps a').attr('href', 'http://github.com/dextra/holy/tree/' + $.holy.version + '/WebContent/holy');
 
 			versions = function(versions) {
 				var ul = $('#content .versions');
