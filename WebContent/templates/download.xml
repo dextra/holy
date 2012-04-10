@@ -62,7 +62,7 @@
 			<h3>
 				<span>other versions</span>
 			</h3>
-			<div>
+			<div style="display:none">
 				<ul class="versions">
 				</ul>
 			</div>
