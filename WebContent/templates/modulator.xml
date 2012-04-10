@@ -1,8 +1,8 @@
 <engine>
 	<action selector="#content">
 		<h3>Ajax Modulator</h3>
-		<p>Ajax Modulator will intercept (preFilter) xml and json ajax to avoid multiples calls to the same resource.</p>
-		<p>Of course it will do necessary behavior to stay invisible to the application.</p>
+		<p>Ajax Modulator will intercept ($.preFilter) xml and json ajax requests to avoid multiple calls to the same resource.</p>
+		<p>Of course, it will do what it takes to stay invisible to the application.</p>
 		<div class="tabPanel">
 			<ul>
 				<li>
@@ -16,8 +16,8 @@
 				</li>
 			</ul>
 			<div class="demo">
-				<p>Both buttons are implemented to do 5 ajax to the same resources. Each one will append a pong in the list.</p>
-				<p>But, for the modulator just one ajax is made, while the other one does the 5 requests.</p>
+				<p>Both buttons are implemented to do 5 ajax requests to the same resource. Each one will append a pong to the list.</p>
+				<p>But, for the modulator just one ajax request is made, while the other one does all 5 requests.</p>
 				<ul></ul>
 				<div class="buttons">
 					<input class="btNone modulate" type="button" value="Modulate" />
