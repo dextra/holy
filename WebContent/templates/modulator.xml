@@ -1,0 +1,73 @@
+<engine>
+	<action selector="#content">
+		<h3>Ajax Modulator</h3>
+		<p>Ajax Modulator will intercept (preFilter) xml and json ajax to avoid multiples calls to the same resource.</p>
+		<p>Of course it will do necessary behavior to stay invisible to the application.</p>
+		<div class="tabPanel">
+			<ul>
+				<li>
+					<a href="#!">Demo</a>
+				</li>
+				<li>
+					<a href="#!">Script</a>
+				</li>
+				<li>
+					<a href="#!">HTML</a>
+				</li>
+			</ul>
+			<div class="demo">
+				<p>Both buttons are implemented to do 5 ajax to the same resources. Each one will append a pong in the list.</p>
+				<p>But, for the modulator just one ajax is made, while the other one does the 5 requests.</p>
+				<ul></ul>
+				<div class="buttons">
+					<input class="btNone modulate" type="button" value="Modulate" />
+					<input class="btNone demodulate" type="button" value="Don't Modulator" />
+				</div>
+			</div>
+			<div class="script">
+				<p>Tip: you can use $.ajaxSetup to turn the modulator default</p>
+				<pre>
+				$.ajax({ 
+					url: 'templates/modulator/mod.xml',
+					dataType: 'holy',
+					modulate: true
+				});
+				</pre>
+			</div>
+			<div class="html">
+				<pre></pre>
+			</div>
+		</div>
+	</action>
+	<script>
+		<![CDATA[
+		$('.html pre').text($('.demo').html());
+		$('.html pre').snippet('html', {style:"ide-eclipse",showNum:false});
+		$('.script pre').snippet('javascript', {style:"ide-eclipse",showNum:false});
+		$(".tabPanel").tabPanel();
+		$('.datatable').datatable();
+		$('.datatable').datatableSortable();
+
+		$('#content .demo input.modulate').click(function() {
+			$('#content .demo ul').html('');
+			for(var i = 0; i < 5; i ++) {
+				$.ajax({ 
+					url: 'templates/modulator/mod.xml',
+					dataType: 'holy',
+					modulate: true
+				});
+			}
+		});
+		$('#content .demo input.demodulate').click(function() {
+			$('#content .demo ul').html('');
+			for(var i = 0; i < 5; i ++) {
+				$.ajax({ 
+					url: 'templates/modulator/mod.xml',
+					dataType: 'holy',
+					modulate: false
+				});
+			}
+		});
+		]]>
+	</script>
+</engine>
