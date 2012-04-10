@@ -13,6 +13,8 @@ See the License for the specific language governing permissions and
 limitations under the License.*/
 
 (function($) {
+	holyDomain = 'http://holy-avenger.appspot.com';
+	
 	$(window).hashchange(function() {
 		if(!location.hash || location.hash == '#') {
 			location = '#home';

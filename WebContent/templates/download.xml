@@ -57,6 +57,16 @@
 				<a target="_blank" href="http://github.com/dextra/holy.git">http://github.com/dextra/holy.git</a>
 			</div>
 		</div>
+
+		<div class="toogle">
+			<h3>
+				<span>other versions</span>
+			</h3>
+			<div>
+				<ul class="versions">
+				</ul>
+			</div>
+		</div>
 	</template>
 	<script>
 		<![CDATA[
@@ -87,6 +97,20 @@
 			});
 			
 			$('#content .zipdownload').attr('href', 'https://github.com/dextra/holy/zipball/' + $.holy.version);
+
+			versions = function(versions) {
+				var ul = $('#content .versions');
+				for(var i in versions) {
+					var version = versions[i];
+					var li = ul.append('<li><a/></li>').find('li:last');
+					var str = version.replace(/\./g, '-');
+					li.find('a').text(version).attr('href', holyDomain.replace('://', '://' + str + '.'));
+				}
+			}
+			$.getScript(holyDomain + '/props/all-versions.js', function() {
+				versions = null;
+			});
+			
 		]]>
 	</script>
 </engine>
