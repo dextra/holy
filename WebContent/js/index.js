@@ -14,13 +14,13 @@ limitations under the License.*/
 
 (function($) {
 	holyDomain = 'http://holy-avenger.appspot.com';
-	
+
 	$(window).hashchange(function() {
-		if(!location.hash || location.hash == '#') {
+		if (!location.hash || location.hash == '#') {
 			location = '#home';
 			return;
 		}
-		if(!location.hash || location.hash == '#!') {
+		if (!location.hash || location.hash == '#!') {
 			return;
 		}
 		var hash = location.hash.substring(1);
@@ -29,16 +29,18 @@ limitations under the License.*/
 
 	$(document).ready(function() {
 		$.ajax({
-			url: 'props/version.txt',
-			dataType: 'text',
-			success: function(version) {
+			url : 'props/version.txt',
+			dataType : 'text',
+			success : function(version) {
 				$.holy.version = $.trim(version);
+			},
+			complete : function() {
+				$(window).hashchange();
 			}
 		});
-		
+
 		$.holy('./templates/menu.xml');
 		$.holy('./templates/userbar.xml');
 		$('.message').messageMonitor();
-		$(window).hashchange();
 	});
 })(jQuery);
