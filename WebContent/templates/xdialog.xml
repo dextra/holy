@@ -72,48 +72,74 @@
 				</div>
 			</div>
 			<div class="options">
-				<p>
-					<strong>overlay:</strong>
-					none or hex color #000000
-					<span>(default: none)</span>
-				</p>
-				<p>
-					<strong>alpha:</strong>
-					1 to 10
-					<span>(default: 5)</span>
-				</p>
-				<p>
-					<strong>width:</strong>
-					auto or px
-					<span>(default: auto)</span>
-				</p>
-				<br />
-				<p>See the script tab to view example.</p>
+				<div class="toogle">
+					<h3>
+						<span>
+							$.fn.xdialog(opts)
+						</span>
+					</h3>
+					<div>
+						<p>
+							<strong>overlay:</strong>
+							Is a map off css properties to be used on the overlay div.
+							<span>(default: { background : 'none', opacity : 0.5 })</span>
+						</p>
+						<p>
+							<strong>unclosable:</strong>
+							Set it to true do not show the close button.
+							<span>(default: false)</span>
+						</p>
+					</div>
+				</div>
+				<div class="toogle">
+					<h3>
+						<span>
+							events
+						</span>
+					</h3>
+					<div>
+						<p>
+							<strong>open.open</strong>
+						</p>
+						<p>
+							<strong>open.close</strong>
+						</p>
+						For both events you can:
+						<p>
+							<strong>$(this).data('xdialog.overlay'):</strong>
+							to get the overlay div
+						</p>
+						<p>
+							<strong>return false</strong>
+							to prevent the dialog open or close
+						</p>
+					</div>
+				</div>
 			</div>
 			<div class="script">
-				<pre>
-				</pre>
-			</div>
-			<div class="html">
 				<pre><![CDATA[
 				$(".myDialog").xdialog({
 					overlay: {background : '#23557E', opacity : 0.3}
-				});	
+				});
 				]]></pre>
+			</div>
+			<div class="html">
+				<pre></pre>
 			</div>
 			<div class="download">
 				<div class="buttons">
 					<a class="btDownload" target="_blank"
-						title="Clique here to download JavaScript file." href="holy/dialog/jquery.dialog.js">jquery.dialog.js
+						title="Clique here to download JavaScript file." href="holy/xdialog/jquery.xdialog.js">jquery.xdialog.js
 					</a>
 					<a class="btDownload" target="_blank" title="Clique here to download CSS file."
-						href="holy/dialog/jquery.dialog.css">jquery.dialog.css</a>
+						href="holy/xdialog/jquery.xdialog.css">jquery.xdialog.css</a>
 				</div>
 			</div>
 		</div>
 	</action>
 	<script>
 		<![CDATA[
+			$('#content .toogle').togglePanel();
 			$('.html pre').text($('.demo').html());
 			$('.html pre').snippet('html', {
 				style : "ide-eclipse",

@@ -15,18 +15,18 @@ limitations under the License.*/
 (function($) {
 	$.fn.xdialog = function(opts) {
 		opts = $.extend({}, opts);
-		var overlay = $.extend({
+		opts.overlay = $.extend({
 			background : 'none',
 			opacity : 0.5
 		}, opts.overlay);
 
-		if (typeof (overlay.opacity) == 'string') {
-			overlay.opacity = parseFloat(overlay.opacity);
+		if (typeof (opts.overlay.opacity) == 'string') {
+			opts.overlay.opacity = parseFloat(opts.overlay.opacity);
 		}
-		if (overlay.opacity == null) {
-			overlay.opacity = 0.5;
+		if (opts.overlay.opacity == null) {
+			opts.overlay.opacity = 0.5;
 		}
-		overlay.filter = 'alpha(opacity=' + (overlay.opacity * 100) + ')';
+		opts.overlay.filter = 'alpha(opacity=' + (opts.overlay.opacity * 100) + ')';
 
 		// $('body').append(
 		// '<div class="dOverlay" style="background:' + overColor
@@ -34,10 +34,12 @@ limitations under the License.*/
 		// + alpha + '0);"></div>');
 		var dOverlay = $('body').append('<div/>').find('div:last');
 		dOverlay.addClass('dOverlay');
-		dOverlay.css(overlay);
+		dOverlay.css(opts.overlay);
 
-		var me = $(this)
+		var me = $(this);
 
+		$(this).data('xdialog.opts', dOverlay);
+		$(this).data('xdialog.overlay', dOverlay);
 		$(this).data('xdialog.parent', $(this).parent());
 		$(this).appendTo('body');
 
