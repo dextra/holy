@@ -73,68 +73,79 @@
 			</div>
 			<div class="options">
 				<p>
-					<strong>overlay:</strong> none or hex color #000000
+					<strong>overlay:</strong>
+					none or hex color #000000
 					<span>(default: none)</span>
 				</p>
 				<p>
-					<strong>alpha:</strong> 1 to 10
+					<strong>alpha:</strong>
+					1 to 10
 					<span>(default: 5)</span>
 				</p>
 				<p>
-					<strong>width:</strong> auto or px
+					<strong>width:</strong>
+					auto or px
 					<span>(default: auto)</span>
 				</p>
 				<br />
 				<p>See the script tab to view example.</p>
 			</div>
 			<div class="script">
-				<pre>$(".btDialogMe").click(function() {
-					$(".myDialog").xdialog({
-					overlay: '#23557E',
-					alpha: '3'
-					});
-					});
-					// close dialog
-					$('form .btCancel').click(function() {
-					$('.myDialog').xundialog();
-					});</pre>
+				<pre>
+				</pre>
 			</div>
 			<div class="html">
-				<pre></pre>
+				<pre><![CDATA[
+				$(".myDialog").xdialog({
+					overlay: {background : '#23557E', opacity : 0.3}
+				});	
+				]]></pre>
 			</div>
 			<div class="download">
 				<div class="buttons">
-					<a class="btDownload" target="_blank" title="Clique here to download JavaScript file." href="holy/dialog/jquery.dialog.js">jquery.dialog.js</a>
-					<a class="btDownload" target="_blank" title="Clique here to download CSS file." href="holy/dialog/jquery.dialog.css">jquery.dialog.css</a>
+					<a class="btDownload" target="_blank"
+						title="Clique here to download JavaScript file." href="holy/dialog/jquery.dialog.js">jquery.dialog.js
+					</a>
+					<a class="btDownload" target="_blank" title="Clique here to download CSS file."
+						href="holy/dialog/jquery.dialog.css">jquery.dialog.css</a>
 				</div>
 			</div>
 		</div>
 	</action>
 	<script>
 		<![CDATA[
-		$('.html pre').text($('.demo').html());
-		$('.html pre').snippet('html', {style:"ide-eclipse",showNum:false});
-		$('.script pre').snippet('javascript', {style:"ide-eclipse",showNum:false});
-		$(".tabPanel").tabPanel();
-		$('.myForm').form();
-		$('.myForm [title]').tipsy({trigger: 'focus', gravity: 's', fade: true});
-		$('.myDialog, .another').hide();
-		$(".showDialog").click(function() {
-		$(".myDialog").xdialog({
-		overlay: '#23557E',
-		alpha: '3'
-		});
-		});
-		$('form').submit(function() {
-		$('.another').xdialog({
-		overlay: '#000',
-		overlayClick: true
-		});
-		return false;
-		});
-		$('form .btCancel').click(function() {
-		$('.myDialog').xundialog();
-		});
+			$('.html pre').text($('.demo').html());
+			$('.html pre').snippet('html', {
+				style : "ide-eclipse",
+				showNum : false
+			});
+			$('.script pre').snippet('javascript', {
+				style : "ide-eclipse",
+				showNum : false
+			});
+			$(".tabPanel").tabPanel();
+			$('.myForm').form();
+			$('.myForm [title]').tipsy({
+				trigger : 'focus',
+				gravity : 's',
+				fade : true
+			});
+			$('.myDialog, .another').hide();
+			$(".showDialog").click(function() {
+				$(".myDialog").xdialog({
+					overlay: {background : '#23557E', opacity : 0.3}
+				});
+			});
+			$('form').submit(function() {
+				$('.another').xdialog({
+					overlay: {background : '#000'},
+					overlayClick : true
+				});
+				return false;
+			});
+			$('form .btCancel').click(function() {
+				$('.myDialog').xundialog();
+			});
 		]]>
 	</script>
 </engine>

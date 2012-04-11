@@ -1,4 +1,4 @@
-/*Copyright 2011/2012 Dextra Sistemas
+	/*Copyright 2011/2012 Dextra Sistemas
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -15,59 +15,78 @@ limitations under the License.*/
 (function($) {
 	$.fn.xdialog = function(opts) {
 		opts = $.extend({}, opts);
+		var overlay = $.extend({
+			background : 'none',
+			opacity : 0.5
+		}, opts.overlay);
 
-		var overColor = opts.overlay;
-		if (!overColor) {
-			overColor = 'none'
+		if (typeof (overlay.opacity) == 'string') {
+			overlay.opacity = parseFloat(overlay.opacity);
 		}
-		var alpha = opts.alpha;
-		if (!alpha) {
-			alpha = '5'
+		if (overlay.opacity == null) {
+			overlay.opacity = 0.5;
 		}
-		var dialogWidth = opts.width;
-		if (!dialogWidth) {
-			dialogWidth = 'auto'
-		}
+		overlay.filter = 'alpha(opacity=' + (overlay.opacity * 100) + ')';
 
-		$('body').append(
-				'<div class="dOverlay" style="background:' + overColor
-						+ '; opacity:0.' + alpha + '; filter: alpha(opacity = '
-						+ alpha + '0);"></div>');
+		// $('body').append(
+		// '<div class="dOverlay" style="background:' + overColor
+		// + '; opacity:0.' + alpha + '; filter: alpha(opacity = '
+		// + alpha + '0);"></div>');
+		var dOverlay = $('body').append('<div/>').find('div:last');
+		dOverlay.addClass('dOverlay');
+		dOverlay.css(overlay);
 
 		var me = $(this)
 
 		$(this).data('xdialog.parent', $(this).parent());
 		$(this).appendTo('body');
 
-		if(!opts.unclosable) {
+		if (!opts.unclosable) {
 			var close = '<a href="#" class="close">(x)</a>'
 			me.prepend(close);
 		}
 
 		me.addClass('dialogBox');
 
-		me.css('width', dialogWidth);
+		if (!me.css('width')) {
+			me.css('width', 'auto');
+		}
 
 		me.center();
 
-		me.fadeIn();
-
-		if(!opts.unclosable) {
-			if(opts.overlayClick) {
+		if (!opts.unclosable) {
+			if (opts.overlayClick) {
 				me.prev('div.dOverlay').click(function() {
 					$(this).find(' + .dialogBox a.close').click();
 				});
 			}
 			me.find('a.close:first').click($.fn.xundialog);
 		}
+		
+		var evt = jQuery.Event("open.xdialog");
+		me.trigger(evt);
+		if(evt.isDefaultPrevented() || evt.isPropagationStopped() || evt.isImmediatePropagationStopped()) {
+			return $(this);
+		}
+		
+		me.fadeIn();
+		
+		return $(this);
 	}
 
 	$.fn.xundialog = function() {
 		var popup = $(this).closest('.dialogBox');
 		var a = popup.children('a.close:first');
 		var overlay = popup.prev('div.dOverlay');
-		if(a.length) {
-			a.remove();	
+
+		var evt = jQuery.Event("close.xdialog");
+		popup.trigger(evt);
+		if(evt.isDefaultPrevented() || evt.isPropagationStopped() || evt.isImmediatePropagationStopped()) {
+			return false;
+		}
+
+		if (a.length) {
+			a.remove();
 		}
 		if (popup.length) {
 			popup.hide();

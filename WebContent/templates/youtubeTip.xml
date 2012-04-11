@@ -46,8 +46,7 @@
 													playerHeight: 200,
 													complete: function(){
 														$(".youtubeDialog").xdialog({
-															overlay: '#23557E',
-															alpha: '3'
+															overlay: {background : '#23557E', opacity : 0.3}
 														});
 													},
 													select: function(o){
@@ -102,8 +101,7 @@
 													playerHeight: 200,
 													complete: function(){
 														$(".youtubeDialog").xdialog({
-															overlay: '#23557E',
-															alpha: '3'
+															overlay: {background : '#23557E', opacity : 0.3}
 														});
 													},
 													select: function(o){
