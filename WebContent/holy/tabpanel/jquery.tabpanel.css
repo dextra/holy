@@ -1,4 +1,4 @@
-.tabPanel { margin: 10px auto; border-bottom:2px solid #232C2F; }
+.tabPanel { margin: 10px auto; }
 
 .tabPanel > ul { overflow: hidden; margin:0; padding:0; }
 
@@ -12,12 +12,9 @@
 
 .tabPanel > div { clear: left; padding: 15px; border: 1px solid #CCC;  }
 
-/* 
-.tabPanel > ul .active a { padding: 5px 20px; background: #3b5998; border-bottom:1px solid #39B7E8; color:#FFF; }
-*/
 .tabPanel > ul .active a { background: #009CD9; border-bottom:1px solid #009CD9; font-weight: bold; }
 
-.tabPanel > div { border: 1px solid #39B7E8; border-top:2px solid #39B7E8; }
+.tabPanel > div { border: 1px solid #39B7E8; border-top:1px solid #39B7E8; }
 
 /* vtab */
 
@@ -38,8 +35,8 @@
 .vtabPanel { border:0; }
 
 .vtabPanel > ul li a,
-.vtabPanel > ul .active a  { border-radius: 0; border-top-left-radius: 10px; border-bottom-left-radius: 10px; margin-bottom:5px; border:0; margin-bottom:2px; }
+.vtabPanel > ul .active a  { border-radius: 0; border-top-left-radius: 10px; border-bottom-left-radius: 10px; margin-bottom:5px; border:0; margin-bottom:1px; }
 
-.vtabPanel > div { margin-left:220px; border: 1px solid #39B7E8; border-left:2px solid #39B7E8; }
+.vtabPanel > div { margin-left:220px; border: 1px solid #39B7E8; border-left:1px solid #39B7E8; }
 
 
