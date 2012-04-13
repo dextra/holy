@@ -4,6 +4,8 @@
 
 .simpleTheme { color: #333333 }
 
+.simpleTheme h1 { padding: 5px } 
+
 .simpleTheme h1,
 .simpleTheme h1 * { font-size: 32px }
 
