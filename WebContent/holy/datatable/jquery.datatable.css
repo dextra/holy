@@ -64,6 +64,20 @@ limitations under the License.*/
 .datatable tr td.action input:hover,
 .datatable tr td.action a:hover {  background-color: transparent; }
 
+.datatable .asc { background: url('imgs/asc.gif') right center no-repeat; }
+
+.datatable .desc { background: url('imgs/desc.gif') right center no-repeat; }
+
+.datatable thead tr { background: url('imgs/gradient-bg.png') top center; }
+
+.datatable thead tr th { background: none; }
+
+/*/ Table - Actions /*/
+
+.datatable tr td .btenable { background: url('imgs/buttons/btenable.png') center center no-repeat; }
+
+.datatable tr td .btdisable { background: url('imgs/buttons/btdisable.png') center center no-repeat; }
+
 /*///// Component - Pagination /////*/
 
 .paging { text-align: center; margin: 10px auto; }
@@ -73,3 +87,9 @@ limitations under the License.*/
 
 .paging .active { font-weight:bold; }
 
+.paging a { background:#FAFAFA; padding: 3px 7px; border-radius: 10px; font-size: 11px; }
+
+.paging a:hover,
+.paging .active { color:#FFF; background:#39B7E8; }
+
+.paging .active { background: #8EBE26; }

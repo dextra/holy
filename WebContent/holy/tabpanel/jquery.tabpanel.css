@@ -1,20 +1,27 @@
-.tabPanel { margin: 10px auto; }
+.tabPanel { margin: 10px auto; border-bottom:2px solid #232C2F; }
 
 .tabPanel > ul { overflow: hidden; margin:0; padding:0; }
 
 .tabPanel > ul li { float:left; list-style: none; }
 
-.tabPanel > ul li a { cursor:pointer; outline:0px; padding: 5px 10px; margin: 0 2px -1px 0; display: inline-block; background: #EEE; border:1px solid #CCC; color:#999; font-size: 12px; }
+.tabPanel > ul li a { cursor:pointer; outline:0px; padding: 5px 20px; margin: 0 2px 0 0; display: inline-block; background: #009CD9; color:#fff; font-size: 12px; border-top-left-radius: 5px; border-top-right-radius: 5px; }
 
-.tabPanel > ul li a:hover { color:#666; }
+.tabPanel > ul li a:hover { background:#2D3235; color: #fff }
 
-.tabPanel > ul .active a { background: #FFF; border-bottom:1px solid #FFF; color:#000; padding: 5px 10px; margin: 0 2px -1px 0; }
+.tabPanel > ul .active a { background: #FFF; border-bottom:1px solid #FFF; padding: 5px 20px; margin: 0 2px 0 0; }
 
 .tabPanel > div { clear: left; padding: 15px; border: 1px solid #CCC;  }
 
-.vtabPanel {position: relative;}
+/* 
+.tabPanel > ul .active a { padding: 5px 20px; background: #3b5998; border-bottom:1px solid #39B7E8; color:#FFF; }
+*/
+.tabPanel > ul .active a { background: #009CD9; border-bottom:1px solid #009CD9; font-weight: bold; }
+
+.tabPanel > div { border: 1px solid #39B7E8; border-top:2px solid #39B7E8; }
 
 /* vtab */
+
+.vtabPanel {position: relative;}
 
 .vtabPanel { position: relative; }
 
@@ -27,3 +34,12 @@
 .vtabPanel > ul .active a {border:1px solid #CCC;}
 
 .vtabPanel > div { margin-left:201px; }
+
+.vtabPanel { border:0; }
+
+.vtabPanel > ul li a,
+.vtabPanel > ul .active a  { border-radius: 0; border-top-left-radius: 10px; border-bottom-left-radius: 10px; margin-bottom:5px; border:0; margin-bottom:2px; }
+
+.vtabPanel > div { margin-left:220px; border: 1px solid #39B7E8; border-left:2px solid #39B7E8; }
+
+

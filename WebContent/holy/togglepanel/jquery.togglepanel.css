@@ -1,4 +1,12 @@
 
-.togglePanel > h3 {	background: #FAFAFA; padding:2px 10px; margin:1px 0px; font-size:18px; color:#666; cursor: pointer; border:1px solid #EEE; }
+.togglePanel { margin-bottom: 3px; }
 
-.togglePanel > div { background: #FFF ; padding: 10px; }
+.togglePanel > h3 {	cursor: pointer; }
+
+.togglePanel > h3.active { }
+
+.togglePanel > h3 span { padding-left: 15px; background: url('imgs/arrow_close.gif') left center no-repeat; }
+
+.togglePanel > h3.active span { background: url('imgs/arrow_open.gif') left center no-repeat; }
+
+.togglePanel > div { border:1px solid #EEE; border-top:none; background: #FFF ; padding: 10px; }

@@ -1,26 +1,34 @@
 /* horizontal dropdown */
 
-.hdropdown li { position:relative; float:left; }
+.hdropdown { width:100%; height:35px; height:35px; border-bottom: 3px solid #009CD9; }
 
-.hdropdown li,
-.hdropdown li a { display:inline-block; text-decoration:none; }
+.hdropdown li { position:relative; float:left; display:inline-block; text-decoration:none; }
 
-.hdropdown li a { padding: 0 5px; white-space: nowrap; outline: 0; }
+.hdropdown li > a { height:35px; line-height:34px; padding:0 15px; text-transform:capitalize; color:#FFFFFF; font-size:12px; display:inline-block; text-decoration:none; padding: 0 5px; white-space: nowrap; outline: 0; }
 
-.hdropdown li a:hover,
-.hdropdown li.active a { text-decoration: none; }
+.hdropdown li > ul { display:none; position:absolute; left:0px; width:150px; z-index:9999; background:#009CD9; border-top: 3px solid #009CD9; top:35px; }
 
-.hdropdown li ul { display:none; position:absolute; left:0px; }
+.hdropdown li > ul li > a { width:150px; border-bottom:1px solid #39B7E8; border-top:1px solid #0092CB; width:110px; height:auto; padding: 5px 20px; display:block; line-height: normal; }
 
-.hdropdown li ul li ul { left:100%; top:0px; }
+.hdropdown li > ul li > a:hover,
+.hdropdown li > ul li.active > a { background: #2D3235; color:#FFF; text-decoration: none; }
+
+.hdropdown li > ul li ul { left:100%; top:0px; }
 
 /* vertical dropdown */
 
 .vdropdown,
 .vdropdown ul { width: 200px; }
 
-.vdropdown li { position:relative; list-style: none; }
+.vdropdown li { position:relative; list-style: none; width:100%; background:#222; border-top:1px solid #444; border-bottom:1px solid #000; height: 30px; border-right: 1px solid #0092CB; }
 
-.vdropdown li ul { display:none; position:absolute; left: 199px; top:0; }
+.vdropdown li a { height:30px; line-height:30px; padding:0 15px; text-transform:capitalize; color:#FFF; font-size:12px; display: block; }
+
+.vdropdown li ul { display:none; position:absolute; left: 199px; top:0; border-left: 1px solid #0092CB; }
 
 .vdropdown li span { float: right; }
+
+.vdropdown li a:hover,
+.vdropdown li.active > a,
+.vdropdown li > ul li a:hover { background:#009CD9; }
+

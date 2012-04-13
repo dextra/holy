@@ -1,6 +1,6 @@
 ﻿<engine>
 	<template selector="#content">
-		<h3>Download</h3>
+		<h2>Download</h2>
 		<div class="toogle">
 			<h3>
 				<span>The easiest way</span>
