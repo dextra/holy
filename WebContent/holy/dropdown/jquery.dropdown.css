@@ -2,6 +2,8 @@
 
 .hdropdown { width:100%; height:35px; height:35px; border-bottom: 3px solid #009CD9; }
 
+.hdropdown { background:#009CD9; }
+
 .hdropdown li { position:relative; float:left; display:inline-block; text-decoration:none; }
 
 .hdropdown li > a { height:35px; line-height:34px; padding:0 15px; text-transform:capitalize; color:#FFFFFF; font-size:12px; display:inline-block; text-decoration:none; padding: 0 5px; white-space: nowrap; outline: 0; }
@@ -20,7 +22,7 @@
 .vdropdown,
 .vdropdown ul { width: 200px; }
 
-.vdropdown li { position:relative; list-style: none; width:100%; background:#222; border-top:1px solid #444; border-bottom:1px solid #000; height: 30px; border-right: 1px solid #0092CB; }
+.vdropdown li { position:relative; list-style: none; width:100%; background:#009CD9; border-top:1px solid #39B7E8; border-bottom:1px solid #0092CB; height: 30px; border-right: 1px solid #0092CB; }
 
 .vdropdown li a { height:30px; line-height:30px; padding:0 15px; text-transform:capitalize; color:#FFF; font-size:12px; display: block; }
 
