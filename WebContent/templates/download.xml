@@ -32,6 +32,28 @@
 						</pre>
 					</div>
 				</div>
+				<div class="toogle">
+					<h3>
+						<span>
+							index.min.html (absolute links)
+						</span>
+					</h3>
+					<div class="absoluteindexmin" style="display:none">
+						<pre class="snippet">
+						</pre>
+					</div>
+				</div>
+				<div class="toogle">
+					<h3>
+						<span>
+							index.min.html (relative links)
+						</span>
+					</h3>
+					<div class="relativeindexmin" style="display:none">
+						<pre class="snippet">
+						</pre>
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -85,12 +107,9 @@
 		<![CDATA[
 			$('#content .toogle').togglePanel();
 
-			$.ajax({
-				url: 'index.html',
-				dataType: 'text',
-				success: function(text) {
-					$('#content .relativeindex .snippet').text(text);
-					$('#content .relativeindex .snippet').snippet('html', {style:"ide-eclipse",showNum:false});
+			var printIndex = function(text, relative, absolute) {
+					relative.text(text);
+					relative.snippet('html', {style:"ide-eclipse",showNum:false});
 					
 					var xml = $($.parseXML(text));
 					xml.find('[src],[href]').each(function() {
@@ -104,8 +123,23 @@
 					        }
 					     }
 					});
-					$('#content .absoluteindex .snippet').text(xml.xml());
-					$('#content .absoluteindex .snippet').snippet('html', {style:"ide-eclipse",showNum:false});
+					absolute.text(xml.xml());
+					absolute.snippet('html', {style:"ide-eclipse",showNum:false});
+			}
+
+			$.ajax({
+				url: 'index.html',
+				dataType: 'text',
+				success: function(text) {
+					printIndex(text, $('#content .relativeindex .snippet'), $('#content .absoluteindex .snippet'));
+				}
+			});
+			
+			$.ajax({
+				url: 'index.min.html',
+				dataType: 'text',
+				success: function(text) {
+					printIndex(text, $('#content .relativeindexmin .snippet'), $('#content .absoluteindexmin .snippet'));
 				}
 			});
 			
