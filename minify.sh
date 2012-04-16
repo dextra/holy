@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Finding files"
+echo "Minify files"
 FILES_JS=$(find WebContent -name "*.js" | grep -v "\.min\.js")
 FILES_CSS=$(find WebContent -name "*.css" | grep -v "\.min\.css")
 echo "Total: js: $(echo "$FILES_JS" | wc -l), css: $(echo "$FILES_CSS" | wc -l)" 
