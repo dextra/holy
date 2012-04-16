@@ -1,0 +1,1 @@
+.togglePanel{margin-bottom:3px}.togglePanel>h3{cursor:pointer}.togglePanel>h3 span{padding-left:15px;background:url('imgs/arrow_close.gif') left center no-repeat}.togglePanel>h3.active span{background:url('imgs/arrow_open.gif') left center no-repeat}.togglePanel>div{border:1px solid #EEE;border-top:0;background:#FFF;padding:10px}
