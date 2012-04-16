@@ -12,6 +12,6 @@ handlers:
   upload: .*
   
 - url: /
-  static_files: index.html
-  upload: index.html
+  static_files: index.min.html
+  upload: index.min.html
  
