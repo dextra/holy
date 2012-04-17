@@ -7,11 +7,31 @@ builtins:
 - remote_api: on
 
 handlers:
-- url: /(.+)
-  static_files: \1
-  upload: .*
-  
 - url: /
   static_files: index.min.html
   upload: index.min.html
+
+- url: /holyapp/.*
+  script: holyapp/map.py
+
+- url: /holy
+  static_dir: holy
+
+- url: /js
+  static_dir: js
+  
+- url: /props
+  static_dir: props
+
+- url: /templates
+  static_dir: templates
+  
+- url: /tests
+  static_dir: tests
+  
+- url: /(.*\.html)
+  static_files: \1
+  upload: (.*\.html)  
+  
+  
  
