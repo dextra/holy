@@ -14,9 +14,14 @@
 .simpleTheme h1 * { font-size: 32px; }
 .simpleTheme h1 :hover { text-decoration: none }
 
-
 .simpleTheme h2 { color: #3C69C4; border-bottom: 1px solid #D4DAE8; margin-bottom: 10px; font-size: 20px  }
 
 .simpleTheme h3 { background: #f7f7f7; border: 1px solid #D4DAE8; padding:2px 10px; margin:1px 0px; color: #3C69C4}
 
+.simpleTheme p { margin: 5px }
+
 .simpleTheme .detail { font-size: 10px; }
+
+.simpleTheme .simpleBox { padding: 5px; margin-left: 20px }
+
+.simpleTheme .simpleBox > li { padding: 5px; }

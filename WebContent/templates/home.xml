@@ -34,7 +34,7 @@
 							produtividade, esses frameworks costumam trazer, junto de si,
 							alguns complicadores tais como:
 						</p>
-						<ul>
+						<ul class="simpleBox">
 							<li>Perda da usabilidade e riqueza da interatividade, uma vez que
 								os recursos disponíveis são os recursos disponibilizados pelo
 								framework e nem sempre estes são os melhores recursos para os
@@ -57,7 +57,7 @@
 							implementação de páginas de aplicações WEB. O Holy foi criado
 							utilizando-se JavaScript e jQuery. Tem como grandes vantagens:
 						</p>
-						<ul>
+						<ul class="simpleBox">
 							<li>Desenvolvimento de protótipos totalmente reaproveitáveis e
 								funcionais
 							</li>
@@ -79,7 +79,7 @@
 						Features
 					</h3>
 					<div>
-						<ul>
+						<ul class="simpleBox">
 							<li>Todos os componentes são plugins do JQuery</li>
 							<li>Os componentes podem ser usados separados</li>
 							<li>Pode ser usado junto com outros componentes do JQuery</li>
@@ -93,7 +93,7 @@
 						Great for
 					</h3>
 					<div>
-						<ul>
+						<ul class="simpleBox">
 							<li>
 								Ajax
 							</li>
