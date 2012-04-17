@@ -9,16 +9,71 @@
 			<div>
 				<p>
 					O Holy uma proposta, ao mesmo tempo inovadora e descomplicada,
-					para a construção de interfaces de sistemas web.
+					para a construção de interfaces de sistemas web. O conceito é o
+					browser montar a pagina client-side. Para isso ele faz chamadas ao
+					servidor para objeter os dados (normalmente JSON). Gostamos de
+					chamar o Holy de um “não-framework”, pela sua simplicidade e
+					tamanho reduzido.
 				</p>
-				<p>
-					O conceito é o browser montar a pagina client-side. Para isso ele
-					faz chamadas ao servidor para objeter os dados (normalmente json).
-				</p>
-				<p>
-					Gostamos de chamar o Holy de um “não-framework”, pela sua
-					simplicidade e tamanho reduzido.
-				</p>
+				<div class="toogle">
+					<h3>
+						WTF?
+					</h3>
+					<div>
+						<p>Atualmente, as aplicações WEB representam uma parcela bastante
+							significativa no montante de aplicações desenvolvidas e
+							implantadas. Duas das grandes vantagens de se optar por este
+							modelo de aplicação são o fato de não demandar a sua instalação
+							em máquinas clients e, também, possibilitar o acesso remoto às
+							informações.
+						</p>
+						<p>O desenvolvimento de aplicações WEB, no entanto, costumam ser
+							realizados utilizando-se frameworks específicos, de acordo com a
+							plataforma utilizada, para o desenvolvimento das páginas que irão
+							apresentar / manipular os dados. Apesar da sensação de aumento de
+							produtividade, esses frameworks costumam trazer, junto de si,
+							alguns complicadores tais como:
+						</p>
+						<ul>
+							<li>Perda da usabilidade e riqueza da interatividade, uma vez que
+								os recursos disponíveis são os recursos disponibilizados pelo
+								framework e nem sempre estes são os melhores recursos para os
+								usuários
+							</li>
+							<li>Consumo de processamento de servidor desnecessário, uma vez
+								que o servidor fica responsável por, além de processar os dados,
+								trabalhar na renderização e demais controles das páginas a serem
+								exibidas.
+							</li>
+						</ul>
+						<p>Com base nesses fatos, e usufruindo da intensa evolução dos
+							navegadores nos últimos tempos, optamos por inovar, criando um
+							mecanismo capaz de trabalhar com páginas totalmente no browser e
+							deixando com o servidor apenas a responsabilidade de processar e
+							manipular os dados envolvidos numa aplicação.
+						</p>
+						<p>Nesse contexto, surgiu o Holy: um “não-framework”, como
+							gostamos de chamar, simples e extremamente eficiente para a
+							implementação de páginas de aplicações WEB. O Holy foi criado
+							utilizando-se JavaScript e jQuery. Tem como grandes vantagens:
+						</p>
+						<ul>
+							<li>Desenvolvimento de protótipos totalmente reaproveitáveis e
+								funcionais
+							</li>
+							<li>Ênfase na usabilidade e interatividade do usuário com a
+								aplicação, uma vez que se pode utilizar todo e qualquer recurso
+								/ componente WEB disponível no mundo
+							</li>
+							<li>Diminuição na carga do servidor que passa a se preocupar
+								apenas com o processamento de dados
+							</li>
+						</ul>
+						<p>O Holy é free e open-source! Experimente e usufrua desse novo
+							jeito descomplicado e eficiente de se desenvolver interfaces WEB!
+						</p>
+					</div>
+				</div>
 				<div class="toogle">
 					<h3>
 						Features
@@ -40,19 +95,14 @@
 					<div>
 						<ul>
 							<li>
-								<a href="http://en.wikipedia.org/wiki/Ajax_(programming)"
-									target="_blank">Ajax</a>
+								Ajax
+							</li>
+							<li>Single Page</li>
+							<li>
+								Rest/JSON
 							</li>
 							<li>
-								<a href="http://en.wikipedia.org/wiki/Single-page_application"
-									target="_blank">Single Page</a>
-							</li>
-							<li>
-								<a
-									href="http://en.wikipedia.org/wiki/Representational_state_transfer"
-									target="_blank">Rest</a>
-								/
-								<a hrf="http://en.wikipedia.org/wiki/Json" target="_blank">json</a>
+								JQuery
 							</li>
 						</ul>
 					</div>
@@ -62,7 +112,16 @@
 	</action>
 	<script>
 		<![CDATA[
+			var html = $('#content .toogle').html();
+			html = html.replace(/Single Page/g, '<a href="http://en.wikipedia.org/wiki/Single-page_application"	target="_blank">Single Page</a>');
+			html = html.replace(/Ajax/g, '<a href="http://en.wikipedia.org/wiki/Ajax_(programming)" target="_blank">Ajax</a>');
+			html = html.replace(/Rest/g, '<a href="http://en.wikipedia.org/wiki/Representational_state_transfer" target="_blank">Rest</a>');
+			html = html.replace(/JSON/g, '<a hrf="http://en.wikipedia.org/wiki/Json" target="_blank">JSON</a>');
+			html = html.replace(/JQuery/g, '<a href="http://jquery.com/" target="_blank">JQuery</a>');
+			html = html.replace(/Holy/g, '<a href="' + window.location.protocol + '//'+ window.location.host + '" target="_blank">Holy</a>');
+			$('#content .toogle').html(html);
 			$('#content .toogle').togglePanel();
+			 
 		]]>
 	</script>
 </engine>
