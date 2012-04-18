@@ -4,8 +4,9 @@
 		<title>Holy</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link rel="shortcut icon" href="themes/liquidblue/imgs/favicon.ico" type="image/x-icon"/>
-		<link rel="stylesheet" type="text/css" href="holy/themes/reset.css"/>
 		
+		<!-- ==== start link ==== -->
+		<link rel="stylesheet" type="text/css" href="holy/themes/reset.css"/>
 		<script type="text/javascript" src="holy/lib/jquery.js"></script>
 		<script type="text/javascript" src="holy/lib/jquery.holycomponents.js"></script>
 		<script type="text/javascript" src="holy/loading/jquery.loading.js"></script>
@@ -17,14 +18,15 @@
 		<script type="text/javascript" src="holy/lib/snippet/jquery.snippet.js"></script>
 		<script type="text/javascript" src="holy/third/jquery.snippetsource.js"></script>
 		<link rel="stylesheet" type="text/css" href="holy/lib/snippet/jquery.snippet.css" />
-		
 		<link rel="stylesheet" type="text/css" href="holy/themes/simple/base.css"/> 
 		<link rel="stylesheet" type="text/css" href="holy/themes/simple/components.css"/>
 		<link rel="stylesheet" type="text/css" href="holy/themes/simple/holy.css"/> 
-		
+		<!-- ==== end link ==== -->
+
 		<script type="text/javascript">
 			(function($) {
-				
+
+				// ==== start fbrequest ====
 				var requestFacebook = function(who) {
 					$('input[name="id"]').val('');
 					$('input[name="name"]').val('');
@@ -52,7 +54,9 @@
 						}
 					});
 				}
-				
+				// ==== end fbrequest ====
+					
+				// ==== start prepare ====
 				$(document).ready(function() {
 					$('.message').messageMonitor();
 					$('form').form();
@@ -63,8 +67,8 @@
 						requestFacebook(filter);
 						return false;
 					});
-
 				});
+				// === end prepare ====
 				
 			})(jQuery);
 		</script>
@@ -78,6 +82,7 @@
 			</div>
 			<ul class="message"></ul>
 			<div id="content">
+				<!-- ==== start form ====  -->
 				<form action="#">
                     <fieldset>
                         <legend>Facebook Profile</legend>
@@ -108,6 +113,7 @@
                         </ul>
                     </fieldset>
                 </form>
+                <!-- ==== end form ====  -->
 			</div>
 			<div id="footer"></div>
 		</div>

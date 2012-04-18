@@ -33,7 +33,7 @@
 				<h3>
 					<span>Linkando os arquivos do holy e suas dependencias</span>
 				</h3>
-				<div class="step-link">
+				<div class="step-link type-html">
 					<pre class="snippet"></pre>
 				</div>
 			</div>
@@ -41,7 +41,7 @@
 				<h3>
 					<span>Criando formulário</span>
 				</h3>
-				<div class="step-form">
+				<div class="step-form type-html">
 					<pre class="snippet"></pre>
 				</div>
 			</div>
@@ -49,7 +49,7 @@
 				<h3>
 					<span>Preparando componentes ao carregar a página</span>
 				</h3>
-				<div class="step-prepare">
+				<div class="step-prepare type-js">
 					<pre class="snippet"></pre>
 				</div>
 			</div>
@@ -57,15 +57,7 @@
 				<h3>
 					<span>Realizando busca no facebook</span>
 				</h3>
-				<div class="step-fbrequest">
-					<pre class="snippet"></pre>
-				</div>
-			</div>
-			<div class="toggle">
-				<h3>
-					<span>Obtendo e apresentando resultados do facebook</span>
-				</h3>
-				<div class="step-fbresponse">
+				<div class="step-fbrequest type-js">
 					<pre class="snippet"></pre>
 				</div>
 			</div>
@@ -73,15 +65,7 @@
 				<h3>
 					<span>Arquivo completo</span>
 				</h3>
-				<div class="step-complete">
-					<pre class="snippet"></pre>
-				</div>
-			</div>
-			<div class="toggle">
-				<h3>
-					<span>E agora?</span>
-				</h3>
-				<div class="step-and">
+				<div class="step-complete type-html">
 					<pre class="snippet"></pre>
 				</div>
 			</div>
@@ -91,6 +75,53 @@
 		<![CDATA[
 			$('#content .steps .toggle > div').hide();
 			$('#content .toggle').togglePanel();
+	
+			var print = function(text, line) {
+				var id = text[line].replace(/^.*==== start | ====.*$/g, '');
+				id = $.trim(id);
+				var target = $('#content .step-' + id);
+				var c = '';
+				while(true) {
+					var l = text[++line];
+					if(l.indexOf('====') >= 0) {
+						break;
+					}
+					c = c + l + '\n';
+				}
+				target.find('pre').text(c);
+			}
+			
+			$.ajax({
+				url: 'example.html',
+				dataType: 'text',
+				success: function(text) {
+					var xml = $($.parseXML(text));
+					xml.find('[src],[href]').each(function() {
+					     var value = $(this).attr('src') ||  $(this).attr('href');
+					     if(!value.match(/\:/)) {
+					        value = location.protocol + '//' + location.host + (value.match(/^\//)?value:'/' + value);
+					        if($(this).attr('src')) {
+					           $(this).attr('src', value);
+					        } else {
+					        	$(this).attr('href', value);
+					        }
+					     }
+					});
+					text = xml.xml();
+					$('#content .step-complete pre').text(text);
+					
+					text = text.split('\n');
+					for(var i in text) {
+						var line = text[i];
+						if(line.indexOf('==== start ') >= 0) {
+							print(text, i);
+						}
+					}
+					
+					$('#content .steps .toggle > .type-html pre').snippet('html', {style:"ide-eclipse",showNum:false});
+					$('#content .steps .toggle > .type-js pre').snippet('javascript', {style:"ide-eclipse",showNum:false});
+				}
+			});
 		]]>
 	</script>
 </engine>
