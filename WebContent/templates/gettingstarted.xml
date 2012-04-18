@@ -1,0 +1,35 @@
+﻿<engine>
+	<template selector="#content">
+		<h2>Getting Started</h2>
+		<div class="toogle">
+			<h3>
+				<span>Exemplo</span>
+			</h3>
+			<div>
+				<p>Segue passo a passo como fazer uma apliação Single Page usando
+					Holy que envia e lê dados do servidor utilizando JSON.
+				</p>
+				<p>Para isso vamos usar um serviço do facebook que retorna algumas
+					informações a partir do user name ou do ID interno.
+				</p>
+				<p>Vamos user o serviço do facebook https://graph.facebook.com/<span class="highlight">id-or-username</span>, exemplo:</p>
+				<p><a href="https://graph.facebook.com/facebook">https://graph.facebook.com/facebook</a></p>
+				<p><a href="https://graph.facebook.com/pyrata.murer">https://graph.facebook.com/pyrata.murer</a></p>
+			</div>
+		</div>
+		<div class="toogle">
+			<h3>
+				<span>Iniciando</span>
+			</h3>
+			<div>
+				<p>Coloque o seguinte arquivo</p>
+				
+			</div>
+		</div>
+	</template>
+	<script>
+		<![CDATA[
+			$('#content .toogle').togglePanel();
+		]]>
+	</script>
+</engine>
