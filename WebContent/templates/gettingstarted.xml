@@ -23,12 +23,14 @@
 				<p>
 					<a href="https://graph.facebook.com/pyrata.murer">https://graph.facebook.com/pyrata.murer</a>
 				</p>
+				<p>Você pode ver esse exemplo funcionando <a href="example.html" target="_blank">aqui</a></p>
 			</div>
 		</div>
 		<h3>
 			<span>Passo a passo</span>
 		</h3>
 		<div class="steps">
+			
 			<div class="toggle">
 				<h3>
 					<span>Linkando os arquivos do holy e suas dependencias</span>
@@ -70,6 +72,7 @@
 				</div>
 			</div>
 		</div>
+		
 	</template>
 	<script>
 		<![CDATA[
