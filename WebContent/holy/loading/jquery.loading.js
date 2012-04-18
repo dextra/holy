@@ -15,10 +15,6 @@ limitations under the License.*/
 (function($) {
 	jQuery.loading = function(opts) {
 
-		jQuery.ajaxSetup({
-			loading : true
-		});
-
 		var bgOver = opts.overlay;
 		if (!bgOver) {
 			bgOver = '#000000'
@@ -31,9 +27,8 @@ limitations under the License.*/
 		
 		if (!$('.loading').length) {
 			$('body').append('<div class="loading"><div class="load"></div><div class="overlay"></div></div>');
+			$('.loading .load').center();
 		}
-		
-		$('.loading .load').center();
 
 		var stack = 0;
 

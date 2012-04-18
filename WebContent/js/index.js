@@ -15,6 +15,10 @@ limitations under the License.*/
 (function($) {
 	holyDomain = 'http://holy.dextra-sw.com';
 
+	jQuery.ajaxSetup({
+		loading : true
+	});
+	
 	$(window).hashchange(function() {
 		if (!location.hash || location.hash == '#') {
 			location = '#home';

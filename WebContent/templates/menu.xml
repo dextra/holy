@@ -5,10 +5,6 @@
 				<a href="#home" title="Home">Home</a>
 			</li>
 			<li>
-				<a href="https://github.com/dextra/holy/issues/new" target="_blank"
-					title="Bug Report">Issues</a>
-			</li>
-			<li>
 				<a href="#download" title="Download">Download</a>
 			</li>
 			<li>
@@ -116,6 +112,10 @@
 			</li>
 			<li>
 				<a href="#themes" title="Themes">Themes</a>
+			</li>
+			<li>
+				<a href="https://github.com/dextra/holy/issues/new" target="_blank"
+					title="Bug Report">Issues</a>
 			</li>
 		</ul>
 	</action>
