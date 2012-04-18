@@ -1,7 +1,7 @@
 ﻿<engine>
 	<template selector="#content">
 		<h2>Getting Started</h2>
-		<div class="toogle">
+		<div class="toggle">
 			<h3>
 				<span>Exemplo</span>
 			</h3>
@@ -12,24 +12,85 @@
 				<p>Para isso vamos usar um serviço do facebook que retorna algumas
 					informações a partir do user name ou do ID interno.
 				</p>
-				<p>Vamos user o serviço do facebook https://graph.facebook.com/<span class="highlight">id-or-username</span>, exemplo:</p>
-				<p><a href="https://graph.facebook.com/facebook">https://graph.facebook.com/facebook</a></p>
-				<p><a href="https://graph.facebook.com/pyrata.murer">https://graph.facebook.com/pyrata.murer</a></p>
+				<p>
+					Vamos user o serviço do facebook https://graph.facebook.com/
+					<span class="highlight">id-or-username</span>
+					, exemplo:
+				</p>
+				<p>
+					<a href="https://graph.facebook.com/facebook">https://graph.facebook.com/facebook</a>
+				</p>
+				<p>
+					<a href="https://graph.facebook.com/pyrata.murer">https://graph.facebook.com/pyrata.murer</a>
+				</p>
 			</div>
 		</div>
-		<div class="toogle">
-			<h3>
-				<span>Iniciando</span>
-			</h3>
-			<div>
-				<p>Coloque o seguinte arquivo</p>
-				
+		<h3>
+			<span>Passo a passo</span>
+		</h3>
+		<div class="steps">
+			<div class="toggle">
+				<h3>
+					<span>Linkando os arquivos do holy e suas dependencias</span>
+				</h3>
+				<div class="step-link">
+					<pre class="snippet"></pre>
+				</div>
+			</div>
+			<div class="toggle">
+				<h3>
+					<span>Criando formulário</span>
+				</h3>
+				<div class="step-form">
+					<pre class="snippet"></pre>
+				</div>
+			</div>
+			<div class="toggle">
+				<h3>
+					<span>Preparando componentes ao carregar a página</span>
+				</h3>
+				<div class="step-prepare">
+					<pre class="snippet"></pre>
+				</div>
+			</div>
+			<div class="toggle">
+				<h3>
+					<span>Realizando busca no facebook</span>
+				</h3>
+				<div class="step-fbrequest">
+					<pre class="snippet"></pre>
+				</div>
+			</div>
+			<div class="toggle">
+				<h3>
+					<span>Obtendo e apresentando resultados do facebook</span>
+				</h3>
+				<div class="step-fbresponse">
+					<pre class="snippet"></pre>
+				</div>
+			</div>
+			<div class="toggle">
+				<h3>
+					<span>Arquivo completo</span>
+				</h3>
+				<div class="step-complete">
+					<pre class="snippet"></pre>
+				</div>
+			</div>
+			<div class="toggle">
+				<h3>
+					<span>E agora?</span>
+				</h3>
+				<div class="step-and">
+					<pre class="snippet"></pre>
+				</div>
 			</div>
 		</div>
 	</template>
 	<script>
 		<![CDATA[
-			$('#content .toogle').togglePanel();
+			$('#content .steps .toggle > div').hide();
+			$('#content .toggle').togglePanel();
 		]]>
 	</script>
 </engine>
