@@ -13,6 +13,41 @@ See the License for the specific language governing permissions and
 limitations under the License.*/
 
 (function($) {
+	
+	jQuery.pushLoading = function(opts) {
+		if (!$('.loading').length) {
+			$('body').append('<div class="loading"><div class="load"></div><div class="overlay"></div></div>');
+		}
+		var stack = $('.loading').data('loading-ajax-stack');
+		if(!stack) {
+			stack = 0;
+		}
+		if (stack < 0) {
+			throw 'error: stack < 0: ' + stack;
+		}
+		stack++;
+		if (stack == 1) {
+			$('.loading .load').center();
+			$('.loading').show();
+		}
+		$('.loading').data('loading-ajax-stack', stack);
+	}
+	
+	jQuery.popLoading = function(opts) {
+		if (!$('.loading').length) {
+			throw 'dom .loading not found';
+		}
+		var stack = $('.loading').data('loading-ajax-stack');
+		if(!stack || stack < 0) {
+			throw 'error: stack <= 0: ' + stack;
+		}
+		if (stack == 1) {
+			$('.loading').hide();
+		}
+		stack--;
+		$('.loading').data('loading-ajax-stack', stack);
+	}
+	
 	jQuery.loading = function(opts) {
 
 		var bgOver = opts.overlay;
@@ -25,25 +60,12 @@ limitations under the License.*/
 			overOpacity = '50'
 		}
 		
-		if (!$('.loading').length) {
-			$('body').append('<div class="loading"><div class="load"></div><div class="overlay"></div></div>');
-			$('.loading .load').center();
-		}
-
-		var stack = 0;
-
 		$('body').ajaxSend(function(evt, xhr, ajax) {
 			if (!ajax.loading) {
 				return;
 			}
 			if (ajax.loading === true) {
-				if (stack < 0) {
-					throw 'error: stack < 0: ' + stack;
-				}
-				stack++;
-				if (stack == 1) {
-					$('.loading').fadeIn('fast');
-				}
+				$.pushLoading();
 				return;
 			}
 			$(ajax.loading).each(function() {
@@ -73,13 +95,7 @@ limitations under the License.*/
 				return;
 			}
 			if (ajax.loading === true) {
-				if (stack <= 0) {
-					throw 'error: stack <= 0: ' + stack;
-				}
-				if (stack == 1) {
-					$('.loading').fadeOut('fast');
-				}
-				stack--;
+				$.popLoading();
 				return;
 			}
 			$(ajax.loading).each(function() {

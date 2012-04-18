@@ -30,6 +30,7 @@
 					$('input[name="name"]').val('');
 					$('input[name="username"]').val('');
 					$('a.fblink').attr('href', '#').text('').hide();
+					$.pushLoading();
 					$.ajax({
 						url: 'http://graph.facebook.com/' + who,
 						dataType: 'jsonp',
@@ -42,6 +43,12 @@
 							$('input[name="name"]').val(info.name);
 							$('input[name="username"]').val(info.username);
 							$('a.fblink').attr('href', info.link).text(info.link).show();
+						},
+						error: function() {
+							$('.message').message('facebook request problem', 'error');
+						},
+						complete: function() {
+							$.popLoading();
 						}
 					});
 				}
