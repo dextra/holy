@@ -7,13 +7,13 @@
 				Intro
 			</h3>
 			<div>
-				<p>
-					O Holy uma proposta, ao mesmo tempo inovadora e descomplicada,
-					para a construção de interfaces de sistemas web. O conceito é o
-					browser montar a pagina client-side. Para isso ele faz chamadas ao
-					servidor para objeter os dados (normalmente JSON). Gostamos de
-					chamar o Holy de um “não-framework”, pela sua simplicidade e
-					tamanho reduzido.
+				<p>O Holy é uma proposta inovadora e descomplicada para a construção
+					de interfaces de sistemas WEB. Seu conceito fundamental é que o
+					browser monte a página client-side, através de chamadas ao servidor
+					para obter os dados (normalmente JSON).
+				</p>
+				<p>Gostamos de chamar o Holy de um “não-framework”, pela sua
+					essência puramente simples!
 				</p>
 				<div class="toogle">
 					<h3>
@@ -23,54 +23,71 @@
 						<p>Atualmente, as aplicações WEB representam uma parcela bastante
 							significativa no montante de aplicações desenvolvidas e
 							implantadas. Duas das grandes vantagens de se optar por este
-							modelo de aplicação são o fato de não demandar a sua instalação
-							em máquinas clients e, também, possibilitar o acesso remoto às
-							informações.
+							modelo de aplicação são:
 						</p>
-						<p>O desenvolvimento de aplicações WEB, no entanto, costumam ser
-							realizados utilizando-se frameworks específicos, de acordo com a
-							plataforma utilizada, para o desenvolvimento das páginas que irão
-							apresentar / manipular os dados. Apesar da sensação de aumento de
+						<ol class="simpleBox">
+							<li>fato de não demandar a sua instalação em máquinas clients
+							</li>
+							<li>Possibilitar o acesso remoto às informações</li>
+						</ol>
+						<p>O desenvolvimento de aplicações WEB, no entanto, costuma ser
+							realizados utilizando frameworks específicos, de acordo com a
+							plataforma empregada, para o desenvolvimento das páginas que irão
+							apresentar e manipular os dados. Apesar da sensação de aumento de
 							produtividade, esses frameworks costumam trazer, junto de si,
-							alguns complicadores tais como:
+							alguns complicadores como:
 						</p>
 						<ul class="simpleBox">
-							<li>Perda da usabilidade e riqueza da interatividade, uma vez que
-								os recursos disponíveis são os recursos disponibilizados pelo
-								framework e nem sempre estes são os melhores recursos para os
+							<li>
+								<span class="highlight">Perda da usabilidade e riqueza da
+									interatividade
+								</span>
+								, pois os recursos disponíveis são os disponibilizados pelo
+								framework, e estes nem sempre são os melhores recursos para os
 								usuários
 							</li>
-							<li>Consumo de processamento de servidor desnecessário, uma vez
-								que o servidor fica responsável por, além de processar os dados,
-								trabalhar na renderização e demais controles das páginas a serem
-								exibidas.
+							<li>
+								<span class="highlight">Consumo de processamento de servidor
+									desnecessário
+								</span>
+								, uma vez que o servidor fica responsável por, além de processar
+								os dados, trabalhar na renderização e demais controles das
+								páginas a serem exibidas
 							</li>
 						</ul>
-						<p>Com base nesses fatos, e aproveitando da intensa evolução dos
+						<p>Com base nesses fatos, e usufruindo da intensa evolução dos
 							navegadores nos últimos tempos, optamos por inovar, criando um
 							mecanismo capaz de trabalhar com páginas totalmente no browser e
-							deixando com o servidor apenas a responsabilidade de processar e
-							manipular os dados envolvidos numa aplicação.
+							deixando para o servidor apenas a responsabilidade de processar e
+							manipular os dados envolvidos na aplicação
 						</p>
-						<p>Nesse contexto, surgiu o Holy: um “não-framework”, como
-							gostamos de chamar, simples e extremamente eficiente para a
-							implementação de páginas de aplicações WEB. O Holy foi criado
-							utilizando-se JavaScript e jQuery. Tem como grandes vantagens:
+						<p>Nesse contexto, surgiu o Holy, um “não-framework”,
+							descomplicado e extremamente eficiente para a implementação de
+							páginas de aplicações WEB. O Holy foi criado utilizando-se
+							JavaScript e jQuery, e apresenta grandes vantagens, como por
+							exemplo
 						</p>
 						<ul class="simpleBox">
-							<li>Desenvolvimento de protótipos totalmente reaproveitáveis e
-								funcionais
+							<li>
+								Desenvolvimento de
+								<span class="highlight">protótipos totalmente reaproveitáveis e
+									funcionais
+								</span>
 							</li>
-							<li>Ênfase na usabilidade e interatividade do usuário com a
-								aplicação, uma vez que se pode utilizar todo e qualquer recurso
-								/ componente WEB disponível no mundo
+							<li>
+								<span class="highlight">Ênfase na usabilidade e interatividade do
+									usuário
+								</span>
+								com a aplicação, já que se pode utilizar todo e qualquer recurso
+								e componente WEB disponível
 							</li>
-							<li>Diminuição na carga do servidor que passa a se preocupar
-								apenas com o processamento de dados
+							<li>
+								<span class="highlight">Diminuição na carga do servidor</span>
+								, que passa a se ocupar apenas com o processamento de dados
 							</li>
 						</ul>
-						<p>O Holy é free e open-source! Experimente e usufrua desse novo
-							jeito descomplicado e eficiente de se desenvolver interfaces WEB!
+						<p>E, ainda, o Holy é free e open-source! Experimente e usufrua
+							desse novo jeito de se desenvolver interfaces WEB!
 						</p>
 					</div>
 				</div>
@@ -80,12 +97,13 @@
 					</h3>
 					<div>
 						<ul class="simpleBox">
-							<li>Todos os componentes são plugins do JQuery</li>
-							<li>Os componentes podem ser usados separados</li>
-							<li>Pode ser usado junto com outros componentes do JQuery</li>
+							<li>Todos os componentes são plugins do JQuery</li>
+							<li>Os componentes podem ser usados separamente</li>
+							<li>Pode ser usado juntamente com outros componentes do JQuery
+							</li>
 							<li>Suporte ao jQuery.noConflict();</li>
 						</ul>
-						<p>Cada componente pode ser acessado atravez do menu acima</p>
+						<p>Cada componente pode ser acessado através do menu acima.</p>
 					</div>
 				</div>
 				<div class="toogle">
@@ -121,7 +139,6 @@
 			html = html.replace(/Holy/g, '<a href="' + window.location.protocol + '//'+ window.location.host + '" target="_blank">Holy</a>');
 			$('#content .toogle').html(html);
 			$('#content .toogle').togglePanel();
-			 
 		]]>
 	</script>
 </engine>

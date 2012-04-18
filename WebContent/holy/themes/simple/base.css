@@ -20,8 +20,11 @@
 
 .simpleTheme p { margin: 5px }
 
+.simpleTheme .highlight { font-weight: bolder; }
+
 .simpleTheme .detail { font-size: 10px; }
 
 .simpleTheme .simpleBox { padding: 5px; margin-left: 20px }
 
 .simpleTheme .simpleBox > li { padding: 5px; }
+
