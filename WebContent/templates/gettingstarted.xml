@@ -6,36 +6,45 @@
 				<span>Exemplo</span>
 			</h3>
 			<div>
-				<p>Segue passo a passo como fazer uma apliação Single Page usando
+				<p>Segue passo a passo como fazer uma aplicação Single Page usando
 					Holy que envia e lê dados do servidor utilizando JSON.
 				</p>
 				<p>Para isso vamos usar um serviço do facebook que retorna algumas
 					informações a partir do user name ou do ID interno.
 				</p>
 				<p>
-					Vamos user o serviço do facebook https://graph.facebook.com/
+					Vamos usar o serviço do facebook https://graph.facebook.com/
 					<span class="highlight">id-or-username</span>
 					, exemplo:
 				</p>
 				<p>
-					<a href="https://graph.facebook.com/facebook">https://graph.facebook.com/facebook</a>
+					<a target="_blank" href="https://graph.facebook.com/facebook">https://graph.facebook.com/facebook</a>
 				</p>
 				<p>
-					<a href="https://graph.facebook.com/pyrata.murer">https://graph.facebook.com/pyrata.murer</a>
+					<a target="_blank" href="https://graph.facebook.com/pyrata.murer">https://graph.facebook.com/pyrata.murer
+					</a>
 				</p>
-				<p>Você pode ver esse exemplo funcionando <a href="example.html" target="_blank">aqui</a></p>
+				<p>
+					Você pode ver esse exemplo funcionando
+					<a href="example.html" target="_blank">aqui</a>
+				</p>
 			</div>
 		</div>
 		<h3>
 			<span>Passo a passo</span>
 		</h3>
 		<div class="steps">
-			
+
 			<div class="toggle">
 				<h3>
-					<span>Linkando os arquivos do holy e suas dependencias</span>
+					<span>Linkando os arquivos do holy e suas dependências</span>
 				</h3>
 				<div class="step-link type-html">
+					<p>No exemplo abaixo estamos adicionado as dependências do Holy na
+						sua página (normalmente no &lt;head&gt; do HTML).</p>
+					<p>Apenas alguns componentes estão sendo utilizados. Você pode
+						aprender mais sobre outros no menu acima.
+					</p>
 					<pre class="snippet"></pre>
 				</div>
 			</div>
@@ -44,6 +53,7 @@
 					<span>Criando formulário</span>
 				</h3>
 				<div class="step-form type-html">
+					<p>O HTML do formulário é feito em HTML (It's amazing!).</p>
 					<pre class="snippet"></pre>
 				</div>
 			</div>
@@ -72,7 +82,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 	</template>
 	<script>
 		<![CDATA[

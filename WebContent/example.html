@@ -1,55 +1,80 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<title>Holy</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<link rel="shortcut icon" href="themes/liquidblue/imgs/favicon.ico" type="image/x-icon"/>
-		
-		<!-- ==== start link ==== -->
-		<link rel="stylesheet" type="text/css" href="holy/themes/reset.css"/>
-		<script type="text/javascript" src="holy/lib/jquery.js"></script>
-		<script type="text/javascript" src="holy/lib/jquery.holycomponents.js"></script>
-		<script type="text/javascript" src="holy/loading/jquery.loading.js"></script>
-		<script type="text/javascript" src="holy/message/jquery.message.js"></script>
-		<script type="text/javascript" src="holy/forms/jquery.forms.js"></script>
-		<link rel="stylesheet" type="text/css" href="holy/loading/jquery.loading.css" />
-		<link rel="stylesheet" type="text/css" href="holy/message/jquery.message.css" />
-		<link rel="stylesheet" type="text/css" href="holy/forms/jquery.forms.css" />
-		<script type="text/javascript" src="holy/lib/snippet/jquery.snippet.js"></script>
-		<script type="text/javascript" src="holy/third/jquery.snippetsource.js"></script>
-		<link rel="stylesheet" type="text/css" href="holy/lib/snippet/jquery.snippet.css" />
-		<link rel="stylesheet" type="text/css" href="holy/themes/simple/base.css"/> 
-		<link rel="stylesheet" type="text/css" href="holy/themes/simple/components.css"/>
-		<link rel="stylesheet" type="text/css" href="holy/themes/simple/holy.css"/> 
-		<!-- ==== end link ==== -->
+<head>
+<title>Holy</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="themes/liquidblue/imgs/favicon.ico"
+	type="image/x-icon" />
 
-		<script type="text/javascript">
+<!-- ==== start link ==== -->
+<link rel="stylesheet" type="text/css" href="holy/themes/reset.css" />
+<script type="text/javascript" src="holy/lib/jquery.js"></script>
+<script type="text/javascript" src="holy/lib/jquery.holycomponents.js"></script>
+<script type="text/javascript" src="holy/loading/jquery.loading.js"></script>
+<script type="text/javascript" src="holy/message/jquery.message.js"></script>
+<script type="text/javascript" src="holy/forms/jquery.forms.js"></script>
+<link rel="stylesheet" type="text/css"
+	href="holy/loading/jquery.loading.css" />
+<link rel="stylesheet" type="text/css"
+	href="holy/message/jquery.message.css" />
+<link rel="stylesheet" type="text/css"
+	href="holy/forms/jquery.forms.css" />
+<script type="text/javascript" src="holy/lib/snippet/jquery.snippet.js"></script>
+<script type="text/javascript" src="holy/third/jquery.snippetsource.js"></script>
+<link rel="stylesheet" type="text/css"
+	href="holy/lib/snippet/jquery.snippet.css" />
+<link rel="stylesheet" type="text/css"
+	href="holy/themes/simple/base.css" />
+<link rel="stylesheet" type="text/css"
+	href="holy/themes/simple/components.css" />
+<link rel="stylesheet" type="text/css"
+	href="holy/themes/simple/holy.css" />
+<!-- ==== end link ==== -->
+
+<script type="text/javascript">
 			(function($) {
 
 				// ==== start fbrequest ====
+				// Criando função para requisitar os dados de um usuário do facebook. 
 				var requestFacebook = function(who) {
+					
+					// JQuery: Limpando campos do formulário 
 					$('input[name="id"]').val('');
 					$('input[name="name"]').val('');
 					$('input[name="username"]').val('');
 					$('a.fblink').attr('href', '#').text('').hide();
+					
+					// Holy: colocando frame de loading.
 					$.pushLoading();
+					
+					// JQuery: Requisitando o facebook para obter o json com as informações
 					$.ajax({
 						url: 'http://graph.facebook.com/' + who,
 						dataType: 'jsonp',
-						success: function(info) {
+						
+						// JQuery: função que será chamada quando o resultado for obtido
+						// info é o objeto (json) com as informações, lembrando que esse json é definido pelo facebook.
+						success: function(info) 
+						
+							// Se o facebook retornar algum erro
 							if(info.error) {
+								// Holy: Mostrar mensagem de erro do facebook no componente de mensagem
 								$('.message').message(info.error.message, 'error');
 								return;
 							}
+						
+							// JQuery: Preencher campos da tela com as informações do facebook.
 							$('input[name="id"]').val(info.id);
 							$('input[name="name"]').val(info.name);
 							$('input[name="username"]').val(info.username);
 							$('a.fblink').attr('href', info.link).text(info.link).show();
 						},
 						error: function() {
+							// Holy: No caso de erro por parte do JQuery, informar o erro no componente de mensagem
 							$('.message').message('facebook request problem', 'error');
 						},
 						complete: function() {
+							// Holy: Independente se ocorrer um erro ou não, precisamos tirar o frame de loading
 							$.popLoading();
 						}
 					});
@@ -57,14 +82,29 @@
 				// ==== end fbrequest ====
 					
 				// ==== start prepare ====
+				// JQuery: devemos usar o evento ready para rodar código no start-up da página
 				$(document).ready(function() {
+					
+					// Holy: Ativando o componente de mensagem do Holy para exibir as erros e avisos.
 					$('.message').messageMonitor();
+					
+					// Holy: Utilizando o componente de formulário do Holy.
 					$('form').form();
+					
+					// Realizando o request para obter inicialmente as informações do username facebook.
 					requestFacebook('facebook');
 					
+					// JQuery: função que deverá ser executado no submit do form. 
 					$('form').submit(function() {
+						
+						// JQuery: obtendo o valor do input de filtro do formulário.
 						var filter = $(this).find('input:text:first').val();
+						
+						// Realizando a chamada para o Facebook para obter os dados do usuário digitado.
 						requestFacebook(filter);
+						
+						// JQuery: isso é importante para evitar que o form seja submetido para o servidor.
+						// Pois estamos fazendo isso via ajax na função acima.
 						return false;
 					});
 				});
@@ -72,53 +112,47 @@
 				
 			})(jQuery);
 		</script>
-		
-	</head>
-	<body class="simpleTheme">
-		<div id="wrapper">
-			<div id="header" class="strongbox">
-				<h1><a href="http://holy.dextra-sw.com">Holy <span class="detail">the best way to start your project!</span></a></h1>
-				<div class="navigation"></div>
-			</div>
-			<ul class="message"></ul>
-			<div id="content">
-				<!-- ==== start form ====  -->
-				<form action="#">
-                    <fieldset>
-                        <legend>Facebook Profile</legend>
-                        <ul>
-                            <li>
-                                <label for="filter">Username or Id:</label>
-                                <input title="Username or Id to query" type="text" name="filter" value="facebook" />
-                            </li>
-                            <li class="buttons">
-                            	<input value="Find" class="btSearch" type="submit" />
-                            </li>
-                            <li>
-                                <label for="id">Id:</label>
-                                <input title="Id" type="text" name="id" />
-                            </li>
-                            <li>
-                                <label for="username">Username:</label>
-                                <input title="Username" type="text" name="username" />
-                            </li>
-                            <li>
-                                <label for="name">Name:</label>
-                                <input title="Name" type="text" name="name"/>
-                            </li>
-                            <li>
-                                <label for="link">Link:</label>
-                                <a class="fblink" href="#" target="_blank">link</a>
-                            </li>
-                        </ul>
-                    </fieldset>
-                </form>
-                <!-- ==== end form ====  -->
-			</div>
-			<div id="footer"></div>
+
+</head>
+<body class="simpleTheme">
+	<div id="wrapper">
+		<div id="header" class="strongbox">
+			<h1>
+				<a href="http://holy.dextra-sw.com">Holy <span class="detail">the
+						best way to start your project!</span></a>
+			</h1>
+			<div class="navigation"></div>
 		</div>
-		<div id="copyright">
-			Live Demo :: Holy. &#169; 2012 <a href="http://www.dextra.com.br" target="_blank">Dextra Sistemas</a>.
+		<ul class="message"></ul>
+		<div id="content">
+			<!-- ==== start form ====  -->
+			<form action="#">
+				<fieldset>
+					<legend>Facebook Profile</legend>
+					<ul>
+						<li><label for="filter">Username or Id:</label> <input
+							title="Username or Id to query" type="text" name="filter"
+							value="facebook" /></li>
+						<li class="buttons"><input value="Find" class="btSearch"
+							type="submit" /></li>
+						<li><label for="id">Id:</label> <input title="Id" type="text"
+							name="id" /></li>
+						<li><label for="username">Username:</label> <input
+							title="Username" type="text" name="username" /></li>
+						<li><label for="name">Name:</label> <input title="Name"
+							type="text" name="name" /></li>
+						<li><label for="link">Link:</label> <a class="fblink"
+							href="#" target="_blank">link</a></li>
+					</ul>
+				</fieldset>
+			</form>
+			<!-- ==== end form ====  -->
 		</div>
-	</body>
+		<div id="footer"></div>
+	</div>
+	<div id="copyright">
+		Live Demo :: Holy. &#169; 2012 <a href="http://www.dextra.com.br"
+			target="_blank">Dextra Sistemas</a>.
+	</div>
+</body>
 </html>
