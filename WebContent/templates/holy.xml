@@ -13,6 +13,9 @@
 					<a href="#!">HTML</a>
 				</li>
 				<li>
+					<a href="#!">Holy XML Example</a>
+				</li>
+				<li>
 					<a href="#!">Download</a>
 				</li>
 			</ul>
@@ -23,18 +26,34 @@
 						<ul>
 							<li>
 								<label class="require" for="template">Template:</label>
-								<textarea name="template" cols="40" rows="10">
-									<![CDATA[
-									<engine>
-									<template selector="#content .result">
-									Hello World: ${name}
-									</template>
-									<script>
-									$('#content .count').val(parseInt($('#content .count').val())+1);
-									</script>
-									</engine>
-									]]>
-								</textarea>
+								<textarea name="template" cols="40" rows="10" class="large"><![CDATA[
+<engine>
+    <!--
+        This means $('#content .result').html('Hello World: ' + name});
+        the "name" comes from the holy call, you can see on the "script" tab.
+        Inside template, we have a trimpath code, you can know on "Trimpath" holy component.
+    -->
+	<template selector="#content .result">
+		Hello World: ${name}
+	</template>
+	<!-- 
+	    This script will run (eval) after the template process and change the DOM.
+	    In other words, the order of entries (templates, scripts, actions) is relevant.
+	-->
+	<script>
+		$('#content .count').val(parseInt($('#content .count').val())+1);
+	</script>
+	<!-- 
+	    You can put more entries here, like template, action or script to be executed.
+	    
+	<template selector=".whatever">
+	    abc
+	</template>
+	--> 
+	
+	
+</engine>
+								]]></textarea>
 							</li>
 							<li>
 								<label class="require" for="count">Count:</label>
@@ -58,9 +77,14 @@
 			<div class="html">
 				<pre></pre>
 			</div>
+			<div class="holyxml">
+				<pre></pre>
+			</div>			
 			<div class="download">
 				<div class="buttons">
-					<a class="btDownload" target="_blank" title="Clique here to download JavaScript file." href="holy/lib/jquery.holyavenger.js">jquery.holyavenger.js</a>
+					<a class="btDownload" target="_blank"
+						title="Clique here to download JavaScript file." href="holy/lib/jquery.holyavenger.js">jquery.holyavenger.js
+					</a>
 				</div>
 			</div>
 		</div>
@@ -69,6 +93,8 @@
 		<![CDATA[
 		$('.html pre').text($('.demo').html());
 		$('.html pre').snippet('html', {style:"ide-eclipse",showNum:false});
+		$('.holyxml pre').text($('#content form textarea[name="template"]').val());
+		$('.holyxml pre').snippet('xml', {style:"ide-eclipse",showNum:false});
 		$('.script pre').snippet('javascript', {style:"ide-eclipse",showNum:false});
 		$(".tabPanel").tabPanel();
 

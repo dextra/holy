@@ -95,6 +95,8 @@ limitations under the License.*/
 .forms select,
 .forms textarea { border-radius:3px; }
 
+.forms textarea.large { width: 770px; height: 300px; }
+
 .forms ul li .focus { background-color:#FFF; border:1px solid #0092CB; box-shadow: 0 0px 4px #39B7E8; -moz-box-shadow: 0 0px 4px #39B7E8; -webkit-box-shadow: 0 0px 4px #39B7E8; color:#000; }
 
 /* MSG BOX's */

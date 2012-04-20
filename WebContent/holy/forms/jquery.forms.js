@@ -46,7 +46,7 @@ limitations under the License.*/
 		opts = $.extend({}, opts);
 		var forms = $(this);
 		forms.addClass('forms');
-		forms.find('ul li:has(textarea)').addClass('clear');
+		//forms.find('ul li:has(textarea)').addClass('clear');
 		
 		$(this).find('input, textarea, select').live('focus', function() {
 			$(this).addClass('focus');
