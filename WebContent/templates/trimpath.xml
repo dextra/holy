@@ -1,6 +1,9 @@
 <engine>
 	<action selector="#content">
-		<h3>Trim<span>path</span></h3>
+		<h3>
+			Trim
+			<span>path</span>
+		</h3>
 		<div class="tabPanel">
 			<ul>
 				<li>
@@ -19,7 +22,10 @@
 			<div class="demo">
 				<form class="myForm" action="#">
 					<fieldset>
-						<legend>http://code.google.com/p/trimpath</legend>
+						<legend>
+							<a href="http://code.google.com/p/trimpath" target="_blank">http://code.google.com/p/trimpath
+							</a>
+						</legend>
 						<ul>
 							<li>
 								<label class="require" for="template">Template:</label>
@@ -38,15 +44,23 @@
 				<div class="result"></div>
 			</div>
 			<div class="script">
-				<pre>$('#content .result').trimpath('Hello World: ${name}', {name:'myname', age:19});</pre>
+				<pre><![CDATA[$('#content .result').trimpath('Hello World: ${name}',	{name:'myname', age:19});]]></pre>
+				<p>
+					You can use trimpath inside the Holy XML as you can see
+					<a href="#holy">here</a>
+				</p>
 			</div>
 			<div class="html">
 				<pre></pre>
 			</div>
 			<div class="download">
 				<div class="buttons">
-					<a class="btDownload" target="_blank" title="Clique here to download JavaScript file." href="holy/lib/trimpath.js">trimpath.js</a>
-					<a class="btDownload" target="_blank" title="Clique here to download JavaScript file." href="holy/lib/jquery.holyavenger.trimpath.js">jquery.holyavenger.trimpath.js</a>
+					<a class="btDownload" target="_blank"
+						title="Clique here to download JavaScript file." href="holy/lib/trimpath.js">trimpath.js
+					</a>
+					<a class="btDownload" target="_blank"
+						title="Clique here to download JavaScript file." href="holy/lib/jquery.holyavenger.trimpath.js">jquery.holyavenger.trimpath.js
+					</a>
 				</div>
 			</div>
 		</div>
