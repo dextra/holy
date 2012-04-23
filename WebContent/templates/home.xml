@@ -113,9 +113,12 @@
 					<div>
 						<ul class="simpleBox">
 							<li>
+								Web Interface Prototypes: You can easily create web interface prototypes using mock files for data.
+							</li>
+							<li>Single Page: It's a nice web development paradigm. Browsers can handle their interfaces to improve user experience.</li>
+							<li>
 								Ajax
 							</li>
-							<li>Single Page</li>
 							<li>
 								Rest/JSON
 							</li>
