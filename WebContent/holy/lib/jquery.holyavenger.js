@@ -157,7 +157,7 @@ limitations under the License.*/
 	});
 
 	$.holy = function(url, context) {
-		$.ajax({
+		return $.ajax({
 			url : url,
 			dataType : 'holy',
 			context : context
