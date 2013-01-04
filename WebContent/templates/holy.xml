@@ -72,7 +72,7 @@
 								]]></textarea>
 							</li>
 							<li>
-								<label class="require" for="template">Template:</label>
+								<label class="require" for="template">Context:</label>
 								<textarea name="context" cols="40" rows="10"><![CDATA[{"name":"myname"}]]></textarea>
 							</li>
 							<li>

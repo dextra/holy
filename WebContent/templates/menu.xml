@@ -26,6 +26,9 @@
 						<a href="#dot" title="doT.js">doT.js</a>
 					</li>
 					<li>
+						<a href="#parsers" title="More template engines">Parsers</a>
+					</li>
+					<li>
 						<a href="#modulator" title="Modulator">Modulator</a>
 					</li>
 				</ul>

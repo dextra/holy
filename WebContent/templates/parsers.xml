@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<engine>
+	<action selector="#content">
+		<h3>Usando outros Template Engines - Criando Holy Parsers</h3>
+		<div class="tabPanel">
+			<div>
+				<p>
+					Com a estruturação dos templates fornecida pelo Holy XML, é possível utilizar os parsers disponíveis para que o a renderização dos templates seja feita de forma automática sempre que se faz um $.holy ou $.ajax com dataType: 'holy'. 
+				</p>
+				<p>
+					Caso você prefira outra engine de templates, que não esteja dentre as que são providas atualmente pelo Holy (Trimpath através da tag "template" e doT.js através da tag "dot"), a extensão para que os seus arquivos Holy XML suportem outras engines de templates de maneira automática como acontece, é muito simples e segue abaixo.
+				</p>
+				<p>
+					Basta que você crie um arquivo como o abaixo:
+				</p>
+				
+				<div class="script">
+					<pre><![CDATA[
+						(function($) {
+							
+							// Aqui, você está definindo como será feito o parse em chamadas $.holy (conforme explicado acima)
+							$.holyavenger.parseMyParser = function(template, context, callback) {
+								template = $(template);
+								var selector = template.attr('id') ? '#' + template.attr('id')
+										: template.attr('selector');
+						
+								var domSelector = template.attr('dom');
+						
+								var dom;
+								if (template.attr('target')) {
+									selector = eval(template.attr('target'));
+								}
+						
+								if (domSelector && context[domSelector]) {
+									dom = context[domSelector];
+								} else if (selector) {
+									dom = $(selector);
+								} else if (!template.attr('optional')) {
+									throw '"myParser" requires id, selector or dom (in context)';
+								}
+						
+								if (dom) {
+									if (!template.attr('append')) {
+										dom.html('');
+									}
+									var text = $.holyavenger.readText(template);
+									context.window = window;
+									
+									// Abaixo a chamada de função myParser.doTheParse deve ser substituida pela chamada do template engine javascript que você deseja usar
+									// Caso ocorra algum erro durante o parse, ele pode ser tratado nesse momento
+									var result = myParser.doTheParse(text, context);
+									
+									
+									dom.append(result);
+								}
+								callback();
+							}
+							
+							// Aqui, você deve especificar qual sera a tag para o seu novo parser, e então adicioná-lo ao $.holyavenger
+							$.holyavenger.addParsers({
+								'myparser' : $.holyavenger.parseMyParser
+							});
+							
+							// Também é interrante que você disponibilize funções jQuery para o parse e append para a nova engine de templates
+							$.fn.myParser = function(template, ctx) {
+								var result = myParser.doTheParse(template, ctx);
+								$(this).html(result);
+								return this;
+							}
+							$.fn.appendMyParser = function(template, ctx) {
+								var result = myParser.doTheParse(template, ctx);
+								$(this).append(result);
+								return this;
+							}
+						})(jQuery);
+					]]></pre>
+				</div>
+				<p>
+					Fazendo dessa forma, o xml poderá conter tags como o exemplo abaixo:
+				</p>
+				<div class="html">
+					<div class="demo"><![CDATA[
+						<engine>
+							<myparser selector=".someDiv">
+								Your template code here
+							</myparser>
+						</engine>
+					]]></div>
+					<pre></pre>
+				</div>
+				<p>			
+					Substituindo os valores referentes ao título da tag (no exemplo temos 'myparser') para o valor desejado, e trocando a chamada de método para a invocação de um parser diferente de um outro engine de templates, você obterá um novo Holy Parser, pronto para ser importado em suas páginas web para renderizar automaticamente os novos templates.
+				</p>
+				<p>
+					Lembrando que o conteúdo dessa nova tag deve seguir a sintaxe definida pelos seu novo engine de templates, porém, em outras tags você ainda pode definir e usar a engine de templates antigas, desde que as definições de parsers estejam devidamente importadas em sua página.
+				</p>
+			</div>
+		</div>
+	</action>
+	<script>
+		$('.script pre').snippet('javascript', {style:"ide-eclipse",showNum:false});
+		
+		$('.html pre').text($('.demo').html());
+		$('.demo').html('');
+		$('.html pre').snippet('html', {style:"ide-eclipse",showNum:false});
+	</script>
+</engine>

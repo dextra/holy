@@ -137,7 +137,7 @@
 			html = html.replace(/Single Page/g, '<a href="http://en.wikipedia.org/wiki/Single-page_application"	target="_blank">Single Page</a>');
 			html = html.replace(/Ajax/g, '<a href="http://en.wikipedia.org/wiki/Ajax_(programming)" target="_blank">Ajax</a>');
 			html = html.replace(/Rest/g, '<a href="http://en.wikipedia.org/wiki/Representational_state_transfer" target="_blank">Rest</a>');
-			html = html.replace(/JSON/g, '<a hrf="http://en.wikipedia.org/wiki/Json" target="_blank">JSON</a>');
+			html = html.replace(/JSON/g, '<a href="http://en.wikipedia.org/wiki/Json" target="_blank">JSON</a>');
 			html = html.replace(/JQuery/g, '<a href="http://jquery.com/" target="_blank">JQuery</a>');
 			html = html.replace(/Holy/g, '<a href="' + window.location.protocol + '//'+ window.location.host + '" target="_blank">Holy</a>');
 			$('#content .toogle').html(html);
