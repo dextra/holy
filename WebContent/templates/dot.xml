@@ -1,0 +1,88 @@
+<engine>
+	<action selector="#content">
+		<h3>
+			doT.js
+		</h3>
+		<div class="tabPanel">
+			<ul>
+				<li>
+					<a href="#!">Demo</a>
+				</li>
+				<li>
+					<a href="#!">Script</a>
+				</li>
+				<li>
+					<a href="#!">HTML</a>
+				</li>
+				<li>
+					<a href="#!">Download</a>
+				</li>
+			</ul>
+			<div class="demo">
+				<form class="myForm" action="#">
+					<fieldset>
+						<legend>
+							<a href="http://github.com/olado/doT" target="_blank">http://github.com/olado/doT
+							</a>
+						</legend>
+						<ul>
+							<li>
+								<label class="require" for="template">Template:</label>
+								<textarea name="template">Hello World: {{= it.name}}</textarea>
+							</li>
+							<li>
+								<label class="require" for="json">Json:</label>
+								<textarea name="json">{name:'myname', age:19}</textarea>
+							</li>
+							<li class="buttons">
+								<button type="button" class="btSave">Execute</button>
+							</li>
+						</ul>
+					</fieldset>
+				</form>
+				<div class="result"></div>
+			</div>
+			<div class="script">
+				<pre><![CDATA[$('#content .result').doT('Hello World: {{= it.name}}', {name:'myname', age:19});]]></pre>
+				<p>
+					You can use doT.js inside the Holy XML as you can see
+					<a href="#holy">here</a>
+				</p>
+			</div>
+			<div class="html">
+				<pre></pre>
+			</div>
+			<div class="download">
+				<div class="buttons">
+					<a class="btDownload" target="_blank"
+						title="Clique here to download JavaScript file." href="holy/lib/doT.js">doT.js
+					</a>
+					<a class="btDownload" target="_blank"
+						title="Clique here to download JavaScript file." href="holy/lib/jquery.holyavenger.dot.js">jquery.holyavenger.dot.js
+					</a>
+				</div>
+			</div>
+		</div>
+	</action>
+	<script>
+		<![CDATA[
+		$('.html pre').text($('.demo').html());
+		$('.html pre').snippet('html', {style:"ide-eclipse",showNum:false});
+		$('.script pre').snippet('javascript', {style:"ide-eclipse",showNum:false});
+		$(".tabPanel").tabPanel();
+		
+		$('.myForm').form();
+
+		$('#content .myForm').submit(function() {
+			return false;
+		});
+
+		$('#content .myForm .btSave').click(function() {
+			var template = $(this).closest('form').find('textarea[name="template"]').val();
+			var json = $(this).closest('form').find('textarea[name="json"]').val();
+			json = eval('(function() { return ' + json + ';})()');
+			$('#content .result').doT(template, json);
+		});
+		
+	]]></script>
+</engine>

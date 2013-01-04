@@ -29,16 +29,20 @@
 								<textarea name="template" cols="40" rows="10" class="large"><![CDATA[
 <engine>
     <!--
-        This means $('#content .result').html('Hello World: ' + name});
+        This means $('#content .result').html('Hello World: ' + name);
         the "name" comes from the holy call, you can see on the "script" tab.
-        Inside template, we have a trimpath code, you can know on "Trimpath" holy component.
+        Inside <template>, we have a trimpath code, you can know on "Trimpath" holy component.
+        Inside <dot>, we have a doT code, you can know on "doT" holy component.
     -->
-	<template selector="#content .result">
-		Hello World: ${name}
+	<template selector="#content .resultTrimpath">
+		Hello World (Trimpath): ${name}
 	</template>
+	<dot selector="#content .result">
+		Hello World (doT): {{= it.name}}
+	</dot>
 	<!-- 
 	    This script will run (eval) after the template process and change the DOM.
-	    In other words, the order of entries (templates, scripts, actions) is relevant.
+	    In other words, the order of entries (templates, doTs, scripts, actions) is relevant.
 	-->
 	<script>
 		$('#content .count').val(parseInt($('#content .count').val())+1);
@@ -56,6 +60,10 @@
 								]]></textarea>
 							</li>
 							<li>
+								<label class="require" for="template">Template:</label>
+								<textarea name="context" cols="40" rows="10"><![CDATA[{"name":"myname"}]]></textarea>
+							</li>
+							<li>
 								<label class="require" for="count">Count:</label>
 								<input type="text" class="count" name="count" value="0" />
 							</li>
@@ -65,12 +73,15 @@
 						</ul>
 					</fieldset>
 				</form>
+				<div class="resultTrimpath"></div>
 				<div class="result"></div>
 			</div>
 			<div class="script">
 				<pre>
-					<![CDATA[			var template = $(this).closest('form').find('textarea[name="template"]').val();
-					$.executeHoly(template, {name:'myname'});
+					<![CDATA[			
+					var template = $(this).closest('form').find('textarea[name="template"]').val();
+					var context = $.parseJSON($(this).closest('form').find('textarea[name="context"]').val());
+					$.executeHoly(template, context);
 					]]>
 				</pre>
 			</div>
@@ -84,6 +95,12 @@
 				<div class="buttons">
 					<a class="btDownload" target="_blank"
 						title="Clique here to download JavaScript file." href="holy/lib/jquery.holyavenger.js">jquery.holyavenger.js
+					</a>
+					<a class="btDownload" target="_blank"
+						title="Clique here to download JavaScript file." href="holy/lib/jquery.holyavenger.trimpath.js">jquery.holyavenger.trimpath.js
+					</a>
+					<a class="btDownload" target="_blank"
+						title="Clique here to download JavaScript file." href="holy/lib/jquery.holyavenger.dot.js">jquery.holyavenger.dot.js
 					</a>
 				</div>
 			</div>
@@ -105,8 +122,9 @@
 		});
 
 		$('#content .myForm .btSave').click(function() {
-		var template = $(this).closest('form').find('textarea[name="template"]').val();
-		$.executeHoly(template, {name:'myname'});
+			var template = $(this).closest('form').find('textarea[name="template"]').val();
+			var context = $.parseJSON($(this).closest('form').find('textarea[name="context"]').val());
+			$.executeHoly(template, context);
 		});
 
 		]]>

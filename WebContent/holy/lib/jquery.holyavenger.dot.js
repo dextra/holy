@@ -13,13 +13,14 @@ See the License for the specific language governing permissions and
 limitations under the License.*/
 
 (function($) {
-	$.holyavenger.parseTemplate = function(template, context, callback) {
+	$.holyavenger.parseDoT = function(template, context, callback) {
 		template = $(template);
 		var selector = template.attr('id') ? '#' + template.attr('id')
 				: template.attr('selector');
 
 		var domSelector = template.attr('dom');
 
+		var dom;
 		if (template.attr('target')) {
 			selector = eval(template.attr('target'));
 		}
@@ -31,37 +32,36 @@ limitations under the License.*/
 		} else if (!template.attr('optional')) {
 			throw "<dot> requires id, selector or dom (in context)";
 		}
-		
+
 		if (dom) {
 			if (!template.attr('append')) {
 				dom.html('');
 			}
 			var text = $.holyavenger.readText(template);
-			template = TrimPath.parseTemplate(text);
+			template = doT.template(text);
 			context.window = window;
-			var result = template.process(context);
+			var result = template(context);
 			if (result.exception) {
 				throw result.exception;
 			}
 			dom.append(result);
 		}
-		
 		callback();
 	}
 	$.holyavenger.addParsers({
-		'template' : $.holyavenger.parseTemplate
+		'dot' : $.holyavenger.parseDoT
 	});
-
-	$.fn.trimpath = function(template, ctx) {
-		var parsed = TrimPath.parseTemplate(template);
-		var result = parsed.process(ctx);
+	
+	$.fn.doT = function(template, ctx) {
+		var templateParsed = doT.template(template);
+		var result = templateParsed(ctx);
 		$(this).html(result);
 		return this;
 	}
 
-	$.fn.appendTrimpath = function(template, ctx) {
-		var parsed = TrimPath.parseTemplate(template);
-		var result = parsed.process(ctx);
+	$.fn.appendDoT = function(template, ctx) {
+		var templateParsed = doT.template(template);
+		var result = templateParsed(ctx);
 		$(this).append(result);
 		return this;
 	}
