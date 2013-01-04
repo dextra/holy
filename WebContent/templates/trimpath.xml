@@ -56,10 +56,10 @@
 			<div class="download">
 				<div class="buttons">
 					<a class="btDownload" target="_blank"
-						title="Clique here to download JavaScript file." href="holy/lib/trimpath.js">trimpath.js
+						title="Click here to download JavaScript file." href="holy/lib/trimpath.js">trimpath.js
 					</a>
 					<a class="btDownload" target="_blank"
-						title="Clique here to download JavaScript file." href="holy/lib/jquery.holyavenger.trimpath.js">jquery.holyavenger.trimpath.js
+						title="Click here to download JavaScript file." href="holy/lib/jquery.holyavenger.trimpath.js">jquery.holyavenger.trimpath.js
 					</a>
 				</div>
 			</div>

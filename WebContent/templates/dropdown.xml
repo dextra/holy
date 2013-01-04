@@ -368,8 +368,8 @@
 			</div>
 			<div class="download">
 				<div class="buttons">
-					<a class="btDownload" target="_blank" title="Clique here to download JavaScript file." href="holy/navigation/jquery.navigation.js">jquery.navigation.js</a>
-					<a class="btDownload" target="_blank" title="Clique here to download CSS file." href="holy/navigation/jquery.navigation.css">jquery.navigation.css</a>
+					<a class="btDownload" target="_blank" title="Click here to download JavaScript file." href="holy/navigation/jquery.navigation.js">jquery.navigation.js</a>
+					<a class="btDownload" target="_blank" title="Click here to download CSS file." href="holy/navigation/jquery.navigation.css">jquery.navigation.css</a>
 				</div>
 			</div>
 		</div>

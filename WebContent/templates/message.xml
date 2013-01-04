@@ -56,8 +56,8 @@
 			</div>
 			<div class="download">
 				<div class="buttons">
-					<a class="btDownload" target="_blank" title="Clique here to download JavaScript file." href="holy/message/jquery.message.js">jquery.message.js</a>
-					<a class="btDownload" target="_blank" title="Clique here to download CSS file." href="holy/message/jquery.message.css">jquery.message.css</a>
+					<a class="btDownload" target="_blank" title="Click here to download JavaScript file." href="holy/message/jquery.message.js">jquery.message.js</a>
+					<a class="btDownload" target="_blank" title="Click here to download CSS file." href="holy/message/jquery.message.css">jquery.message.css</a>
 				</div>
 			</div>
 		</div>

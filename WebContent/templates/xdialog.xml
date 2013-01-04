@@ -129,9 +129,9 @@
 			<div class="download">
 				<div class="buttons">
 					<a class="btDownload" target="_blank"
-						title="Clique here to download JavaScript file." href="holy/xdialog/jquery.xdialog.js">jquery.xdialog.js
+						title="Click here to download JavaScript file." href="holy/xdialog/jquery.xdialog.js">jquery.xdialog.js
 					</a>
-					<a class="btDownload" target="_blank" title="Clique here to download CSS file."
+					<a class="btDownload" target="_blank" title="Click here to download CSS file."
 						href="holy/xdialog/jquery.xdialog.css">jquery.xdialog.css</a>
 				</div>
 			</div>

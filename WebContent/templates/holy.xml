@@ -40,6 +40,18 @@
 	<dot selector="#content .result">
 		Hello World (doT): {{= it.name}}
 	</dot>
+
+	<!--
+		This works like the selector attribute, but instead of calling the jquery function with a selector,
+		the value must be a jQuery object that the result will be appended
+	-->
+	<template dom="domObjectTrimpath">
+		Hello World (Trimpath - dom): ${name}
+	</template>
+	<dot dom="domObjectDot">
+		Hello World (doT - dom): {{= it.name}}
+	</dot>
+
 	<!-- 
 	    This script will run (eval) after the template process and change the DOM.
 	    In other words, the order of entries (templates, doTs, scripts, actions) is relevant.
@@ -75,12 +87,18 @@
 				</form>
 				<div class="resultTrimpath"></div>
 				<div class="result"></div>
+				<div class="resultTrimpathDom"></div>
+				<div class="resultDom"></div>
 			</div>
 			<div class="script">
 				<pre>
 					<![CDATA[			
 					var template = $(this).closest('form').find('textarea[name="template"]').val();
 					var context = $.parseJSON($(this).closest('form').find('textarea[name="context"]').val());
+					
+					context.domObjectDot = $("#content .resultDom");
+					context.domObjectTrimpath = $("#content .resultTrimpathDom");
+					
 					$.executeHoly(template, context);
 					]]>
 				</pre>
@@ -94,13 +112,13 @@
 			<div class="download">
 				<div class="buttons">
 					<a class="btDownload" target="_blank"
-						title="Clique here to download JavaScript file." href="holy/lib/jquery.holyavenger.js">jquery.holyavenger.js
+						title="Click here to download JavaScript file." href="holy/lib/jquery.holyavenger.js">jquery.holyavenger.js
 					</a>
 					<a class="btDownload" target="_blank"
-						title="Clique here to download JavaScript file." href="holy/lib/jquery.holyavenger.trimpath.js">jquery.holyavenger.trimpath.js
+						title="Click here to download JavaScript file." href="holy/lib/jquery.holyavenger.trimpath.js">jquery.holyavenger.trimpath.js
 					</a>
 					<a class="btDownload" target="_blank"
-						title="Clique here to download JavaScript file." href="holy/lib/jquery.holyavenger.dot.js">jquery.holyavenger.dot.js
+						title="Click here to download JavaScript file." href="holy/lib/jquery.holyavenger.dot.js">jquery.holyavenger.dot.js
 					</a>
 				</div>
 			</div>
@@ -124,6 +142,10 @@
 		$('#content .myForm .btSave').click(function() {
 			var template = $(this).closest('form').find('textarea[name="template"]').val();
 			var context = $.parseJSON($(this).closest('form').find('textarea[name="context"]').val());
+
+			context.domObjectDot = $("#content .resultDom");
+			context.domObjectTrimpath = $("#content .resultTrimpathDom");
+
 			$.executeHoly(template, context);
 		});
 

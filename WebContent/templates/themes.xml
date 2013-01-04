@@ -7,8 +7,8 @@
 			</h3>
 			<div>
 				<div class="buttons">
-					<a class="btDownload" target="_blank" title="Clique here to download CSS file." href="holy/themes/liquidblue/base.css">base.css</a>
-					<a class="btDownload" target="_blank" title="Clique here to download CSS file." href="holy/themes/liquidblue/components.css">components.css</a>
+					<a class="btDownload" target="_blank" title="Click here to download CSS file." href="holy/themes/liquidblue/base.css">base.css</a>
+					<a class="btDownload" target="_blank" title="Click here to download CSS file." href="holy/themes/liquidblue/components.css">components.css</a>
 				</div>
 				<img src="holy/themes/liquidblue/imgs/screenshot.gif" alt="Liquidblue theme" />
 			</div>

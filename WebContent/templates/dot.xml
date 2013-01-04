@@ -55,10 +55,10 @@
 			<div class="download">
 				<div class="buttons">
 					<a class="btDownload" target="_blank"
-						title="Clique here to download JavaScript file." href="holy/lib/doT.js">doT.js
+						title="Click here to download JavaScript file." href="holy/lib/doT.js">doT.js
 					</a>
 					<a class="btDownload" target="_blank"
-						title="Clique here to download JavaScript file." href="holy/lib/jquery.holyavenger.dot.js">jquery.holyavenger.dot.js
+						title="Click here to download JavaScript file." href="holy/lib/jquery.holyavenger.dot.js">jquery.holyavenger.dot.js
 					</a>
 				</div>
 			</div>

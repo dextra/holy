@@ -71,8 +71,8 @@
 			</div>
 			<div class="download">
 				<div class="buttons">
-					<a class="btDownload" target="_blank" title="Clique here to download JavaScript file." href="holy/youtubetip/jquery.youtubetip.js">jquery.youtubetip.js</a>
-					<a class="btDownload" target="_blank" title="Clique here to download CSS file." href="holy/youtubetip/jquery.youtubetip.css">jquery.youtubetip.css</a>
+					<a class="btDownload" target="_blank" title="Click here to download JavaScript file." href="holy/youtubetip/jquery.youtubetip.js">jquery.youtubetip.js</a>
+					<a class="btDownload" target="_blank" title="Click here to download CSS file." href="holy/youtubetip/jquery.youtubetip.css">jquery.youtubetip.css</a>
 				</div>
 			</div>
 		</div>
