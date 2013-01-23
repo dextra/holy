@@ -1,9 +1,0 @@
-Os frameworks tradicionais para a construção de interfaces web tem se tornado cada vez mais complexos. Pior do que isto, eles têm se afastado cada vez mais das tecnologias base da Internet (HTML, CSS e Javascript) que estão se tornando cada vez mais poderosas.
-
-O Holy é uma proposta, ao mesmo tempo inovadora e descomplicada, para a construção de interfaces de sistemas web-based. A proposta é baseada no conceito de inversão de controle: não é o servidor que monta a página e a envia para o browser, mas é o browser que monta a página, solicitando as informações necessárias para isto. Gostamos de chamar o Holy de um não-framework, pela sua simplicidade e tamanho reduzido.
-
-Você pode visualizar os componentes de interface já desenvolvidos e entender sua forma de uso através do endereço http://holy.dextra-sw.com.
-
-O projeto é OpenSource e utiliza a licença Apache 2.0 (mais informações em http://www.apache.org/licenses/LICENSE-2.0.html)
-
-A versão mais atual do Holy está disponível em https://github.com/dextra/holy.
