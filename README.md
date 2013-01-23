@@ -17,6 +17,14 @@ Devel Server
     ./util/minify.sh
     ./dev.sh
     
+Deploy
+--
+
+This script will arrange the version file and minify resources before deploy
+
+    ./deploy.sh
+    
+
 
    
 
