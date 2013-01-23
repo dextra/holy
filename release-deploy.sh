@@ -1,10 +1,9 @@
-#!/bin/bash
-
+#!/bin/bash -x
 
 VERSION=$1
 
 if [ "x$VERSION" == "x" ]; then
-	echo "release.sh <version>";
+	echo "release-deploy.sh <version>";
 	echo "";
 	exit 1;
 fi
@@ -28,5 +27,5 @@ echo $GAE_VERSION
 
 http_proxy=
 https_proxy=
-appcfg.py --insecure -V "$GAE_VERSION" update WebContent
+appcfg.py -V "$GAE_VERSION" update WebContent
 
