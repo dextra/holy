@@ -24,6 +24,17 @@ This script will arrange the version file and minify resources before deploy
 
     ./deploy.sh
     
+Release
+--
+
+You want to release some version, like x.y.z:
+
+    ./release.sh x.y.z
+    
+Then you need to deploy it (the same x.y.z):
+
+    ./release-deploy.sh x.y.z
+    
 
 
    
