@@ -2,7 +2,7 @@
 
 (echo "versions([" && git tag | grep "^holy\-.\+$" | sed "s/^/'/g" | sed "s/$/',/g" && echo "'master']);") > WebContent/props/all-versions.js
 
-./minify.sh
+./util/minify.sh
 
 http_proxy=
 https_proxy=
