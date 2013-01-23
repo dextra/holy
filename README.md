@@ -31,7 +31,11 @@ You want to release some version, like x.y.z:
 
     ./release.sh x.y.z
     
-Then you need to deploy it (the same x.y.z):
+If something goes wrong on release, you need to delete tag x.y.z
+
+    /util/delete-tag.sh holy-x.y.z
+    
+If everthing works fine until here, you need to deploy it (the same x.y.z):
 
     ./release-deploy.sh x.y.z
     
